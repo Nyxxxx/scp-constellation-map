@@ -12,7 +12,8 @@ Personal notes about the owner and private links live in `CLAUDE.local.md`, whic
   Publishing a change = `python make.py page`, test, commit, push; the site updates within a few minutes.
 - Built from `site/scp-constellation-map.html` (version 16 at the hand-over).
 - 18,083 pages, 58 regions, 58 canons, 54 GoIs, 49 contests, 42 tale series (preview), a timeline, highlight menus, search, light and dark themes.
-- Everything was tested in a headless browser only. **It has never been checked on a real phone or with a real mouse.**
+- Automatic tests run in a headless browser. On 11 October 2026 the owner opened the public site on a real phone: "runs extremely well".
+  Not yet tried: a trackpad, a large screen, an older or slower phone.
 
 ## Setup (Windows)
 
@@ -149,7 +150,7 @@ land in slightly different places, and region names are tied to each region's th
 ### E. Computation and speed
 
 25. **Timeline play** repaints every dot on every frame. Keep the settled dots as a picture between two months and animate only the new ones, if it is slow on real machines.
-26. **Test on real devices:** pinch-zoom and speed on a phone, a trackpad, a large screen. Never done.
+26. **Test on real devices:** phone done on 11 October 2026 (runs well). Still to try: a trackpad, a large screen, a slow phone.
 27. **Soft cloud fills** are a fixed-size picture, slightly soft when zoomed far in (a compromise chosen to avoid re-rendering). They could be drawn as shapes like the outlines.
 28. **True live physics** (dragging dots and reshaping the map as in Obsidian) needs a GPU drawing engine such as the one behind Cosmograph, and a rebuild of the drawing layer.
     Parked: the owner liked the idea early on, then chose to keep the fixed layout.
