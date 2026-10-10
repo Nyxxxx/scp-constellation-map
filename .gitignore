@@ -8,3 +8,4 @@ out/*.log
 out/preview*.html
 out/frame.html
 mockups/*.html
+series_hubs.json

@@ -1,6 +1,9 @@
 """Reads the series hubs held by the dataset and extracts, for each, the pages it lists in the hub's own order.
 
-Usage: python3 -I make_hubs.py <raw dataset dir> <built json> hubs.json
+Usage: python3 -I make_hubs.py <raw dataset dir> <built json> hubs.json [series_hubs.json]
+
+The dataset only holds the hubs whose title begins with a digit, A or B. series_hubs.json (written by fetch_series.py from the
+wiki's Series Archive) adds the others; a hub present in both is read from the dataset.
 
 A series hub is a page tagged "series-hub". Its reading list is taken from the body of the page, in document order:
 links placed in list items, headings, table cells, or paragraphs made of little more than the link itself.
@@ -12,6 +15,9 @@ from bs4 import BeautifulSoup, NavigableString, Tag
 
 RAW, BUILT, OUT = sys.argv[1], sys.argv[2], sys.argv[3]
 hubs = json.load(open(RAW + "/hubs/index.json"))
+for _p in sys.argv[4:]:
+    for _s, _v in json.load(open(_p, encoding="utf-8")).items():
+        if _s not in hubs and _s.lower() not in {k.lower() for k in hubs}: hubs[_s] = dict(_v, src="wiki")
 d = json.load(open(BUILT))
 on_map = {s.lower(): i for i, s in enumerate(d["slug"])}
 HUB_SLUGS = {k.lower() for k in hubs}
@@ -142,9 +148,9 @@ for slug, v in sorted(hubs.items()):
     title = clean(re.sub(r"\s*-\s*SCP Foundation$", "", v.get("title") or slug))
     res.append({"slug": slug, "title": title, "date": (v.get("created_at") or "")[:7], "author": v.get("creator") or "",
                 "blurb": blurb_of(raw), "canons": [t for t in tags if kind.get(t) == 1], "gois": [t for t in tags if kind.get(t) == 2],
-                "sections": secs, "n": n, "mode": mode, "off": off, "every": every})
+                "sections": secs, "n": n, "mode": mode, "off": off, "every": every, "src": v.get("src", "dataset")})
 json.dump(res, open(OUT, "w"), ensure_ascii=False, indent=1)
-print(len(res), "series hubs in the dataset;", sum(1 for r in res if r["n"] >= 2), "with a reading list of two pages or more")
+print(len(res), "series hubs read;", sum(1 for r in res if r["n"] >= 2), "with a reading list of two pages or more")
 for r in res:
     print(f"\n== {r['slug']} | {r['title']} | {r['date']} {r['author']} | canons {r['canons']} gois {r['gois']} | {r['n']} pages of {r['every']} linked, {r['off']} off map, {r['mode']}")
     if r["blurb"]: print("   blurb:", r["blurb"][:160])

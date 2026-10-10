@@ -25,7 +25,50 @@
   "n": 8,
   "mode": "list",
   "off": 4,
-  "every": 8
+  "every": 8,
+  "src": "dataset"
+ },
+ {
+  "slug": "1998-911-hub",
+  "title": "Manhattan Crisis Hub",
+  "date": "2023-09",
+  "author": "(account deleted)",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Story",
+    [
+     "koigarezaki-news-911-1998-ver",
+     "september-eleven-prequel",
+     "sc-99-734-01-506",
+     "uiu-file-2001-745"
+    ]
+   ],
+   [
+    "The Demon Forces",
+    [
+     "scp-4661"
+    ]
+   ],
+   [
+    "Article List: Abridged",
+    [
+     "kte-1221-parallax-nacl-carcinoma",
+     "as-it-happened",
+     "in-your-heart",
+     "point-counterpoint",
+     "all-quiet-on-the-wall-street-front",
+     "scp-8911"
+    ]
+   ]
+  ],
+  "n": 11,
+  "mode": "list",
+  "off": 9,
+  "every": 26,
+  "src": "wiki"
  },
  {
   "slug": "512-means-onwards-hub",
@@ -55,7 +98,8 @@
   "n": 10,
   "mode": "list",
   "off": 1,
-  "every": 10
+  "every": 10,
+  "src": "dataset"
  },
  {
   "slug": "8000-dead-rats-hub",
@@ -115,7 +159,8 @@
   "n": 21,
   "mode": "list",
   "off": 0,
-  "every": 21
+  "every": 21,
+  "src": "dataset"
  },
  {
   "slug": "a-dark-forsaken-candle",
@@ -143,8 +188,9 @@
   ],
   "n": 4,
   "mode": "list",
-  "off": 2,
-  "every": 4
+  "off": 0,
+  "every": 4,
+  "src": "dataset"
  },
  {
   "slug": "above-all-stand-i",
@@ -167,7 +213,8 @@
   "n": 3,
   "mode": "list",
   "off": 0,
-  "every": 3
+  "every": 3,
+  "src": "dataset"
  },
  {
   "slug": "acidverse",
@@ -227,7 +274,8 @@
   "n": 25,
   "mode": "list",
   "off": 1,
-  "every": 25
+  "every": 25,
+  "src": "dataset"
  },
  {
   "slug": "acquisitions-hub",
@@ -263,8 +311,9 @@
   ],
   "n": 10,
   "mode": "list",
-  "off": 1,
-  "every": 32
+  "off": 0,
+  "every": 32,
+  "src": "dataset"
  },
  {
   "slug": "adamantine-temptations-hub",
@@ -292,7 +341,8 @@
   "n": 4,
   "mode": "list",
   "off": 9,
-  "every": 4
+  "every": 4,
+  "src": "dataset"
  },
  {
   "slug": "admonition",
@@ -321,7 +371,8 @@
   "n": 7,
   "mode": "list",
   "off": 0,
-  "every": 7
+  "every": 7,
+  "src": "dataset"
  },
  {
   "slug": "adventures-in-capitalism-hub",
@@ -347,7 +398,8 @@
   "n": 4,
   "mode": "list",
   "off": 1,
-  "every": 4
+  "every": 4,
+  "src": "dataset"
  },
  {
   "slug": "aftermath-hub",
@@ -386,7 +438,8 @@
   "n": 14,
   "mode": "list",
   "off": 0,
-  "every": 14
+  "every": 14,
+  "src": "dataset"
  },
  {
   "slug": "aleph-null-hub",
@@ -414,7 +467,8 @@
   "n": 8,
   "mode": "list",
   "off": 0,
-  "every": 8
+  "every": 8,
+  "src": "dataset"
  },
  {
   "slug": "all-eyes-on-silesia-hub",
@@ -457,7 +511,68 @@
   "n": 13,
   "mode": "list",
   "off": 1,
-  "every": 14
+  "every": 14,
+  "src": "dataset"
+ },
+ {
+  "slug": "all-that-glisters",
+  "title": "All That Glisters",
+  "date": "2018-08",
+  "author": "DrChandra",
+  "blurb": "",
+  "canons": [
+   "dread&circuses"
+  ],
+  "gois": [
+   "marshall-carter-and-dark"
+  ],
+  "sections": [
+   [
+    "Item Listings",
+    [
+     "kaiju-caviar-ocn39-t5fg6-7hjl2",
+     "osteotronic-cubes-vxy33-f7rq3-9xad1",
+     "the-dark-web-dke79-o2rg5-4jlw6",
+     "mcd-fidget-winners",
+     "somatic-backups",
+     "mcd-smart-hex",
+     "mcd-thunderbolt-iron"
+    ]
+   ],
+   [
+    "Testimonials",
+    [
+     "so-they-called-him-darke",
+     "dark-and-disquieting",
+     "micky-d-s",
+     "1-001-dark-and-stormy-nights",
+     "freaks-friends-and-fiends",
+     "text-message-in-a-bottle",
+     "a-vale-of-tears",
+     "a-pound-of-flesh-a-piece-of-meat",
+     "holding-an-umbrella",
+     "free-consultation",
+     "sweet-dreams-are-made-of-these",
+     "we-re-all-mad-here",
+     "how-is-your-name",
+     "and-the-world-felt-like-nothing-amen",
+     "masks-monsters-merchants"
+    ]
+   ],
+   [
+    "External Reports",
+    [
+     "scp-3189",
+     "scp-3277",
+     "scp-3549"
+    ]
+   ]
+  ],
+  "n": 25,
+  "mode": "list",
+  "off": 0,
+  "every": 26,
+  "src": "wiki"
  },
  {
   "slug": "altitudes-hub",
@@ -491,7 +606,8 @@
   "n": 9,
   "mode": "list",
   "off": 0,
-  "every": 10
+  "every": 10,
+  "src": "dataset"
  },
  {
   "slug": "american-dreams-hub",
@@ -538,7 +654,38 @@
   "n": 10,
   "mode": "list",
   "off": 1,
-  "every": 10
+  "every": 10,
+  "src": "dataset"
+ },
+ {
+  "slug": "amnesticization",
+  "title": "Team Fuhgeddaboutit Hub",
+  "date": "2018-05",
+  "author": "(account deleted)",
+  "blurb": "Come, now, across the five rivers, and submit yourself to oblivion.",
+  "canons": [
+   "ad-astra"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-3484",
+     "scp-3848",
+     "excerpt-from-the-astrolabe-institute-journal",
+     "schulman-ny-programmable-mnestic-device-ac34d-nc77q-95dcs",
+     "paperpushing",
+     "that-buzzing-behind-your-eye",
+     "when-the-time-comes-i-do-not-want-to-be-forgotten"
+    ]
+   ]
+  ],
+  "n": 7,
+  "mode": "list",
+  "off": 0,
+  "every": 7,
+  "src": "wiki"
  },
  {
   "slug": "anabasis-hub",
@@ -597,7 +744,8 @@
   "n": 34,
   "mode": "list",
   "off": 2,
-  "every": 34
+  "every": 34,
+  "src": "dataset"
  },
  {
   "slug": "anastasis-hub",
@@ -628,7 +776,8 @@
   "n": 9,
   "mode": "prose",
   "off": 0,
-  "every": 9
+  "every": 9,
+  "src": "dataset"
  },
  {
   "slug": "and-every-time-we-meet-again-hub",
@@ -713,7 +862,8 @@
   "n": 48,
   "mode": "list",
   "off": 4,
-  "every": 48
+  "every": 48,
+  "src": "dataset"
  },
  {
   "slug": "and-to-the-stars-i-went-with-only-a-name-hub",
@@ -761,7 +911,8 @@
   "n": 11,
   "mode": "list",
   "off": 1,
-  "every": 11
+  "every": 11,
+  "src": "dataset"
  },
  {
   "slug": "animal-hospital-hub",
@@ -813,7 +964,8 @@
   "n": 15,
   "mode": "list",
   "off": 7,
-  "every": 16
+  "every": 16,
+  "src": "dataset"
  },
  {
   "slug": "anthology-2023-hub",
@@ -840,7 +992,8 @@
   "n": 7,
   "mode": "list",
   "off": 0,
-  "every": 7
+  "every": 7,
+  "src": "dataset"
  },
  {
   "slug": "antimemetics-division-hub",
@@ -923,7 +1076,52 @@
   "n": 33,
   "mode": "list",
   "off": 1,
-  "every": 33
+  "every": 33,
+  "src": "dataset"
+ },
+ {
+  "slug": "ao-hub",
+  "title": "Tales of Anomalous Items",
+  "date": "2017-11",
+  "author": "MaliceAforethought",
+  "blurb": "“It has long been an axiom of mine that the little things are infinitely the most important.” ― Arthur Conan Doyle",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "The Tales",
+    [
+     "time-after-time",
+     "endless-light",
+     "tum-tum-tum-tum-tum-tum-tum-tum-tum-tum",
+     "tjalla",
+     "anomalous-incidents",
+     "the-lizard-in-the-mosaic",
+     "charcoal",
+     "the-three-bullets-of-destiny",
+     "white",
+     "do-not-collect-200",
+     "and-when-he-heard-the-clock-he-cried",
+     "here-we-only-got-one-rule-never-ever-let-it-cool",
+     "down-the-rabbit-wormhole",
+     "penny-for-your-thoughts",
+     "big-fish-in-the-sky",
+     "something-glowing",
+     "blue-moon-o-virginia",
+     "one-good-turn-deserves-another",
+     "paraffin",
+     "afterglow",
+     "she-waits",
+     "addendum-to-neutralization-report-ky-2018-dw2",
+     "nosedive"
+    ]
+   ]
+  ],
+  "n": 23,
+  "mode": "list",
+  "off": 0,
+  "every": 23,
+  "src": "wiki"
  },
  {
   "slug": "arch-hub",
@@ -950,7 +1148,8 @@
   "n": 5,
   "mode": "list",
   "off": 0,
-  "every": 5
+  "every": 5,
+  "src": "dataset"
  },
  {
   "slug": "arsene-lupin-vs-the-scp-foundation-hub",
@@ -976,7 +1175,8 @@
   "n": 6,
   "mode": "list",
   "off": 0,
-  "every": 6
+  "every": 6,
+  "src": "dataset"
  },
  {
   "slug": "arthurian-cycle-hub",
@@ -1002,7 +1202,45 @@
   "n": 4,
   "mode": "list",
   "off": 0,
-  "every": 4
+  "every": 4,
+  "src": "dataset"
+ },
+ {
+  "slug": "ascension-hub",
+  "title": "Dancing with Rachael",
+  "date": "2018-01",
+  "author": "DarkStuff",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "sometimes-i-wish-this-moment-could-last-forever",
+     "waiting-on-the-good-times",
+     "forever-young",
+     "we-didn-t-do-this-for-nothing",
+     "ura-1902",
+     "the-consequences-of-a-deep-dark-disassociation",
+     "the-call-to-action",
+     "we-meet-again",
+     "it-feels-like-i-only-go-backwards",
+     "along-for-the-ride",
+     "a-hole-in-the-tapestry",
+     "xxxxx",
+     "industrial",
+     "dorer-dances",
+     "ascension",
+     "a-world-unto-yourself"
+    ]
+   ]
+  ],
+  "n": 16,
+  "mode": "list",
+  "off": 0,
+  "every": 16,
+  "src": "wiki"
  },
  {
   "slug": "at-creation-s-end-hub",
@@ -1025,7 +1263,8 @@
   "n": 3,
   "mode": "list",
   "off": 0,
-  "every": 3
+  "every": 3,
+  "src": "dataset"
  },
  {
   "slug": "atzak-hub",
@@ -1048,7 +1287,8 @@
   "n": 3,
   "mode": "list",
   "off": 0,
-  "every": 3
+  "every": 3,
+  "src": "dataset"
  },
  {
   "slug": "austringers",
@@ -1077,7 +1317,8 @@
   "n": 4,
   "mode": "list",
   "off": 0,
-  "every": 5
+  "every": 5,
+  "src": "dataset"
  },
  {
   "slug": "bawarao-hub",
@@ -1107,7 +1348,8 @@
   "n": 6,
   "mode": "list",
   "off": 3,
-  "every": 6
+  "every": 6,
+  "src": "dataset"
  },
  {
   "slug": "beneath-control-hub",
@@ -1135,7 +1377,195 @@
   "n": 8,
   "mode": "prose",
   "off": 0,
-  "every": 8
+  "every": 8,
+  "src": "dataset"
+ },
+ {
+  "slug": "bird",
+  "title": "Team Bird Hub",
+  "date": "2018-05",
+  "author": "Lt Flops",
+  "blurb": "Yes, your new colleague is a seagull. The world is a weird place. Welcome to the Foundation. —Researcher Calvin",
+  "canons": [
+   "the-sharkest-timeline"
+  ],
+  "gois": [
+   "shark-punching-center"
+  ],
+  "sections": [
+   [
+    "REQUIRED READING",
+    [
+     "scp-3095"
+    ]
+   ],
+   [
+    "PART ONE: Doomsday",
+    [
+     "scp-3662",
+     "scp-3296",
+     "join-the-flock",
+     "scp-2785",
+     "tales-of-the-automaton-the-big-birdocalypse",
+     "scp-3362"
+    ]
+   ],
+   [
+    "INTERLUDE",
+    [
+     "spc-507"
+    ]
+   ],
+   [
+    "PART TWO: Migration",
+    [
+     "scp-3570",
+     "the-sacred-djehuti",
+     "scp-3632",
+     "avian-anthology-i",
+     "umbral-migratory-sequence",
+     "avian-anthology-ii"
+    ]
+   ],
+   [
+    "Stories From the Team Bird Multiverse",
+    [
+     "the-scent-of-a-toaster",
+     "my-empire-of-birds",
+     "corncrake-of-destiny",
+     "scp-4688",
+     "erics-journal",
+     "a-given-purpose",
+     "bird-review"
+    ]
+   ],
+   [
+    "A Team Bird Anthology",
+    [
+     "scp-4248",
+     "document-recovered-from-a-parallel-universe",
+     "scp-4795",
+     "three-feet-under-i",
+     "three-feet-under-ii",
+     "three-feet-under-iii",
+     "chasing-suns",
+     "down-through",
+     "forgotten-shrine"
+    ]
+   ],
+   [
+    "THE AVIAN DIVISION CREST",
+    [
+     "not-a-seagull-proposal",
+     "scp-3733",
+     "scp-4804",
+     "scp-4800",
+     "scp-4348",
+     "scp-4048",
+     "scp-5800",
+     "scp-579-j",
+     "scp-3339",
+     "scp-4785",
+     "scp-3747",
+     "scp-4948",
+     "scp-199",
+     "scp-7234",
+     "scp-3485",
+     "scp-4799",
+     "scp-4800-j",
+     "scp-5981",
+     "scp-3833",
+     "scp-4808",
+     "scp-5054",
+     "scp-5025",
+     "scp-3748",
+     "scp-4148",
+     "scp-1037",
+     "scp-1684",
+     "scp-093-j",
+     "scp-3248",
+     "scp-5680",
+     "scp-4872",
+     "scp-6904",
+     "scp-5483",
+     "scp-6785",
+     "scp-4397",
+     "scp-8832",
+     "scp-9248",
+     "the-little-robot-that-could",
+     "the-siege-of-site-19",
+     "footage-recovered-from-a-private-server",
+     "moose-on-the-loose",
+     "joey-fucknuts-steals-the-declaration-of-independence",
+     "katz-and-dogs",
+     "your-guard",
+     "vacation-opportunity",
+     "psc-101-applied-political-assassination",
+     "hist-203-a-brief-history-of-citizen-sabotage",
+     "disco-inferno",
+     "wind-in-the-sails",
+     "dead-reckoning",
+     "the-shape-of-water-is-humanoid",
+     "acc-305-basic-hospitality-and-mixed-martial-arts",
+     "into-the-beetle-black-yonder",
+     "hyperfine",
+     "dont-knock-on-strange-doors",
+     "scp-4420",
+     "scp-4416",
+     "scp-4790",
+     "scp-4031",
+     "scp-5990",
+     "scp-3787",
+     "scp-5810",
+     "scp-3464",
+     "scp-4190",
+     "scp-3719",
+     "scp-6327",
+     "scp-7723",
+     "scp-8741",
+     "scp-2",
+     "the-abyss-gazes-back",
+     "the-doctor-s-dilemma",
+     "buggy-hardware",
+     "fifthist-family-picnic",
+     "a-scene-from-a-meme",
+     "what-lurks",
+     "no-sense-crying",
+     "illac",
+     "crispy-sex-pirates",
+     "inner-space",
+     "a-necromantic-prelude",
+     "an-old-familiar-dream",
+     "pursuing-ghosts-part-1",
+     "solidao",
+     "samara-be-the-itsy-bitsy-spider",
+     "pursuing-ghosts-part-2",
+     "spc-993",
+     "scattersomnia",
+     "saturn-s-corner",
+     "of-the-great-searing",
+     "scp-3309",
+     "scp-3739",
+     "scp-4428",
+     "scp-4475",
+     "scp-4519",
+     "scp-6447",
+     "scp-6481",
+     "scp-6705",
+     "scp-6830",
+     "scp-7010",
+     "land-of-honey",
+     "broken-masquerade-epistolary",
+     "grant-request-post-mortem-neural-preservation",
+     "critter-profile-bartholomew"
+    ]
+   ]
+  ],
+  "n": 132,
+  "mode": "list",
+  "off": 30,
+  "every": 132,
+  "src": "wiki"
  },
  {
   "slug": "bitch-hub",
@@ -1167,7 +1597,8 @@
   "n": 10,
   "mode": "list",
   "off": 0,
-  "every": 10
+  "every": 10,
+  "src": "dataset"
  },
  {
   "slug": "black-as-night",
@@ -1197,7 +1628,45 @@
   "n": 8,
   "mode": "list",
   "off": 1,
-  "every": 10
+  "every": 10,
+  "src": "dataset"
+ },
+ {
+  "slug": "black-autumn-hub",
+  "title": "THE BLACK AUTUMN",
+  "date": "2017-10",
+  "author": "(account deleted)",
+  "blurb": "",
+  "canons": [
+   "s&c-plastics"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "THE BLACK AUTUMN",
+    [
+     "prologue-you-can-check-out-any-time-you-want",
+     "chapter-1-corvophobia",
+     "chapter-2-here-comes-the-bogeyman",
+     "chapter-3-pictures-of-plastic-people",
+     "chapter-4-bloody-pulps-and-vines",
+     "chapter-5-following-the-leylines",
+     "chapter-6-scarecrow-factory",
+     "chapter-7-unshelved",
+     "chapter-8-but-you-can-never-leave",
+     "chapter-9-it-s-just-a-jump-to-the-left",
+     "chapter-10-a-brief-flashback",
+     "chapter-11-equinox-s-rise",
+     "chapter-12-autumn-s-end",
+     "scp-4040"
+    ]
+   ]
+  ],
+  "n": 14,
+  "mode": "list",
+  "off": 0,
+  "every": 14,
+  "src": "wiki"
  },
  {
   "slug": "black-queen-renaissance-hub",
@@ -1222,7 +1691,8 @@
   "n": 3,
   "mode": "list",
   "off": 1,
-  "every": 3
+  "every": 3,
+  "src": "dataset"
  },
  {
   "slug": "black-sunrise",
@@ -1256,8 +1726,9 @@
   ],
   "n": 10,
   "mode": "list",
-  "off": 2,
-  "every": 12
+  "off": 1,
+  "every": 12,
+  "src": "dataset"
  },
  {
   "slug": "blood-red-summer-hub",
@@ -1287,7 +1758,8 @@
   "n": 3,
   "mode": "list",
   "off": 0,
-  "every": 3
+  "every": 3,
+  "src": "dataset"
  },
  {
   "slug": "broken-light-hub",
@@ -1314,7 +1786,8 @@
   "n": 7,
   "mode": "list",
   "off": 0,
-  "every": 7
+  "every": 7,
+  "src": "dataset"
  },
  {
   "slug": "broken-ouroboros-hub",
@@ -1330,7 +1803,8 @@
   "n": 0,
   "mode": "prose",
   "off": 3,
-  "every": 0
+  "every": 0,
+  "src": "dataset"
  },
  {
   "slug": "burnt-bridges",
@@ -1358,7 +1832,642 @@
   "n": 5,
   "mode": "list",
   "off": 0,
-  "every": 6
+  "every": 6,
+  "src": "dataset"
+ },
+ {
+  "slug": "bury-the-survivors-hub",
+  "title": "The Breach Goes On: Bury the Survivors Hub",
+  "date": "2022-09",
+  "author": "HarryBlank",
+  "blurb": "On 8 September 2002, all heaven and hell breaks loose at Site-43.",
+  "canons": [
+   "on-guard-43"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "Storyline complete as of 10/10/2022!",
+    [
+     "0-underture",
+     "1-remember-remember",
+     "2-the-mausoleum-at-ipperwash",
+     "3-halls-of-the-dead",
+     "4-granularity",
+     "5-the-mourning-after",
+     "6-on-reflection",
+     "7-beyond-repair",
+     "8-mind-over-matter",
+     "9-transition",
+     "10-under-new-direction",
+     "11-turnover",
+     "12-aromantic-abatement",
+     "13-reproduction",
+     "14-drilling-down",
+     "15-a-clean-break",
+     "16-the-eighth-of-september",
+     "17-here-today"
+    ]
+   ]
+  ],
+  "n": 18,
+  "mode": "list",
+  "off": 0,
+  "every": 19,
+  "src": "wiki"
+ },
+ {
+  "slug": "cack-hub",
+  "title": "Cack Hub",
+  "date": "2019-04",
+  "author": "Uncle Nicolini",
+  "blurb": "The Cack Hard cinematic universe is home to a bunch of dumb stupid stuff, mostly weird crack fiction.\nCack fiction, if you will.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "crack fic? More like cack fic!",
+    [
+     "scp-3472-j",
+     "scp-4491",
+     "scp-4498",
+     "scp-4952",
+     "scp-4852",
+     "scp-7013",
+     "cack-hard",
+     "cack-hard-2-revengeance-reloaded",
+     "boiled-scrambled-and-fried",
+     "let-me-cure-her-daddy",
+     "seven-days-with-mr-fish",
+     "classy-carlos-goes-to-therapy",
+     "moon-champion-s-cinco-de-mayo-extravaganza",
+     "let-sleeping-dogs-lie-a-play-in-two-acts",
+     "a-tale-about-petty-revenge",
+     "mobile-toddler-force",
+     "sc-paper",
+     "not-the-foundation-fight-club",
+     "scp-ide",
+     "7ring",
+     "big-dick-chappell",
+     "sunlight",
+     "why-clef-hates-cupcakes",
+     "stupid-cupid",
+     "gamers-against-creativity",
+     "is-bad-luck-really-such-a-crime",
+     "no-cars-allowed",
+     "clef-goes-to-the-dmv",
+     "cimmerian-sends-650-pms",
+     "fifthist-family-picnic",
+     "hogslice-vs-bones",
+     "cck-class-copyright-infringement-lawsuit-scenario",
+     "049-x-minion-x-reader",
+     "if-a-bear-shits-in-the-woods-does-it-make-a-sound",
+     "critter-profile-wobbles",
+     "corncrake-of-destiny",
+     "project-koza"
+    ]
+   ]
+  ],
+  "n": 37,
+  "mode": "list",
+  "off": 0,
+  "every": 37,
+  "src": "wiki"
+ },
+ {
+  "slug": "canon-jp-2",
+  "title": "evilFoundation - Secure. Contain. Predominate.",
+  "date": "2020-09",
+  "author": "INT_Translator",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [],
+  "n": 0,
+  "mode": "prose",
+  "off": 32,
+  "every": 0,
+  "src": "wiki"
+ },
+ {
+  "slug": "cavalcade-hub",
+  "title": "Cavalcade (Hub)",
+  "date": "2014-04",
+  "author": "Randomini",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "cav-001",
+     "cav-002",
+     "cav-003",
+     "cav-004",
+     "cav-006",
+     "cav-007"
+    ]
+   ]
+  ],
+  "n": 6,
+  "mode": "list",
+  "off": 0,
+  "every": 6,
+  "src": "wiki"
+ },
+ {
+  "slug": "centre-quand-le-soleil-se-couche",
+  "title": "When the Sun Goes Down Hub",
+  "date": "2025-08",
+  "author": "Cyrielle Centori",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "SCP",
+    [
+     "scp-fra31-236",
+     "scp-que13-126",
+     "scp-ukg07-511",
+     "scp-356"
+    ]
+   ]
+  ],
+  "n": 4,
+  "mode": "list",
+  "off": 7,
+  "every": 4,
+  "src": "wiki"
+ },
+ {
+  "slug": "christ-in-scarlet-hub",
+  "title": "Christ In Scarlet - Hub",
+  "date": "2023-06",
+  "author": "UraniumEmpire",
+  "blurb": "",
+  "canons": [
+   "the-gulf",
+   "the-trashfire"
+  ],
+  "gois": [
+   "daevite"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "scp-5952",
+     "a-dove-in-a-chicken-pen",
+     "scp-3178",
+     "irregularity-proposal-2001-489",
+     "scp-4370",
+     "christ-in-scarlet"
+    ]
+   ]
+  ],
+  "n": 6,
+  "mode": "list",
+  "off": 0,
+  "every": 6,
+  "src": "wiki"
+ },
+ {
+  "slug": "chronicles-of-the-irreal-hub",
+  "title": "Chronicles of the Irreal Hub",
+  "date": "2023-08",
+  "author": "Ralliston",
+  "blurb": "",
+  "canons": [
+   "alchemy-department",
+   "from-120s-archives"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-5616",
+     "scp-6172",
+     "stranded-lullaby",
+     "the-mind-electric",
+     "time-machine-en",
+     "let-the-maze-of-my-design-carry-you-on",
+     "isle-unto-thyself",
+     "fresh-blood"
+    ]
+   ]
+  ],
+  "n": 8,
+  "mode": "list",
+  "off": 1,
+  "every": 8,
+  "src": "wiki"
+ },
+ {
+  "slug": "chroniques-de-saphir",
+  "title": "The SAPPHIRE Chronicles",
+  "date": "2024-09",
+  "author": "MasterTman2",
+  "blurb": "Where the SAPPHIRE Chronicles are brought together.",
+  "canons": [],
+  "gois": [
+   "sapphire"
+  ],
+  "sections": [],
+  "n": 0,
+  "mode": "prose",
+  "off": 0,
+  "every": 0,
+  "src": "wiki"
+ },
+ {
+  "slug": "cleanliness-guaranteed-hub",
+  "title": "Cleanliness Guaranteed*",
+  "date": "2025-11",
+  "author": "radian628",
+  "blurb": "Dial 555-605-CLEANUP and we’ll be there in a lick of a dime! Once we're done, you can rest easy, because we promise… CLEANLINESS GUARANTEED*",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Home",
+    [
+     "a-wyoming-frog-in-pierre",
+     "the-unseen-that-lurks",
+     "beau-goes-for-a-run"
+    ]
+   ],
+   [
+    "What We Do",
+    [
+     "the-pilot",
+     "welcome-to-site-19",
+     "biweekly",
+     "the-lake-oahe-monster",
+     "site-19-dossier",
+     "cleanup-on-aisle-five",
+     "clean-up-for-customer-082"
+    ]
+   ]
+  ],
+  "n": 10,
+  "mode": "list",
+  "off": 1,
+  "every": 10,
+  "src": "wiki"
+ },
+ {
+  "slug": "comedown-machine-hub",
+  "title": "Comedown Machine Hub",
+  "date": "2017-04",
+  "author": "TyGently",
+  "blurb": "A nebbish secretary finds himself at the center of a web of mind control, murder, and Mexican restaurants that threatens to smash the delicate societal order of Three Portlands.",
+  "canons": [
+   "third-law"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "a-confluence-of-clandestine-conferences",
+     "slow-animals",
+     "automatic-stop",
+     "the-end-has-no-end",
+     "threat-of-joy",
+     "separate-ways",
+     "fear-of-sleep"
+    ]
+   ]
+  ],
+  "n": 7,
+  "mode": "list",
+  "off": 0,
+  "every": 10,
+  "src": "wiki"
+ },
+ {
+  "slug": "conspiracy",
+  "title": "Conspiracy",
+  "date": "2012-08",
+  "author": "Hornby",
+  "blurb": "\"I have studied intelligence and espionage fairly extensively throughout university, writing my senior thesis on intelligence analysis. This tale is essentially an attempt to write up a good spy story in the world of the SCP Foundation.\"",
+  "canons": [],
+  "gois": [
+   "chaos-insurgency",
+   "global-occult-coalition",
+   "marshall-carter-and-dark"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "conspiracy-prologue",
+     "conspiracy-part-i",
+     "conspiracy-part-ii",
+     "conspiracy-part-iii",
+     "conspiracy-part-iv",
+     "conspiracy-part-v",
+     "conspiracy-part-vi",
+     "conspiracy-part-vii",
+     "conspiracy-part-viii",
+     "conspiracy-part-ix",
+     "conspiracy-part-x",
+     "conspiracy-part-xi",
+     "conspiracy-part-xii",
+     "conspiracy-epilogue"
+    ]
+   ]
+  ],
+  "n": 14,
+  "mode": "list",
+  "off": 0,
+  "every": 14,
+  "src": "wiki"
+ },
+ {
+  "slug": "cool-war-4-hub",
+  "title": "Cool War 4: Remnants Of Zmurgath's Cave",
+  "date": "2020-06",
+  "author": "Randomini",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "winzip-out-for-a-byte-to-eat"
+    ]
+   ]
+  ],
+  "n": 1,
+  "mode": "prose",
+  "off": 0,
+  "every": 1,
+  "src": "wiki"
+ },
+ {
+  "slug": "corpse-corpus-hub",
+  "title": "Corpse Corpus Hub",
+  "date": "2023-11",
+  "author": "(account deleted)",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-6874"
+    ]
+   ]
+  ],
+  "n": 1,
+  "mode": "prose",
+  "off": 13,
+  "every": 1,
+  "src": "wiki"
+ },
+ {
+  "slug": "creative-destruction-hub",
+  "title": "Creative Destruction Hub",
+  "date": "2025-11",
+  "author": "AlienSpaceBat",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "A-Plot",
+    [
+     "dab-orientation",
+     "site-247-dossier"
+    ]
+   ],
+   [
+    "B-Plots",
+    [
+     "scp-2352",
+     "scp-6569",
+     "scp-7213",
+     "scp-5042",
+     "scp-6874",
+     "jensenaleph",
+     "parawatch-lost-media-the-lost-creepypastas-of-gungelover",
+     "scp-8507",
+     "isabel-v-fights-art-block"
+    ]
+   ],
+   [
+    "Want to contribute?",
+    [
+     "parker-informational-breach",
+     "bobblecon-2018"
+    ]
+   ]
+  ],
+  "n": 13,
+  "mode": "list",
+  "off": 0,
+  "every": 13,
+  "src": "wiki"
+ },
+ {
+  "slug": "crewtime",
+  "title": "Monthly Discussion: True Crime",
+  "date": "2023-01",
+  "author": "stormbreath",
+  "blurb": "",
+  "canons": [],
+  "gois": [
+   "parawatch"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "death-of-aj-fader",
+     "vanishing-of-nils",
+     "who-killed-silas-emerson",
+     "bigfoot-did-it",
+     "flight-4145",
+     "the-boltmann-ambush",
+     "impossible-murder",
+     "the-cold-cult-of-the-yukon",
+     "the-case-of-jacob-stourner",
+     "the-cologne-massacre",
+     "down-the-tracks",
+     "in-plain-sight",
+     "the-mosque-goes-missing",
+     "driving-limalandim"
+    ]
+   ]
+  ],
+  "n": 14,
+  "mode": "list",
+  "off": 1,
+  "every": 15,
+  "src": "wiki"
+ },
+ {
+  "slug": "crossoverprojectindex",
+  "title": "Project Crossover",
+  "date": "2012-01",
+  "author": "DrClef",
+  "blurb": "This is your challenge: write a crossover fanfiction between the SCP Foundation and any other fictional universe of your choice. It can be hilarious, tongue-in-cheek, or deadly serious, just as long as it is well-written. Extra points scored for \"crackiest\" crossover.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "diary-of-an-existential-kid",
+     "holding-on",
+     "the-broken-god-of-ayrshire-chapter-1",
+     "the-lingering-lark-of-leviathan-square",
+     "dial-s-for-scp",
+     "cart-can-can-cart",
+     "issue-100",
+     "knee-deep-in-the-keter",
+     "the-case-of-the-missing-hand",
+     "scp-foundation-the-movie-2",
+     "scp-1926-r",
+     "incident-report-kaf-09"
+    ]
+   ]
+  ],
+  "n": 12,
+  "mode": "list",
+  "off": 0,
+  "every": 12,
+  "src": "wiki"
+ },
+ {
+  "slug": "crowne-thorne-hub",
+  "title": "Crowne of Thornes",
+  "date": "2024-08",
+  "author": "GreenWolf",
+  "blurb": "A series about dying in Three Portlands, punching your dad, talking to birds, getting revenge, kidnapping ghosts, nuclear war, burglary, betrayal, loss, and attaining resolution.",
+  "canons": [
+   "third-law",
+   "twisted-pines"
+  ],
+  "gois": [
+   "unusual-incidents-unit"
+  ],
+  "sections": [
+   [
+    "Birds, Bones, & Ashes",
+    [
+     "funeral-for-the-phoenix"
+    ]
+   ],
+   [
+    "The Gospel of Eagles",
+    [
+     "haunted-by-the-living",
+     "much-belated-inheritance",
+     "memory-of-a-murder"
+    ]
+   ],
+   [
+    "One for Sorrow, Seven for a Secret",
+    [
+     "calling-on-the-blackbird",
+     "where-it-all-ended",
+     "decryption-by-a-necromancer",
+     "interrogation-of-the-dead"
+    ]
+   ],
+   [
+    "The Mischief of Magpies",
+    [
+     "foundation-on-trial",
+     "love-stronger-than-death"
+    ]
+   ],
+   [
+    "Bits of Birdsong",
+    [
+     "when-parallel-lines-diverge",
+     "dinner-with-the-thornes",
+     "when-parallel-lines-converge",
+     "the-blackbird-and-the-falcon",
+     "under-control"
+    ]
+   ]
+  ],
+  "n": 15,
+  "mode": "list",
+  "off": 1,
+  "every": 15,
+  "src": "wiki"
+ },
+ {
+  "slug": "cycle-of-seasons-hub",
+  "title": "Cycle Of Seasons Hub",
+  "date": "2022-09",
+  "author": "Ethagon",
+  "blurb": "The Fae Courts once governed reality. As wrongs are righted they set out to take on their task once more.",
+  "canons": [
+   "from-120s-archives"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "Introductory Seasons",
+    [
+     "scp-6401",
+     "they-had-names",
+     "nt-4041-nimuedianetic-karhu",
+     "scp-6471"
+    ]
+   ],
+   [
+    "Escalating Seasons",
+    [
+     "will-winter",
+     "sc-05-321-05-335",
+     "truth-glamour"
+    ]
+   ],
+   [
+    "Inevitable Seasons",
+    [
+     "fall-witness-part-1",
+     "brings-the-hunt",
+     "spring-again",
+     "scp-8471"
+    ]
+   ],
+   [
+    "Ancillary Seasons and other Cycles",
+    [
+     "immune-integrity"
+    ]
+   ],
+   [
+    "Context and Inspirations",
+    [
+     "scp-5925",
+     "scp-5159",
+     "scp-5213",
+     "scp-6500",
+     "the-lands-nobody-returns-from",
+     "goc-tale-sequence-assessment",
+     "ralliston-s-proposal",
+     "esterberg-city-wikipedia"
+    ]
+   ]
+  ],
+  "n": 20,
+  "mode": "list",
+  "off": 2,
+  "every": 21,
+  "src": "wiki"
  },
  {
   "slug": "czarne-niebo-hub",
@@ -1378,8 +2487,354 @@
   ],
   "n": 1,
   "mode": "prose",
-  "off": 10,
-  "every": 1
+  "off": 9,
+  "every": 1,
+  "src": "dataset"
+ },
+ {
+  "slug": "damocles",
+  "title": "The Damocles Initiative",
+  "date": "2022-02",
+  "author": "GreenWolf",
+  "blurb": "Hector Canvera seeks enlightenment among the stars. He must not succeed. Only the crew of the Joyeuse can stop him.",
+  "canons": [
+   "third-law"
+  ],
+  "gois": [
+   "fifthist",
+   "global-occult-coalition"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "grant-request-for-the-construction-of-an-interstellar-scienc",
+     "scp-1425",
+     "a-little-bit-of-help"
+    ]
+   ],
+   [
+    "Countdown",
+    [
+     "stairway-to-the-stars",
+     "harvester-of-eyes",
+     "workshop-of-the-telescopes"
+    ]
+   ],
+   [
+    "After & Aside",
+    [
+     "scp-9016"
+    ]
+   ]
+  ],
+  "n": 7,
+  "mode": "list",
+  "off": 1,
+  "every": 10,
+  "src": "wiki"
+ },
+ {
+  "slug": "dark-side-hub",
+  "title": "Dark Side Discography",
+  "date": "2018-08",
+  "author": "The Great Hippo",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "breathe",
+     "on-the-run",
+     "time-reprise",
+     "the-great-gig-in-the-sky",
+     "us-and-them",
+     "money"
+    ]
+   ]
+  ],
+  "n": 6,
+  "mode": "list",
+  "off": 0,
+  "every": 6,
+  "src": "wiki"
+ },
+ {
+  "slug": "dark-stuff-for-sleepless-nights",
+  "title": "Dark Stuff for Sleepless Nights",
+  "date": "2021-05",
+  "author": "DarkStuff",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "making-weight",
+     "the-grown-up",
+     "the-mind-as-a-canopic-jar",
+     "baby-don-t-hurt-me",
+     "tube-slides",
+     "say-cheese",
+     "smoking-on-company-time",
+     "online-dating",
+     "the-smell-of-cellulose"
+    ]
+   ]
+  ],
+  "n": 9,
+  "mode": "list",
+  "off": 0,
+  "every": 9,
+  "src": "wiki"
+ },
+ {
+  "slug": "dead-king-s-march",
+  "title": "Dead King's March",
+  "date": "2025-02",
+  "author": "Anorrack",
+  "blurb": "\"RULE HELL THROUGH VIOLENCE.\"",
+  "canons": [
+   "third-law"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "𒄤 𒈗𒁺",
+    [
+     "to-be-king-in-the-house-of-dust",
+     "with-naught-but-dust-to-eat",
+     "ptt-1666-gray-templum",
+     "king-of-the-dead-breaker-of-chains",
+     "to-make-meat-of-clay",
+     "scp-8660",
+     "slayer-of-wickedness",
+     "the-fruit-of-eight-millennia"
+    ]
+   ]
+  ],
+  "n": 8,
+  "mode": "list",
+  "off": 0,
+  "every": 8,
+  "src": "wiki"
+ },
+ {
+  "slug": "deadlined-hub",
+  "title": "The Breach Goes On: Deadlined Hub",
+  "date": "2024-09",
+  "author": "HarryBlank",
+  "blurb": "A confrontation between the forces of order and chaos is at hand, and the fate of all possible futures hangs in the balance.\nHowever it ends, it's going to be memorable… If there's anyone left to remember it.",
+  "canons": [
+   "on-guard-43"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "Storyline complete as of 10/10/2024!",
+    [
+     "43-nothing-happens",
+     "44-next-to-nothing",
+     "45-nothing-to-worry-about",
+     "46-nothing-changes",
+     "47-past-caring",
+     "48-unforgettable-too",
+     "49-repent-at-leisure",
+     "50-turning-and-turning",
+     "51-stop-the-clock",
+     "52-true-art-is-cognitohazardous",
+     "53-those-who-cant",
+     "54-not-ready-for-prime-time",
+     "55-wonders-of-my-hand",
+     "56-this-forgotten-babylon",
+     "57-the-only-shadow",
+     "58-time-flat",
+     "59-the-foreseeable-future",
+     "60-underlogue"
+    ]
+   ]
+  ],
+  "n": 18,
+  "mode": "list",
+  "off": 0,
+  "every": 18,
+  "src": "wiki"
+ },
+ {
+  "slug": "death-and-the-doctors-hub",
+  "title": "Death and the Doctors Hub",
+  "date": "2015-09",
+  "author": "Dmatix",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "three-short-scenes-about-death",
+     "therapy",
+     "painless",
+     "surgery"
+    ]
+   ]
+  ],
+  "n": 4,
+  "mode": "list",
+  "off": 1,
+  "every": 4,
+  "src": "wiki"
+ },
+ {
+  "slug": "death-by-ritual-immolation-hub",
+  "title": "Death By Ritual Immolation Hub GOICON 2026",
+  "date": "2026-08",
+  "author": "Strawberry_Donnelly",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "a-sacred-deer",
+     "let-the-hunters-claim-their-trophies",
+     "253-782-seattle-2026",
+     "pop-pops-oath",
+     "pop-pop-was-not-a-nazi-a-thorough-response",
+     "dispatch-miss-kumo"
+    ]
+   ]
+  ],
+  "n": 6,
+  "mode": "list",
+  "off": 0,
+  "every": 6,
+  "src": "wiki"
+ },
+ {
+  "slug": "december-24th-2011-hub",
+  "title": "December 24th, 2011 Hub",
+  "date": "2014-12",
+  "author": "Jacob Conwell",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "= Song List =",
+    [
+     "navarro-saves-christmas-for-some-people-he-barely-knows",
+     "set-up-thine-altar-here",
+     "no-one-should-be-alone",
+     "i-hope-that-i-get-old-before-i-die",
+     "the-lost-shepherd",
+     "the-north-pole",
+     "too-drunk-to-be-merry",
+     "reconciliation"
+    ]
+   ]
+  ],
+  "n": 8,
+  "mode": "list",
+  "off": 2,
+  "every": 8,
+  "src": "wiki"
+ },
+ {
+  "slug": "demarcaters-of-the-edge-center",
+  "title": "Demarcators of the Frontiers Hub",
+  "date": "2023-05",
+  "author": "la kanro",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [],
+  "n": 0,
+  "mode": "prose",
+  "off": 6,
+  "every": 0,
+  "src": "wiki"
+ },
+ {
+  "slug": "demasqed",
+  "title": "Demasqed Hub",
+  "date": "2020-06",
+  "author": "Henzoid",
+  "blurb": "",
+  "canons": [
+   "broken-masquerade"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "Act I",
+    [
+     "pineapple-cognitohazard",
+     "shuffle-puppies",
+     "therapy-tacos",
+     "fluffy-little-kitty",
+     "sci-fi-shenanigans",
+     "partition"
+    ]
+   ],
+   [
+    "Act II",
+    [
+     "safety-reasons",
+     "three-fifty",
+     "meme-culture",
+     "under-the-desk",
+     "final-form"
+    ]
+   ]
+  ],
+  "n": 11,
+  "mode": "list",
+  "off": 0,
+  "every": 11,
+  "src": "wiki"
+ },
+ {
+  "slug": "devils-advocate-hub",
+  "title": "Devil's Advocate Hub",
+  "date": "2022-12",
+  "author": "GlassAutomaton",
+  "blurb": "",
+  "canons": [
+   "resurrection"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "humanoid-risk-assessment",
+     "kill-the-feeling",
+     "redwood-labs",
+     "closed-beta",
+     "everybody-loves-aleksander",
+     "all-the-bells-and-whistles",
+     "dead-mans-party",
+     "absence-makes-the-heart",
+     "right-to-repair",
+     "quiet-quitting",
+     "shoulder-devil",
+     "rise-and-shine",
+     "swimming-lessons",
+     "a-series-of-bad-moves",
+     "voices-carry-part-1"
+    ]
+   ]
+  ],
+  "n": 15,
+  "mode": "list",
+  "off": 0,
+  "every": 15,
+  "src": "wiki"
  },
  {
   "slug": "discordant-anthology-hub",
@@ -1433,7 +2888,3044 @@
   "n": 12,
   "mode": "list",
   "off": 0,
-  "every": 12
+  "every": 12,
+  "src": "dataset"
+ },
+ {
+  "slug": "dixieland-nightmare-magic-hub",
+  "title": "Dixieland Nightmare Magic Hub",
+  "date": "2014-09",
+  "author": "Kate McTiriss",
+  "blurb": "",
+  "canons": [
+   "the-gulf"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "by Kate McTiriss",
+    [
+     "kate-mctiriss-s-proposal",
+     "scp-2072",
+     "scp-2558",
+     "scp-2172",
+     "scp-2930",
+     "scp-2272",
+     "scp-2972",
+     "fault-lines",
+     "going-straight-to-hell-in-a-lincoln-continental",
+     "operation-cannery-row-document-2013-451a3",
+     "i-double-e",
+     "the-hyacinth-hymnal",
+     "seven-vignettes-from-the-life-of-mackenzie-lee-crook",
+     "operation-cannery-row-excerpts-from-the-foundation",
+     "an-overview-of-foundation-journals-published-in-may-2017"
+    ]
+   ],
+   [
+    "by other authors",
+    [
+     "the-one-thousand-deaths-of-pastor-lewis-robinson-the-ethics",
+     "the-ballad-of-region-352"
+    ]
+   ]
+  ],
+  "n": 17,
+  "mode": "list",
+  "off": 0,
+  "every": 17,
+  "src": "wiki"
+ },
+ {
+  "slug": "dr-gears-storytime-entries",
+  "title": "Dr Gears Storytime Entries",
+  "date": "2010-01",
+  "author": "Dr Gears",
+  "blurb": "I have been told that my little chat stories have merit as creepypasta, so in the spirit of greater entertainment, I now post them here for your enjoyment.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Introduction",
+    [
+     "reentry",
+     "swimmer",
+     "the-vault",
+     "influenza",
+     "meteor",
+     "late-night",
+     "peeled",
+     "knives",
+     "jaywalk",
+     "devotion",
+     "feverish",
+     "cold",
+     "alone",
+     "mice",
+     "elevator",
+     "potty",
+     "life-saver",
+     "bloody",
+     "mad-love",
+     "sa-jin-photo",
+     "breaker-1-9",
+     "delia",
+     "climber",
+     "shy",
+     "dog-man",
+     "sleep-it-off",
+     "puffy",
+     "washed-away",
+     "the-rainforest-house",
+     "marathon",
+     "everyday-suffering",
+     "stitches",
+     "love-hate",
+     "the-dire-mother"
+    ]
+   ]
+  ],
+  "n": 34,
+  "mode": "list",
+  "off": 0,
+  "every": 34,
+  "src": "wiki"
+ },
+ {
+  "slug": "end-of-line-hub",
+  "title": "End of Line Hub",
+  "date": "2018-05",
+  "author": "Jacob Conwell",
+  "blurb": "",
+  "canons": [
+   "twisted-pines"
+  ],
+  "gois": [
+   "anderson"
+  ],
+  "sections": [
+   [
+    "Series Overview",
+    [
+     "the-vanishing-of-vincent-anderson",
+     "non-volatile-memory",
+     "the-best-laid-plans",
+     "volatile-memory",
+     "end-of-line",
+     "scp-3560",
+     "scp-3860"
+    ]
+   ]
+  ],
+  "n": 7,
+  "mode": "list",
+  "off": 1,
+  "every": 7,
+  "src": "wiki"
+ },
+ {
+  "slug": "end-of-olympians-hub",
+  "title": "End Of Olympians Hub",
+  "date": "2013-02",
+  "author": "RJB_R",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "olympia",
+     "prometheans",
+     "meeting-of-the-minds",
+     "preaching-to-the-choir",
+     "when-we-reach-the-crescendo",
+     "a-few-more-words-from-the-administrator"
+    ]
+   ]
+  ],
+  "n": 6,
+  "mode": "list",
+  "off": 1,
+  "every": 8,
+  "src": "wiki"
+ },
+ {
+  "slug": "escapism-hub",
+  "title": "Escapism Hub",
+  "date": "2025-01",
+  "author": "DarkStuff",
+  "blurb": "",
+  "canons": [
+   "wonderful-world"
+  ],
+  "gois": [
+   "black-queen"
+  ],
+  "sections": [
+   [
+    "Escapism",
+    [
+     "escapism-i",
+     "escapism-ii",
+     "escapism-iii",
+     "escapism-iv",
+     "escapism-v",
+     "escapism-vi"
+    ]
+   ]
+  ],
+  "n": 6,
+  "mode": "list",
+  "off": 0,
+  "every": 6,
+  "src": "wiki"
+ },
+ {
+  "slug": "etdp-hub-page",
+  "title": "Et Tam Deum Petivi Hub Page",
+  "date": "2013-02",
+  "author": "(account deleted)",
+  "blurb": "Tales from the Horizon Initiative and other things of a theological nature.",
+  "canons": [],
+  "gois": [
+   "horizon-initiative"
+  ],
+  "sections": [
+   [
+    "Tales and Tale Series",
+    [
+     "just-a-word-to-me",
+     "shepherds",
+     "second-watch",
+     "people-look-east",
+     "the-good-of-the-other",
+     "the-place-where-two-rivers-meet",
+     "breakfast-for-dinner",
+     "crossing-the-streams",
+     "the-tick-tock-gospel",
+     "nor-gloom-of-night-shall-stay",
+     "agricola-in-insula-est-poeta",
+     "empire-of-dirt-part-1",
+     "empire-of-dirt-part-2",
+     "empire-of-dirt-part-3",
+     "the-settling-ash",
+     "mud-on-the-carpet",
+     "when-we-came-home",
+     "those-thin-penultimate-hours",
+     "down-by-the-river",
+     "excerpt-of-an-autobiography",
+     "tolerance",
+     "the-horizon-blues",
+     "the-man-comes-around",
+     "the-written-god",
+     "the-word-and-the-wolf",
+     "ignition-part-one-the-artists",
+     "lovecraft-parody-title",
+     "the-heart-of-mekhane",
+     "scp-7372",
+     "adnan-s-alibi",
+     "bernard-s-ballad",
+     "samuel-s-seranade"
+    ]
+   ]
+  ],
+  "n": 32,
+  "mode": "list",
+  "off": 0,
+  "every": 33,
+  "src": "wiki"
+ },
+ {
+  "slug": "ever-after-hub",
+  "title": "Ever After Hub",
+  "date": "2025-06",
+  "author": "Uncle Nicolini",
+  "blurb": "",
+  "canons": [
+   "forgotten-memories",
+   "on-guard-43"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "Dr. Jay Everwood",
+    [
+     "scp-8725"
+    ]
+   ],
+   [
+    "Dr. Ilse Reynders",
+    [
+     "scp-5616"
+    ]
+   ],
+   [
+    "Rsr. James Everwood-Reynders",
+    [
+     "scp-8726"
+    ]
+   ],
+   [
+    "The Stories",
+    [
+     "59-the-foreseeable-future"
+    ]
+   ],
+   [
+    "by HarryBlank",
+    [
+     "sublimation",
+     "tpokaof",
+     "high-pressure-low",
+     "if-they-like-you-i-like-you",
+     "los-zapaticos-de-rosa",
+     "what-goes-unsaid",
+     "scp-9726",
+     "is-this-land-still-made-for-you-and-me",
+     "it-her-them",
+     "pediatric-para-psychology",
+     "scp-7728",
+     "mean-monster-blues",
+     "a-gift-from-my-uncles"
+    ]
+   ],
+   [
+    "featuring Alexmey and Koscheiisms",
+    [
+     "from-their-lips-to-gods-ears",
+     "scp-9291"
+    ]
+   ],
+   [
+    "featuring Astersquill",
+    [
+     "up-the-cuts",
+     "ssri-rx-i-tab-qd-po"
+    ]
+   ],
+   [
+    "Artwork",
+    [
+     "scp-7725",
+     "scp-9287",
+     "scp-7573",
+     "scp-7221",
+     "nicos-proposal-ii",
+     "scp-6911",
+     "scp-4046",
+     "scp-1538",
+     "scp-5231",
+     "scp-7724",
+     "scp-3756",
+     "asset-florida-orange",
+     "myocardial-infarction",
+     "omega-k-049",
+     "borne-on-the-fm-waves-of-the-heart",
+     "seven-days-with-mr-fish",
+     "critter-profile-sandra-and-george",
+     "critter-profile-maya",
+     "sebastian",
+     "lillian-lillihammer-and-the-great-meme-war",
+     "error-404-database-not-found",
+     "stormsite19",
+     "drunkenly-stumbling-down-memory-lane"
+    ]
+   ]
+  ],
+  "n": 44,
+  "mode": "list",
+  "off": 4,
+  "every": 44,
+  "src": "wiki"
+ },
+ {
+  "slug": "ever-turning",
+  "title": "Life is Ever Turning",
+  "date": "2023-09",
+  "author": "ThatGuyThatTime",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-7754",
+     "scp-7574",
+     "scp-7518",
+     "scp-7209"
+    ]
+   ]
+  ],
+  "n": 4,
+  "mode": "list",
+  "off": 0,
+  "every": 4,
+  "src": "wiki"
+ },
+ {
+  "slug": "everkeep-hub",
+  "title": "Of the Dream Seen by the Divinity’s Shadow Hub",
+  "date": "2026-09",
+  "author": "Randomthings999",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "The Genesis to the Witch of New Century",
+    [
+     "sayonara-hatsukoi",
+     "cold-below"
+    ]
+   ]
+  ],
+  "n": 2,
+  "mode": "prose",
+  "off": 1,
+  "every": 2,
+  "src": "wiki"
+ },
+ {
+  "slug": "finding-asmodeus-hub",
+  "title": "Finding Asmodeus",
+  "date": "2020-10",
+  "author": "aismallard",
+  "blurb": "",
+  "canons": [
+   "unfounded"
+  ],
+  "gois": [
+   "parawatch"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "this-is-how-we-build-revelation",
+     "let-the-factory-fail",
+     "asmodeus",
+     "heart-of-the-beast"
+    ]
+   ]
+  ],
+  "n": 4,
+  "mode": "list",
+  "off": 0,
+  "every": 4,
+  "src": "wiki"
+ },
+ {
+  "slug": "florence-thorne-hub",
+  "title": "The Phoenix, The Nightingale, and The Magpies",
+  "date": "2019-04",
+  "author": "GreenWolf",
+  "blurb": "Florence Elsinger could have been the most valuable agent this organization has ever fielded. Instead we created Florence Thorne, a hardened battlemage who despises the Foundation.",
+  "canons": [
+   "third-law"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "A Gang of Ghosts",
+    [
+     "minneapolis-burns",
+     "unexpected-interview"
+    ]
+   ],
+   [
+    "Soldiers in Solomon's War",
+    [
+     "much-wisdom-much-grief",
+     "thunders-fist-solomons-hand"
+    ]
+   ],
+   [
+    "Life Under the Lake",
+    [
+     "individual-efficacy",
+     "finding-scalpel",
+     "greater-good-necessary-evil"
+    ]
+   ],
+   [
+    "Never Again a Nightingale",
+    [
+     "a-scp-ab",
+     "thorne-is-born"
+    ]
+   ],
+   [
+    "The Federal Files",
+    [
+     "when-parallel-lines-diverge",
+     "dinner-with-the-thornes",
+     "when-parallel-lines-converge"
+    ]
+   ]
+  ],
+  "n": 12,
+  "mode": "list",
+  "off": 1,
+  "every": 12,
+  "src": "wiki"
+ },
+ {
+  "slug": "flow-hub",
+  "title": "Flow Hub",
+  "date": "2017-10",
+  "author": "SunnyClockwork",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Prequel",
+    [
+     "flow",
+     "torrent"
+    ]
+   ],
+   [
+    "Anart Courses",
+    [
+     "professors-of-anart",
+     "anart-lecture",
+     "foundation-mandated-interlude",
+     "extracurricular-practice",
+     "seven-new-characters-are-introduced",
+     "testing-the-flow",
+     "skyboy",
+     "bring-it-back",
+     "foundation-mandated-interlude-2"
+    ]
+   ],
+   [
+    "Supplement",
+    [
+     "down-the-silver-river",
+     "what-dragons-we-shall-be",
+     "tum-tum-tum-tum-tum-tum-tum-tum-tum-tum",
+     "conservation-of-momentum"
+    ]
+   ]
+  ],
+  "n": 15,
+  "mode": "list",
+  "off": 0,
+  "every": 15,
+  "src": "wiki"
+ },
+ {
+  "slug": "fortune-favors-hub",
+  "title": "Fortune Favors",
+  "date": "2021-04",
+  "author": "Calibold",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Setting a Stage",
+    [
+     "a-bold-choice",
+     "responsible-promotion",
+     "scp-4456",
+     "manifest-476",
+     "mission-decommission",
+     "scp-l618",
+     "scp-9695",
+     "scp-9889",
+     "scp-8494",
+     "scp-8421",
+     "scp-8228",
+     "scp-7178",
+     "scp-7179",
+     "scp-6469",
+     "scp-2082",
+     "scp-6156",
+     "scp-6579",
+     "scp-6900",
+     "scp-5277",
+     "scp-5363",
+     "scp-3482",
+     "scp-5156",
+     "scp-2693",
+     "scp-5559",
+     "scp-3448-j",
+     "scp-4745",
+     "scp-4645",
+     "mustard-baby-hits-the-deck",
+     "paramax-connection",
+     "threatini",
+     "diary-of-an-existential-kid",
+     "friends-of-us-never-die",
+     "truth-lies",
+     "a-team-you-can-maybe-trust",
+     "happy-father-s-day",
+     "i-am-become-death",
+     "ulysses-b-donkman-and-the-heinous-hitman",
+     "its-beginning-to-look-a-lot-like-eldritch",
+     "chapter-one-the-end",
+     "the-book-of-mathisi-chapter-1",
+     "lte-8686-yellow-kewpie",
+     "uiu-file-2001-023",
+     "scp-5500",
+     "herlock-sholmes-arrives-too-late",
+     "calibold-harryblank-nico-proposal",
+     "tall-and-short-tales-of-the-thieves-domain",
+     "taste-the-rainbow",
+     "abraka-davids-proposal",
+     "scp-7400",
+     "scp-5545",
+     "scp-194"
+    ]
+   ]
+  ],
+  "n": 51,
+  "mode": "list",
+  "off": 2,
+  "every": 51,
+  "src": "wiki"
+ },
+ {
+  "slug": "foundation-of-nomads",
+  "title": "Foundation of Nomads Hub",
+  "date": "2021-08",
+  "author": "Tufto",
+  "blurb": "Our duty was once to stop reality and normalcy from imploding. It is now to prevent the annihilation of reality itself.",
+  "canons": [
+   "lampeter"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "on-the-multiversal-cargo-train",
+     "on-the-west-bound-passenger-train",
+     "vast-suspended-ruins",
+     "multiplying-time-alleyways-in-the-1960s",
+     "irene-in-leafy-english-suburbs"
+    ]
+   ]
+  ],
+  "n": 5,
+  "mode": "list",
+  "off": 0,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "foundational-parasite-hub",
+  "title": "Foundational Parasite Hub",
+  "date": "2025-12",
+  "author": "Doctor Lovelace",
+  "blurb": "\"The most likely reaction to a truly alien intelligence would be one of confusion, anthropomorphization, or dawning horror.\"",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Recommended Order",
+    [
+     "target-audience",
+     "containment-reassessment",
+     "scp-9471"
+    ]
+   ]
+  ],
+  "n": 3,
+  "mode": "list",
+  "off": 1,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "foxhunt-hub",
+  "title": "Foxhunt",
+  "date": "2025-04",
+  "author": "Naepic",
+  "blurb": "No matter the path I take, I am to be hunted down. That is the fate of a fox. The only way to survive is to hunt them myself.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Season 1 - To Hunt a Gumiho",
+    [
+     "confessions-of-the-foxqueen",
+     "fangs-of-the-unrivaled-foxqueen",
+     "oath-for-a-foxqueen",
+     "foxqueen-orange-sunset",
+     "foxqueen-s-lacrima"
+    ]
+   ],
+   [
+    "Season 2 - To Stand on a Grave of yī wàn Souls",
+    [
+     "dearly-beloved",
+     "at-dusk-i-will-think-of-you",
+     "march-caprice",
+     "scherzo-e-intermezzo"
+    ]
+   ]
+  ],
+  "n": 9,
+  "mode": "prose",
+  "off": 0,
+  "every": 9,
+  "src": "wiki"
+ },
+ {
+  "slug": "gamedayindex",
+  "title": "Game Day",
+  "date": "2011-09",
+  "author": "DrClef",
+  "blurb": "Attached, please find my compilation of materials related to the security breach that took place at Site-17 on ██-██-████, and the events that followed. It is my hope that this report will serve as a comprehensive and definitive record of the events that occured on this date, as well as the subsequent series of events leading to the \"Bloody Friday\" attacks on ██-██-████…",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "gamedaypart1index"
+    ]
+   ]
+  ],
+  "n": 1,
+  "mode": "prose",
+  "off": 0,
+  "every": 1,
+  "src": "wiki"
+ },
+ {
+  "slug": "gamedaypart2index",
+  "title": "Game Day, Phase 2: Contain",
+  "date": "2011-10",
+  "author": "DrClef",
+  "blurb": "The situation is grim: a major attack on a Foundation Site by a previously unknown force has caused a major containment breach. Dozens, if not hundreds, of SCP artifacts have been released. Other occult organizations, upon seeing these events, are moving in. And to make matters worse, a few of the SCPs in question have their own agendas as well…",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "TIMELINE OF EVENTS",
+    [
+     "scp-953",
+     "gamedaypart1index",
+     "gdp2-antivirus",
+     "gdp2-second-language",
+     "scp-542",
+     "gdp2-a-working-lunch",
+     "like-clockwork",
+     "gdp2-the-light-at-the-end-of-the-tunnel",
+     "gdp2-tunneling-between-worlds",
+     "f-u-b-a-r",
+     "rapture",
+     "reflections",
+     "scp-682",
+     "discovered-attack",
+     "gdp2-freshbreath-inhale",
+     "gdp2-looking-at-the-world-from-a-different-angle",
+     "gdp2-a-little-chat",
+     "gdp2-point-in-line",
+     "gdp2-fun",
+     "gdp2-freshbreath-holding",
+     "gdp2-angle-of-attack",
+     "gdp2-basking-in-the-light",
+     "gdp2-attacking-the-darkness"
+    ]
+   ],
+   [
+    "Predator (SCP-953, The Proponents of Paranormal Rights)",
+    [
+     "gdp2-and-then-i-saw-the-light"
+    ]
+   ],
+   [
+    "Monitor Lizard Gone Viral (SCP-229; SCP-682)",
+    [
+     "gdp2-underhisskin"
+    ]
+   ],
+   [
+    "And In The Wings, Shadows (Multiple subjects and items)",
+    [
+     "settling-tabs",
+     "lost-time"
+    ]
+   ],
+   [
+    "A Breath of Fresh Air (SCP-200)",
+    [
+     "gamedaypart1imago"
+    ]
+   ],
+   [
+    "Other Incidents",
+    [
+     "run-away-forevurrr",
+     "gdp2-sometimes-you-get-the-bear"
+    ]
+   ]
+  ],
+  "n": 30,
+  "mode": "list",
+  "off": 0,
+  "every": 37,
+  "src": "wiki"
+ },
+ {
+  "slug": "gamedaypart3index",
+  "title": "Game Day, Phase 3: Protect",
+  "date": "2012-08",
+  "author": "DrClef",
+  "blurb": "Everything has gone wrong. The Foundation is on its back foot. Chaos Insurgency elements are openly attacking SCP Foundation facilities. Marshall, Carter, and Dark are rushing around snatching up everything they can find. The war of the paranormal has gone overt.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "game-day-part-3-synchronous"
+    ]
+   ]
+  ],
+  "n": 1,
+  "mode": "prose",
+  "off": 0,
+  "every": 1,
+  "src": "wiki"
+ },
+ {
+  "slug": "gaslight-gatekeep-girlboss-hub",
+  "title": "GASLIGHT, GATEKEEP, GIRLBOSS Hub",
+  "date": "2022-04",
+  "author": "Ralliston",
+  "blurb": "",
+  "canons": [
+   "from-120s-archives",
+   "man-who-wasnt-there"
+  ],
+  "gois": [
+   "nobody"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "the-beast-that-shouted-i-at-the-end-of-the-world",
+     "scp-5572",
+     "the-lands-nobody-returns-from",
+     "four-knights-tango",
+     "i-was-the-queen-before-it-was-cool",
+     "nobody-s-home",
+     "people-without-meaning",
+     "human",
+     "jaeger-part-1",
+     "jaeger-part-2",
+     "spooky-scary-skeletons",
+     "ralliston-s-proposal",
+     "scp-1000",
+     "esterberg-city-wikipedia"
+    ]
+   ]
+  ],
+  "n": 14,
+  "mode": "list",
+  "off": 2,
+  "every": 14,
+  "src": "wiki"
+ },
+ {
+  "slug": "gears-day-collection-hub",
+  "title": "Gears Day Collection",
+  "date": "2018-10",
+  "author": "Uncle Nicolini",
+  "blurb": "As a means of thanking (and sustaining) the one and only Gears, we offer upon him Creepy Pastas once yearly on the 18th of August. Below are the pages of Gears Days past; classic-style original creepypasta collections put together specially for Gears birthday, all open for his and your reading pleasure. Enjoy!",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Gears Day Collections",
+    [
+     "surprise-happy-birthday",
+     "surprise-happy-birthday-2",
+     "surprise-happy-birthday-3",
+     "surprise-happy-birthday-4",
+     "surprise-happy-birthday-5",
+     "surprise-happy-birthday-6",
+     "surprise-happy-birthday-7",
+     "surprise-happy-birthday-8",
+     "surprise-happy-birthday-9",
+     "surprise-happy-birthday-10",
+     "surprise-happy-birthday-11",
+     "surprise-happy-birthday-12",
+     "surprise-happy-birthday-13",
+     "surprise-happy-birthday-14"
+    ]
+   ]
+  ],
+  "n": 14,
+  "mode": "list",
+  "off": 0,
+  "every": 16,
+  "src": "wiki"
+ },
+ {
+  "slug": "glittering-horizon-hub",
+  "title": "Glittering Horizon Hub",
+  "date": "2017-07",
+  "author": "LordStonefish",
+  "blurb": "",
+  "canons": [],
+  "gois": [
+   "second-hytoth"
+  ],
+  "sections": [
+   [
+    "Background",
+    [
+     "scp-2006",
+     "scp-2417",
+     "scp-2742"
+    ]
+   ],
+   [
+    "Chapter One",
+    [
+     "wade-williams-distribution",
+     "scp-2653",
+     "the-news-tonight-wednesday-april-26th-2017"
+    ]
+   ],
+   [
+    "Chapter Two",
+    [
+     "the-undoing",
+     "out-of-frame"
+    ]
+   ]
+  ],
+  "n": 8,
+  "mode": "list",
+  "off": 0,
+  "every": 8,
+  "src": "wiki"
+ },
+ {
+  "slug": "gloriana-alexylva-hub",
+  "title": "Gloriana Alexylva Hub",
+  "date": "2018-04",
+  "author": "djkaktus",
+  "blurb": "",
+  "canons": [],
+  "gois": [
+   "alexylva"
+  ],
+  "sections": [
+   [
+    "Gloriana Alexylva",
+    [
+     "fourth-and-long",
+     "postgame",
+     "coach-panagakos-eldest-and-most-revered",
+     "the-unforgiving-gridiron",
+     "anima-ex-machina"
+    ]
+   ]
+  ],
+  "n": 5,
+  "mode": "list",
+  "off": 0,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "goc-act-hub",
+  "title": "GOC ACT Hub",
+  "date": "2018-09",
+  "author": "DolphinSlugchugger",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "alto-clef-jr-fins-of-the-father",
+     "not-with-a-whimper-but-with-a-bang",
+     "kids-with-guns-part-three",
+     "scp-2801",
+     "alto-clef-jr-fire-and-flames",
+     "alto-clef-jr-the-star-and-you",
+     "alto-clef-jr-virus-alert",
+     "alto-clef-jr-dopesmoker",
+     "alto-clef-jr-ecce-farcio",
+     "scp-3369",
+     "scp-3416",
+     "scp-3033",
+     "alto-clef-jr-the-joker",
+     "alto-clef-jr-hurt",
+     "alto-clef-jr-doorcrasher"
+    ]
+   ]
+  ],
+  "n": 15,
+  "mode": "list",
+  "off": 0,
+  "every": 23,
+  "src": "wiki"
+ },
+ {
+  "slug": "goc-hub-page",
+  "title": "Global Occult Coalition Casefiles",
+  "date": "2014-01",
+  "author": "DrClef",
+  "blurb": "To those of you who would do harm to humanity, I say this: the Global Occult Coalition stands ready to defend humanity against all foes.\nWhether it likes it or not.",
+  "canons": [],
+  "gois": [
+   "global-occult-coalition"
+  ],
+  "sections": [
+   [
+    "Field Manuals and Guides",
+    [
+     "goc-supplemental-basic-guide",
+     "goc-supplemental-equipment",
+     "goc-supplemental-humanoid-guide"
+    ]
+   ],
+   [
+    "Lectures and Orientations",
+    [
+     "goc-supplemental-thaumatology",
+     "goc-supplemental-arad",
+     "goc-supplemental-thaumworkings",
+     "goc-supplemental-qandq"
+    ]
+   ],
+   [
+    "Casefile Reports",
+    [
+     "kte-1221-cyan-rorrim",
+     "ute-1978-cyanfather-andromeda-l-engle-green-ribbon",
+     "pte-cyan-atypical-alkahest",
+     "lte-6679-otranto-silver",
+     "group-bogeyman",
+     "ute-2077-tiercel-buster",
+     "kte-2957-white-cresentchild",
+     "kte-0641-white-domino",
+     "kte-0003-carcinomafather",
+     "kte-2039-carcinoma-oder-templum",
+     "kte-0154-blackwood-gorgon",
+     "kte-5503-bice-copernicus",
+     "ute-9839-templum-ebbinghaus",
+     "nte-2858-cyan-blaecca",
+     "nt-4041-nimuedianetic-karhu",
+     "lte-1004-caliburn-velveteen",
+     "kte-1221-parallax-nacl-carcinoma",
+     "project-roc-part-1",
+     "kte-6990-mendel-nimuebusterchild",
+     "lte-1998-burnout-blaecca-parallax",
+     "lte-7433-goodrick-kringle",
+     "kte-9817-bluebuster-mendel-shelley-renegade-armbrusteri",
+     "ptt-1666-gray-templum",
+     "lte-8686-yellow-kewpie",
+     "ute-1919-discofather",
+     "archival-document-hsa-008-advent",
+     "kte-6024-blit-nuntius",
+     "kte-5634-ex-machina-bosch",
+     "pepsi-coke-territorial-holdings",
+     "lte-2712-bosch",
+     "lte-0851-cetus",
+     "kte-2013-kapala-mendes"
+    ]
+   ],
+   [
+    "GOC Tales",
+    [
+     "messenger-rna",
+     "hypothermia",
+     "the-bookworm",
+     "retrieval",
+     "goc-intellog-d-5589",
+     "simplicity",
+     "pulse-not-shockable",
+     "heavens-rain",
+     "smithsonian-irem-expedition",
+     "your-mind-is-a-cage",
+     "collective-punishment",
+     "stroll-through-the-night",
+     "desired-to-become-wise",
+     "lucky-triple-sevens",
+     "testimony-regarding-minor-theft",
+     "midnight",
+     "the-fronds-of-war",
+     "andthedemon",
+     "not-so-lucky-triple-sevens",
+     "re-kto-7890-valentinus",
+     "wssch2",
+     "nobody-would-sing-the-rhythm-in-the-wing-again-and-again",
+     "nested-loops",
+     "power",
+     "greenlighting",
+     "ash-and-maple-part-1",
+     "mama-put-my-guns-in-the-ground-i-cant-shoot-them-anymore",
+     "urgent-commission-of-inquiry-into-worldwide-paranormal-event",
+     "green-day-ii",
+     "be-a-wizard-they-said",
+     "killing-dracula",
+     "wssch3",
+     "starsinthesky",
+     "goc-tale-frontier-psychiatry",
+     "providence",
+     "bedlam",
+     "exactly-what-happened",
+     "september-eleven-prequel",
+     "nx-05",
+     "heresophage",
+     "one-for-the-road",
+     "the-ranger-with-the-big-iron-on-his-hip",
+     "hod2-rybd",
+     "standoff",
+     "breaking-it-all-down-on-me",
+     "in-your-heart",
+     "all-quiet-on-the-wall-street-front",
+     "stray-pigs",
+     "about-the-algeciras-accords",
+     "green-day",
+     "the-old-hometown-looks-the-same",
+     "the-crow-gets-the-last-laugh",
+     "gunsight",
+     "point-counterpoint",
+     "answersonmattersoftheheart",
+     "taking-a-break-from-all-your-worries",
+     "a-date-which-will-live-in-infamy",
+     "four-agents-and-a-campfire",
+     "thereven-germination",
+     "six-codas",
+     "patris-et-filia",
+     "voodoo-ranger",
+     "goc-supplemental-green",
+     "out-of-the-darkness",
+     "possible-kill-screen",
+     "humeanitarianism",
+     "system-boot",
+     "you-shall-not-die",
+     "as-it-happened",
+     "bowegate",
+     "stray-katz",
+     "wayward-forlorn-kin",
+     "rampart-rogue-renegade",
+     "dont-care-all-fine",
+     "that-day-in-the-woods",
+     "pumpkin-mystery",
+     "occult-warfare",
+     "vox-populi-vox-dei",
+     "a-murder-and-relief-in-the-dark",
+     "keeping-with-the-times",
+     "hamibombard1",
+     "in-the-dark",
+     "conspiracy-part-x",
+     "mage-s-tiff",
+     "conspiracy-part-ix",
+     "conspiracy-part-xii",
+     "coda-for-the-capitol",
+     "the-mind-electric",
+     "the-battle-of-baikal",
+     "within-the-walls-i",
+     "re-kto-1466-houdini",
+     "speed-of-hate",
+     "memory",
+     "gdp2-sometimes-you-get-the-bear",
+     "conspiracy-part-iii",
+     "the-edge-of-all-light",
+     "conspiracy-part-ii",
+     "watching-corpses",
+     "your-very-own-chair"
+    ]
+   ],
+   [
+    "Foundation Interactions",
+    [
+     "scp-l347",
+     "scp-9443",
+     "scp-6493",
+     "scp-8659",
+     "scp-8535",
+     "scp-7406",
+     "scp-9970",
+     "scp-8849",
+     "scp-9451",
+     "scp-9603",
+     "scp-8680",
+     "scp-9198",
+     "scp-8324",
+     "scp-9743",
+     "scp-9245-j",
+     "scp-5528",
+     "scp-8086",
+     "scp-9948",
+     "scp-9215",
+     "scp-6989-j",
+     "scp-9271",
+     "scp-l818",
+     "scp-9315",
+     "scp-l009",
+     "scp-7022",
+     "scp-9669",
+     "scp-9206",
+     "scp-6422",
+     "scp-7344",
+     "scp-8068",
+     "scp-9112",
+     "scp-3518",
+     "scp-7445",
+     "scp-7453",
+     "scp-8161",
+     "scp-9905",
+     "scp-4575",
+     "scp-9208",
+     "scp-6126",
+     "scp-6828",
+     "scp-8870",
+     "scp-8530",
+     "scp-5536",
+     "scp-5773",
+     "scp-5989",
+     "scp-7139",
+     "scp-5017",
+     "scp-8484",
+     "scp-2326",
+     "scp-7423",
+     "scp-5565",
+     "scp-015-de-j",
+     "scp-6571",
+     "scp-6678",
+     "scp-6310",
+     "scp-6722",
+     "scp-6946",
+     "scp-8968",
+     "scp-7586",
+     "scp-8820",
+     "scp-9050",
+     "scp-6019",
+     "scp-6989",
+     "scp-5419",
+     "scp-6656",
+     "scp-6795",
+     "scp-7844",
+     "scp-9070",
+     "scp-9966",
+     "scp-9231",
+     "scp-2801",
+     "scp-7207",
+     "scp-7612",
+     "scp-8847",
+     "scp-4250",
+     "scp-4067",
+     "scp-5299",
+     "scp-9933",
+     "scp-4851",
+     "scp-3432",
+     "bleep-s-onyx-proposal",
+     "scp-6821",
+     "scp-9510",
+     "scp-8911",
+     "scp-7993",
+     "scp-1537",
+     "scp-9013",
+     "scp-2748",
+     "scp-7273",
+     "scp-9016",
+     "scp-9830"
+    ]
+   ],
+   [
+    "Sequence",
+    [
+     "goc-tale-sequence-assessment",
+     "goc-tale-sequence-strike",
+     "goc-tale-sequence-special-observer",
+     "goc-tale-sequence-farpoint",
+     "goc-tale-sequence-awtok",
+     "goc-tale-sequence-joint-venture",
+     "goc-tale-sequence-trauma",
+     "goc-tale-sequence-tempering",
+     "goc-tale-sequence-vigil",
+     "goc-tale-sequence-diplomacy",
+     "goc-tale-sequence-uhec",
+     "goc-tale-sequence-scrambleorder"
+    ]
+   ],
+   [
+    "Case COLD HARPER",
+    [
+     "memorandum-dated-6-november-1944",
+     "transcript-of-meeting-june-2-1972",
+     "transcript-of-telephone-conversation-august-9-1991"
+    ]
+   ],
+   [
+    "Miscellaneous Tales",
+    [
+     "goc-tale-incident-bl-7-alpha",
+     "goc-tale-comeintomyparlor"
+    ]
+   ]
+  ],
+  "n": 246,
+  "mode": "list",
+  "off": 13,
+  "every": 246,
+  "src": "wiki"
+ },
+ {
+  "slug": "green-thumb",
+  "title": "Green Thumb Hub",
+  "date": "2014-10",
+  "author": "InsipidParoxysm",
+  "blurb": "",
+  "canons": [
+   "the-gulf"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "Green Thumbs",
+    [
+     "shellfish-for-breakfast",
+     "banana-smoothie",
+     "just-like-me",
+     "canola-oil-panic"
+    ]
+   ]
+  ],
+  "n": 4,
+  "mode": "list",
+  "off": 0,
+  "every": 4,
+  "src": "wiki"
+ },
+ {
+  "slug": "guns-pointed-hub",
+  "title": "Guns Pointed at the Head of God",
+  "date": "2017-08",
+  "author": "A Random Day",
+  "blurb": "",
+  "canons": [
+   "third-law"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-2664",
+     "t-minus",
+     "t-plus",
+     "deus-vulture",
+     "conqueror-worm",
+     "the-dedekind-infinite-demographic"
+    ]
+   ]
+  ],
+  "n": 6,
+  "mode": "list",
+  "off": 0,
+  "every": 6,
+  "src": "wiki"
+ },
+ {
+  "slug": "heart-of-darkness",
+  "title": "Heart of Darkness Hub",
+  "date": "2021-11",
+  "author": "MarcusLCrassus",
+  "blurb": "",
+  "canons": [
+   "the-coldest-war"
+  ],
+  "gois": [
+   "chaos-insurgency"
+  ],
+  "sections": [
+   [
+    "EPISODES",
+    [
+     "hod1-homecoming",
+     "hod2-rybd",
+     "hod3-respite",
+     "hod4-hilloffire",
+     "hod5-enterthespire"
+    ]
+   ],
+   [
+    "OPTIONAL READING",
+    [
+     "sc-63-141-65-030"
+    ]
+   ]
+  ],
+  "n": 6,
+  "mode": "prose",
+  "off": 0,
+  "every": 6,
+  "src": "wiki"
+ },
+ {
+  "slug": "hecatoncheires-cycle-hub",
+  "title": "Hecatoncheires Cycle Hub",
+  "date": "2020-10",
+  "author": "Grigori Karpin",
+  "blurb": "[g]od is dead. The staff at Site-91 follow a trail leading from its cadaver to a Hellenic cult, an eldritch possession, and the resurgence of the Daeva.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Documentation of Project Hecatoncheires",
+    [
+     "scp-4612",
+     "scp-4712",
+     "scp-5512",
+     "scp-5612",
+     "catching-up",
+     "looking-forward",
+     "cleaning-house",
+     "scp-3743",
+     "repatriation",
+     "scp-5957",
+     "fox-hunt",
+     "never-fight-a-land-war-in-the-peloponnese",
+     "scp-5267",
+     "ee-8832",
+     "oh-so-smart-or-oh-so-pleasant",
+     "an-scp-masquerading-as-a-tale",
+     "the-ends-justify-the-means-of-production",
+     "scp-5626",
+     "scp-6520",
+     "scp-7812"
+    ]
+   ],
+   [
+    "Logistical Capabilities",
+    [
+     "scp-5079"
+    ]
+   ]
+  ],
+  "n": 21,
+  "mode": "list",
+  "off": 0,
+  "every": 21,
+  "src": "wiki"
+ },
+ {
+  "slug": "hollow-hydra-revolution",
+  "title": "HOLLOW HYDRA REVOLUTION",
+  "date": "2026-08",
+  "author": "TyGently",
+  "blurb": "The Foundation beats a bloody retreat from Xiangyao, kaijupolis beneath the waves. Nothing will ever be the same.",
+  "canons": [
+   "third-law"
+  ],
+  "gois": [
+   "chaos-insurgency"
+  ],
+  "sections": [
+   [
+    "ACT I",
+    [
+     "fathomless",
+     "heartburn",
+     "blind-the-all-seeing-eye",
+     "syzygy"
+    ]
+   ],
+   [
+    "INTERMISSION",
+    [
+     "eluctablemodality"
+    ]
+   ],
+   [
+    "ACT II",
+    [
+     "loveyourstrings",
+     "the-maw-electric",
+     "headache"
+    ]
+   ]
+  ],
+  "n": 8,
+  "mode": "prose",
+  "off": 0,
+  "every": 8,
+  "src": "wiki"
+ },
+ {
+  "slug": "holy-science",
+  "title": "Holy Science",
+  "date": "2017-03",
+  "author": "(account deleted)",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Relics",
+    [
+     "scp-2589",
+     "scp-2782",
+     "scp-1616",
+     "scp-1782",
+     "scp-3682"
+    ]
+   ],
+   [
+    "Archives",
+    [
+     "themission"
+    ]
+   ],
+   [
+    "Apocrypha",
+    [
+     "the-special-bond-between-child-and-mother",
+     "you-may-become-science"
+    ]
+   ]
+  ],
+  "n": 8,
+  "mode": "list",
+  "off": 0,
+  "every": 8,
+  "src": "wiki"
+ },
+ {
+  "slug": "how-to-clean-a-polyester-dress",
+  "title": "How To Clean A Polyester Dress",
+  "date": "2021-04",
+  "author": "UraniumEmpire",
+  "blurb": "",
+  "canons": [
+   "the-trashfire"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "how-to-remove-glitter-from-a-polyester-dress",
+     "how-to-remove-kerosene-from-a-polyester-dress",
+     "how-to-remove-human-blood-from-a-polyester-dress",
+     "how-to-remove-spinal-fluid-from-a-polyester-dress",
+     "polyester-woman"
+    ]
+   ]
+  ],
+  "n": 5,
+  "mode": "list",
+  "off": 0,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "i-didn-t-forget-hub",
+  "title": "I Didn't Forget Hub",
+  "date": "2023-12",
+  "author": "XHAWK77X",
+  "blurb": "This series of tales follows a young man's quest for the truth behind the events that took his brother away from him. He begins mostly ignorant of the true nature of the world he lives in, but his quest will put him in conflict with some of the greatest powers in the anomalous world, and force him to ask very difficult questions about the people closest to him.",
+  "canons": [
+   "resurrection"
+  ],
+  "gois": [
+   "fifthist",
+   "second-hytoth"
+  ],
+  "sections": [
+   [
+    "Season 1",
+    [
+     "i-didn-t-forget-pt-1-the-galaxy-plaza-disaster",
+     "i-didn-t-forget-pt-2-spirituality-club",
+     "i-didn-t-forget-pt-3-richard-michaels",
+     "i-didn-t-forget-pt-4-guiding-star-baptist-church",
+     "i-didn-t-forget-pt-5-the-star-clad-tome",
+     "i-didn-t-forget-pt-6-the-service",
+     "i-didn-t-forget-pt-7-the-church-of-the-blessed-sacrifice",
+     "i-didn-t-forget-pt-8-theodore-north",
+     "i-didn-t-forget-pt-9-the-wanderer-s-library",
+     "i-didn-t-forget-pt-10-the-serpent-s-hand",
+     "i-didn-t-forget-pt-11-the-jailors",
+     "i-didn-t-forget-pt-12-site-17",
+     "i-didn-t-forget-pt-13-evan-sanders"
+    ]
+   ],
+   [
+    "Interlude",
+    [
+     "scp-7851"
+    ]
+   ],
+   [
+    "Season 2",
+    [
+     "i-didn-t-forget-pt-14-containment-cell-84",
+     "i-didn-t-forget-pt-15-something-big",
+     "i-didn-t-forget-pt-16-hell-on-earth",
+     "i-didn-t-forget-pt-17-veronica-hall",
+     "i-didn-t-forget-pt-18-callum-michaels",
+     "i-didn-t-forget-pt-19-the-memetic-agent",
+     "i-didn-t-forget-pt-20-the-cure",
+     "i-didn-t-forget-pt-21-sleep-deprivation",
+     "i-didn-t-forget-pt-22-spite",
+     "i-didn-t-forget-pt-23-the-sacrifice"
+    ]
+   ]
+  ],
+  "n": 24,
+  "mode": "list",
+  "off": 1,
+  "every": 24,
+  "src": "wiki"
+ },
+ {
+  "slug": "immrama",
+  "title": "Immrama",
+  "date": "2025-02",
+  "author": "arthcymro",
+  "blurb": "Giants, faeries, leprechauns, ghosts and monsters. Once the quieter sections of the Foundation, the UK branches now face a threat millennia in the waiting.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "In the 1990s, something stirred in the Britain Isle. Something old. Something forgotten. Something vengeful…",
+    [
+     "scp-6916",
+     "nx-02",
+     "a-folklorist-approach-to-myth-case-study-01-the-tuatha-de-da",
+     "scp-6796",
+     "in-june-i-change-my-tune",
+     "anomaly-306-the-silver-alder",
+     "experiment-log-2307-a"
+    ]
+   ],
+   [
+    "Groups",
+    [
+     "lte-0851-cetus"
+    ]
+   ]
+  ],
+  "n": 8,
+  "mode": "list",
+  "off": 0,
+  "every": 8,
+  "src": "wiki"
+ },
+ {
+  "slug": "in-his-own-image",
+  "title": "In His Own Image",
+  "date": "2012-07",
+  "author": "TroyL",
+  "blurb": "A story about life in the Foundation and what happens to people along the way.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "in-his-own-image-part-1",
+     "in-his-own-image-interlude-1",
+     "in-his-own-image-part-2",
+     "in-his-own-image-interlude-2",
+     "in-his-own-image-part-3",
+     "in-his-own-image-interlude-3",
+     "in-his-own-image-part-4",
+     "in-his-own-image-interlude-4",
+     "in-his-own-image-part-5",
+     "in-his-own-image-interlude-5",
+     "in-his-own-image-part-6",
+     "in-his-own-image-interlude-6",
+     "in-his-own-image-part-7",
+     "in-his-own-image-epilogue",
+     "the-man-from-maple-street",
+     "containing-yourself",
+     "a-day-in-the-life-of-alto-clef"
+    ]
+   ]
+  ],
+  "n": 17,
+  "mode": "list",
+  "off": 0,
+  "every": 17,
+  "src": "wiki"
+ },
+ {
+  "slug": "in-opposition-to",
+  "title": "SCP Vs. Series",
+  "date": "2019-04",
+  "author": "Doctor Cimmerian",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "SCP Vs. Hub",
+    [
+     "consequences-and-collarbones",
+     "snap-crackle-pop",
+     "with-a-target",
+     "an-ending-is-only-tragic",
+     "come-together-right-now-over-me",
+     "the-melody-is-familiar",
+     "everything-can-change-in-the-blink-of-an-eye",
+     "nor-spake-nor-moved-their-eyes",
+     "the-horrors-of-an-unclean-bowl"
+    ]
+   ]
+  ],
+  "n": 9,
+  "mode": "list",
+  "off": 0,
+  "every": 9,
+  "src": "wiki"
+ },
+ {
+  "slug": "indivisible-hub",
+  "title": "Indivisible Hub",
+  "date": "2026-07",
+  "author": "HarryBlank",
+  "blurb": "As they stand, so stand we all…",
+  "canons": [
+   "on-guard-43"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "Tales complete! Finale SCP after GOIcon!",
+    [
+     "0-unsinkable",
+     "1-hachiro",
+     "2-pilar",
+     "3-imrich",
+     "4-rasmus",
+     "5-wynn",
+     "6-randolph",
+     "7-clio",
+     "8-gabrielle",
+     "9-melissa",
+     "10-genevieve",
+     "11-ilse",
+     "12-delfina",
+     "13-nhung",
+     "14-flora",
+     "15-xinyi",
+     "16-mali",
+     "17-udo",
+     "18-nastya",
+     "19-nimkii",
+     "20-eileen",
+     "21-daniil",
+     "22-noor",
+     "23-michael",
+     "24-jennifer",
+     "25-howard",
+     "26-jay",
+     "27-dolores",
+     "28-eszter",
+     "29-amelia",
+     "30-bastien",
+     "31-wilhelmina",
+     "32-polyxeni",
+     "33-rozalie",
+     "34-joanna",
+     "35-sevara",
+     "36-character",
+     "37-basil",
+     "38-fantasma",
+     "39-lillian",
+     "40-philip",
+     "41-william",
+     "42-james",
+     "43-harold"
+    ]
+   ]
+  ],
+  "n": 44,
+  "mode": "list",
+  "off": 0,
+  "every": 44,
+  "src": "wiki"
+ },
+ {
+  "slug": "integration-program-hub",
+  "title": "Integration Program Hub",
+  "date": "2022-12",
+  "author": "PlaguePJP",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Area-179",
+    [
+     "scp-5595",
+     "scp-5104",
+     "scp-7597",
+     "scp-5175",
+     "scp-5591",
+     "scp-6597",
+     "scp-6599",
+     "hogslice-makes-a-friend",
+     "scp-3837",
+     "scp-6453",
+     "scp-6593",
+     "scp-7595",
+     "scp-7596",
+     "scp-8596",
+     "plague-s-proposal",
+     "scp-8000",
+     "hogslice-vs-bones",
+     "scp-6121",
+     "scp-6483",
+     "scp-6912",
+     "scp-6984",
+     "scp-7999",
+     "scp-6458",
+     "scp-7522",
+     "scp-6459",
+     "scp-8350",
+     "scp-1046",
+     "scp-8672"
+    ]
+   ]
+  ],
+  "n": 28,
+  "mode": "list",
+  "off": 0,
+  "every": 28,
+  "src": "wiki"
+ },
+ {
+  "slug": "interior",
+  "title": "Interior",
+  "date": "2026-05",
+  "author": "Akumeoy",
+  "blurb": "Stories about the end of the world.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-8517",
+     "scp-9124",
+     "scp-3181",
+     "scp-8841",
+     "scp-8164",
+     "scp-9425",
+     "bees",
+     "scp-8746",
+     "scp-2808",
+     "scp-2926",
+     "scp-9938",
+     "scp-8518",
+     "scp-8251"
+    ]
+   ]
+  ],
+  "n": 13,
+  "mode": "list",
+  "off": 0,
+  "every": 13,
+  "src": "wiki"
+ },
+ {
+  "slug": "into-the-void-hub",
+  "title": "Into the Void Hub",
+  "date": "2021-05",
+  "author": "Sirslash47",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "The Beholder Program",
+    [
+     "scp-5857",
+     "scp-5623",
+     "scp-5843",
+     "scp-4524",
+     "scp-5651",
+     "scp-5979",
+     "scp-3195",
+     "scp-5943",
+     "scp-6524",
+     "scp-6701",
+     "scp-6983",
+     "scp-6143",
+     "scp-7233",
+     "scp-7928",
+     "scp-7169",
+     "scp-7713",
+     "space-cadet-semantics",
+     "it-s-better-to-burn-out-than-to-fade-away",
+     "ad-fundum-universum-ad-fundum"
+    ]
+   ]
+  ],
+  "n": 19,
+  "mode": "list",
+  "off": 0,
+  "every": 19,
+  "src": "wiki"
+ },
+ {
+  "slug": "jakartan-methodology",
+  "title": "Jakartan Methodology",
+  "date": "2026-08",
+  "author": "EastIndies",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Jakartan Methodology",
+    [
+     "an-0189",
+     "an-1119",
+     "an-1712",
+     "indonesian-occult-games-thread"
+    ]
+   ]
+  ],
+  "n": 4,
+  "mode": "list",
+  "off": 1,
+  "every": 4,
+  "src": "wiki"
+ },
+ {
+  "slug": "jude-s-bizarre-adventure",
+  "title": "Jude's Bizarre Adventure",
+  "date": "2018-03",
+  "author": "kinchtheknifeblade",
+  "blurb": "",
+  "canons": [],
+  "gois": [
+   "are-we-cool-yet",
+   "gamers-against-weed"
+  ],
+  "sections": [
+   [
+    "(or, The Doped-Up Sadboy Chronicles)",
+    [
+     "phantom-blunt",
+     "bong-rip-tendency",
+     "kiefdust-crusaders",
+     "diamond-is-not-kush"
+    ]
+   ]
+  ],
+  "n": 4,
+  "mode": "list",
+  "off": 0,
+  "every": 4,
+  "src": "wiki"
+ },
+ {
+  "slug": "just-fragments-hub",
+  "title": "Just Fragments Hub",
+  "date": "2024-07",
+  "author": "Doctor Scrappy",
+  "blurb": "",
+  "canons": [
+   "competitive-eschatology"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "REQUIRED READING FIRST",
+    [
+     "scp-004",
+     "scp-055",
+     "scp-079",
+     "scp-173",
+     "revised-entry",
+     "scp-579",
+     "scp-616",
+     "scp-5000"
+    ]
+   ],
+   [
+    "INTRODUCTION",
+    [
+     "scp-8138"
+    ]
+   ]
+  ],
+  "n": 9,
+  "mode": "list",
+  "off": 0,
+  "every": 13,
+  "src": "wiki"
+ },
+ {
+  "slug": "k-o-failure-scenario-hub",
+  "title": "K/O Failure Scenario Hub",
+  "date": "2018-06",
+  "author": "Jacob Conwell",
+  "blurb": "",
+  "canons": [],
+  "gois": [
+   "shark-punching-center"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "peppersghosts-stupid-proposal",
+     "after-they-broke-our-fists",
+     "spc-172-j",
+     "scp-3760"
+    ]
+   ]
+  ],
+  "n": 4,
+  "mode": "list",
+  "off": 1,
+  "every": 4,
+  "src": "wiki"
+ },
+ {
+  "slug": "kiryu-labs-hub",
+  "title": "Kiryu Labs Hub",
+  "date": "2014-11",
+  "author": "Zyn",
+  "blurb": "There are 18 rooms total that make up Kiryu Labs.\nThese and the other rooms are where a few of the Foundation’s caches of anomalous items (not quite interesting enough to merit special containment, not quite harmless enough to be stuffed in a broom closet) are processed.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "On-Site Processing",
+    [
+     "more-than-ever",
+     "sacrifice",
+     "irrational",
+     "reality-check"
+    ]
+   ],
+   [
+    "Off-Site Investigation",
+    [
+     "salut-d-amour",
+     "memory-of-a-masterpiece",
+     "remember-you",
+     "a-sort-of-challenge",
+     "decompression"
+    ]
+   ],
+   [
+    "Extra-Department Docs",
+    [
+     "lucky-dinosaur",
+     "zyn-kaiju-butterfly-ninja-master",
+     "care-for-you",
+     "lepidoptraetheia",
+     "gentle-wings-flutter-quietly-in-the-dark",
+     "christmas-at-kiryu-labs",
+     "zyn-s-gift-2020",
+     "zyn-says-the-f-word",
+     "the-critters-of-kiryu-labs"
+    ]
+   ],
+   [
+    "SCP Objects in active supervision",
+    [
+     "scp-1457",
+     "scp-1338",
+     "scp-2255",
+     "scp-2332",
+     "scp-2225"
+    ]
+   ],
+   [
+    "SCP Objects supervision on hold",
+    [
+     "scp-1355"
+    ]
+   ],
+   [
+    "SCP Objects requiring further examination The Adventuwes of Mawk and Wiven",
+    [
+     "scp-3333-j",
+     "scp-723-j",
+     "roach-wrangling-at-kiryu-labs",
+     "scp-732-j"
+    ]
+   ]
+  ],
+  "n": 28,
+  "mode": "list",
+  "off": 1,
+  "every": 28,
+  "src": "wiki"
+ },
+ {
+  "slug": "kit-s-home-hub-of-happening",
+  "title": "Kit's Home Hub of Happenings",
+  "date": "2017-11",
+  "author": "Zara Calico",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "and-then-kit-slept",
+     "kit-s-bloomin-adventure",
+     "kit-s-brotherhood",
+     "the-duvet-queen",
+     "kit-s-horror-hospital-of-horror",
+     "scp-1471",
+     "that-one-time-kit-tried-to-kill-himself",
+     "kit-s-fate",
+     "live-now-tomorrow-we-die",
+     "twenty-minutes",
+     "an-arm-and-a-leg",
+     "the-storyteller",
+     "no-racing-by-horse-drawn-vehicles",
+     "kit-always-used-to-think-she-was-cool",
+     "trans-formative",
+     "i-wish-you-weren-t-here",
+     "and-then-gabriel-slept",
+     "are-you-proud-of-yourself",
+     "kit-s-christmas-miracle-pt-1",
+     "one-kit-and-an-anomalous-baby-pt-2",
+     "one-kit-and-an-anomalous-baby-pt-3",
+     "one-kit-and-an-anomalous-baby-the-finale"
+    ]
+   ]
+  ],
+  "n": 22,
+  "mode": "prose",
+  "off": 0,
+  "every": 22,
+  "src": "wiki"
+ },
+ {
+  "slug": "last-light-hub",
+  "title": "Team 'Last Light' Hub",
+  "date": "2018-06",
+  "author": "TechSorcerer2747",
+  "blurb": "What if you still had thoughts and feelings but were completely incapable of conveying them? What if everything went wrong all at once and you had no way to tell anyone?\nWhat if the entire world got stuck that way, forever?",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Recovered Data",
+    [
+     "not-with-a-whimper-but-with-a-bang",
+     "kte-6024-blit-nuntius",
+     "pizzicato",
+     "scp-3432"
+    ]
+   ]
+  ],
+  "n": 4,
+  "mode": "list",
+  "off": 0,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "learning-the-alphabet-hub",
+  "title": "Learning The Alphabet Hub",
+  "date": "2014-07",
+  "author": "TwistedGears",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Learning the Alphabet with Aldon & Finnegan",
+    [
+     "anart-antics",
+     "covert-cursing",
+     "divine-demands",
+     "exasperated-efforts",
+     "facetious-fanatics",
+     "gray-god",
+     "hugo-hijinks",
+     "involuntary-isolation",
+     "jam-jars",
+     "killing-knowledge",
+     "library-lifeline",
+     "mental-mazes",
+     "super-stars"
+    ]
+   ]
+  ],
+  "n": 13,
+  "mode": "list",
+  "off": 5,
+  "every": 13,
+  "src": "wiki"
+ },
+ {
+  "slug": "like-clockwork-hub",
+  "title": "...Like Clockwork Hub",
+  "date": "2017-11",
+  "author": "Decibelles",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "The Story As It Is",
+    [
+     "i-see-a-darkness",
+     "dying-out-west",
+     "let-us-get-murdered",
+     "golden-dawn",
+     "only-once-away-my-son",
+     "the-vampyre-of-time-and-memory",
+     "somebody-home",
+     "likeclockwork"
+    ]
+   ],
+   [
+    "Further Reading",
+    [
+     "scp-3999",
+     "scp-3817",
+     "scp-765",
+     "in-his-own-image-part-6",
+     "portraits-of-your-father"
+    ]
+   ],
+   [
+    "Tangentially-Related Reference Materials",
+    [
+     "scp-2740",
+     "leeway",
+     "only-in-dreams",
+     "routine-psychological-evaluations-by-dr-glass"
+    ]
+   ]
+  ],
+  "n": 17,
+  "mode": "list",
+  "off": 1,
+  "every": 17,
+  "src": "wiki"
+ },
+ {
+  "slug": "like-toy-story-except-fucked-up",
+  "title": "Mass Animation Hub",
+  "date": "2018-06",
+  "author": "Akumeoy",
+  "blurb": "The MA-Class Mass Animation Scenario is the Foundation's term for any scenario wherein a large number of nonliving things display intelligence or mobility to the point of jeopardizing normalcy. This may or may not also entail an \"SK-Class Dominance Shift\", depending on the power and resources available to newly animated things.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Bring Me to Life: Doomsday Stories",
+    [
+     "chaos-praxis",
+     "scp-3406",
+     "misery-makes-company",
+     "artist-formerly-known-as-chuck",
+     "uf-00031",
+     "serving-the-twin-cities-since-2021"
+    ]
+   ]
+  ],
+  "n": 6,
+  "mode": "list",
+  "off": 0,
+  "every": 6,
+  "src": "wiki"
+ },
+ {
+  "slug": "love-v-violence-hub",
+  "title": "The Power of Love vs. The Power of Incredible Violence (Hub)",
+  "date": "2026-08",
+  "author": "Lt Flops",
+  "blurb": "The first step in my journey was realizing that it is impossible to defeat fascism with the power of love.",
+  "canons": [],
+  "gois": [
+   "serpents-hand"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "a-serpent-on-a-bed-of-leaves",
+     "of-the-great-searing",
+     "pluck-and-plow"
+    ]
+   ]
+  ],
+  "n": 3,
+  "mode": "list",
+  "off": 0,
+  "every": 3,
+  "src": "wiki"
+ },
+ {
+  "slug": "maim-the-sky-slay-the-sun-hub",
+  "title": "Maim the Sky, Slay the Sun",
+  "date": "2018-01",
+  "author": "Pedantique",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "forgetting-the-number-of-dead-stars",
+     "thirty-pieces-of-silver-plus-inflationary-costs",
+     "under-a-baleful-sky",
+     "quarterly-performance-review",
+     "in-the-manner-of-a-bad-apple",
+     "gall-gulls-gallows",
+     "thousand-tooth-rat-trap",
+     "salt-the-slug-sheepdog",
+     "abject-blue-insomnia",
+     "twenty-step-death-march-to-ultrahell",
+     "staring-down-the-barrel-of-a-sun",
+     "fattening-stacks-fashioning-stones",
+     "floral-arrangement-fundamentals",
+     "hell-in-a-handcasket",
+     "scp-910",
+     "scp-3985",
+     "scp-5656",
+     "scp-4470"
+    ]
+   ]
+  ],
+  "n": 18,
+  "mode": "list",
+  "off": 0,
+  "every": 19,
+  "src": "wiki"
+ },
+ {
+  "slug": "mainline-hub",
+  "title": "Mainline Hub",
+  "date": "2014-05",
+  "author": "weizhong",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "spirit-dust",
+     "of-meetings-and-meals",
+     "trip-hammer",
+     "all-work-and-no-play",
+     "conferencing"
+    ]
+   ]
+  ],
+  "n": 5,
+  "mode": "list",
+  "off": 0,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "mantimania",
+  "title": "MANTIMANIA",
+  "date": "2025-10",
+  "author": "vilsolad",
+  "blurb": "",
+  "canons": [
+   "chaos-on-the-monolith",
+   "forgotten-memories"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "PROLOGUE (????-2001)",
+    [
+     "capital-m"
+    ]
+   ],
+   [
+    "JUST BUSINESS (2001-2021)",
+    [
+     "scp-9835",
+     "dusty-pearl",
+     "group-document-vherta-999000"
+    ]
+   ]
+  ],
+  "n": 4,
+  "mode": "list",
+  "off": 0,
+  "every": 4,
+  "src": "wiki"
+ },
+ {
+  "slug": "masks-of-nyarlathotep-hub",
+  "title": "Masks of Nyarlathotep Hub",
+  "date": "2025-02",
+  "author": "ubergoober",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "ACT I",
+    [
+     "scp-8776"
+    ]
+   ],
+   [
+    "ACT II",
+    [
+     "businessmen",
+     "names-don-t-matter"
+    ]
+   ],
+   [
+    "ACT III",
+    [
+     "answers",
+     "y-ai"
+    ]
+   ]
+  ],
+  "n": 5,
+  "mode": "list",
+  "off": 0,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "matryoshka",
+  "title": "Matryoshka",
+  "date": "2016-09",
+  "author": "(account deleted)",
+  "blurb": "",
+  "canons": [
+   "the-coldest-war"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "matryoshka-prologue",
+     "matryoshka-one",
+     "matryoshka-two",
+     "matryoshka-three",
+     "matryoshka-four",
+     "matryoshka-five",
+     "matryoshka-six",
+     "matryoshka-seven",
+     "matryoshka-eight",
+     "matryoshka-nine",
+     "matryoshka-epilogue"
+    ]
+   ]
+  ],
+  "n": 11,
+  "mode": "list",
+  "off": 0,
+  "every": 11,
+  "src": "wiki"
+ },
+ {
+  "slug": "misfire-hub",
+  "title": "Misfire Hub",
+  "date": "2018-02",
+  "author": "Decibelles",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "First-Hand Accounts",
+    [
+     "flick-of-the-wrist",
+     "now-i-m-here",
+     "stone-cold-crazy"
+    ]
+   ],
+   [
+    "Tangentially-Related Reference Materials",
+    [
+     "scp-092",
+     "scp-2620"
+    ]
+   ]
+  ],
+  "n": 5,
+  "mode": "list",
+  "off": 1,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "mississippi-blues",
+  "title": "Mississippi Blues",
+  "date": "2026-08",
+  "author": "Vevind",
+  "blurb": "Mississippi's a real bore these days, didn't always used to be that way, y'know?",
+  "canons": [],
+  "gois": [
+   "unusual-incidents-unit"
+  ],
+  "sections": [],
+  "n": 0,
+  "mode": "prose",
+  "off": 0,
+  "every": 0,
+  "src": "wiki"
+ },
+ {
+  "slug": "monarchs-and-maestros",
+  "title": "Monarchs and Maestros Hub",
+  "date": "2024-07",
+  "author": "MontagueETC",
+  "blurb": "From one death to another.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Act 1: Paper Chimeras",
+    [
+     "scp-7408",
+     "dr-kondraki-cut-up-while-thinking",
+     "a-betamax-suicide-note",
+     "scp-7586",
+     "exquisite-blast",
+     "scp-9255",
+     "cross-testing"
+    ]
+   ]
+  ],
+  "n": 7,
+  "mode": "list",
+  "off": 0,
+  "every": 7,
+  "src": "wiki"
+ },
+ {
+  "slug": "mtf-theta-90-hub-page",
+  "title": "MTF Theta-90 Hub Page",
+  "date": "2014-01",
+  "author": "Mr Carbon",
+  "blurb": "Life in Mobile Task Force Theta-90",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Introducing MTF Theta-90",
+    [
+     "mtf-theta-90-character-profiles"
+    ]
+   ],
+   [
+    "Tales",
+    [
+     "sunday-0600-mobile-task-force-central-training-facility",
+     "wednesday-3pm-the-office-of-paul-dimaccio",
+     "monday-6am-escherville-facility-two",
+     "friday-2200-paul-dimaccios-personal-quarters",
+     "running-out",
+     "four-years-later",
+     "mtf-theta-90-turning-points"
+    ]
+   ],
+   [
+    "SCPs that Employ or Mention MTF Theta-90",
+    [
+     "scp-914",
+     "scp-1707",
+     "scp-2601",
+     "scp-3307",
+     "scp-4037",
+     "scp-4096",
+     "scp-4104",
+     "scp-8273",
+     "scp-9001"
+    ]
+   ],
+   [
+    "Cameos, jokes and other stuff",
+    [
+     "tuesday-11am-conference-room-three",
+     "the-character-assassination-of-site-666-by-theta-90-a-poem"
+    ]
+   ]
+  ],
+  "n": 19,
+  "mode": "list",
+  "off": 0,
+  "every": 21,
+  "src": "wiki"
+ },
+ {
+  "slug": "muckscape-megagrid-mayhem-hub",
+  "title": "MUCKSCAPE / MEGAGRID / MAYHEM",
+  "date": "2019-10",
+  "author": "Pedantique",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "midnight-naught-exact",
+     "prime-civil-dawn",
+     "fleas-roaches-and-gnats",
+     "like-the-moons-drifting-carcass",
+     "crows-call-calamitous",
+     "scp-3649"
+    ]
+   ]
+  ],
+  "n": 6,
+  "mode": "list",
+  "off": 0,
+  "every": 6,
+  "src": "wiki"
+ },
+ {
+  "slug": "mundus-liberari",
+  "title": "Mundus, Liberari Hub",
+  "date": "2022-01",
+  "author": "(account deleted)",
+  "blurb": "The World, To Be Freed.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Main Entries",
+    [
+     "re-kto-0001-bellfather",
+     "ecce-insurgo",
+     "re-kto-1466-houdini",
+     "occult-warfare",
+     "project-proposal-2024-878-die-gedanken-sind-frei",
+     "razing-of-the-library",
+     "patris-et-filia",
+     "collective-punishment",
+     "nalka-union",
+     "first-shots",
+     "re-kto-7890-valentinus"
+    ]
+   ],
+   [
+    "Hoping Machines",
+    [
+     "scp-8068"
+    ]
+   ]
+  ],
+  "n": 12,
+  "mode": "list",
+  "off": 1,
+  "every": 12,
+  "src": "wiki"
+ },
+ {
+  "slug": "murderoftheuniverse",
+  "title": "MURDER OF THE UNIVERSE",
+  "date": "2025-02",
+  "author": "TroutMaskReplica",
+  "blurb": "I am the weather, I am the sun's heat. I am the night sky.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "open-water",
+     "the-acrid-corpse",
+     "the-last-oasis",
+     "scp-8121",
+     "am-i-in-heaven"
+    ]
+   ]
+  ],
+  "n": 5,
+  "mode": "prose",
+  "off": 0,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "murphy-law-hub",
+  "title": "Murphy Law in... Murphy Law's Hub!",
+  "date": "2017-11",
+  "author": "(account deleted)",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "ANY ATTEMPT TO MODIFY THESE FILES WITHOUT APPROPRIATE AUTHORIZATION WILL BE LOGGED AND LEAD TO ME COMPLAININ…",
+    [
+     "scp-423"
+    ]
+   ],
+   [
+    "There Is No Canon",
+    [
+     "scp-3043",
+     "scp-3143",
+     "never-metafictional-character-i-liked",
+     "scp-4028",
+     "recovered-media-the-hard-boiled-adventures-of-murphy-law"
+    ]
+   ],
+   [
+    "Other Stories",
+    [
+     "scp-7043",
+     "scp-8643",
+     "scp-9643"
+    ]
+   ],
+   [
+    "Related Materials",
+    [
+     "scp-2747"
+    ]
+   ]
+  ],
+  "n": 10,
+  "mode": "list",
+  "off": 1,
+  "every": 10,
+  "src": "wiki"
+ },
+ {
+  "slug": "necropotence",
+  "title": "Necropotence Hub",
+  "date": "2020-10",
+  "author": "minmin",
+  "blurb": "",
+  "canons": [
+   "the-coldest-war"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "Entries",
+    [
+     "as-on-a-darkling-plain",
+     "everywhere-ny",
+     "ignorant-armies-clash-by-night",
+     "mile-high-club"
+    ]
+   ]
+  ],
+  "n": 4,
+  "mode": "list",
+  "off": 0,
+  "every": 4,
+  "src": "wiki"
+ },
+ {
+  "slug": "new",
+  "title": "The Adventures of Lord Blackwood, Explorer and Gentleman",
+  "date": "2018-02",
+  "author": "Smapti",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-1867",
+     "from-the-diaries-of-lord-blackwood",
+     "lord-blackwood-and-the-great-tarasque-hunt-of-83",
+     "recollections-of-a-gentleman-s-gentleman",
+     "lord-blackwood-and-the-thaumaturge-the-t",
+     "lord-blackwood-astro-naut",
+     "lord-blackwood-and-the-land-of-the-unclean",
+     "lord-blackwood-s-revenge",
+     "anachronisms",
+     "ask-lord-blackwood",
+     "a-most-unfortunate-reunion",
+     "uncle-teddy",
+     "when-one-reaches-the-end",
+     "scp-319",
+     "a-keter-kinda-christmas",
+     "goc-tale-sequence-strike",
+     "starch-and-cream",
+     "histories",
+     "askinate-herr-spankoflex",
+     "scp-2783",
+     "habil-and-qabil",
+     "nx-03",
+     "the-sea-slug-and-the-showman",
+     "scp-3292",
+     "scp-3560-j",
+     "zetetic-bulletin-wu-xing-iris",
+     "the-amazonian-hind",
+     "lord-blackwood-in-the-land-of-wonder",
+     "found-in-a-dusty-corner-of-the-library",
+     "scylla-and-charybdis",
+     "scp-3790-j",
+     "a-true-account-of-the-events-of-1666",
+     "scp-6500",
+     "lord-blackwood-in-amon-iram",
+     "rounderhouse-gold-proposal",
+     "scp-6621",
+     "scp-6132",
+     "scp-6835",
+     "rounderhouse-jade-proposal",
+     "anomaly-243-the-neamh-mairbh",
+     "scp-8899",
+     "scp-8343",
+     "scp-8001",
+     "echoes-of-shattered-erikesh",
+     "triskaidekatych",
+     "for-all-mankind-to-behold-in-awe",
+     "scp-8181",
+     "new-from-atf-cryptid-currency",
+     "76-stopwatch"
+    ]
+   ]
+  ],
+  "n": 49,
+  "mode": "list",
+  "off": 2,
+  "every": 49,
+  "src": "wiki"
+ },
+ {
+  "slug": "new-age-hub",
+  "title": "New Age - a Tale",
+  "date": "2013-08",
+  "author": "SRegan",
+  "blurb": "While Tosui was making vinegar, one of the beggars gave him a picture of the Buddha. Tosui hung it on the wall of his hut and put a sign beside it. The sign read:\n\"Mr. Amida Buddha: This little room is quite narrow. I can let you remain as a transient. But don't think I am asking you to help me to be reborn in your paradise.\"",
+  "canons": [],
+  "gois": [
+   "chaos-insurgency"
+  ],
+  "sections": [
+   [
+    "New Age",
+    [
+     "new-age-1",
+     "new-age-2",
+     "new-age-3"
+    ]
+   ],
+   [
+    "SCPs and Tales referenced, derivative elements and Author's Notes—spoiler-heavy",
+    [
+     "scp-722",
+     "scp-773",
+     "scp-287",
+     "scp-432",
+     "scp-1199",
+     "scp-1728",
+     "surprise-happy-birthday-2",
+     "black-white-black-white-black-white-black-white-black-white",
+     "d-class-orientation",
+     "a-man-at-the-top-of-his-profession",
+     "slate-thunder",
+     "first-seed",
+     "grasp-on-reality",
+     "clef101"
+    ]
+   ]
+  ],
+  "n": 17,
+  "mode": "list",
+  "off": 0,
+  "every": 29,
+  "src": "wiki"
+ },
+ {
+  "slug": "new-york-minute-hub",
+  "title": "Manhattan Crisis: New York Minute Hub",
+  "date": "2025-05",
+  "author": "Uncle Nicolini",
+  "blurb": "",
+  "canons": [],
+  "gois": [
+   "chaos-insurgency",
+   "global-occult-coalition",
+   "horizon-initiative",
+   "prometheus"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "kte-1221-parallax-nacl-carcinoma",
+     "as-it-happened",
+     "in-your-heart",
+     "point-counterpoint",
+     "all-quiet-on-the-wall-street-front",
+     "scp-8911"
+    ]
+   ]
+  ],
+  "n": 6,
+  "mode": "list",
+  "off": 0,
+  "every": 6,
+  "src": "wiki"
+ },
+ {
+  "slug": "no-gamer-left-behind-hub",
+  "title": "No Gamer Left Behind Hub",
+  "date": "2026-08",
+  "author": "fishqueen",
+  "blurb": "",
+  "canons": [],
+  "gois": [
+   "gamers-against-weed"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "ohm-sweet-ohm",
+     "computer-love"
+    ]
+   ]
+  ],
+  "n": 2,
+  "mode": "prose",
+  "off": 0,
+  "every": 2,
+  "src": "wiki"
+ },
+ {
+  "slug": "no-love-hub",
+  "title": "No Love For a Dead Man - Hub",
+  "date": "2024-07",
+  "author": "kingofmice",
+  "blurb": "“If I say something real sappy will it kill the mood?”",
+  "canons": [],
+  "gois": [
+   "nobody"
+  ],
+  "sections": [
+   [
+    "Starring Dr. Benjamin Kondraki (as A Dead Man)",
+    [
+     "yesterday",
+     "the-king-is-dead",
+     "portraits-of-your-father",
+     "blackened",
+     "incident-4166-b"
+    ]
+   ],
+   [
+    "Starring: Dr. Charles Gears (as Nobody in Particular) and Dr. Alto Clef (as SCP-4231-B)",
+    [
+     "tomorrow-and-tomorrow-and-tomorrow"
+    ]
+   ]
+  ],
+  "n": 6,
+  "mode": "list",
+  "off": 0,
+  "every": 10,
+  "src": "wiki"
+ },
+ {
+  "slug": "no-wave",
+  "title": "No Wave Hub",
+  "date": "2026-06",
+  "author": "TroutMaskReplica",
+  "blurb": "Lesson No. 1 for the New Artist",
+  "canons": [],
+  "gois": [
+   "are-we-cool-yet"
+  ],
+  "sections": [
+   [
+    "Articles",
+    [
+     "scp-9371",
+     "project-consonance",
+     "nalkan-art-exhibit",
+     "3portsplaysitself",
+     "groupofseventeen",
+     "scp-l804",
+     "portal-to-venus",
+     "a-million-pictures-of-the-ocean-song-of-the-gulls",
+     "prisonerinyourskull",
+     "redvelvetwound",
+     "the-world-looks-red-the-world-looks-black",
+     "untitled-2023",
+     "scp-l499"
+    ]
+   ]
+  ],
+  "n": 13,
+  "mode": "list",
+  "off": 0,
+  "every": 13,
+  "src": "wiki"
+ },
+ {
+  "slug": "nobody-dies-at-dawn-hub",
+  "title": "Nobody Dies At Dawn Hub",
+  "date": "2025-02",
+  "author": "Ralliston",
+  "blurb": "",
+  "canons": [
+   "from-120s-archives",
+   "man-who-wasnt-there"
+  ],
+  "gois": [
+   "broken-god",
+   "nobody",
+   "sarkic"
+  ],
+  "sections": [
+   [
+    "The Shattered Path",
+    [
+     "laid-in-blood",
+     "my-name-is-no-one",
+     "favoured-son",
+     "empty-trail",
+     "scp-8472"
+    ]
+   ],
+   [
+    "The World at Large",
+    [
+     "a-baptism-of-fire",
+     "a-faerie-tale-of-twin-queens",
+     "fragments-regarding-legate-trunnion-apostate",
+     "fret-not-dear-heart",
+     "echoes-of-shattered-erikesh",
+     "mother-who-demands-ones-toes",
+     "scp-217",
+     "scp-2095",
+     "scp-2406"
+    ]
+   ]
+  ],
+  "n": 14,
+  "mode": "list",
+  "off": 0,
+  "every": 14,
+  "src": "wiki"
  },
  {
   "slug": "non-prophet-organization-hub",
@@ -1465,7 +5957,53 @@
   "n": 5,
   "mode": "list",
   "off": 1,
-  "every": 5
+  "every": 5,
+  "src": "dataset"
+ },
+ {
+  "slug": "north-star-hub",
+  "title": "North Star",
+  "date": "2021-07",
+  "author": "DrDapper",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "> Latest Installment <",
+    [
+     "7-levels-of-17"
+    ]
+   ],
+   [
+    "> Table of Contents <",
+    [
+     "the-scottish-goliath",
+     "the-minutemen",
+     "brink-of-hysteria",
+     "scp-6303",
+     "bright-sunny-south-part-1",
+     "beige-folder",
+     "operation-galvanic-ukulele",
+     "the-area10-massacre",
+     "after-action-report-operation-thermopylae",
+     "we-concerned-few"
+    ]
+   ],
+   [
+    "> Spoiler Tab <",
+    [
+     "scp-4217",
+     "prisoners",
+     "scp-105"
+    ]
+   ]
+  ],
+  "n": 14,
+  "mode": "list",
+  "off": 0,
+  "every": 18,
+  "src": "wiki"
  },
  {
   "slug": "nothing-to-fear-hub",
@@ -1509,7 +6047,1187 @@
   "n": 17,
   "mode": "list",
   "off": 0,
-  "every": 19
+  "every": 19,
+  "src": "dataset"
+ },
+ {
+  "slug": "now-the-serpent",
+  "title": "Now, The Serpent",
+  "date": "2022-10",
+  "author": "Jerden",
+  "blurb": "A Tale Series about the Serpent's Hand, what they stand for, and who they stand against. The Anomalous is on the Rise! You cannot hold back the Future forever…",
+  "canons": [],
+  "gois": [
+   "serpents-hand"
+  ],
+  "sections": [
+   [
+    "The Library",
+    [
+     "pleasing-to-the-eye",
+     "desired-to-become-wise",
+     "more-cunning-than-any-beast",
+     "you-shall-not-die",
+     "your-eyes-shall-be-opened",
+     "become-like-god",
+     "knowing-good-and-evil",
+     "the-past-is-never-dead",
+     "hid-from-the-presence",
+     "the-serpent-deceived",
+     "fruit-of-knowledge",
+     "the-last-daughter-of-daevon",
+     "the-emperor-of-many-voices",
+     "oroks-ball"
+    ]
+   ]
+  ],
+  "n": 14,
+  "mode": "list",
+  "off": 0,
+  "every": 21,
+  "src": "wiki"
+ },
+ {
+  "slug": "nsfw-activities-hub",
+  "title": "Not Safe For Work Activities Hub",
+  "date": "2026-08",
+  "author": "stellyfins",
+  "blurb": "Nothing lewd here, just workplace safety.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "burning-down-the-house-cci",
+     "cci-49-2024",
+     "cci-hs-202242"
+    ]
+   ]
+  ],
+  "n": 3,
+  "mode": "list",
+  "off": 0,
+  "every": 3,
+  "src": "wiki"
+ },
+ {
+  "slug": "of-an-endless-hunt",
+  "title": "Of an Endless Hunt",
+  "date": "2017-04",
+  "author": "rumetzen",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "ofanendlesshunt-partone-alltheworldwillbeyourenemy",
+     "ofanendlesshunt-parttwo-rites-of-passage",
+     "ofanendlesshunt-partthree-riddlesfromthedark",
+     "ofanendlesshunt-partfour-livingthroughshatteredglass",
+     "ofanendlesshunt-partfive-theprisoner",
+     "ofanendlesshunt-partsix-trueplacesneverare",
+     "ofanendlesshunt-partseven-andwhenevertheycatchyou",
+     "wasting",
+     "eh9-ride-the-dragon"
+    ]
+   ]
+  ],
+  "n": 9,
+  "mode": "list",
+  "off": 0,
+  "every": 9,
+  "src": "wiki"
+ },
+ {
+  "slug": "olympia-project",
+  "title": "Olympia Project",
+  "date": "2008-12",
+  "author": "Kain Pathos Crow",
+  "blurb": "Project Aims: To successfully create an artificial humanoid through the use of several SCPs, and use it to the benefit of the Foundation.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "SCP Utilised",
+    [
+     "scp-040",
+     "scp-143",
+     "scp-148",
+     "scp-158",
+     "scp-291",
+     "scp-500",
+     "scp-542",
+     "scp-914"
+    ]
+   ],
+   [
+    "Refining and Altering Procedures",
+    [
+     "experiment-log-158-ag",
+     "experiment-log-914-theta",
+     "experiment-log-040"
+    ]
+   ],
+   [
+    "Integration Procedures",
+    [
+     "olympia-integration-experiment-alpha",
+     "olympia-integration-experiment-beta",
+     "olympia-integration-experiment-gamma"
+    ]
+   ],
+   [
+    "Mass Production",
+    [
+     "production-model-changes-and-procedures"
+    ]
+   ]
+  ],
+  "n": 15,
+  "mode": "list",
+  "off": 2,
+  "every": 15,
+  "src": "wiki"
+ },
+ {
+  "slug": "oss-goicon-2026",
+  "title": "Three Queer Deer Team Hub",
+  "date": "2026-08",
+  "author": "AstralNavigator",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "the-codex-sidereal-primer",
+     "death-and-elias-crowe",
+     "sterling-sunshine"
+    ]
+   ]
+  ],
+  "n": 3,
+  "mode": "prose",
+  "off": 0,
+  "every": 3,
+  "src": "wiki"
+ },
+ {
+  "slug": "outfounded-hub",
+  "title": "Outfounded Hub",
+  "date": "2020-10",
+  "author": "Greyve",
+  "blurb": "",
+  "canons": [
+   "unfounded"
+  ],
+  "gois": [
+   "global-occult-coalition"
+  ],
+  "sections": [
+   [
+    "STORIES",
+    [
+     "a-sympathetic-thorn-in-the-side-of-the-bookburners",
+     "halfway-lost",
+     "in-the-dark",
+     "within-the-walls-i"
+    ]
+   ]
+  ],
+  "n": 4,
+  "mode": "list",
+  "off": 0,
+  "every": 4,
+  "src": "wiki"
+ },
+ {
+  "slug": "over-time-hub",
+  "title": "The Breach Goes On: Over Time Hub",
+  "date": "2025-09",
+  "author": "HarryBlank",
+  "blurb": "",
+  "canons": [
+   "on-guard-43"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "ACT I",
+    [
+     "61-dividing-time",
+     "62-things-that-pass",
+     "63-de-tijd-vliegt",
+     "64-idiosynchrony",
+     "65-plot-treason-and-gunpowder",
+     "66-kaleidoscope",
+     "67-terminal-terminal"
+    ]
+   ],
+   [
+    "ACT II",
+    [
+     "68-ones-own",
+     "69-red-shift",
+     "70-parasite",
+     "71-overlude",
+     "72-red-letter-days",
+     "73-better-dead",
+     "74-killing-time"
+    ]
+   ],
+   [
+    "ACT III",
+    [
+     "75-spring-forward",
+     "76-stopwatch"
+    ]
+   ]
+  ],
+  "n": 16,
+  "mode": "list",
+  "off": 0,
+  "every": 16,
+  "src": "wiki"
+ },
+ {
+  "slug": "palingenesis-hub",
+  "title": "Palingenesis Hub",
+  "date": "2026-02",
+  "author": "(account deleted)",
+  "blurb": "“We have slain Wonder on the green field; nay, we have dined on Her fragrant corpse and proclaimed that all is well.”",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "☿",
+    [
+     "scp-9499",
+     "saturn-deers-web-center-archive",
+     "i-can-hate-me-harder-than-you-can"
+    ]
+   ]
+  ],
+  "n": 3,
+  "mode": "list",
+  "off": 0,
+  "every": 3,
+  "src": "wiki"
+ },
+ {
+  "slug": "paul-tree-hub",
+  "title": "Paul Tree Series Hub",
+  "date": "2025-10",
+  "author": "fluxman",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "paul-tree-0",
+     "paul-tree-1",
+     "paul-tree-2",
+     "paul-tree-3",
+     "paul-tree-4",
+     "paul-tree-5",
+     "paul-tree-6"
+    ]
+   ]
+  ],
+  "n": 7,
+  "mode": "list",
+  "off": 1,
+  "every": 7,
+  "src": "wiki"
+ },
+ {
+  "slug": "pdps",
+  "title": "Public Domain Protection Service Hub",
+  "date": "2018-03",
+  "author": "ObserverSeptember",
+  "blurb": "As you may have guessed, the central theme or recurring elements of all PDPS articles are copyright and the preservation of knowledge.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Articles",
+    [
+     "scp-3185",
+     "scp-3285",
+     "antipublicinterference",
+     "fortherepublic"
+    ]
+   ]
+  ],
+  "n": 4,
+  "mode": "list",
+  "off": 0,
+  "every": 4,
+  "src": "wiki"
+ },
+ {
+  "slug": "peregrine",
+  "title": "Peregrine",
+  "date": "2014-07",
+  "author": "Jacob Conwell",
+  "blurb": "",
+  "canons": [
+   "third-law",
+   "twisted-pines"
+  ],
+  "gois": [
+   "anderson"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "last-meetings",
+     "simple-sketches",
+     "products",
+     "building-up",
+     "tearing-down"
+    ]
+   ]
+  ],
+  "n": 5,
+  "mode": "list",
+  "off": 0,
+  "every": 6,
+  "src": "wiki"
+ },
+ {
+  "slug": "phantom-queen-hub",
+  "title": "The Phantom Queen",
+  "date": "2025-10",
+  "author": "DrGrimoire",
+  "blurb": "",
+  "canons": [
+   "third-law"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "our-lady-of-sorrows",
+     "mirror-isnt-big-enough",
+     "drowning-lessons",
+     "fate-of-avalon",
+     "your-ashes-under-my-skin"
+    ]
+   ]
+  ],
+  "n": 5,
+  "mode": "list",
+  "off": 0,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "pieklo-cycow-hub",
+  "title": "Cyców's Hell Hub",
+  "date": "2022-07",
+  "author": "Zygard",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-8086",
+     "projekt-aplikacji-malphas"
+    ]
+   ]
+  ],
+  "n": 2,
+  "mode": "prose",
+  "off": 0,
+  "every": 2,
+  "src": "wiki"
+ },
+ {
+  "slug": "pinocchio-hub",
+  "title": "Pinocchio Hub",
+  "date": "2025-03",
+  "author": "WhoIsCthulhu",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "flesh-and-wood",
+     "scp-8206",
+     "scp-8206-psych-evals",
+     "the-puppet",
+     "the-real-boy",
+     "scp-8092"
+    ]
+   ]
+  ],
+  "n": 6,
+  "mode": "list",
+  "off": 0,
+  "every": 6,
+  "src": "wiki"
+ },
+ {
+  "slug": "pointtwo",
+  "title": "Point Two Hub",
+  "date": "2025-11",
+  "author": "naeldavi",
+  "blurb": "",
+  "canons": [],
+  "gois": [
+   "chaos-insurgency"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "pointtwoprologue",
+     "pointtwo1",
+     "pointtwo2",
+     "pointtwo3",
+     "pointtwo4"
+    ]
+   ]
+  ],
+  "n": 5,
+  "mode": "list",
+  "off": 0,
+  "every": 6,
+  "src": "wiki"
+ },
+ {
+  "slug": "poor-foundation-hub",
+  "title": "poorFoundation Hub",
+  "date": "2026-09",
+  "author": "WhoIsCthulhu",
+  "blurb": "\"I want to inspire change, start a dialogue, something. I made a mistake, I know that now. And I want to try to correct it.\"",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Articles",
+    [
+     "no-such-thing-as-a-free-lunch",
+     "marquee-moon",
+     "scp-8782"
+    ]
+   ]
+  ],
+  "n": 3,
+  "mode": "list",
+  "off": 0,
+  "every": 3,
+  "src": "wiki"
+ },
+ {
+  "slug": "portland-vice",
+  "title": "Portland Vice",
+  "date": "2018-10",
+  "author": "Jacob Conwell",
+  "blurb": "",
+  "canons": [
+   "third-law",
+   "twisted-pines"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "Series Overview",
+    [
+     "closed-game",
+     "middlegame",
+     "breakthrough",
+     "bare-king",
+     "all-hallows"
+    ]
+   ]
+  ],
+  "n": 5,
+  "mode": "list",
+  "off": 1,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "postfoundationhub",
+  "title": "Post-Foundation (Hub)",
+  "date": "2021-06",
+  "author": "redredred",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "postfoundation1",
+     "postfoundation2",
+     "postfoundation3",
+     "postfoundation4",
+     "postfoundation5",
+     "postfoundation6",
+     "postfoundation7",
+     "postfoundation8",
+     "postfoundation9",
+     "postfoundation10",
+     "postfoundation11",
+     "postfoundation12",
+     "postfoundation13",
+     "postfoundation14"
+    ]
+   ]
+  ],
+  "n": 14,
+  "mode": "list",
+  "off": 0,
+  "every": 14,
+  "src": "wiki"
+ },
+ {
+  "slug": "project-palisade",
+  "title": "Project Palisade Hub",
+  "date": "2018-06",
+  "author": "weizhong",
+  "blurb": "To compromise this would mean nothing less than the death of all reality. The lives of too many innocents rely on us to allow this last moral quibble to undermine all that we have done.\nThey must die in the dark, so that we can continue to defend the light.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Act 1: Fear in the Neighborhood",
+    [
+     "uiu-file-2017-003",
+     "good-fences-make-good-neighbors"
+    ]
+   ],
+   [
+    "Act 2: Mirrors and Ways",
+    [
+     "scp-3818",
+     "daffodils",
+     "tko"
+    ]
+   ],
+   [
+    "Act 3: Ants and Rocks",
+    [
+     "wmdd-s-proposal",
+     "scp-3591",
+     "in-the-end"
+    ]
+   ]
+  ],
+  "n": 8,
+  "mode": "list",
+  "off": 0,
+  "every": 8,
+  "src": "wiki"
+ },
+ {
+  "slug": "project-paragon-hub",
+  "title": "Project PARAGON",
+  "date": "2021-08",
+  "author": "djkaktus",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-4812",
+     "scp-2932",
+     "scp-2254",
+     "scp-4840",
+     "scp-6666",
+     "scp-6765",
+     "scp-073",
+     "scp-076",
+     "scp-140",
+     "scp-343",
+     "scp-1000",
+     "scp-3790",
+     "taboo",
+     "scp-4008",
+     "lily-s-proposal"
+    ]
+   ]
+  ],
+  "n": 15,
+  "mode": "list",
+  "off": 0,
+  "every": 15,
+  "src": "wiki"
+ },
+ {
+  "slug": "qui-lactis",
+  "title": "NIGHTFALL: Qui Lactis",
+  "date": "2023-04",
+  "author": "LORDXVNV",
+  "blurb": "",
+  "canons": [
+   "nightfall"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "The Main Story",
+    [
+     "scp-6248",
+     "the-phlegmfont",
+     "the-road-to-arcana",
+     "the-arcana-institute-of-xerophylla",
+     "three-lessons-for-endless-night",
+     "names-stricken"
+    ]
+   ],
+   [
+    "Tales from the Arcana Institute",
+    [
+     "scp-7375"
+    ]
+   ],
+   [
+    "Tales from the Land of Hinomoto",
+    [
+     "eikyu-monogatari"
+    ]
+   ],
+   [
+    "Characters",
+    [
+     "bury-the-light"
+    ]
+   ],
+   [
+    "Arcana",
+    [
+     "scp-6987",
+     "scp-8008",
+     "scp-7069",
+     "scp-7997",
+     "scp-6572",
+     "scp-1337-ex",
+     "scp-6433",
+     "scp-7715",
+     "scp-8616",
+     "scp-7335",
+     "scp-8814",
+     "scp-7576",
+     "scp-9013",
+     "scp-1392",
+     "scp-6510",
+     "scp-7634",
+     "scp-7272",
+     "top-5-colleges",
+     "cck-class-copyright-infringement-lawsuit-scenario",
+     "requiem-for-ice-spider",
+     "a-faerie-tale-of-twin-queens",
+     "taking-the-reinz",
+     "mountainous-essophysics",
+     "insurance",
+     "ecce-insurgo",
+     "garfield-timeline",
+     "unreal-sushi",
+     "miau-miau-asheworth-kun",
+     "muddy-skies",
+     "the-smog-wastes-of-neoamerica",
+     "life-can-be-a-surprise",
+     "man-on-a-mission",
+     "capslock-collusion",
+     "teamwork",
+     "we-live-in-a-society",
+     "cheesus",
+     "but-never-trees",
+     "ghost-signal",
+     "thereven-germination",
+     "deusvolt",
+     "spc-6500",
+     "spc-105",
+     "spc-1981",
+     "hist-327-comparative-mythology-of-mekhanism-and-naelkae",
+     "spc-1258",
+     "spc-179",
+     "kte-6990-mendel-nimuebusterchild",
+     "project-proposal-2007-012",
+     "milkssiah",
+     "a-wandsman-in-a-vegas-cathouse",
+     "spc-166",
+     "a-wandsman-in-the-greaze-lands-of-kansas",
+     "1-staar-cuttt-2-5",
+     "spc-1548",
+     "spc-cn-985"
+    ]
+   ],
+   [
+    "Collaborations!",
+    [
+     "scp-6301",
+     "scp-6447",
+     "scp-6483",
+     "scp-6542",
+     "scp-6596",
+     "scp-6760",
+     "a-nightmare-dreary",
+     "the-bathrooms-wiki"
+    ]
+   ]
+  ],
+  "n": 72,
+  "mode": "list",
+  "off": 1,
+  "every": 72,
+  "src": "wiki"
+ },
+ {
+  "slug": "quinn-law-hub",
+  "title": "Dead Reckoning",
+  "date": "2023-04",
+  "author": "Anorrack",
+  "blurb": "A politician kidnapped, a gang on the run. A lone necromancer left picking up the pieces. Quinn Law in: DEAD RECKONING.",
+  "canons": [
+   "third-law"
+  ],
+  "gois": [
+   "unusual-incidents-unit"
+  ],
+  "sections": [
+   [
+    "Secret",
+    [
+     "dead-men-tell-tales",
+     "dead-mans-secrets",
+     "digging-two-graves",
+     "he-called-me-his-son",
+     "spellbound-and-hellbound",
+     "transposthumousism",
+     "uiu-file-2003-112",
+     "uiu-file-2024-092"
+    ]
+   ]
+  ],
+  "n": 8,
+  "mode": "list",
+  "off": 0,
+  "every": 11,
+  "src": "wiki"
+ },
+ {
+  "slug": "ragnarok-hub",
+  "title": "Ragnarok Hub",
+  "date": "2018-06",
+  "author": "Karnickel",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-3488",
+     "0-texts-found",
+     "scp-3378",
+     "ragnarok",
+     "the-curious-incident-of-the-contradictory-crocodile"
+    ]
+   ]
+  ],
+  "n": 5,
+  "mode": "list",
+  "off": 0,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "rammer-jammer-yellow-hammer-hub",
+  "title": "Rammer Jammer Yellow Hammer Hub",
+  "date": "2014-10",
+  "author": "Doctor Cimmerian",
+  "blurb": "",
+  "canons": [
+   "the-gulf"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-2047",
+     "scp-2065",
+     "scp-2131",
+     "scp-2713",
+     "scp-2913",
+     "sex-success-and-targeted-advertising",
+     "the-art-of-coping-with-anomalies-in-the-gulf-region",
+     "the-one-thousand-deaths-of-pastor-lewis-robinson-the-ethics",
+     "the-north-pole",
+     "that-ll-do-pig-that-ll-do"
+    ]
+   ]
+  ],
+  "n": 10,
+  "mode": "list",
+  "off": 0,
+  "every": 10,
+  "src": "wiki"
+ },
+ {
+  "slug": "red-on-white",
+  "title": "Red On White Hub",
+  "date": "2026-05",
+  "author": "ecdysister",
+  "blurb": "In which two very lonely women talk to each other through a containment cell's speaker system.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Entries",
+    [
+     "alex-avon-s-first-kiss",
+     "piece-by-piece",
+     "silhouettes",
+     "me-and-my-concrete-box"
+    ]
+   ]
+  ],
+  "n": 4,
+  "mode": "list",
+  "off": 0,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "red-queen-s-race",
+  "title": "RED QUEEN'S RACE",
+  "date": "2025-03",
+  "author": "Intercedent",
+  "blurb": "Hyperstrategy, hyperpolitics. Hyperviolence.",
+  "canons": [],
+  "gois": [
+   "chaos-insurgency",
+   "global-occult-coalition"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "strikefall",
+     "handjob",
+     "fallout",
+     "gunsight",
+     "greenlight"
+    ]
+   ]
+  ],
+  "n": 5,
+  "mode": "prose",
+  "off": 0,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "redtape",
+  "title": "REDTAPE HUB",
+  "date": "2023-09",
+  "author": "Rounderhouse",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "STORIES",
+    [
+     "vagabond-actual",
+     "scp-5549",
+     "lord-blackwood-in-amon-iram",
+     "rounderhouse-gold-proposal",
+     "interregnum-blackstar",
+     "burnt-offerings",
+     "delta-wave",
+     "scp-6781",
+     "scp-4776",
+     "scp-7545",
+     "scp-8969",
+     "rounderhouse-jade-proposal",
+     "interregnum-everest",
+     "heresy",
+     "scp-8600",
+     "scp-5900",
+     "scp-6000",
+     "warpaint",
+     "lamb-of-god",
+     "farhan-s-flame",
+     "tempest",
+     "airgap",
+     "humint",
+     "replica",
+     "autopsy",
+     "segfault",
+     "daemon",
+     "fishskin",
+     "rounderhouse-bone-proposal",
+     "rounderhouse-proposal"
+    ]
+   ]
+  ],
+  "n": 30,
+  "mode": "list",
+  "off": 1,
+  "every": 30,
+  "src": "wiki"
+ },
+ {
+  "slug": "remembrance",
+  "title": "Remembrance",
+  "date": "2013-01",
+  "author": "RJB_R",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "days-gone-by",
+     "in-symphony",
+     "lonwood",
+     "reunion",
+     "bicentennial",
+     "the-year-that-it-was",
+     "scp-1833",
+     "scp-332",
+     "scp-1423"
+    ]
+   ]
+  ],
+  "n": 9,
+  "mode": "list",
+  "off": 1,
+  "every": 9,
+  "src": "wiki"
+ },
+ {
+  "slug": "rest-in-fever-hub",
+  "title": "Rest In Fever Hub",
+  "date": "2026-08",
+  "author": "Heck_Tech",
+  "blurb": "\"And then I saw the Goddess Fever, who held the World in her hands.\"",
+  "canons": [],
+  "gois": [
+   "febris-pharmaceuticals"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "delendases-f3b3r-x44nm-pll77",
+     "anedonia",
+     "immune-integrity",
+     "there-is-no-cure-for-a-case-of-the-mondays"
+    ]
+   ]
+  ],
+  "n": 4,
+  "mode": "list",
+  "off": 1,
+  "every": 4,
+  "src": "wiki"
+ },
+ {
+  "slug": "resurrection-his-will-be-done-hub",
+  "title": "Resurrection: His Will Be Done Hub",
+  "date": "2021-09",
+  "author": "Grigori Karpin",
+  "blurb": "",
+  "canons": [
+   "resurrection"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "Resurrection: His Will Be Done",
+    [
+     "old-faces-new-foes",
+     "a-study-in-cinnabar",
+     "scp-093-orange-test",
+     "guilt-trip",
+     "quarantine-blues",
+     "a-funny-thing-happened-on-the-way-to-the-manor",
+     "old-friends-old-sins"
+    ]
+   ]
+  ],
+  "n": 7,
+  "mode": "list",
+  "off": 1,
+  "every": 13,
+  "src": "wiki"
+ },
+ {
+  "slug": "resurrection-new-faces-hub",
+  "title": "Resurrection: New Faces Hub",
+  "date": "2020-09",
+  "author": "Grigori Karpin",
+  "blurb": "Chosen to head a new Mobile Task Force made up (at least partially) by anomalous individuals by the powers that be, Director Light has a lot of pressure on her.\nAt the same time, an anomaly beneath a Site in Yellowstone has begun to wake up.",
+  "canons": [
+   "resurrection"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "Intro",
+    [
+     "new-faces-overture"
+    ]
+   ],
+   [
+    "Arrival",
+    [
+     "recruitment-drive",
+     "welcome-to-yellowstone",
+     "a-team-you-can-maybe-trust",
+     "jolly-cooperation",
+     "light-and-the-mole",
+     "gomboc",
+     "bottom-floor",
+     "truth-lies"
+    ]
+   ],
+   [
+    "Outro",
+    [
+     "shut-it-down",
+     "tangled-web"
+    ]
+   ]
+  ],
+  "n": 11,
+  "mode": "list",
+  "off": 0,
+  "every": 12,
+  "src": "wiki"
+ },
+ {
+  "slug": "resurrection-old-foes-hub",
+  "title": "Resurrection: Old Foes Hub",
+  "date": "2020-09",
+  "author": "HarryBlank",
+  "blurb": "Over the past decade, the Foundation has spent copious time and absurd amounts of money bringing back their old tricks.\nYou can't possibly think their enemies haven't been doing that, too?",
+  "canons": [
+   "resurrection"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "Full storyline complete as of 14 Oct 2020 23:07!",
+    [
+     "blood-in-the-water",
+     "footage-recovered-from-a-private-server",
+     "such-a-shame-it-didn-t-work",
+     "him-and-the-other-him",
+     "the-siege-of-site-19",
+     "give-it",
+     "sun-sister-and-moon-champion",
+     "moose-on-the-loose",
+     "the-bowe-decommission-part-one",
+     "the-b-b-decommission",
+     "the-bowe-decommission-part-two",
+     "scenes-from-a-comprehensive-clusterfuck",
+     "the-bowe-decommission-part-three",
+     "scp-5025",
+     "broken-bowe"
+    ]
+   ]
+  ],
+  "n": 15,
+  "mode": "list",
+  "off": 0,
+  "every": 15,
+  "src": "wiki"
+ },
+ {
+  "slug": "revolution-earth",
+  "title": "Revolution Earth",
+  "date": "2020-07",
+  "author": "ch00bakka",
+  "blurb": "Romance and Betrayal in the Chaos Insurgency",
+  "canons": [],
+  "gois": [
+   "chaos-insurgency"
+  ],
+  "sections": [
+   [
+    "Table of Contents",
+    [
+     "static-in-my-attic",
+     "burned-a-hole-in-my-mind",
+     "hot-latitudes-cool-attitudes"
+    ]
+   ],
+   [
+    "Further Reading",
+    [
+     "scp-3005",
+     "scp-105"
+    ]
+   ]
+  ],
+  "n": 5,
+  "mode": "list",
+  "off": 0,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "rich-man-s-world",
+  "title": "Rich Man's World",
+  "date": "2023-07",
+  "author": "ch00bakka",
+  "blurb": "Marshall, Carter and Dark, LLC, is due for a change in management. Mr. Marshall and Mr. Carter have chosen their successors; Mr. Dark's, unfortunately, does not want the job.",
+  "canons": [
+   "third-law"
+  ],
+  "gois": [
+   "black-queen",
+   "deer-college",
+   "marshall-carter-and-dark"
+  ],
+  "sections": [
+   [
+    "Main Sequence: Iris I Was A Rich Man",
+    [
+     "when-situations-degenerate",
+     "get-out-of-her-way",
+     "they-laid-down-the-law",
+     "blind-to-the-big-surprise",
+     "latest-model-getaway-jeep",
+     "disgusting-things"
+    ]
+   ],
+   [
+    "Side Stories: Mo' Money Mo' Problems",
+    [
+     "three-times-five-equals-fifteen"
+    ]
+   ]
+  ],
+  "n": 7,
+  "mode": "list",
+  "off": 0,
+  "every": 7,
+  "src": "wiki"
  },
  {
   "slug": "rise-of-the-pit-sloth-hub",
@@ -1547,7 +7265,2280 @@
   "n": 16,
   "mode": "list",
   "off": 0,
-  "every": 17
+  "every": 17,
+  "src": "dataset"
+ },
+ {
+  "slug": "run-the-river-red-hub",
+  "title": "Run the River Red Hub",
+  "date": "2025-10",
+  "author": "Dino--Draws",
+  "blurb": "In the maw of the mountains, we lay here bleeding. All 'til the dead canary sings.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Mine Town Musings",
+    [
+     "scp-8987",
+     "scp-8988",
+     "orogenesis-file",
+     "scp-2888",
+     "scp-8306",
+     "black-lungs",
+     "scp-8446",
+     "scp-5315",
+     "scp-8411",
+     "scp-9990",
+     "scp-9404",
+     "scp-8852",
+     "scp-9455"
+    ]
+   ],
+   [
+    "Welcome to Appalachia",
+    [
+     "scp-672",
+     "scp-8007"
+    ]
+   ]
+  ],
+  "n": 15,
+  "mode": "list",
+  "off": 0,
+  "every": 16,
+  "src": "wiki"
+ },
+ {
+  "slug": "saffronsands-hub",
+  "title": "In Saffron Sands Hub",
+  "date": "2020-07",
+  "author": "(account deleted)",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-3279",
+     "scp-5413",
+     "scp-5550",
+     "lo-behold-the-tiger",
+     "scp-5903",
+     "last-train-home",
+     "god-i-hate-this",
+     "scp-5265",
+     "that-divine-strife",
+     "scp-9680",
+     "i-miss-you",
+     "scp-9943",
+     "scp-9186",
+     "scp-9712",
+     "scp-5641",
+     "scp-l119"
+    ]
+   ]
+  ],
+  "n": 16,
+  "mode": "list",
+  "off": 14,
+  "every": 16,
+  "src": "wiki"
+ },
+ {
+  "slug": "schlangenkrieg-hub",
+  "title": "Schlangenkrieg Hub",
+  "date": "2026-10",
+  "author": "daveyoufool",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-579",
+     "scp-8005",
+     "scp-9005",
+     "the-schlangenkrieg-inscription"
+    ]
+   ]
+  ],
+  "n": 4,
+  "mode": "list",
+  "off": 1,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "scp-anthology-2024",
+  "title": "SCP Anthology 2024",
+  "date": "2024-10",
+  "author": "S D Locke",
+  "blurb": "Collected here for your consideration, your introspection, are tales of woe. Tales of madness. Tragedies whose concerns are the foibles of man; they are depictions of his agony.\nEach file represents a different fear. A unique phobia.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Masklophobia",
+    [
+     "scp-8066",
+     "scp-8596",
+     "scp-8091",
+     "scp-8906"
+    ]
+   ],
+   [
+    "Photophobia",
+    [
+     "scp-8380",
+     "scp-8980",
+     "scp-8894",
+     "scp-8339"
+    ]
+   ],
+   [
+    "Hedonophobia",
+    [
+     "scp-8084",
+     "scp-8876",
+     "scp-8430",
+     "scp-8558"
+    ]
+   ],
+   [
+    "Automatonophobia",
+    [
+     "scp-8822",
+     "scp-8976",
+     "scp-8520",
+     "scp-8986"
+    ]
+   ],
+   [
+    "Tokophobia",
+    [
+     "scp-8480",
+     "scp-8724",
+     "scp-8465",
+     "scp-8935"
+    ]
+   ],
+   [
+    "Atychiphobia",
+    [
+     "scp-8201",
+     "scp-8217",
+     "scp-8123",
+     "dr-frueh-s-proposal"
+    ]
+   ],
+   [
+    "Athazagoraphobia",
+    [
+     "scp-8654",
+     "scp-8607",
+     "scp-8770",
+     "scp-8160"
+    ]
+   ],
+   [
+    "Nyctophobia",
+    [
+     "scp-8109",
+     "scp-8934",
+     "scp-3246"
+    ]
+   ],
+   [
+    "Erotophobia",
+    [
+     "scp-8523",
+     "scp-8356",
+     "scp-8490",
+     "scp-9940"
+    ]
+   ],
+   [
+    "Dittophobia",
+    [
+     "scp-9426"
+    ]
+   ]
+  ],
+  "n": 36,
+  "mode": "prose",
+  "off": 0,
+  "every": 36,
+  "src": "wiki"
+ },
+ {
+  "slug": "scp-anthology-2025",
+  "title": "SCP Anthology 2025",
+  "date": "2025-10",
+  "author": "Yossipossi",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [],
+  "n": 0,
+  "mode": "prose",
+  "off": 0,
+  "every": 0,
+  "src": "wiki"
+ },
+ {
+  "slug": "scp-anthology-hub",
+  "title": "SCP Anthology 2022",
+  "date": "2022-10",
+  "author": "S D Locke",
+  "blurb": "ANTHOLOGY is a 31-day event wherein each day of October, a horror SCP is posted, bound by the theme \"ABCs of Death\", each by a different author.\nThere's something for everyone here — So long as it is nightmares you seek.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Author List",
+    [
+     "scp-7034",
+     "scp-7234",
+     "scp-7303",
+     "scp-7396",
+     "scp-7559",
+     "scp-7686",
+     "scp-7841",
+     "scp-7898",
+     "scp-7933",
+     "scp-7972"
+    ]
+   ]
+  ],
+  "n": 10,
+  "mode": "list",
+  "off": 0,
+  "every": 33,
+  "src": "wiki"
+ },
+ {
+  "slug": "scp-origins-hub",
+  "title": "SCP ORIGINS HUB",
+  "date": "2024-08",
+  "author": "Doctor Scrappy",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [],
+  "n": 0,
+  "mode": "prose",
+  "off": 0,
+  "every": 0,
+  "src": "wiki"
+ },
+ {
+  "slug": "seven-woes-hub",
+  "title": "The Seven Woes Hub",
+  "date": "2026-06",
+  "author": "Its a Bad Idea",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-7900",
+     "scp-7470",
+     "scp-7614",
+     "scp-8900",
+     "scp-8804",
+     "scp-9090",
+     "scp-7804"
+    ]
+   ]
+  ],
+  "n": 7,
+  "mode": "list",
+  "off": 0,
+  "every": 9,
+  "src": "wiki"
+ },
+ {
+  "slug": "seventhlife",
+  "title": "Seventh Life Hub",
+  "date": "2026-07",
+  "author": "CRAt26",
+  "blurb": "Welcome to the end of the world.",
+  "canons": [],
+  "gois": [],
+  "sections": [],
+  "n": 0,
+  "mode": "prose",
+  "off": 3,
+  "every": 0,
+  "src": "wiki"
+ },
+ {
+  "slug": "sins-of-the-past-hub",
+  "title": "Sins Of The Past Hub",
+  "date": "2017-01",
+  "author": "rumetzen",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "giving-bad-people-good-ideas",
+     "i-want-to-tell-you",
+     "the-man-who-sold-the-world",
+     "change-in-the-house-of-the-flies",
+     "why-where-what",
+     "god-am",
+     "but-life-goes-on",
+     "rather-die-young",
+     "march-of-the-fire-ants",
+     "posthuman",
+     "no-rain",
+     "thieves-screamed-the-ghost",
+     "war-within-a-breath",
+     "home-is-where-the-hatred-is"
+    ]
+   ]
+  ],
+  "n": 14,
+  "mode": "list",
+  "off": 1,
+  "every": 14,
+  "src": "wiki"
+ },
+ {
+  "slug": "skies-made-strange-hub",
+  "title": "Skies Made Strange Hub",
+  "date": "2018-06",
+  "author": "Decibelles",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-3475",
+     "into-the-woods",
+     "hello-little-girl",
+     "it-takes-two",
+     "birth-of-a-new-day"
+    ]
+   ],
+   [
+    "Supplemental Materials",
+    [
+     "scp-2152",
+     "scp-2747",
+     "what-ever-happened",
+     "as-skies-frozen",
+     "the-countless-first-briefing"
+    ]
+   ]
+  ],
+  "n": 10,
+  "mode": "list",
+  "off": 1,
+  "every": 11,
+  "src": "wiki"
+ },
+ {
+  "slug": "sky-sermon-hub",
+  "title": "Sky Sermon Hub",
+  "date": "2019-04",
+  "author": "Rounderhouse",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "aflame-with-the-fires-of-delusion",
+     "oh-i-feel-it-i-feel-the-cosmos",
+     "scp-4161",
+     "the-moons-stellar-companion",
+     "scp-4801"
+    ]
+   ]
+  ],
+  "n": 5,
+  "mode": "list",
+  "off": 0,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "spectralnations",
+  "title": "Heaven Shall Be Empty Hub",
+  "date": "2026-06",
+  "author": "whenwerewe",
+  "blurb": "",
+  "canons": [
+   "no-return"
+  ],
+  "gois": [
+   "global-occult-coalition"
+  ],
+  "sections": [
+   [
+    "EPISTLE I",
+    [
+     "protoevangelion",
+     "humeanitarianism",
+     "starsinthesky",
+     "heresophage",
+     "andthedemon"
+    ]
+   ]
+  ],
+  "n": 5,
+  "mode": "list",
+  "off": 0,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "speed-demon-hub",
+  "title": "Speed Demon",
+  "date": "2019-05",
+  "author": "A Random Day",
+  "blurb": "",
+  "canons": [
+   "third-law"
+  ],
+  "gois": [
+   "chicago-spirit"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "australian-rules",
+     "hypervelocity",
+     "terminal-velocity",
+     "zeitgeist",
+     "the-chosen-few",
+     "morphine-machine",
+     "loud-lawless-and-lost",
+     "the-revelation",
+     "truth-is-sin",
+     "the-vice-girls",
+     "rise-and-repent",
+     "ecstasy-and-exorcism",
+     "hard-machine",
+     "prey-and-obey",
+     "jump-the-gun",
+     "leather-pig",
+     "no-one-gets-out-of-her-alive",
+     "contempt",
+     "escape-velocity"
+    ]
+   ]
+  ],
+  "n": 19,
+  "mode": "list",
+  "off": 0,
+  "every": 19,
+  "src": "wiki"
+ },
+ {
+  "slug": "squelching-blunderbuggers-hub",
+  "title": "The Magnificent Squelching Blunderbuggers Hub",
+  "date": "2018-06",
+  "author": "Mortos",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "A ΔW-CLASS ECLIPSE-OF-CONSCIOUSNESS SCENARIO IS CURRENTLY IN PROGRESS. PLEASE REFER TO THE FOLLOWING DOCUMEN…",
+    [
+     "the-slumbering-prince",
+     "scp-1798",
+     "the-long-game",
+     "scp-3547"
+    ]
+   ]
+  ],
+  "n": 4,
+  "mode": "list",
+  "off": 0,
+  "every": 4,
+  "src": "wiki"
+ },
+ {
+  "slug": "stealingsolidarityhub",
+  "title": "Stealing Solidarity Hub",
+  "date": "2015-02",
+  "author": "(account deleted)",
+  "blurb": "Five cyborg commando catgirls. One guy in a bathrobe. One spaceship. Space is infinite.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "The Tales",
+    [
+     "stealingsolidarityphase1",
+     "stealingsolidarityphase2",
+     "stealingsolidarityphase3",
+     "stealingsolidarityphase4",
+     "stealingsolidarityepilogue",
+     "brainstorm",
+     "sidelines-sarabande",
+     "too-insane-to-fail",
+     "scp-7120",
+     "more-cunning-than-any-beast",
+     "stealing-something-else"
+    ]
+   ]
+  ],
+  "n": 11,
+  "mode": "list",
+  "off": 0,
+  "every": 13,
+  "src": "wiki"
+ },
+ {
+  "slug": "stillborn-skies-hub",
+  "title": "STILLBORN SKIES Hub",
+  "date": "2025-09",
+  "author": "poltatherian",
+  "blurb": "",
+  "canons": [
+   "chaos-on-the-monolith"
+  ],
+  "gois": [
+   "horizon-initiative"
+  ],
+  "sections": [
+   [
+    "REQUIRED READING",
+    [
+     "djoric-dmatix-proposal"
+    ]
+   ],
+   [
+    "PRELUDE",
+    [
+     "all-we-are-is-us",
+     "all-they-will-be-is-them",
+     "firstborn-soul"
+    ]
+   ],
+   [
+    "ACT I",
+    [
+     "ashes-of-babylon",
+     "soda-sodomy",
+     "count-to-ten",
+     "daniel-carson-interview"
+    ]
+   ],
+   [
+    "ACT II",
+    [
+     "title",
+     "all-they-are-is-them",
+     "all-you-were-was-you",
+     "all-we-were-was-us"
+    ]
+   ],
+   [
+    "ACT III",
+    [
+     "secure-facility-dossier-chapterhouse-1",
+     "magnum-opus",
+     "perfect-preparation"
+    ]
+   ],
+   [
+    "POSSIBLE ENDINGS",
+    [
+     "nineteeth-horizon-initiative-donation",
+     "quiet-days",
+     "va-34-2040-1183-dream-seance"
+    ]
+   ],
+   [
+    "TIMELINE DUBIOUS/STANDALONE",
+    [
+     "adnan-s-alibi",
+     "bernard-s-ballad",
+     "samuel-s-seranade",
+     "untitled-metamorphic-piece-circa-2525"
+    ]
+   ]
+  ],
+  "n": 22,
+  "mode": "list",
+  "off": 0,
+  "every": 22,
+  "src": "wiki"
+ },
+ {
+  "slug": "stop-making-sense",
+  "title": "Stop Making Sense",
+  "date": "2026-02",
+  "author": "J_V_G",
+  "blurb": "Open your mind, and let your brain fall out, the war is on.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Full Tracklist",
+    [
+     "scp-9067",
+     "found-a-job",
+     "slippery-people",
+     "scp-9068",
+     "scp-9340",
+     "scp-1983-ex",
+     "scp-9363",
+     "step-compilation-what-a-day-that-was",
+     "scp-9628",
+     "scp-9171",
+     "scp-9588",
+     "scp-9208",
+     "scp-9137",
+     "scp-l083"
+    ]
+   ]
+  ],
+  "n": 14,
+  "mode": "list",
+  "off": 2,
+  "every": 14,
+  "src": "wiki"
+ },
+ {
+  "slug": "subversion-hub",
+  "title": "SUBVERSION",
+  "date": "2014-02",
+  "author": "Randomini",
+  "blurb": "",
+  "canons": [],
+  "gois": [
+   "chaos-insurgency"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "vaccination",
+     "three-men-named-con-murphy",
+     "the-corpse-the-twister-and-the-veteran",
+     "dull-ache-hand"
+    ]
+   ]
+  ],
+  "n": 4,
+  "mode": "list",
+  "off": 4,
+  "every": 4,
+  "src": "wiki"
+ },
+ {
+  "slug": "summer-of-doom-hub",
+  "title": "SUMMER OF DOOM HUB",
+  "date": "2025-07",
+  "author": "Letova",
+  "blurb": "The Unofficial 2025 Summer Anthology.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "rural-decay",
+     "ut-adversarium-extirpem",
+     "scp-8391",
+     "scp-8257",
+     "alpha-double-negative",
+     "scp-8179",
+     "user-was-found-for-this-post",
+     "scp-1166",
+     "scp-8622"
+    ]
+   ]
+  ],
+  "n": 9,
+  "mode": "list",
+  "off": 0,
+  "every": 9,
+  "src": "wiki"
+ },
+ {
+  "slug": "swords-unto-scramjets",
+  "title": "Swords unto Scramjets",
+  "date": "2024-04",
+  "author": "Pedantique",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "as-bruises-linger-and-munitions-molder",
+     "hybrid-analysis-and-advisement-hmid1014",
+     "sodium-deficiency-pacing-problems",
+     "onus-entire",
+     "smoke-without-fire",
+     "littering-on-the-road-to-nowhere",
+     "drinking-doubt-dry",
+     "prowess-pissant",
+     "migrating-the-minefield",
+     "flowers-grown-feral-skulls-sucked-clean",
+     "wormsign-actual",
+     "pique-proves-perennial",
+     "scp-7636",
+     "the-deicide-rain",
+     "the-cub-hungered-once"
+    ]
+   ]
+  ],
+  "n": 15,
+  "mode": "list",
+  "off": 0,
+  "every": 15,
+  "src": "wiki"
+ },
+ {
+  "slug": "take-it-away-my-darling",
+  "title": "Take It Away, My Darling",
+  "date": "2020-04",
+  "author": "DarkStuff",
+  "blurb": "",
+  "canons": [
+   "wonderful-world"
+  ],
+  "gois": [
+   "wilsons-wildlife"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "elliot-and-edna",
+     "dad-goes-to-the-zoo",
+     "blake-tillerson",
+     "diving-in-the-san-diego-sea",
+     "cardiac-myxoma",
+     "the-beginnings-of-love",
+     "and-the-endings-thereof",
+     "alice-oezdemir",
+     "anders-robin",
+     "i-get-it",
+     "wilson-s-wildlife-shelter",
+     "letters-from-oregon",
+     "audrey-fuchs",
+     "the-supervisors",
+     "disconnect",
+     "scp-3879",
+     "fae-goes-to-the-shelter",
+     "the-years-between",
+     "tim-wilson",
+     "escapism-i",
+     "tim-and-audrey",
+     "the-old-new",
+     "out-of-stasis",
+     "old-connections",
+     "the-fundraiser",
+     "a-welcome-distraction",
+     "escapism-ii"
+    ]
+   ]
+  ],
+  "n": 27,
+  "mode": "list",
+  "off": 10,
+  "every": 27,
+  "src": "wiki"
+ },
+ {
+  "slug": "tales-of-mr-collector",
+  "title": "Tales of Mr. Collector",
+  "date": "2011-10",
+  "author": "Salman Corbette",
+  "blurb": "Wow! You just found yourself the Tales of Mr. Collector, a limited edition story collection from Dr. Wondertainment!\nRead them all and become Mr. Reader!!",
+  "canons": [],
+  "gois": [
+   "dr-wondertainment",
+   "mister"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "1-mr-headless",
+     "mr-clank",
+     "3-mr-money",
+     "4-mr-lie",
+     "5-mr-mad",
+     "interval-1",
+     "6-mr-stripes",
+     "ohhello",
+     "8-mr-moon",
+     "9-mr-clumsy",
+     "10-mr-mission",
+     "interval-2",
+     "11-mr-feather",
+     "mr-laugh",
+     "13-mr-purple",
+     "14-mr-brass",
+     "15-ms-sweetie",
+     "mr-fish",
+     "end",
+     "epilogue"
+    ]
+   ]
+  ],
+  "n": 20,
+  "mode": "list",
+  "off": 0,
+  "every": 20,
+  "src": "wiki"
+ },
+ {
+  "slug": "tales-of-the-mosaic",
+  "title": "Tales of the Mosaic",
+  "date": "2025-05",
+  "author": "Jezixo",
+  "blurb": "Our city is a picture of a thousand little worlds – a thousand little stories, each one truer than the last.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Story Ideas",
+    [
+     "mosaic-crabmeat",
+     "mosaic-the-rainbow-pebble",
+     "the-broken-dawn",
+     "the-beast-of-liverwort-hill",
+     "right-of-first-refuse",
+     "the-gizzen-kirk",
+     "canvas-fish-fly",
+     "the-parcelmens-creed",
+     "bessie-bogan-and-the-crow-road-inn",
+     "juni-writes-a-poem",
+     "a-gally-fellows-lens",
+     "leasehold-on-daylight"
+    ]
+   ]
+  ],
+  "n": 12,
+  "mode": "list",
+  "off": 0,
+  "every": 12,
+  "src": "wiki"
+ },
+ {
+  "slug": "team-epitaphic-hub",
+  "title": "Team Epitaphic Hub",
+  "date": "2020-10",
+  "author": "CanOfSoup",
+  "blurb": "",
+  "canons": [
+   "aces-and-eights"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "Iris' Field Notes",
+    [
+     "laugh-and-the-world-laughs-with-you-weep-and-you-weep-alone",
+     "i-crawl-a-cracked-and-broken-path-if-we-make-it-we-can-all-s",
+     "knowledge-is-a-deadly-friend",
+     "when-you-re-sure-you-ve-had-enough-of-this-life",
+     "the-beat-of-rain-upon-the-land-broken-teardrop-in-my-hand",
+     "a-memory-from-your-lonesome-past-keeps-us-so-far-apart"
+    ]
+   ],
+   [
+    "Nathan Rivers' Stories",
+    [
+     "what-the-hand-dare-seize-the-fire",
+     "i-took-the-one-less-traveled-by-and-that-has-made-all-of-the",
+     "in-the-cards-and-at-the-bend-of-the-road-we-never-saw-you"
+    ]
+   ],
+   [
+    "Edward Kelly's Adventures",
+    [
+     "the-ranger-with-the-big-iron-on-his-hip",
+     "mama-put-my-guns-in-the-ground-i-cant-shoot-them-anymore"
+    ]
+   ]
+  ],
+  "n": 11,
+  "mode": "list",
+  "off": 1,
+  "every": 11,
+  "src": "wiki"
+ },
+ {
+  "slug": "telecommunications-monitoring-office-hub",
+  "title": "Telecommunications Monitoring Office Hub",
+  "date": "2022-03",
+  "author": "Meserach",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "The Sofia Muñoz series",
+    [
+     "hanging-on-the-telephone",
+     "maria-a-tale-of-the-tmo",
+     "atomic"
+    ]
+   ],
+   [
+    "Other Tales",
+    [
+     "comdependency",
+     "rapture-a-tale-of-the-tmo"
+    ]
+   ],
+   [
+    "SCPs",
+    [
+     "scp-5783",
+     "scp-7656"
+    ]
+   ],
+   [
+    "Training Videos",
+    [
+     "picture-this",
+     "for-your-eyes-only-a-tale-of-the-tmo"
+    ]
+   ]
+  ],
+  "n": 9,
+  "mode": "list",
+  "off": 3,
+  "every": 9,
+  "src": "wiki"
+ },
+ {
+  "slug": "thaumiel",
+  "title": "Project Thaumiel",
+  "date": "2011-10",
+  "author": "TroyL",
+  "blurb": "Explore every way things can go wrong for each SCP-001 proposal.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "clavis",
+     "corvus",
+     "cygnus",
+     "lux",
+     "pila",
+     "rota",
+     "virr",
+     "visium",
+     "capitis",
+     "exanimis",
+     "flos",
+     "illac",
+     "numerus",
+     "serus",
+     "umbra"
+    ]
+   ]
+  ],
+  "n": 15,
+  "mode": "list",
+  "off": 0,
+  "every": 15,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-adventures-of-siggy-and-robomonkey-hub",
+  "title": "The Adventures of Siggy and RoboMonkey Hub",
+  "date": "2021-05",
+  "author": "Ekronak",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "A Rude Awakening",
+    [
+     "siggy-and-the-monster-of-the-dark-halls",
+     "siggy-and-robomonkey-and-the-beast-that-screams",
+     "siggy-and-robomonkey-and-the-dead-mummy-walking",
+     "siggy-and-robomonkey-and-the-deadly-doctor"
+    ]
+   ],
+   [
+    "Finding Lana",
+    [
+     "siggy-and-robomonkey-and-the-new-world",
+     "siggy-and-robomonkey-and-the-attack-of-the-bears",
+     "siggy-and-robomonkey-and-the-rise-of-the-betrayed"
+    ]
+   ],
+   [
+    "Loose Ends",
+    [
+     "siggy-and-the-fellowship-of-the-damned",
+     "siggy-and-robomonkey-and-the-two-promises",
+     "siggy-and-robomonkey-and-the-return-of-the-witch"
+    ]
+   ]
+  ],
+  "n": 10,
+  "mode": "list",
+  "off": 0,
+  "every": 12,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-appliance-war-hub",
+  "title": "THE APPLIANCE WAR Hub",
+  "date": "2023-08",
+  "author": "ThatGuyThatTime",
+  "blurb": "Our creations have turned against us, and we never saw it coming.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "THE KITCHEN",
+    [
+     "scp-7119",
+     "scripture-for-microwaves",
+     "something-burning",
+     "scp-7929"
+    ]
+   ],
+   [
+    "THE BATHROOM",
+    [
+     "scp-7939",
+     "nial-must-be-flushed",
+     "scp-7639"
+    ]
+   ],
+   [
+    "THE LIVING ROOM",
+    [
+     "alight",
+     "a-sinking-feeling",
+     "scp-7362",
+     "log-of-deviant-appliances",
+     "in-an-attempt-to-feel-something"
+    ]
+   ]
+  ],
+  "n": 12,
+  "mode": "list",
+  "off": 0,
+  "every": 12,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-arachne-hub",
+  "title": "The Arachne",
+  "date": "2026-04",
+  "author": "Napalmdoctor556",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "SCP Files",
+    [
+     "scp-7927"
+    ]
+   ],
+   [
+    "1950s",
+    [
+     "sedition"
+    ]
+   ],
+   [
+    "2000s",
+    [
+     "the-snowman",
+     "strange-bedfellows-bloody-sheets"
+    ]
+   ],
+   [
+    "2010s",
+    [
+     "monotony",
+     "fbi-uiu-updated-2018orientation"
+    ]
+   ]
+  ],
+  "n": 6,
+  "mode": "list",
+  "off": 0,
+  "every": 7,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-ballad-of-neapolio",
+  "title": "The Ballad of Neapolio",
+  "date": "2026-08",
+  "author": "notgull",
+  "blurb": "No, the point of the course is not to assassinate your professor. A well-planned but non-fatal assassination attempt will not lead to receiving a passing grade; it will only lead to your summary execution.",
+  "canons": [],
+  "gois": [
+   "alexylva"
+  ],
+  "sections": [
+   [
+    "SYLLABUS",
+    [
+     "welcome-to-alexylva",
+     "psc-101-applied-political-assassination",
+     "hist-203-a-brief-history-of-citizen-sabotage",
+     "acc-305-basic-hospitality-and-mixed-martial-arts",
+     "results-day"
+    ]
+   ]
+  ],
+  "n": 5,
+  "mode": "list",
+  "off": 0,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-black-queen",
+  "title": "The Black Queen",
+  "date": "2013-07",
+  "author": "Dr Gears",
+  "blurb": "I am going to make you cry.\nSubject designated \"Black Queen\", first documented communication.",
+  "canons": [],
+  "gois": [
+   "black-queen"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "splinters",
+     "opening-moves",
+     "queen-to-pawn",
+     "quiet-game",
+     "kriegspiel",
+     "work-journal-2",
+     "work-journal-2-cont",
+     "work-journal-3"
+    ]
+   ]
+  ],
+  "n": 8,
+  "mode": "list",
+  "off": 0,
+  "every": 8,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-case-of-her-broken-stomach-hub",
+  "title": "The Case of Her Broken Stomach Hub",
+  "date": "2025-03",
+  "author": "Shirley Sterling",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Act I",
+    [
+     "scp-8712"
+    ]
+   ],
+   [
+    "Act II",
+    [
+     "the-cogwork-cult"
+    ]
+   ]
+  ],
+  "n": 2,
+  "mode": "prose",
+  "off": 0,
+  "every": 2,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-computer-chronicles",
+  "title": "The Computer Chronicles",
+  "date": "2021-02",
+  "author": "do_the_right_thing",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "without a revolution?",
+    [
+     "live-and-let-die",
+     "you-only-live-twice",
+     "for-your-eyes-only",
+     "the-living-daylights",
+     "diamonds-are-forever"
+    ]
+   ]
+  ],
+  "n": 5,
+  "mode": "list",
+  "off": 0,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-cool-war-hub",
+  "title": "The Cool War",
+  "date": "2013-11",
+  "author": "Randomini",
+  "blurb": ">unzip the_C00L_war.7z Extracting 23 Files… Extracted! >del the_C00L_war.7z Deleting… Deleted!",
+  "canons": [],
+  "gois": [
+   "are-we-cool-yet",
+   "dr-wondertainment",
+   "nobody"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "wowwee-go-kill-ursefl",
+     "it-just-shattered",
+     "a-cooler-manifesto",
+     "snip-snip-snip",
+     "flexibility",
+     "novel-cultivars",
+     "shady-meetings",
+     "the-toyman-and-the-doctor",
+     "quintessence-of-dust",
+     "and-then-what-happened",
+     "the-cool-kids",
+     "final-attack-orders",
+     "the-friday-exhibition",
+     "insufficient-clearance",
+     "nobody-dies",
+     "no",
+     "empty-unmarked-grave",
+     "detained",
+     "disposal-and-discourse",
+     "snipped-from-the-same-cloth",
+     "brotherhood",
+     "eulogy-for-the-living",
+     "wowwee-u-kild-ursefl"
+    ]
+   ]
+  ],
+  "n": 23,
+  "mode": "list",
+  "off": 0,
+  "every": 23,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-department-of-colour-hub",
+  "title": "The Department of Colour HUB",
+  "date": "2026-07",
+  "author": "Doctor Zurvan",
+  "blurb": "\"The Department of Colour HUB\"",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Where the Story Begins",
+    [
+     "welcome-to-the-department-of-colour",
+     "welcome-to-the-department-of-colour-part-2",
+     "welcome-to-the-department-of-colour-part-3",
+     "welcome-to-the-department-of-colour-part-4"
+    ]
+   ],
+   [
+    "Peripheral Entries by the Series Creator",
+    [
+     "scp-9109",
+     "scp-9974",
+     "tomb-of-the-ultra-violent-witch"
+    ]
+   ],
+   [
+    "Want to Contribution?",
+    [
+     "scp-8464",
+     "scp-8578",
+     "scp-9858",
+     "scp-6214",
+     "scp-6878",
+     "scp-7281",
+     "scp-8959",
+     "now-you-find-out",
+     "scp-foundation-presents-the-hod-golem-series",
+     "the-climb"
+    ]
+   ]
+  ],
+  "n": 17,
+  "mode": "list",
+  "off": 0,
+  "every": 17,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-drooling-path",
+  "title": "Drooling Path Hub",
+  "date": "2022-02",
+  "author": "Kothardarastrix",
+  "blurb": "This is the record of Dr. Scott's dangerous off-the-books investigation, and his desperate attempt to untangle the sinister threads tied to the Heart of Darkness.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "The Tales",
+    [
+     "the-drooling-path-part-1",
+     "the-drooling-path-part-2",
+     "the-drooling-path-part-3",
+     "the-drooling-path-part-4",
+     "the-drooling-path-part-5",
+     "the-drooling-path-epilogue"
+    ]
+   ],
+   [
+    "Related Articles",
+    [
+     "scp-058",
+     "scp-1981",
+     "scp-2432",
+     "scp-3008",
+     "scp-4068",
+     "scp-8775"
+    ]
+   ]
+  ],
+  "n": 12,
+  "mode": "list",
+  "off": 2,
+  "every": 12,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-elusive-anderson",
+  "title": "The Elusive Anderson",
+  "date": "2015-09",
+  "author": "Jacob Conwell",
+  "blurb": "",
+  "canons": [
+   "third-law",
+   "twisted-pines"
+  ],
+  "gois": [
+   "anderson"
+  ],
+  "sections": [
+   [
+    "Series Overview",
+    [
+     "hunting-anderson",
+     "finding-anderson",
+     "meeting-anderson"
+    ]
+   ]
+  ],
+  "n": 3,
+  "mode": "list",
+  "off": 0,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-eternal-mxtape",
+  "title": "The Eternal MxTape",
+  "date": "2019-12",
+  "author": "Tsercele",
+  "blurb": "Equal parts stoner comedy, spy thriller, queer drama, pop culture spoof, and existential nightmare. Brought to you by Gamers Against Weed.",
+  "canons": [],
+  "gois": [
+   "gamers-against-weed"
+  ],
+  "sections": [
+   [
+    "PLAY",
+    [
+     "scp-4581",
+     "smile-you-are-being-watched",
+     "start-the-music",
+     "scp-4784",
+     "the-not-too-distant-future",
+     "extra-salty",
+     "scp-6476",
+     "nightmare-on-archer-row-part-2",
+     "being-known",
+     "scp-8735",
+     "tttat"
+    ]
+   ],
+   [
+    "SHUFFLE (???)",
+    [
+     "worthy-of-being-loved"
+    ]
+   ],
+   [
+    "Here…",
+    [
+     "about-deer",
+     "lake-ontario-array"
+    ]
+   ],
+   [
+    "Gamers Against Weed",
+    [
+     "the-assassination-of-beleaguered-normalcy-by-the-coward-game",
+     "what-passes-as-normal-in-the-digital-age",
+     "danger-in-the-manger",
+     "scp-3420",
+     "scp-3869",
+     "scp-4239",
+     "rainbow-crapitalism"
+    ]
+   ],
+   [
+    "Masterson × Multiverse",
+    [
+     "scp-5470",
+     "so-we-sang-the-chorus-from-atlanta-to-the-sea",
+     "scp-8581",
+     "the-communitys-proposal",
+     "top-surplus"
+    ]
+   ]
+  ],
+  "n": 26,
+  "mode": "list",
+  "off": 0,
+  "every": 28,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-father-the-son-and-the-holy-spirit-hub",
+  "title": "The Father, The Son, and The Holy Spirit - Hub",
+  "date": "2024-06",
+  "author": "FLOORBOARDS",
+  "blurb": "",
+  "canons": [
+   "but-a-dream"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-6109",
+     "please-g-d-dont-kill-yourself",
+     "a-shadow-over",
+     "a-thorley-little-christmas",
+     "agne-and-their-deer",
+     "you-deserve-to-be-happy",
+     "illcovetyouifyoucoverme",
+     "returns",
+     "spikebrennan-s-proposal",
+     "scp-7502",
+     "holy-terrors-1",
+     "scp-3004",
+     "so-it-was",
+     "scp-8994",
+     "scp-2293",
+     "alex-thorley-unclogs-the-drain",
+     "how-to-walk-on-air-and-poetry"
+    ]
+   ]
+  ],
+  "n": 17,
+  "mode": "list",
+  "off": 0,
+  "every": 18,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-fishing-council-hub",
+  "title": "The Fishing Council Hub",
+  "date": "2022-04",
+  "author": "DodoDevil",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "The Great Fishing Saga",
+    [
+     "the-fishing-council",
+     "the-fishing-council-the-bigger-fish",
+     "the-fishing-council-crossover-episode",
+     "fish-out-of-water"
+    ]
+   ],
+   [
+    "Fishing Tales",
+    [
+     "the-castaway-from-unreality",
+     "unreal-sushi",
+     "fishing-tales-plenty-of-fish-in-the-sea",
+     "throwing-the-old-line-and-bait"
+    ]
+   ],
+   [
+    "Fishing Trips",
+    [
+     "a-man-fishes-in-wyoming"
+    ]
+   ],
+   [
+    "Catch of the Day",
+    [
+     "scp-6269-j",
+     "scp-5597"
+    ]
+   ],
+   [
+    "Who's in Fishing Council?",
+    [
+     "scp-5516"
+    ]
+   ],
+   [
+    "A Note on 'Fish' Council",
+    [
+     "scp-6247",
+     "scp-6216",
+     "scp-5961"
+    ]
+   ]
+  ],
+  "n": 15,
+  "mode": "list",
+  "off": 0,
+  "every": 15,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-hanged-king-s-comedy",
+  "title": "The Hanged King's Comedy",
+  "date": "2018-10",
+  "author": "Gabriel Jade",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "The Hanged King's Comedy",
+    [
+     "a-wandsman-in-the-court-of-the-hanged-king"
+    ]
+   ],
+   [
+    "The story thus far…",
+    [
+     "pestilence-in-the-court-of-the-hanged-king",
+     "in-the-shadow-of-the-anguished-lord",
+     "everyone-wears-a-mask",
+     "an-angel-who-has-forsaken-sympathy"
+    ]
+   ]
+  ],
+  "n": 5,
+  "mode": "list",
+  "off": 0,
+  "every": 6,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-lion-the-sun-witch-and-the-warlock",
+  "title": "The Lion The Sun Witch And The Warlock Hub",
+  "date": "2025-04",
+  "author": "DrBleep",
+  "blurb": "The witch upon her throne leans forwards, dominating the scene in a flowing gown of purple, blue, and gold, hair radiant with the fire of the sun and brown of the earth.",
+  "canons": [
+   "orcadia"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "Pre-Cobra",
+    [
+     "torn-strings",
+     "the-city-sings",
+     "scp-8711"
+    ]
+   ]
+  ],
+  "n": 3,
+  "mode": "list",
+  "off": 2,
+  "every": 3,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-lombardi-tales",
+  "title": "The Lombardi Tales",
+  "date": "2011-10",
+  "author": "TroyL",
+  "blurb": "\"So, you wanna join the Foundation? Think you know what it's like after readin' the reports? Pal, you don't know the half of it. I seen shit you wouldn't fuckin' believe if your mama told you in Sunday School. Name's Max Lombardi, an' I been an Agent for ten goddamn years. You wanna know what it's like? Lemme tell you about it…\"",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "urban-legends",
+     "grasp-on-reality",
+     "property-values",
+     "nobody-knows",
+     "going-my-way",
+     "relationskips",
+     "orientation",
+     "trick-or-treat",
+     "command-performance",
+     "hiccup-jacet"
+    ]
+   ]
+  ],
+  "n": 10,
+  "mode": "list",
+  "off": 0,
+  "every": 10,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-man-in-the-white-suit-hub",
+  "title": "The Man In The White Suit Hub",
+  "date": "2020-10",
+  "author": "Rounderhouse",
+  "blurb": "",
+  "canons": [
+   "man-who-wasnt-there"
+  ],
+  "gois": [
+   "nobody"
+  ],
+  "sections": [
+   [
+    "05.23.2077",
+    [
+     "hello-my-name-isnt",
+     "chiaroscuro",
+     "nobodyx4",
+     "scp-5353",
+     "everyday-is-somebodys-birthday",
+     "scp-5877",
+     "ghosts-in-the-machine",
+     "intercepts",
+     "scp-5375",
+     "nobody-in-their-right-mind",
+     "memebodies"
+    ]
+   ]
+  ],
+  "n": 11,
+  "mode": "list",
+  "off": 0,
+  "every": 11,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-man-who-stood-alone-hub",
+  "title": "The Man Who Stood Alone Hub",
+  "date": "2022-03",
+  "author": "Professor Puffer",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "-Posted 6/02/2022-",
+    [
+     "charlie-don-t-surf"
+    ]
+   ],
+   [
+    "When some semblance of humanity rested behind those eyes.",
+    [
+     "the-scottish-goliath",
+     "the-minutemen",
+     "we-concerned-few",
+     "scp-2191",
+     "scp-3456",
+     "captain-kirby-s-proposal",
+     "operation-galvanic-ukulele",
+     "the-area10-massacre",
+     "after-action-report-operation-thermopylae",
+     "personnel-expendable-part-i",
+     "personnel-expendable-part-ii",
+     "fresh-fish",
+     "hard-boiled"
+    ]
+   ]
+  ],
+  "n": 14,
+  "mode": "list",
+  "off": 0,
+  "every": 16,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-marrow-histories",
+  "title": "The Marrow Histories",
+  "date": "2026-08",
+  "author": "Arclund",
+  "blurb": "We Are Calling.",
+  "canons": [],
+  "gois": [
+   "sarkic"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "conclave-a-hope-necessity",
+     "nadoxi-valkama",
+     "snippets-from-a-legend-catalogue",
+     "a-gaze-within",
+     "taste-of-family",
+     "who-is-naelkae",
+     "newflesh-guidance"
+    ]
+   ],
+   [
+    "Facts",
+    [
+     "excerpt-of-the-naelkaen-bestiary-the-vasasoonenuetae",
+     "excerpt-of-the-naelkaen-bestiary-the-koepiokoerae",
+     "excerpt-of-the-naelkaen-bestiary-ruensaastilaepsia",
+     "naelkaen-history-the-legacy-of-orok",
+     "naelkaen-history-orokin-koetonae"
+    ]
+   ]
+  ],
+  "n": 12,
+  "mode": "list",
+  "off": 0,
+  "every": 12,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-sanest-king",
+  "title": "The Sanest King Hub",
+  "date": "2025-03",
+  "author": "PoufyPoufson",
+  "blurb": "",
+  "canons": [],
+  "gois": [
+   "dr-wondertainment"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "the-mad-three-parties",
+     "wearerofmanyhats",
+     "yourstrulyfirstunbirthdayball",
+     "scp-8981"
+    ]
+   ]
+  ],
+  "n": 4,
+  "mode": "list",
+  "off": 3,
+  "every": 4,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-stuff-industry-hub",
+  "title": "The Stuff Industry Hub",
+  "date": "2014-08",
+  "author": "AndarielHalo",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Welcome to The Stuff Industry!",
+    [
+     "scp-2021",
+     "scp-2077",
+     "scp-2058"
+    ]
+   ],
+   [
+    "INCIDENT REPORTS",
+    [
+     "scp-1934",
+     "week-1-looking-for-stuff",
+     "week-1-day-3-finding-some-stuff",
+     "week-2-only-sane-man",
+     "week-3-day-3-end-of-line"
+    ]
+   ]
+  ],
+  "n": 8,
+  "mode": "list",
+  "off": 0,
+  "every": 8,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-time-after-time-password-hub",
+  "title": "The Time After Time Password Hub",
+  "date": "2021-01",
+  "author": "HarryBlank",
+  "blurb": "",
+  "canons": [
+   "on-guard-43"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-5056",
+     "scp-5109",
+     "scp-5243",
+     "the-significant-others-part-a",
+     "the-significant-others-part-b"
+    ]
+   ],
+   [
+    "Prologue",
+    [
+     "character-development",
+     "georgian-gothic",
+     "who-framed-ralph-roget",
+     "the-moloch-mentality",
+     "meanwhile-in-australia",
+     "not-my-sloths-not-my-pit",
+     "if-you-don-t-know-the-words",
+     "the-green-machine",
+     "ready-or-not",
+     "here-i-come",
+     "spread-the-word",
+     "whack-a-mole",
+     "lost-in-the-translation",
+     "passing-sentence",
+     "over",
+     "under",
+     "out-of-character",
+     "pass-it-on"
+    ]
+   ],
+   [
+    "Epilogue",
+    [
+     "many-last-words",
+     "scp-5382",
+     "scp-5494",
+     "scp-5520"
+    ]
+   ]
+  ],
+  "n": 27,
+  "mode": "list",
+  "off": 1,
+  "every": 27,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-ursus-maritimus-incident",
+  "title": "The Ursus Maritimus Incident",
+  "date": "2019-06",
+  "author": "DrAnnoyingDog",
+  "blurb": "",
+  "canons": [],
+  "gois": [
+   "unusual-incidents-unit",
+   "wilsons-wildlife"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "critter-profile-the-polar-bear",
+     "on-the-radar",
+     "uiu-file-2008-21"
+    ]
+   ]
+  ],
+  "n": 3,
+  "mode": "list",
+  "off": 0,
+  "every": 3,
+  "src": "wiki"
+ },
+ {
+  "slug": "the-works-of-doc-burns",
+  "title": "The Works Of Doc Burns",
+  "date": "2012-05",
+  "author": "Arlecchino",
+  "blurb": "\"Single white male, 20-25, wanted for questioning in conjunction with multiple homicides.\"",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "hiding-beauty",
+     "the-tailor",
+     "daddy-long-legs",
+     "on-the-third-day",
+     "the-samaritan",
+     "the-designer"
+    ]
+   ]
+  ],
+  "n": 6,
+  "mode": "list",
+  "off": 0,
+  "every": 6,
+  "src": "wiki"
+ },
+ {
+  "slug": "thirteen-thorns-hub",
+  "title": "Thirteen Thorns Hub",
+  "date": "2026-05",
+  "author": "Ralliston",
+  "blurb": "",
+  "canons": [
+   "from-120s-archives"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-8772",
+     "scp-7532",
+     "scp-8372",
+     "scp-9372",
+     "scp-8572",
+     "scp-8295"
+    ]
+   ]
+  ],
+  "n": 6,
+  "mode": "list",
+  "off": 1,
+  "every": 6,
+  "src": "wiki"
+ },
+ {
+  "slug": "those-who-lived-on-hub",
+  "title": "Those Who Lived On",
+  "date": "2015-06",
+  "author": "HotCocoaNerd",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Tales of the Travelers",
+    [
+     "a-world-s-legacy",
+     "lost-golden-days",
+     "pooling-our-resources",
+     "audience-of-crowns",
+     "deadalive-deadalive"
+    ]
+   ],
+   [
+    "Tales of the Old Lands",
+    [
+     "this-is-how-the-world-ends"
+    ]
+   ]
+  ],
+  "n": 6,
+  "mode": "list",
+  "off": 0,
+  "every": 6,
+  "src": "wiki"
+ },
+ {
+  "slug": "three-wishes-hub",
+  "title": "Three Wishes Hub",
+  "date": "2026-08",
+  "author": "poltatherian",
+  "blurb": "",
+  "canons": [],
+  "gois": [
+   "oria"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "oria-ntation",
+     "welcome-home",
+     "ute-1978-cyanfather-andromeda-l-engle-green-ribbon",
+     "memorandum-5-regarding-23rd-street-arial-maintenance"
+    ]
+   ]
+  ],
+  "n": 4,
+  "mode": "list",
+  "off": 0,
+  "every": 4,
+  "src": "wiki"
+ },
+ {
+  "slug": "time-travel",
+  "title": "Elementary Time Travel",
+  "date": "2017-04",
+  "author": "AJMansfield",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Table of Contents",
+    [
+     "time-travel-ch1",
+     "time-travel-ch2",
+     "time-travel-ch3"
+    ]
+   ]
+  ],
+  "n": 3,
+  "mode": "list",
+  "off": 0,
+  "every": 3,
+  "src": "wiki"
+ },
+ {
+  "slug": "totally-legit-scp-anthology-2025",
+  "title": "The Totally Legit SCP Anthology 2025!",
+  "date": "2025-04",
+  "author": "Yossipossi",
+  "blurb": "the joke may or may not be sex. who's to say",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-8369",
+     "scp-8867",
+     "scp-9980",
+     "claustrophilia",
+     "scp-7964",
+     "scp-8730"
+    ]
+   ]
+  ],
+  "n": 6,
+  "mode": "prose",
+  "off": 0,
+  "every": 6,
+  "src": "wiki"
+ },
+ {
+  "slug": "triple-hub",
+  "title": "Triple Hub.",
+  "date": "2025-03",
+  "author": "Doctor-ivory",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Triple Fang presents",
+    [
+     "flesh-and-blood",
+     "herman-fuller-presents-dracula",
+     "lycoris-radiata",
+     "scp-7589",
+     "stains-of-blood-and-sin"
+    ]
+   ]
+  ],
+  "n": 5,
+  "mode": "list",
+  "off": 0,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "twin-sites-hub",
+  "title": "Twin Sites Hub",
+  "date": "2024-05",
+  "author": "Dr Vikki Lost",
+  "blurb": "During a mass construction period in the 1950s, the Foundation's Overseers erroneously signed off on the construction of Site 403 twice, resulting in two separate Sites with near identical layouts built side by side on the same plot of land.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "The Twin Sites",
+    [
+     "scp-7218",
+     "the-death-of-marilla-vega"
+    ]
+   ],
+   [
+    "The Deal Of Agent Heckerman",
+    [
+     "sage-west-s-guide-to-keeping-up-disappearances",
+     "sage-west-s-guide-to-making-dead-men-talk",
+     "an-approval-for-shadows",
+     "the-first-ever-twin-site-secret-santa-gift-exchange",
+     "a-tale-of-two-mailrooms",
+     "mabel-lenora-s-guide-on-hiding-plurality-through-brain-traum",
+     "branches-reaching-home",
+     "the-museum-of-shapes-welcomes-you"
+    ]
+   ]
+  ],
+  "n": 10,
+  "mode": "list",
+  "off": 0,
+  "every": 11,
+  "src": "wiki"
+ },
+ {
+  "slug": "uiu-series-with-no-name-hub",
+  "title": "The UIU Series With No Name Hub",
+  "date": "2015-03",
+  "author": "(account deleted)",
+  "blurb": "",
+  "canons": [],
+  "gois": [
+   "unusual-incidents-unit"
+  ],
+  "sections": [
+   [
+    "This is the story of two agents in this much maligned organization, and their adventures in a far-off land k…",
+    [
+     "unusual-happenings",
+     "do-you-remember-these-guys",
+     "taproots",
+     "of-portals-plasma-cannons-and-other-boring-things",
+     "homecoming",
+     "midnight-plane-going-anywhere",
+     "it-s-too-cold-for-you-here"
+    ]
+   ]
+  ],
+  "n": 7,
+  "mode": "list",
+  "off": 0,
+  "every": 7,
+  "src": "wiki"
+ },
+ {
+  "slug": "unabridged-history-of-barrow-station-hub",
+  "title": "Unabridged History of Barrow Station Hub",
+  "date": "2026-07",
+  "author": "zkidanomalous",
+  "blurb": "",
+  "canons": [],
+  "gois": [
+   "unusual-incidents-unit"
+  ],
+  "sections": [
+   [
+    "Original series canon",
+    [
+     "uiu-file-2001-092",
+     "the-winepress-of-gods-wrath"
+    ]
+   ]
+  ],
+  "n": 2,
+  "mode": "list",
+  "off": 2,
+  "every": 2,
+  "src": "wiki"
+ },
+ {
+  "slug": "unconditional-love-hub",
+  "title": "Unconditional Love Hub",
+  "date": "2024-09",
+  "author": "Uncle Nicolini",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Playlist 1",
+    [
+     "two-coffins",
+     "borne-on-the-fm-waves-of-the-heart",
+     "paralytic-states"
+    ]
+   ],
+   [
+    "Playlist 2",
+    [
+     "shape-shift-with-me",
+     "because-of-the-shame",
+     "scp-1046"
+    ]
+   ],
+   [
+    "Playlist 3",
+    [
+     "fuckmylife666",
+     "project-proposal-2018-145",
+     "high-pressure-low",
+     "true-trans-soul-rebel",
+     "scp-9595-j",
+     "scp-7926",
+     "scp-6911",
+     "scp-7112",
+     "scp-5057",
+     "scp-7337",
+     "scp-8913",
+     "scp-l726",
+     "scp-7573",
+     "scp-7728",
+     "scp-8727",
+     "scp-3923",
+     "abraka-davids-proposal",
+     "scp-2681",
+     "dark-sushi-file-no-726-under-ice",
+     "square-your-shoulders",
+     "wanted-the-thieves-domain",
+     "a-tale-about-petty-revenge",
+     "tpokaof",
+     "los-zapaticos-de-rosa",
+     "surprise-happy-birthday-12",
+     "life-insurance-policy",
+     "piercing-the-veil",
+     "grant-request-post-mortem-neural-preservation",
+     "vktm-product-catalogue-breach-highlights",
+     "daeva-cooking-and-you",
+     "critter-profile-jerry",
+     "nobody-likes-having-enemies"
+    ]
+   ]
+  ],
+  "n": 38,
+  "mode": "list",
+  "off": 2,
+  "every": 38,
+  "src": "wiki"
  },
  {
   "slug": "undervegas-hub",
@@ -1603,6 +9594,760 @@
   "n": 31,
   "mode": "list",
   "off": 0,
-  "every": 31
+  "every": 31,
+  "src": "dataset"
+ },
+ {
+  "slug": "unfiltered-exhaust-hub",
+  "title": "Unfiltered Exhaust Hub",
+  "date": "2024-10",
+  "author": "TroutMaskReplica",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Catharsis: the process of releasing, and thereby providing relief from, strong or repressed emotions.",
+    [
+     "scp-6356",
+     "the-son-you-love",
+     "daisydeathdysphoria",
+     "scatterbrained",
+     "backtobed",
+     "deny-defend-depose"
+    ]
+   ]
+  ],
+  "n": 6,
+  "mode": "list",
+  "off": 0,
+  "every": 6,
+  "src": "wiki"
+ },
+ {
+  "slug": "unreality-hub",
+  "title": "Department of Unreality Hub",
+  "date": "2022-04",
+  "author": "Fishish",
+  "blurb": "A blurb should go here.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "[CLICK TO EDIT TEXT]",
+    [
+     "unreality-orientation",
+     "your-imaginary-friend",
+     "something-glowing",
+     "the-castaway-from-unreality",
+     "its-not-real-it-never-was-you-pathetic-fools",
+     "scp-6208",
+     "scp-6938",
+     "haunt-me",
+     "disintegration",
+     "really-long-unreality-tale-title-revised"
+    ]
+   ],
+   [
+    "Running on Empty",
+    [
+     "burger",
+     "bagel",
+     "unreal-sushi",
+     "the-blank-page",
+     "a-thorley-little-christmas",
+     "alex-thorley-goes-on-a-blind-date",
+     "give-me-back-to-the-sky",
+     "poem",
+     "illcovetyouifyoucoverme",
+     "sundial",
+     "magazine",
+     "drama",
+     "alex-thorley-confuses-a-guy",
+     "baroque-unreality",
+     "scatterbrained"
+    ]
+   ],
+   [
+    "[ACCESS DENIED]",
+    [
+     "scp-5863",
+     "scp-0983",
+     "scp-6478",
+     "scp-6558",
+     "scp-7591",
+     "scp-7195",
+     "scp-7356",
+     "scp-7365",
+     "scp-6352",
+     "scp-7488",
+     "scp-7413",
+     "scp-8993",
+     "scp-8591",
+     "scp-8195",
+     "scp-7646",
+     "scp-8797",
+     "scp-7825"
+    ]
+   ]
+  ],
+  "n": 42,
+  "mode": "list",
+  "off": 3,
+  "every": 43,
+  "src": "wiki"
+ },
+ {
+  "slug": "unusual-investigations",
+  "title": "The Unusual Investigations of Kenneth Spencer and Robin Thorne",
+  "date": "2017-11",
+  "author": "GreenWolf",
+  "blurb": "Special Agents Kenneth Spencer and Robin Thorne of the UIU's Three Portlands Field Office investigate the strangest crimes of the Weird City.",
+  "canons": [
+   "third-law"
+  ],
+  "gois": [
+   "unusual-incidents-unit"
+  ],
+  "sections": [
+   [
+    "Quid Pro Quo",
+    [
+     "vital-signs",
+     "circumstances"
+    ]
+   ],
+   [
+    "The Three Portlands Bomber",
+    [
+     "permanent-waves",
+     "a-farewell-to-kings",
+     "moving-pictures"
+    ]
+   ],
+   [
+    "The Body Electric",
+    [
+     "eagle-eye",
+     "falcon-flight"
+    ]
+   ],
+   [
+    "Down Time",
+    [
+     "spencer-and-shaw-vs-shaq"
+    ]
+   ],
+   [
+    "Other Investigations",
+    [
+     "the-blackbird-and-the-falcon"
+    ]
+   ],
+   [
+    "Related Files",
+    [
+     "when-parallel-lines-diverge",
+     "dinner-with-the-thornes",
+     "when-parallel-lines-converge",
+     "paramax"
+    ]
+   ]
+  ],
+  "n": 13,
+  "mode": "list",
+  "off": 0,
+  "every": 13,
+  "src": "wiki"
+ },
+ {
+  "slug": "varuna-s-war",
+  "title": "Varuna's War",
+  "date": "2025-02",
+  "author": "Anorrack",
+  "blurb": "",
+  "canons": [
+   "third-law"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "Burma — November, 1942",
+    [
+     "walkin-slow"
+    ]
+   ],
+   [
+    "Hainan Island — March, 1943",
+    [
+     "voice-of-rage-and-ruin",
+     "talking-to-someone-else"
+    ]
+   ],
+   [
+    "British Borneo — June, 1943",
+    [
+     "shadow-on-my-back",
+     "no-tears-of-regret"
+    ]
+   ],
+   [
+    "Other Seventh Occult War Works",
+    [
+     "scp-8842",
+     "sifting-through-the-sand"
+    ]
+   ]
+  ],
+  "n": 7,
+  "mode": "list",
+  "off": 0,
+  "every": 7,
+  "src": "wiki"
+ },
+ {
+  "slug": "vend-a-friend",
+  "title": "Vend-a-Friend Hub",
+  "date": "2017-12",
+  "author": "DarkStuff",
+  "blurb": "",
+  "canons": [
+   "wonderful-world"
+  ],
+  "gois": [
+   "dr-wondertainment"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "we-just-make-toys",
+     "to-think-i-ve-spent-my-whole-life-waiting",
+     "i-don-t-get-it-i-functioned-before",
+     "you-can-t-win-them-all",
+     "be-strange-or-be-forgotten",
+     "sometimes-the-best-intentions-need-redemption",
+     "life-s-a-show",
+     "and-i-m-the-star",
+     "back-in-habit",
+     "pepper-s-lament",
+     "souls-somas",
+     "deceptive-cadence",
+     "what-a-wonderful-world",
+     "everything-will-be-okay",
+     "holding-an-umbrella"
+    ]
+   ]
+  ],
+  "n": 15,
+  "mode": "list",
+  "off": 0,
+  "every": 15,
+  "src": "wiki"
+ },
+ {
+  "slug": "void-dancer-hub",
+  "title": "Void Dancer Hub",
+  "date": "2021-01",
+  "author": "Lt Flops",
+  "blurb": "Entities that enter this place may find that their experience gives it form; that it populates it; that their perception shapes reality; and that imagination equals power.",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-423"
+    ]
+   ],
+   [
+    "Required Reading",
+    [
+     "scp-3309",
+     "scp-3090"
+    ]
+   ],
+   [
+    "Loading Screen by Lt Flops (2018–2020)",
+    [
+     "the-abyss-gazes-back",
+     "buggy-hardware",
+     "a-scene-from-a-meme"
+    ]
+   ],
+   [
+    "Further Reading (References)",
+    [
+     "danger-in-the-manger",
+     "scp-2852",
+     "scp-3004",
+     "scp-2"
+    ]
+   ],
+   [
+    "The Void also appears in",
+    [
+     "inner-space",
+     "a-serpent-on-a-bed-of-leaves"
+    ]
+   ]
+  ],
+  "n": 12,
+  "mode": "list",
+  "off": 1,
+  "every": 12,
+  "src": "wiki"
+ },
+ {
+  "slug": "wasabi-hub",
+  "title": "Wasabi Hub",
+  "date": "2024-03",
+  "author": "fluxman",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-825-ko-1"
+    ]
+   ]
+  ],
+  "n": 1,
+  "mode": "prose",
+  "off": 2,
+  "every": 1,
+  "src": "wiki"
+ },
+ {
+  "slug": "wayfarers-hub",
+  "title": "Wayfarers Hub",
+  "date": "2016-12",
+  "author": "Jacob Conwell",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Series Overview",
+    [
+     "wayfarers",
+     "we-boldly-went",
+     "razumite-games",
+     "what-happened-beneath-cronos",
+     "the-homecoming-of-eta-13",
+     "scp-2344",
+     "the-hydra-s-spine"
+    ]
+   ]
+  ],
+  "n": 7,
+  "mode": "list",
+  "off": 0,
+  "every": 7,
+  "src": "wiki"
+ },
+ {
+  "slug": "wayward",
+  "title": "Parable of the Wayward Prince",
+  "date": "2012-06",
+  "author": "Eskobar",
+  "blurb": "As requested, all relevant information with regards to Event KB-615. On a personal note, Jack, please keep some of an open mind. I am aware of what your opinion of David was before this, and I'm sure this didn't help, but keep in mind what this cost him but please try to remember that he didn't intend for any of this to happen.",
+  "canons": [
+   "bellerverse"
+  ],
+  "gois": [
+   "alexylva"
+  ],
+  "sections": [
+   [
+    "Relevant Articles",
+    [
+     "scp-877",
+     "scp-961",
+     "scp-1043",
+     "scp-1080",
+     "scp-1546",
+     "scp-1893"
+    ]
+   ],
+   [
+    "Preludes",
+    [
+     "address-to-the-students-and-faculty",
+     "stray",
+     "the-red-woodsman",
+     "stare"
+    ]
+   ],
+   [
+    "Parable of the Wayward Prince",
+    [
+     "wayward-prologue",
+     "wayward-commencement",
+     "wayward-deontic",
+     "soliloquy",
+     "wayward-intermission",
+     "wayward-repel",
+     "wayward-negotiation",
+     "wayward-denouement"
+    ]
+   ]
+  ],
+  "n": 18,
+  "mode": "list",
+  "off": 1,
+  "every": 22,
+  "src": "wiki"
+ },
+ {
+  "slug": "what-happens-in-vegas-stays-in-vegas",
+  "title": "WHAT HAPPENS IN VEGAS STAYS IN VEGAS",
+  "date": "2026-08",
+  "author": "xexnoncores",
+  "blurb": "BUY THE TICKET, TAKE THE RIDE.",
+  "canons": [
+   "black-diamond-billions"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "MAIN ATTRACTION",
+    [
+     "casino-crimson",
+     "casino-crimson-2",
+     "hole-mouth-red-lipstick-smeared"
+    ]
+   ],
+   [
+    "AFTERMATH",
+    [
+     "taxidermy-clause",
+     "put-it-all-on-black"
+    ]
+   ]
+  ],
+  "n": 5,
+  "mode": "list",
+  "off": 0,
+  "every": 5,
+  "src": "wiki"
+ },
+ {
+  "slug": "white-space-hub",
+  "title": "white space (HUB)",
+  "date": "2020-05",
+  "author": "Nagiros",
+  "blurb": "",
+  "canons": [
+   "deepwell-catalog"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "slipping-away",
+     "the-eschaton",
+     "scp-4736",
+     "nagiros-proposal"
+    ]
+   ]
+  ],
+  "n": 4,
+  "mode": "list",
+  "off": 0,
+  "every": 4,
+  "src": "wiki"
+ },
+ {
+  "slug": "whore-of-blood-hub",
+  "title": "WHORE OF BLOOD",
+  "date": "2023-03",
+  "author": "Fantem",
+  "blurb": "\"Are you happy?\"",
+  "canons": [],
+  "gois": [],
+  "sections": [
+   [
+    "Formerly the Book-Bound Devil",
+    [
+     "scp-6607",
+     "scp-7616",
+     "scp-7603",
+     "therion-devours",
+     "sol-invictus",
+     "fuckhead"
+    ]
+   ],
+   [
+    "NEW!",
+    [
+     "i-am-your-tyrant"
+    ]
+   ]
+  ],
+  "n": 7,
+  "mode": "list",
+  "off": 0,
+  "every": 9,
+  "src": "wiki"
+ },
+ {
+  "slug": "wills-and-ways-hub",
+  "title": "Wills And Ways",
+  "date": "2014-06",
+  "author": "Randomini",
+  "blurb": "",
+  "canons": [],
+  "gois": [
+   "marshall-carter-and-dark"
+  ],
+  "sections": [
+   [
+    "",
+    [
+     "third-death",
+     "skitter-marshall",
+     "robert-carter",
+     "iris-dark",
+     "some-rational-inheritance",
+     "number-crunching"
+    ]
+   ]
+  ],
+  "n": 6,
+  "mode": "list",
+  "off": 0,
+  "every": 6,
+  "src": "wiki"
+ },
+ {
+  "slug": "with-the-old-gods-hub",
+  "title": "With the Old Gods Hub",
+  "date": "2025-01",
+  "author": "DrBleep",
+  "blurb": "Here in the twilight before the shattering of our greatest works, will you fight beside us once more? Or will you die in the dark?",
+  "canons": [
+   "orcadia"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "A legend yet untold.",
+    [
+     "scp-8711"
+    ]
+   ],
+   [
+    "Death to the GOC Arc",
+    [
+     "on-the-rails",
+     "multi-goddess-drifting"
+    ]
+   ],
+   [
+    "Preparing for War Arc",
+    [
+     "scp-8710",
+     "swallowed-by-a-prideful-lesbian-sea",
+     "medea-filicidium",
+     "snow-queen",
+     "scp-8810",
+     "cat-got-your-tongue",
+     "love-across-a-nonbinary-spectrum"
+    ]
+   ],
+   [
+    "Myths carried on the tides",
+    [
+     "slow-pride-filled-life"
+    ]
+   ]
+  ],
+  "n": 11,
+  "mode": "list",
+  "off": 0,
+  "every": 11,
+  "src": "wiki"
+ },
+ {
+  "slug": "woman-of-stone-and-blood",
+  "title": "Woman of Stone and Blood Hub",
+  "date": "2025-10",
+  "author": "KatyaStrangelove",
+  "blurb": "\"It's sad…realizing you've been dragged to hell, and knowing that nobody but yourself will pull you out.\"",
+  "canons": [],
+  "gois": [
+   "daevite"
+  ],
+  "sections": [
+   [
+    "⚠️ A Note on Content Warnings",
+    [
+     "scp-9140",
+     "an-incomplete-interview",
+     "barrikadas-marital-cage",
+     "scp-9980",
+     "candaulism",
+     "scp-9940",
+     "cvad"
+    ]
+   ],
+   [
+    "Related Works",
+    [
+     "scp-8537"
+    ]
+   ]
+  ],
+  "n": 8,
+  "mode": "list",
+  "off": 0,
+  "every": 8,
+  "src": "wiki"
+ },
+ {
+  "slug": "world-of-wolves-hub",
+  "title": "World Of Wolves: Hub",
+  "date": "2024-04",
+  "author": "Clysm31201",
+  "blurb": "",
+  "canons": [],
+  "gois": [],
+  "sections": [],
+  "n": 0,
+  "mode": "prose",
+  "off": 0,
+  "every": 0,
+  "src": "wiki"
+ },
+ {
+  "slug": "wrong-tomorrow-hub",
+  "title": "The Breach Goes On: Wrong Tomorrow Hub",
+  "date": "2023-09",
+  "author": "HarryBlank",
+  "blurb": "It's almost enough to make you wonder if totalitarian shadow governments are worth it!",
+  "canons": [
+   "on-guard-43"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "Storyline complete as of 10/26/2023!",
+    [
+     "18-the-only-constant",
+     "19-detour-de-force",
+     "20-not-my-day",
+     "21-the-short-version",
+     "22-borrowing-trouble",
+     "23-hidden-depths",
+     "24-coffin-corner",
+     "25-off-track",
+     "26-working-wonders",
+     "27-we-stand-divided",
+     "28-hooking-up",
+     "29-meeting-in-the-middle",
+     "30-underlude",
+     "31-the-lines-are-down",
+     "32-executive-dysfunction",
+     "33-taking-the-lead",
+     "34-the-cruelest-fight",
+     "35-fire-in-the-hole",
+     "36-face-time",
+     "37-beggar-belief",
+     "38-world-of-difference",
+     "39-double-date",
+     "40-waiting-to-happen",
+     "41-the-world-wide-web",
+     "42-life-cycled"
+    ]
+   ]
+  ],
+  "n": 25,
+  "mode": "list",
+  "off": 0,
+  "every": 25,
+  "src": "wiki"
+ },
+ {
+  "slug": "wwydftltimd-hub",
+  "title": "When Will You Die for the Last Time in My Dreams - Hub",
+  "date": "2019-04",
+  "author": "UraniumEmpire",
+  "blurb": "but people like you, you’re just blinded by you own self hate and everybody’s rooting for you when will you listen up or just keep writing me off, writing me off, you just keep writing me off~Pool Kids - Overly Verbose Email Series pt. III",
+  "canons": [
+   "the-trashfire"
+  ],
+  "gois": [],
+  "sections": [
+   [
+    "",
+    [
+     "scp-952",
+     "d-7294-s-declassified-d-class-survival-guide",
+     "the-last-things-dr-darryl-loyd-ever-did-in-chronological-ord",
+     "baptism-of-the-wandering-jew-by-johnny-the-son",
+     "david-cameron-fucked-a-dead-pig",
+     "beef-albini-in-fusion-sauce-with-a-side-of-fruit",
+     "ess-why-dee",
+     "nineeightnineninenine",
+     "i-was-a-teenage-shoggoth",
+     "let-me-borrow-the-map",
+     "staining-boss-s-silk-sheets"
+    ]
+   ]
+  ],
+  "n": 11,
+  "mode": "list",
+  "off": 0,
+  "every": 11,
+  "src": "wiki"
+ },
+ {
+  "slug": "yggdrasils-surveyor",
+  "title": "Yggdrasil's Surveyor Hub",
+  "date": "2021-01",
+  "author": "(account deleted)",
+  "blurb": "One man. One job. An infinite multiverse. A cross-canon series that explores them all.",
+  "canons": [],
+  "gois": [
+   "serpents-hand"
+  ],
+  "sections": [
+   [
+    "Current entries",
+    [
+     "scp-507",
+     "broken-masquerade-epistolary",
+     "hopping-through-worlds",
+     "ulla-na-folla",
+     "when-i-was-a-child-i-had-a-fever",
+     "gardeners-of-the-orchard",
+     "scp-7507",
+     "nantucket",
+     "the-escape-artist-of-saint-christopher-s",
+     "the-ironclad-fae",
+     "razing-of-the-library",
+     "a-hopper-in-the-offshoot",
+     "the-immortal-empire",
+     "grabnok-the-destroyer",
+     "scp-8300"
+    ]
+   ],
+   [
+    "Universes crossed over with (SPOILERS)",
+    [
+     "quiet-days",
+     "scp-5000"
+    ]
+   ]
+  ],
+  "n": 17,
+  "mode": "list",
+  "off": 0,
+  "every": 18,
+  "src": "wiki"
  }
 ]

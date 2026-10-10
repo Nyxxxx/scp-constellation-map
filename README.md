@@ -30,7 +30,9 @@ works offline; only the fonts need an internet connection.
 | `jokes/`, `jokes_list.json` | What was read for the joke entries (`part_*.txt`), and the list taken from the Joke SCPs hub. `failed_*.txt` lists pages that could not be read. |
 | `make_contests.py`, `contests_base.json` → `contests.json` | Contest names, dates, links, and the descriptions copied from the wiki's Contest Archive. |
 | `make_notes.py` → `notes.json` | GoI and canon descriptions copied from the wiki's Groups of Interest page and Canon Hub. |
-| `make_hubs.py` → `hubs.json` | The tale series: reading lists extracted from the series hubs held by the dataset (42 of about 270 on the wiki). |
+| `fetch_series.py` → `series_hubs.json` | Downloads the wiki's Series Archive and every series hub it lists (one request per second; pages kept in `raw_wiki/`, never fetched twice). |
+| `make_hubs.py` → `hubs.json` | The tale series: reading lists extracted from the series hubs (the dataset's 44, plus the rest downloaded from the wiki). |
+| `mockups/` | Colour variants (`make_mockups.py`) and a spot-check page for tale series (`make_series_check.py`). Their output is not kept in git. |
 | `region_names.json` | Names and one-line descriptions of the regions (written with an AI assistant; the page says so). Keyed by the three most typical tags of each region. |
 | `fuzz.py`, `shot17.py`, `shot18.py` | Automatic browser tests (random clicking on five screen sizes; checks of the latest changes). |
 | `history/` | Earlier versions of the page source and of some inputs. |
@@ -81,9 +83,8 @@ The code is under the MIT licence (`LICENSE`). The content and data come from th
 
 ## Known gaps
 
-- The Tale series menu is a preview: the dataset only holds the series hubs whose title begins with a digit, A or B (44 of about 270).
-  To complete it, download the other hub pages from the wiki (the list is on `scp-wiki.wikidot.com/series-archive`, 23 pages) and run the
-  same extraction on them: `make_hubs.py` expects each hub as an entry with `raw_content` (the page HTML), `tags`, `title`, `creator`, `created_at`.
+- Tale series: 253 of the 268 hubs on the Series Archive (downloaded 11 October 2026). 15 are left out because fewer than two of their pages
+  are on the map (other language branches, pages newer than the dataset, or lists built in a way the extraction cannot read).
 
 - 25 joke entries listed on the Joke SCPs hub are not on the map. 13 were refused by the reading tool (too many requests):
   scp-056-j, 067-j, 069-j, 078-j, 273-j, 2006-j, 2041-j, 4463-j, 9000-j, meta-ex-j, mystery-j, wcpgw-j, tldr-j.

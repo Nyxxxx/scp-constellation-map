@@ -75,7 +75,8 @@ elif step == "all":
     run("make_contests.py", hubs, "contests_base.json", "contests.json")
     run("build.py", RAW, built, "region_names.json", SNAPSHOT, "extra_pages.json")
     run("make_notes.py", hubs, built, "notes.json")
-    run("make_hubs.py", RAW, built, "hubs.json")
+    run("fetch_series.py", "series_hubs.json")   # the wiki's Series Archive and its hubs; pages already in raw_wiki/ are not fetched again
+    run("make_hubs.py", RAW, built, "hubs.json", "series_hubs.json")
     data(); page()
 elif step == "test":
     run("shot17.py"); run("shot18.py"); run("fuzz.py")

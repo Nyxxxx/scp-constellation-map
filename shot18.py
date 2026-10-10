@@ -37,7 +37,7 @@ async def main():
         check("menu grouped by canon", any(x.startswith("Canon: ") for x in heads) and any(x.startswith("No canon") for x in heads), heads[:6])
         await pg.screenshot(path="out/r15-menu.png", clip={"x":0,"y":60,"width":700,"height":640})
         await pg.evaluate("Array.from(document.querySelectorAll('#pop .sortrow button')).find(b=>b.textContent==='By date').click()"); await pg.wait_for_timeout(150)
-        heads = await pg.evaluate("Array.from(document.querySelectorAll('#pop li.grp')).map(e=>e.textContent)"); check("menu by date", heads[:1] == ["2012"], heads[:4])
+        heads = await pg.evaluate("Array.from(document.querySelectorAll('#pop li.grp')).map(e=>e.textContent)"); check("menu by date", len(heads) > 3 and all(h.isdigit() and len(h) == 4 for h in heads) and heads == sorted(heads), heads[:4])
         await pg.evaluate("Array.from(document.querySelectorAll('#pop .sortrow button')).find(b=>b.textContent==='A to Z').click()"); await pg.wait_for_timeout(150)
         await pg.evaluate("Array.from(document.querySelectorAll('#pop li button')).find(b=>b.textContent.includes('Austringers')).click()"); await pg.wait_for_timeout(900)
         body = await pg.evaluate("document.getElementById('pbody').innerText")

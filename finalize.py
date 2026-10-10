@@ -192,15 +192,20 @@ print("repairs (end):", dict(fixed))
 
 # ---- 6. tale series: the reading lists extracted from the series hubs (make_hubs.py), with the canons and GoIs their hub page is tagged with
 if os.path.exists("hubs.json"):
-    hl = []
-    for r in json.load(open("hubs.json")):
+    hl, hubs_read = [], json.load(open("hubs.json"))
+    d["meta"]["hubsRead"] = len(hubs_read)
+    d["meta"]["hubsFromWiki"] = sum(1 for r in hubs_read if r.get("src") == "wiki")
+    for r in hubs_read:
         secs = [[nm, [slug_idx[p] for p in pages if p in slug_idx]] for nm, pages in r["sections"]]
         secs = [sc for sc in secs if sc[1]]
         if sum(len(sc[1]) for sc in secs) < 2: continue
         hl.append({"s": r["slug"], "t": r["title"], "d": r["date"], "a": "(deleted account)" if r["author"] == "deleted" else r["author"], "b": r["blurb"],
                    "k": [tag_idx[t] for t in r["canons"] + r["gois"] if t in tag_idx], "q": secs, "off": r["off"]})
     d["hubs"] = hl
-    d["meta"]["hubsListed"] = HUBS_ON_WIKI
+    # how many series the wiki's Series Archive lists, counted when it was downloaded (fetch_series.py); the estimate otherwise
+    sh = json.load(open("series_hubs.json", encoding="utf-8")) if os.path.exists("series_hubs.json") else {}
+    d["meta"]["hubsListed"] = len(sh) or HUBS_ON_WIKI
+    d["meta"]["hubsFetched"] = max((v.get("fetched_at", "") for v in sh.values()), default="")
     print("tale series:", len(hl), "| pages in at least one:", len({n for x in hl for sc in x["q"] for n in sc[1]}))
 
 missing = sorted(set(titles) - set(added) - set(skipped))
