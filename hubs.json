@@ -5730,6 +5730,7 @@
    [
     "SCPs and Tales referenced, derivative elements and Author's Notes—spoiler-heavy",
     [
+     "scp-554",
      "scp-722",
      "scp-773",
      "scp-287",
@@ -5747,7 +5748,7 @@
     ]
    ]
   ],
-  "n": 17,
+  "n": 18,
   "mode": "list",
   "off": 0,
   "every": 29,
@@ -7500,20 +7501,43 @@
    [
     "Author List",
     [
+     "scp-7027",
      "scp-7034",
+     "scp-7091",
+     "scp-7113",
+     "scp-7160",
+     "scp-7179",
+     "scp-7219",
      "scp-7234",
+     "scp-7291",
      "scp-7303",
+     "scp-7340",
      "scp-7396",
+     "scp-7432",
+     "scp-7450",
+     "scp-7470",
+     "scp-7533",
      "scp-7559",
+     "scp-7579",
+     "scp-7603",
+     "scp-7660",
      "scp-7686",
+     "scp-7725",
+     "scp-7759",
+     "scp-7795",
+     "scp-7840",
      "scp-7841",
      "scp-7898",
+     "scp-7930",
+     "scp-7931",
+     "scp-7932",
      "scp-7933",
-     "scp-7972"
+     "scp-7972",
+     "scp-7980"
     ]
    ]
   ],
-  "n": 10,
+  "n": 33,
   "mode": "list",
   "off": 0,
   "every": 33,

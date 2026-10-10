@@ -69,6 +69,22 @@ def parse(slug, raw):
             elif isinstance(x, NavigableString): texts[idx] += str(x)
         return hit, clean(texts[hit])
 
+    listlike = {}
+
+    def list_paragraph(blk):
+        """A paragraph of three lines or more, most of them opening with a link ("SCP-7027 A is for Annihilation - author"), is a list."""
+        if id(blk) not in listlike:
+            lines, cur_l = [], []
+            for x in blk.descendants:
+                if isinstance(x, Tag) and x.name == "br": lines.append(cur_l); cur_l = []
+                elif isinstance(x, Tag) and x.name == "a": cur_l.append("a")
+                elif isinstance(x, NavigableString) and x.strip() and not any(isinstance(p, Tag) and p.name == "a" for p in x.parents if p is not blk): cur_l.append("t")
+            lines.append(cur_l)
+            full = [l for l in lines if l]
+            starts = sum(1 for l in full if l[0] == "a")
+            listlike[id(blk)] = starts >= 3 and starts >= 0.6 * len(full)
+        return listlike[id(blk)]
+
     # Headings give the section names. Wikidot numbers the headings written by the author (id="toc3"); when a page has such headings,
     # the unnumbered ones belong to cards and inserted modules and are not sections. "cur" is the path of headings above the current spot.
     heads = body.find_all(["h1", "h2", "h3", "h4", "h5", "h6"])
@@ -97,7 +113,8 @@ def parse(slug, raw):
                 # a paragraph that is little more than the link: "Chapter 3: <link>" yes, a sentence with a link in it no
                 rest = btxt[len(txt):].lstrip() if btxt.startswith(txt) else None
                 card = rest is not None and len(txt) > 2 and len(btxt) < 200 and (rest == "" or re.match(r"(by\b|[-–—:(\[|/])", rest, re.I) is not None)   # title first, then the author or a few words
-                if len(txt) >= 0.45 * max(1, len(btxt)) or len(btxt) - len(txt) <= 28 or card: structured.append((order, s, cur, txt, key))
+                lead = btxt.startswith(txt) and len(btxt) < 200 and list_paragraph(blk)   # a line of a list written as one paragraph
+                if len(txt) >= 0.45 * max(1, len(btxt)) or len(btxt) - len(txt) <= 28 or card or lead: structured.append((order, s, cur, txt, key))
                 else: loose.append((order, s, cur, txt))
             else:
                 structured.append((order, s, cur, txt, key))

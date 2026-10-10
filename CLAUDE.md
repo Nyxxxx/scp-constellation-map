@@ -105,10 +105,12 @@ land in slightly different places, and region names are tied to each region's th
 
 ### A. Validated by the owner, waiting to be done
 
-1. **Finish the Tale series menu.** 42 of about 270 series are in (the dataset only holds hubs whose title starts with a digit, A or B).
-   Download the 23 pages of `scp-wiki.wikidot.com/series-archive` (`/p/2` … `/p/23`) for the list, then each hub page, keep the HTML,
-   and feed `make_hubs.py` (it expects `raw_content`, `tags`, `title`, `creator`, `created_at` per hub). Check a sample by eye against the wiki:
-   the owner asked for careful work because a series is often a sub-story of a canon. Then remove the word "preview" from the menu note and the limits text.
+1. **Tale series menu: done on 11 October 2026.** `fetch_series.py` downloads the Series Archive (268 hubs) into `raw_wiki/`; `make_hubs.py`
+   reads the dataset's 44 plus the rest; 253 series have two pages or more on the map. Owner spot-checked 8 (Olympia Project, Team Bird,
+   Kit's Home, Revolution Earth, The Ballad of Neapolio, Schlangenkrieg: fine). SCP Anthology 2022 was missing 23 of 33 entries (one paragraph
+   of "link + text" lines): fixed with the list-paragraph rule. Manhattan Crisis Hub: half its links are Japanese-branch or nonexistent pages,
+   which cannot be on the map; SCP-4661 comes from a character blurb (known limit). Left out: 15 hubs (Japanese-branch pages, or lists the
+   extraction cannot read: Mississippi Blues, World of Wolves, SCP Origins, SCP Anthology 2025, the SAPPHIRE Chronicles).
 2. **Colour redesign.** Done on 11 October 2026 (see "Behaviour decided"). The guide's sentence on name colours ("Red italic names…
    brown italic names") still matches, since canon and GoI colours were kept. An earlier remark, not yet addressed: the light theme was once "a bit too bright".
 3. **Reading order on the map** for a tale series: undecided between nothing, a thin line joining the dots in order, or small numbers next to the dots. Ask.
