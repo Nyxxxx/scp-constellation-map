@@ -1,0 +1,5 @@
+scp-056-j|WebFetch proxy HTTP 429 rate limit; proxy forbade retry
+scp-069-j|WebFetch proxy HTTP 429 rate limit; proxy forbade retry
+scp-067-j|page footer cut off (rating +177 read); norender fetch refused by WebFetch proxy HTTP 429, retry forbidden
+scp-078-j|page footer cut off (rating +340 read); norender fetch refused by WebFetch proxy HTTP 429, retry forbidden
+scp-273-j|page footer cut off (rating +51 read); norender fetch refused by WebFetch proxy HTTP 429, retry forbidden

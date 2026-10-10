@@ -1,0 +1,1 @@
+scp-1047-j|redirects to the joke-scps hub (page tagged "redirect"); with /noredirect/true it reads +60, TroyL, thread started 2022-10, tags: _licensebox esoteric-class joke redirect scp

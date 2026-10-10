@@ -1,0 +1,390 @@
+{
+ "visual|cognitohazard|mind-affecting": {
+  "name": "Cognitohazards & memetics",
+  "desc": "Things that harm through seeing, hearing or knowing them."
+ },
+ "humanoid|sapient|alive": {
+  "name": "Humanoids",
+  "desc": "Anomalous people, ghosts and the reanimated."
+ },
+ "extraterrestrial|transmission|appliance": {
+  "name": "Space & signals",
+  "desc": "Aliens, planets, broadcasts and strange appliances."
+ },
+ "insect|alive|biohazard": {
+  "name": "Insects, parasites & plagues",
+  "desc": "Swarms, infections and biological hazards."
+ },
+ "portal|extradimensional|spatial": {
+  "name": "Portals & other places",
+  "desc": "Doors, pocket dimensions and impossible buildings."
+ },
+ "broken-god|religious-fiction|maxwellism": {
+  "name": "Churches & gods",
+  "desc": "The Broken God, the Scarlet King and other anomalous faiths."
+ },
+ "computer|electronic|online": {
+  "name": "Computers & the internet",
+  "desc": "Programs, websites, AIs and games of chance."
+ },
+ "aquatic|animal|fish": {
+  "name": "Sea creatures",
+  "desc": "Fish, whales and things from deep water."
+ },
+ "artifact|chemical|liquid": {
+  "name": "Artifacts & substances",
+  "desc": "Old objects, liquids and chemicals with odd properties."
+ },
+ "doctor-gears|doctor-clef|doctor-kondraki": {
+  "name": "Old guard: Clef, Gears, Kondraki",
+  "desc": "Tales of the wiki's earliest senior staff characters."
+ },
+ "bureaucracy|ethics-committee|raisa": {
+  "name": "Foundation bureaucracy",
+  "desc": "The Ethics Committee, RAISA, the Administrator and paperwork."
+ },
+ "horror|psychological-horror|body-horror": {
+  "name": "Horror",
+  "desc": "Psychological horror, body horror and bleak endings."
+ },
+ "slice-of-life|lgbtq|bittersweet": {
+  "name": "Slice of life & romance",
+  "desc": "Quiet, bittersweet and romantic stories."
+ },
+ "weapon|robotic|jewelry": {
+  "name": "Weapons & clockwork",
+  "desc": "Weapons, robots, machines and military history."
+ },
+ "tool|food|sculpture": {
+  "name": "Everyday objects",
+  "desc": "Tools, food and household things that misbehave."
+ },
+ "marshall-carter-and-dark|corporate|black-diamond-billions": {
+  "tag": "marshall-carter-and-dark",
+  "desc": "The London club that sells anomalies to the very rich."
+ },
+ "crime-fiction|unusual-incidents-unit|third-law": {
+  "name": "Crime fiction",
+  "desc": "Detectives, the FBI's Unusual Incidents Unit and Three Portlands."
+ },
+ "vehicle|airborne|mechanical": {
+  "name": "Vehicles",
+  "desc": "Cars, ships, trains and aircraft."
+ },
+ "chaos-insurgency|military-fiction|spy-fiction": {
+  "name": "Military & spy fiction",
+  "desc": "Chaos Insurgency and Global Occult Coalition operations."
+ },
+ "foundation-document|worldbuilding|prometheus": {
+  "name": "Science fiction & worldbuilding",
+  "desc": "In-universe documents, Prometheus Labs and far futures."
+ },
+ "bird|animal|reptile": {
+  "name": "Birds & reptiles",
+  "desc": "Birds, lizards, dinosaurs and dragons."
+ },
+ "plant|tree|extremity": {
+  "name": "Plants & forests",
+  "desc": "Trees, forests and things that grow."
+ },
+ "toy|child|tactile": {
+  "name": "Toys & children",
+  "desc": "Toys, teddy bears and anomalies involving children."
+ },
+ "cosmic-horror|broken-masquerade|fifthist": {
+  "name": "Cosmic horror",
+  "desc": "The Fifth Church, watching stars and the Veil breaking."
+ },
+ "resurrection|iris-thompson|able": {
+  "name": "Able, Cain & Iris",
+  "desc": "Classic characters and the Resurrection canon."
+ },
+ "comedy|absurdism|black-comedy": {
+  "name": "Comedy & absurdism",
+  "desc": "Jokes, the Shark Punching Center and absurd timelines."
+ },
+ "on-guard-43|doctor-blank|doctor-wettle": {
+  "tag": "on-guard-43",
+  "desc": "Site-43 and its recurring staff."
+ },
+ "rats-nest|post-apocalyptic|grabnok": {
+  "name": "Post-apocalypse",
+  "desc": "After the end of the world, including the Rat's Nest canon."
+ },
+ "medical|factory|restaurant": {
+  "name": "Food & medicine",
+  "desc": "Medicine, restaurants and The Factory's products."
+ },
+ "from-120s-archives|homo-sapiens-sidhe|faerie": {
+  "name": "Fae & the Hanged King",
+  "desc": "Fairies, Alagadda and old kingdoms."
+ },
+ "s&c-plastics|halloween|slice-of-life": {
+  "tag": "s&c-plastics",
+  "desc": "Small-town strangeness in Sloth's Pit, Wisconsin."
+ },
+ "parawatch|correspondence|but-a-dream": {
+  "tag": "parawatch",
+  "desc": "An online forum of amateur paranormal investigators."
+ },
+ "mister|gamers-against-weed|dr-wondertainment": {
+  "name": "Anomalous products & pranks",
+  "desc": "Dr. Wondertainment, the Little Misters and Gamers Against Weed."
+ },
+ "poetry|no-dialogue|pattern-screamer": {
+  "name": "Poetry",
+  "desc": "Poems and pieces without dialogue."
+ },
+ "sleep|dream|oneiroi": {
+  "name": "Dreams & sleep",
+  "desc": "Dreams, sleepers and the Oneiroi Collective."
+ },
+ "sarkic|daevite|grand-karcist-ion": {
+  "tag": "sarkic",
+  "desc": "Flesh-shaping cults and the Daevite empire."
+ },
+ "animal|canine|feline": {
+  "name": "Dogs, cats & rodents",
+  "desc": "Pets and small mammals."
+ },
+ "wilsons-wildlife|faeowynn-wilson|tim-wilson": {
+  "tag": "wilsons-wildlife",
+  "desc": "A shelter for anomalous animals in Oregon."
+ },
+ "herman-fuller|dread&circuses|fantasy": {
+  "tag": "herman-fuller",
+  "desc": "A travelling circus of anomalous performers."
+ },
+ "the-sculpture|competitive-eschatology|self-keeping-secret": {
+  "name": "Around SCP-173",
+  "desc": "The Sculpture, its festival and secrets that keep themselves."
+ },
+ "nobody|manna-charitable-foundation|dr-wondertainment": {
+  "name": "Wanderers & charities",
+  "desc": "Nobody, the Manna Charitable Foundation and wandering figures."
+ },
+ "temporal|paradox|future": {
+  "name": "Time & paradox",
+  "desc": "Time travel, loops and the Temporal Anomalies Department."
+ },
+ "are-we-cool-yet|the-critic|man-who-wasnt-there": {
+  "name": "Anomalous art",
+  "desc": "Are We Cool Yet?, the Critic and the art world."
+ },
+ "plague-doctor|western|aces-and-eights": {
+  "name": "Westerns & the Plague Doctor",
+  "desc": "SCP-049 and the frontier canon Aces and Eights."
+ },
+ "gru-division-p|ijamea|7th-occult-war": {
+  "name": "Occult wars",
+  "desc": "GRU Division \"P\", IJAMEA and the Seventh Occult War."
+ },
+ "clothing|ocular|sensory": {
+  "name": "Clothing & masks",
+  "desc": "Things you wear, and what they do to you."
+ },
+ "sport|equine|game": {
+  "name": "Sport & games",
+  "desc": "Sports, games, horses and rabbits."
+ },
+ "valravn|our-open-veins|ninth-world": {
+  "tag": "our-open-veins",
+  "desc": "A canon featuring the Valravn Corporation and the Sin Nombre Cartel."
+ },
+ "daybreak|eric|project-thaumiel": {
+  "name": "Dystopias",
+  "desc": "Daybreak, Eric's toys and worlds gone wrong."
+ },
+ "cinema|stillborn-skies|media": {
+  "name": "Cinema & film",
+  "desc": "Films and cinema, including Chaos on the Monolith."
+ },
+ "alexylva|bellerverse|post-apocalyptic": {
+  "tag": "alexylva",
+  "desc": "A university from another world, and the Bellerverse."
+ },
+ "photographic|accelerate-the-future|visual": {
+  "name": "Photographs & cameras",
+  "desc": "Cameras and pictures that show too much."
+ },
+ "orcadia|doctor-garrison|forgotten-memories": {
+  "tag": "orcadia",
+  "desc": "The Finnfolk and the seas around Orkney."
+ },
+ "nightfall|alcur-hospital|half-cat-josie": {
+  "tag": "nightfall",
+  "desc": "A fantasy canon that includes Alcur Hospital and Josie the Half-Cat."
+ },
+ "unreality-dept|alex-thorley|untitled-series": {
+  "name": "Department of Unreality",
+  "desc": "Alex Thorley and surreal stories."
+ },
+ "unhuman|greazeburger|post-apocalyptic": {
+  "tag": "unhuman",
+  "desc": "A post-apocalyptic comedy canon, with Greazeburger."
+ },
+ "the-coldest-war|period-piece|spy-fiction": {
+  "tag": "the-coldest-war",
+  "desc": "Cold War era spy and military stories."
+ },
+ "arcadia|game|electronic": {
+  "tag": "arcadia",
+  "desc": "An anomalous video game company."
+ },
+ "food|artifact|liquid": {
+  "name": "Artifacts, food & substances",
+  "desc": "Old objects, food, liquids and chemicals with odd properties."
+ },
+ "vehicle|portal|extradimensional": {
+  "name": "Places, portals & vehicles",
+  "desc": "Doors, pocket dimensions, impossible buildings and things that travel."
+ },
+ "animal|alive|species": {
+  "name": "Animals & species",
+  "desc": "Insects, fish, sea creatures and whole anomalous species."
+ },
+ "comedy|doctor-gears|doctor-clef": {
+  "name": "Comedy & the old guard",
+  "desc": "Comedy, absurdism and tales of the earliest senior staff: Clef, Gears, Kondraki."
+ },
+ "action|crime-fiction|fantasy": {
+  "name": "Action & adventure",
+  "desc": "Fights, chases, crime and military stories, often with the Global Occult Coalition."
+ },
+ "extraterrestrial|transmission|planet": {
+  "name": "Space & signals",
+  "desc": "Aliens, planets, broadcasts and gravity."
+ },
+ "murder-monster|horror|the-sculpture": {
+  "name": "Monsters & SCP-173",
+  "desc": "Creatures that kill, the Sculpture, and the Rat's Nest canon."
+ },
+ "marshall-carter-and-dark|herman-fuller|corporate": {
+  "name": "Anomalous business & the circus",
+  "desc": "Marshall, Carter & Dark, Herman Fuller's Circus and other companies."
+ },
+ "sarkic|broken-god|religious-fiction": {
+  "name": "Sarkicism & the Broken God",
+  "desc": "Flesh-shaping cults, the Mekhanite church and other anomalous faiths."
+ },
+ "reanimation|intangible|humanoid": {
+  "name": "Ghosts & the undead",
+  "desc": "Ghosts, skeletons, reanimated bodies and loose limbs."
+ },
+ "tool|telekinetic|photographic": {
+  "name": "Tools, cameras & fire",
+  "desc": "Tools, photographs and objects that move, heat or burn."
+ },
+ "lgbtq|bittersweet|slice-of-life": {
+  "name": "Slice of life & romance",
+  "desc": "Quiet, bittersweet and romantic stories."
+ },
+ "on-guard-43|doctor-blank|doctor-lillihammer": {
+  "tag": "on-guard-43",
+  "desc": "Site-43 and its recurring staff."
+ },
+ "virus|fungus|biohazard": {
+  "name": "Plagues & contagion",
+  "desc": "Viruses, fungi, bacteria and other biological hazards."
+ },
+ "toy|child|bear": {
+  "name": "Toys & children",
+  "desc": "Toys, teddy bears and anomalies involving children."
+ },
+ "plant|tree|forest": {
+  "name": "Plants & forests",
+  "desc": "Trees, forests, islands and things that grow."
+ },
+ "third-law|twisted-pines|three-portlands": {
+  "name": "Three Portlands & Third Law",
+  "desc": "Three Portlands, Anderson Robotics and the canons Third Law and Those Twisted Pines."
+ },
+ "bureaucracy|chaos-insurgency|anomalous-event": {
+  "name": "Bureaucracy & insurgency",
+  "desc": "Foundation paperwork, the Chaos Insurgency, spies and period pieces."
+ },
+ "probability|city|currency": {
+  "name": "Luck, money & cities",
+  "desc": "Chance, currency and anomalous cities."
+ },
+ "no-dialogue|worldbuilding|foundation-document": {
+  "name": "Documents & worldbuilding",
+  "desc": "In-universe documents, academic papers and GOC casefiles."
+ },
+ "sculpture|robotic|self-replicating": {
+  "name": "Statues, robots & clockwork",
+  "desc": "Sculptures, machines and things that copy themselves."
+ },
+ "serpents-hand|alexylva|wanderers-library": {
+  "name": "Serpent's Hand & the Library",
+  "desc": "The Wanderers' Library, its patrons and Alexylva University."
+ },
+ "appliance|electrical|electronic": {
+  "name": "Appliances & electricity",
+  "desc": "Household machines, electrical and mechanical devices."
+ },
+ "narrative|metafiction|pataphysics-dept": {
+  "name": "Metafiction",
+  "desc": "Stories aware of being stories, and the Department of Pataphysics."
+ },
+ "shark-punching-center|cinema|the-sharkest-timeline": {
+  "name": "Sharks, cinema & absurd timelines",
+  "desc": "The Shark Punching Center, the Sharkest Timeline and films."
+ },
+ "canine|animal|feline": {
+  "name": "Dogs & cats",
+  "desc": "Dogs, cats and other household animals."
+ },
+ "dream|sleep|oneiroi": {
+  "name": "Dreams & sleep",
+  "desc": "Dreams, sleepers and the Oneiroi Collective."
+ },
+ "s&c-plastics|halloween|doctor-sinclair": {
+  "tag": "s&c-plastics",
+  "desc": "Small-town strangeness in Sloth's Pit, Wisconsin."
+ },
+ "nobody|manna-charitable-foundation|the-administrator": {
+  "name": "Mysterious figures & charities",
+  "desc": "Nobody, the Administrator and the Manna Charitable Foundation."
+ },
+ "prometheus|end-of-death|science-fiction": {
+  "name": "Science fiction",
+  "desc": "Prometheus Labs, the End of Death canon, space opera and dystopias."
+ },
+ "resurrection|iris-thompson|last-hope": {
+  "name": "Resurrection & Iris",
+  "desc": "Iris Thompson, Agent Adams, Dr. Light and the Resurrection canon."
+ },
+ "poetry|pattern-screamer|bleak": {
+  "name": "Poetry",
+  "desc": "Poems, pattern screamers and bleak pieces."
+ },
+ "hanged-king|alagadda|wandsmen": {
+  "name": "Alagadda & the Hanged King",
+  "desc": "The Hanged King's court, the Wandsmen and the Bellerverse."
+ },
+ "factory|polyhedral|abnormalities": {
+  "name": "The Factory & strange shapes",
+  "desc": "The Factory, polyhedral objects and anomalous buildings."
+ },
+ "ijamea|primate|7th-occult-war": {
+  "name": "Occult wars",
+  "desc": "IJAMEA, the Obskurakorps and the Seventh Occult War."
+ },
+ "unreality-dept|alex-thorley|deepwell-catalog": {
+  "name": "Department of Unreality",
+  "desc": "Alex Thorley, the Site-17 Deepwell Catalog and surreal stories."
+ },
+ "afterlife|tactical-theology|undervegas": {
+  "name": "Afterlife & tactical theology",
+  "desc": "The afterlife, the Department of Tactical Theology and Undervegas."
+ },
+ "unusual-incidents-unit|agent-rodney|miracle-liberation-front": {
+  "name": "Unusual Incidents Unit cases",
+  "desc": "FBI case files and stories of the Unusual Incidents Unit."
+ },
+ "rodent|animal|alive": {
+  "name": "Rodents",
+  "desc": "Rats, mice, squirrels and beavers."
+ }
+}

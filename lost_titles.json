@@ -1,0 +1,677 @@
+[
+{
+"slug": "scp-l000",
+"id": "SCP-L000",
+"title": "[DATA LOST]"
+},
+{
+"slug": "scp-l001",
+"id": "SCP-L001",
+"title": "C:\\$Recycle.Bin\\hmcl_direct\\scp\\001"
+},
+{
+"slug": "scp-l002",
+"id": "SCP-L002",
+"title": "The King in Memphis and the Day the Music Died"
+},
+{
+"slug": "scp-l003",
+"id": "SCP-L003",
+"title": "Where the Water Was"
+},
+{
+"slug": "scp-l004",
+"id": "SCP-L004",
+"title": "Apophemera"
+},
+{
+"slug": "scp-l005",
+"id": "SCP-L005",
+"title": "The Key That Does Not Open"
+},
+{
+"slug": "scp-l006",
+"id": "SCP-L006",
+"title": "Movie Stars"
+},
+{
+"slug": "scp-l007",
+"id": "SCP-L007",
+"title": "MY INTERNS ARE ON THEIR WAY TO SUE Y'ALL FOR LIBEL"
+},
+{
+"slug": "scp-l008",
+"id": "SCP-L008",
+"title": "LETHIMOUT"
+},
+{
+"slug": "scp-l009",
+"id": "SCP-L009",
+"title": "The Only Poem"
+},
+{
+"slug": "scp-l010",
+"id": "SCP-L010",
+"title": "LIBRARIAN TETHER BRUTALIST CAPITALISM (I LOVED YOU LIKE NOBODY ELSE COULD)"
+},
+{
+"slug": "scp-l011",
+"id": "SCP-L011",
+"title": "A Curious Case"
+},
+{
+"slug": "scp-l012",
+"id": "SCP-L012",
+"title": "Prototype? SENTINEL"
+},
+{
+"slug": "scp-l013",
+"id": "SCP-L013",
+"title": "A Lossy Format"
+},
+{
+"slug": "scp-l014",
+"id": "SCP-L014",
+"title": "She Dreamt She Was a Bulldozer, She Dreamt She Was Alone in an Empty Field"
+},
+{
+"slug": "scp-l015",
+"id": "SCP-L015",
+"title": "So, you've been assigned to work on SCP-L015!"
+},
+{
+"slug": "scp-l016",
+"id": "SCP-L016",
+"title": "“Bat Man” from Houston, Texas"
+},
+{
+"slug": "scp-l017",
+"id": "SCP-L017",
+"title": "“Those tramps don't get along with the format!”"
+},
+{
+"slug": "scp-l018",
+"id": "SCP-L018",
+"title": "Please Keep the Screen On."
+},
+{
+"slug": "scp-l019",
+"id": "SCP-L019",
+"title": "One day, they'll wake up and realize they haven't thought about it at all."
+},
+{
+"slug": "scp-l020",
+"id": "SCP-L020",
+"title": "Ants, Ants, Ants!"
+},
+{
+"slug": "scp-l021",
+"id": "SCP-L021",
+"title": "Hiala"
+},
+{
+"slug": "scp-l022",
+"id": "SCP-L022",
+"title": "Missing Persons"
+},
+{
+"slug": "scp-l023",
+"id": "SCP-L023",
+"title": "Shards of a Looking Glass"
+},
+{
+"slug": "scp-l024",
+"id": "SCP-L024",
+"title": "What Was Will Be"
+},
+{
+"slug": "scp-l026",
+"id": "SCP-L026",
+"title": "Venus Flytrap"
+},
+{
+"slug": "scp-l033",
+"id": "SCP-L033",
+"title": "Ceiling Drip."
+},
+{
+"slug": "scp-l034",
+"id": "SCP-L034",
+"title": "Don't Click On This, Don't Look At Me, Goddamnit"
+},
+{
+"slug": "scp-l037",
+"id": "SCP-L037",
+"title": "Then It Stopped Short, Never To Go Again"
+},
+{
+"slug": "scp-l042",
+"id": "SCP-L042",
+"title": "The 13th Gate"
+},
+{
+"slug": "scp-l043",
+"id": "SCP-L043",
+"title": "Turn Me Off, Dead Man"
+},
+{
+"slug": "scp-l048",
+"id": "SCP-L048",
+"title": "Things Coming To Light"
+},
+{
+"slug": "scp-l049",
+"id": "SCP-L049",
+"title": "Humanoid Corvine Sickness"
+},
+{
+"slug": "scp-l055",
+"id": "SCP-L055",
+"title": "Love, Polluted By Me (What Problems Can’t Money Solve?)"
+},
+{
+"slug": "scp-l056",
+"id": "SCP-L056",
+"title": "El Clase D Desaparicido"
+},
+{
+"slug": "scp-l057",
+"id": "SCP-L057",
+"title": "Snuff Swap"
+},
+{
+"slug": "scp-l064",
+"id": "SCP-L064",
+"title": "A Wall Between Two Gardens"
+},
+{
+"slug": "scp-l066",
+"id": "SCP-L066",
+"title": "Errata's Toy"
+},
+{
+"slug": "scp-l068",
+"id": "SCP-L068",
+"title": "Haiga sido como haiga sido."
+},
+{
+"slug": "scp-l069",
+"id": "SCP-L069",
+"title": "A False Pederasty"
+},
+{
+"slug": "scp-l072",
+"id": "SCP-L072",
+"title": "Fear Activation Tablets"
+},
+{
+"slug": "scp-l076",
+"id": "SCP-L076",
+"title": "Apricity"
+},
+{
+"slug": "scp-l078",
+"id": "SCP-L078",
+"title": "your floor"
+},
+{
+"slug": "scp-l079",
+"id": "SCP-L079",
+"title": "My New Body."
+},
+{
+"slug": "scp-l082",
+"id": "SCP-L082",
+"title": "IN THE SLAUGHTERHOUSE (HALL) OF THE CANNIBAL KING"
+},
+{
+"slug": "scp-l083",
+"id": "SCP-L083",
+"title": "Crosseyed and Painless"
+},
+{
+"slug": "scp-l085",
+"id": "SCP-L085",
+"title": "i wanna be a __ when i grow up"
+},
+{
+"slug": "scp-l086",
+"id": "SCP-L086",
+"title": "AND THE WOLF IS YOU"
+},
+{
+"slug": "scp-l087",
+"id": "SCP-L087",
+"title": "Improper Practice"
+},
+{
+"slug": "scp-l089",
+"id": "SCP-L089",
+"title": "An Exorcism"
+},
+{
+"slug": "scp-l093",
+"id": "SCP-L093",
+"title": "American Ghosts"
+},
+{
+"slug": "scp-l096",
+"id": "SCP-L096",
+"title": "Give Up Your Son So We May Eat Him"
+},
+{
+"slug": "scp-l099",
+"id": "SCP-L099",
+"title": "The False Messiah"
+},
+{
+"slug": "scp-l100",
+"id": "SCP-L100",
+"title": "The Century"
+},
+{
+"slug": "scp-l105",
+"id": "SCP-L105",
+"title": "The Witness"
+},
+{
+"slug": "scp-l106",
+"id": "SCP-L106",
+"title": "High School Torture Doll."
+},
+{
+"slug": "scp-l111",
+"id": "SCP-L111",
+"title": "Last Resort"
+},
+{
+"slug": "scp-l113",
+"id": "SCP-L113",
+"title": "By the Way, I Know Everything"
+},
+{
+"slug": "scp-l116",
+"id": "SCP-L116",
+"title": "Ice Mayhem: The Movie"
+},
+{
+"slug": "scp-l119",
+"id": "SCP-L119",
+"title": "An Itemized Account of the American Failure"
+},
+{
+"slug": "scp-l120",
+"id": "SCP-L120",
+"title": "The \"Teleporting Button\""
+},
+{
+"slug": "scp-l123",
+"id": "SCP-L123",
+"title": "Its dark in here."
+},
+{
+"slug": "scp-l134",
+"id": "SCP-L134",
+"title": "ice may ham: delicious birthday cake by for dado"
+},
+{
+"slug": "scp-l139",
+"id": "SCP-L139",
+"title": "nowhere to go"
+},
+{
+"slug": "scp-l140",
+"id": "SCP-L140",
+"title": "Wish You Were Here"
+},
+{
+"slug": "scp-l143",
+"id": "SCP-L143",
+"title": "Stockpiles Of Sentiment"
+},
+{
+"slug": "scp-l157",
+"id": "SCP-L157",
+"title": "Señor Delegate"
+},
+{
+"slug": "scp-l173",
+"id": "SCP-L173",
+"title": "Suspiciously Complicated Placeholder"
+},
+{
+"slug": "scp-l179",
+"id": "SCP-L179",
+"title": "sungazing"
+},
+{
+"slug": "scp-l185",
+"id": "SCP-L185",
+"title": "A Field of Spikes"
+},
+{
+"slug": "scp-l193",
+"id": "SCP-L193",
+"title": "Pulverized."
+},
+{
+"slug": "scp-l199",
+"id": "SCP-L199",
+"title": "Carted off."
+},
+{
+"slug": "scp-l200",
+"id": "SCP-L200",
+"title": "The Lozovac Door"
+},
+{
+"slug": "scp-l210",
+"id": "SCP-L210",
+"title": "Castle On The Hill / An Immortal Mourns The Way Things Used To Be"
+},
+{
+"slug": "scp-l231",
+"id": "SCP-L231",
+"title": "YOU WILL NOT KEEP ME HERE"
+},
+{
+"slug": "scp-l239",
+"id": "SCP-L239",
+"title": "SILVERWITCH"
+},
+{
+"slug": "scp-l271",
+"id": "SCP-L271",
+"title": "Lost, once again"
+},
+{
+"slug": "scp-l294",
+"id": "SCP-L294",
+"title": "Autobiographical Student Film"
+},
+{
+"slug": "scp-l300",
+"id": "SCP-L300",
+"title": "Mermaid’s Kin."
+},
+{
+"slug": "scp-l313",
+"id": "SCP-L313",
+"title": "Frost and Found"
+},
+{
+"slug": "scp-l322",
+"id": "SCP-L322",
+"title": "Sanguivore Statue"
+},
+{
+"slug": "scp-l330",
+"id": "SCP-L330",
+"title": "Stay Just A While Longer"
+},
+{
+"slug": "scp-l333",
+"id": "SCP-L333",
+"title": "YOU HAVE BEEN CURSED"
+},
+{
+"slug": "scp-l343",
+"id": "SCP-L343",
+"title": "Still not building it."
+},
+{
+"slug": "scp-l347",
+"id": "SCP-L347",
+"title": "Trajectory of a Broken Dream"
+},
+{
+"slug": "scp-l363",
+"id": "SCP-L363",
+"title": "The Technique"
+},
+{
+"slug": "scp-l369",
+"id": "SCP-L369",
+"title": "Apartment Under Observation"
+},
+{
+"slug": "scp-l399",
+"id": "SCP-L399",
+"title": "A Lethean Visitor"
+},
+{
+"slug": "scp-l400",
+"id": "SCP-L400",
+"title": "Tradition"
+},
+{
+"slug": "scp-l402",
+"id": "SCP-L402",
+"title": "From Last Time"
+},
+{
+"slug": "scp-l408",
+"id": "SCP-L408",
+"title": "Crab (G)rave"
+},
+{
+"slug": "scp-l411",
+"id": "SCP-L411",
+"title": "Kids"
+},
+{
+"slug": "scp-l425",
+"id": "SCP-L425",
+"title": "A Star's Signal"
+},
+{
+"slug": "scp-l426",
+"id": "SCP-L426",
+"title": "I, Hostility"
+},
+{
+"slug": "scp-l444",
+"id": "SCP-L444",
+"title": "Requiem for the Noosphere"
+},
+{
+"slug": "scp-l451",
+"id": "SCP-L451",
+"title": "21st Century Illiteracy Crisis"
+},
+{
+"slug": "scp-l462",
+"id": "SCP-L462",
+"title": "Pet Project"
+},
+{
+"slug": "scp-l499",
+"id": "SCP-L499",
+"title": "Die Patriarch! The Screams of Infancy"
+},
+{
+"slug": "scp-l500",
+"id": "SCP-L500",
+"title": "MME."
+},
+{
+"slug": "scp-l501",
+"id": "SCP-L501",
+"title": "Depravity's Limit"
+},
+{
+"slug": "scp-l521",
+"id": "SCP-L521",
+"title": "Corpse Blender"
+},
+{
+"slug": "scp-l522",
+"id": "SCP-L522",
+"title": "Mooving On Is Hard"
+},
+{
+"slug": "scp-l527",
+"id": "SCP-L527",
+"title": "NIGHT SCHOOL"
+},
+{
+"slug": "scp-l555",
+"id": "SCP-L555",
+"title": "Forgive them."
+},
+{
+"slug": "scp-l576",
+"id": "SCP-L576",
+"title": "The Best Years of Your Life"
+},
+{
+"slug": "scp-l595",
+"id": "SCP-L595",
+"title": "Upstairs Neighbor"
+},
+{
+"slug": "scp-l600",
+"id": "SCP-L600",
+"title": "Elegy for the Living"
+},
+{
+"slug": "scp-l610",
+"id": "SCP-L610",
+"title": "The Flesh That Knows."
+},
+{
+"slug": "scp-l616",
+"id": "SCP-L616",
+"title": "The Testament"
+},
+{
+"slug": "scp-l618",
+"id": "SCP-L618",
+"title": "Aglet Redux"
+},
+{
+"slug": "scp-l666",
+"id": "SCP-L666",
+"title": "Horsemeat."
+},
+{
+"slug": "scp-l700",
+"id": "SCP-L700",
+"title": "The Things We Do"
+},
+{
+"slug": "scp-l724",
+"id": "SCP-L724",
+"title": "Technician Attention Needed"
+},
+{
+"slug": "scp-l726",
+"id": "SCP-L726",
+"title": "A Good Case For Grief Counseling"
+},
+{
+"slug": "scp-l744",
+"id": "SCP-L744",
+"title": "Mechanophobia"
+},
+{
+"slug": "scp-l749",
+"id": "SCP-L749",
+"title": "An Unsolvable Case"
+},
+{
+"slug": "scp-l777",
+"id": "SCP-L777",
+"title": "Heaven on Earth."
+},
+{
+"slug": "scp-l790",
+"id": "SCP-L790",
+"title": "Department of"
+},
+{
+"slug": "scp-l799",
+"id": "SCP-L799",
+"title": "The Dark Forest"
+},
+{
+"slug": "scp-l800",
+"id": "SCP-L800",
+"title": "The Pure Land"
+},
+{
+"slug": "scp-l804",
+"id": "SCP-L804",
+"title": "Become Smaller And Smaller"
+},
+{
+"slug": "scp-l818",
+"id": "SCP-L818",
+"title": "don't be so blue."
+},
+{
+"slug": "scp-l872",
+"id": "SCP-L872",
+"title": "The Elephant in the Room"
+},
+{
+"slug": "scp-l888",
+"id": "SCP-L888",
+"title": "Can Opener."
+},
+{
+"slug": "scp-l899",
+"id": "SCP-L899",
+"title": "EMESIS NUKE"
+},
+{
+"slug": "scp-l900",
+"id": "SCP-L900",
+"title": "The Failsafe"
+},
+{
+"slug": "scp-l909",
+"id": "SCP-L909",
+"title": "Where does it go?"
+},
+{
+"slug": "scp-l911",
+"id": "SCP-L911",
+"title": "We're Doing Well Now."
+},
+{
+"slug": "scp-l920",
+"id": "SCP-L920",
+"title": "SOLVITUR AMBULANDO (IT IS SOLVED BY WALKING)"
+},
+{
+"slug": "scp-l926",
+"id": "SCP-L926",
+"title": "Ever Burning Flame"
+},
+{
+"slug": "scp-l969",
+"id": "SCP-L969",
+"title": "Pacto del Olvido"
+},
+{
+"slug": "scp-l994",
+"id": "SCP-L994",
+"title": "One Foot Out The Door"
+},
+{
+"slug": "scp-l997",
+"id": "SCP-L997",
+"title": "BIG SHOT"
+},
+{
+"slug": "scp-l998",
+"id": "SCP-L998",
+"title": "Paperwraith."
+},
+{
+"slug": "scp-l999",
+"id": "SCP-L999",
+"title": "Cranial Valve"
+}
+]

@@ -1,0 +1,4 @@
+scp-2006-j|fetch proxy refused request (HTTP 429 rate limit), told not to retry
+scp-2041-j|fetch proxy refused request (HTTP 429 rate limit), told not to retry
+scp-3303-j|could not be read after two tries (CLIENT_ERROR from target site, page probably does not exist)
+scp-3428-j|could not be read after two tries (CLIENT_ERROR from target site, page probably does not exist)

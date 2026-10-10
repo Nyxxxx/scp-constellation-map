@@ -1,0 +1,526 @@
+[
+ {
+  "slug": "gears-birthday-contest-2009",
+  "name": "Gears Birthday Contest 2009",
+  "hosts": "Dr Gears",
+  "dates": "2009/8/07 - 2009/8/19",
+  "desc": "To celebrate Dr Gears's birthday (the user, not the character), a general horror-themed contest is run.",
+  "win": [
+   "Opportunity Knocks, tunedtoadeadchannel"
+  ]
+ },
+ {
+  "slug": "the-great-short-story-contest-archives",
+  "name": "The Great Short Story Contest",
+  "hosts": "agatharights",
+  "dates": "2010/1/27 - 2010/9/30",
+  "desc": "Multiple short contests, each themed around a short prompt.",
+  "win": [
+   "Varied (See hub)"
+  ]
+ },
+ {
+  "slug": "scp1000contesthub",
+  "name": "The SCP-1000 Contest",
+  "hosts": "SCP Wiki Staff",
+  "dates": "2011/7/27 - 2011/9/01",
+  "desc": "A contest to determine which SCP will go in the coveted SCP-1000 slot, themed around folktales and urban legends.",
+  "win": [
+   "SCP-1000 - Bigfoot, thedeadlymoose"
+  ]
+ },
+ {
+  "slug": "halloween-contest",
+  "name": "Halloween Contest, 2012",
+  "hosts": "TroyL",
+  "dates": "2012/10/21 - 2012/10/31",
+  "desc": "A tale of themes which incorporate the SCP Foundation and an in-universe Halloween in some shape or form.",
+  "win": [
+   "Treats, Dr Gears",
+   "2013 - 2014"
+  ]
+ },
+ {
+  "slug": "new-years-contest",
+  "name": "New Years Canon Contest, 2013",
+  "hosts": "TroyL",
+  "dates": "2013/1/11 - 2013/2/15",
+  "desc": "A contest to create some new canons, which birthed some of the most popular onsite canons to this day.",
+  "win": [
+   "The Unfounded Canon, by DrClef, Fantem, Photosynthetic, & Pig_catapult"
+  ]
+ },
+ {
+  "slug": "five-questions",
+  "name": "Five Questions Contest",
+  "hosts": "DrEverettMann",
+  "dates": "2013/2/25 - 2013/3/22",
+  "desc": "Five questions, each dealing with an ambiguity or plot hole in another article, are posed. The authors were tasked to write tales answering said questions.",
+  "win": [
+   "Iteration 0, HammerMaiden",
+   "Playing God, Rikks",
+   "Children of Doubt, [Anonymous]",
+   "A Slumber Did My Spirit Seal, Dmatix",
+   "Bugs, giant enemy spycrab"
+  ]
+ },
+ {
+  "slug": "time-contest",
+  "name": "Time Contest",
+  "hosts": "Drewbear",
+  "dates": "2013/8/01 - 2013/9/07",
+  "desc": "A contest centered around how pre-existing SCPs would interact with the passage of time.",
+  "win": [
+   "And the Winner Is..., Smapti"
+  ]
+ },
+ {
+  "slug": "scp2000contesthub",
+  "name": "The SCP-2000 Contest",
+  "hosts": "SCP Wiki Staff",
+  "dates": "2013/10/28 - 2013/12/13",
+  "desc": "A contest to win the coveted SCP-2000 slot, themed around the concept of Sci-fi.",
+  "win": [
+   "SCP-2000 - Deus Ex Machina, HammerMaiden"
+  ]
+ },
+ {
+  "slug": "under-appreciated-contest",
+  "name": "Under-Appreciated Contest",
+  "hosts": "CryogenChaos",
+  "dates": "2014/3/07 - 2014/4/11",
+  "desc": "A contest to shine the spotlight on some woefully overlooked articles using tales.",
+  "win": [
+   "Exit History, HammerMaiden",
+   "Exploded Diagram of a Young Woman, Chubert"
+  ]
+ },
+ {
+  "slug": "goi-contest-2014",
+  "name": "Groups of Interest Contest!",
+  "hosts": "TroyL",
+  "dates": "2014/5/28 - 2014/7/12",
+  "desc": "Some of our most famous Groups of Interest have their origins in this team contest, where teams of authors worked together to invent some more players in the SCP universe.",
+  "win": [
+   "Serpent's Hand, by thedeadlymoose, Dexanote, Vivax, & Zyn"
+  ]
+ },
+ {
+  "slug": "dystopia-contest",
+  "name": "Dystopia Contest",
+  "hosts": "Rejekyll",
+  "dates": "2014/10/29 - 2014/12/07",
+  "desc": "Dystopian blurb.",
+  "win": [
+   "Mission Statement, Dr Reach",
+   "2015 - 2016"
+  ]
+ },
+ {
+  "slug": "reimagining-contest",
+  "name": "Reimagining Contest",
+  "hosts": "thedeadlymoose & TroyL",
+  "dates": "2015/2/03 - 2015/3/10",
+  "desc": "In this contest, some of the oldest and most classic articles on the site were treated to a makeover and re-imagining for new audiences.",
+  "win": [
+   "The Lucky Dinosaur, Sophia Light"
+  ]
+ },
+ {
+  "slug": "short-works-contest",
+  "name": "Short Works Contest",
+  "hosts": "Sophia Light",
+  "dates": "2015/7/04 - 2015/8/02",
+  "desc": "Brevity is the soul of wit - and of this contest to create the best article with the fewest words.",
+  "win": [
+   "●●|●●●●●|●●|●, LurkD"
+  ]
+ },
+ {
+  "slug": "mobile-task-force-contest",
+  "name": "Mobile Task Force Contest!",
+  "hosts": "Decibelles & TroyL",
+  "dates": "2016/1/23 - 2016/3/16",
+  "desc": "The Foundation's MTFs got the limelight in this contest all about the Foundation's best people in uniform.",
+  "win": [
+   "Team Basic (\"Kappa-10\"), by LurkD, djkaktus, Harmony, & Doctor Cimmerian"
+  ]
+ },
+ {
+  "slug": "an-incredibly-important-announcement",
+  "name": "Crack Fiction Contest",
+  "hosts": "TroyL",
+  "dates": "2016/3/31 - 2016/4/01",
+  "desc": "Authors were tasked with creating…. something, alright!",
+  "win": [
+   "Gears Is Totally Not A Robot Guys, Dr Solo",
+   "The Minions© day at the scp, Randomini",
+   "It's Not Pronounced Like the Thesaurus, Dammit!, Kestin",
+   "SCP the Anime, part 4 (Gears/Iceberg, Clef/Kondraki, Rights/Light, Kain, monkey!Bright), MrWrong",
+   "Orgy 5 Counsel 9: XXXK End of Virginity Scenario, TyGently",
+   "My Loever, the Dog: The Incredibly True Story of Kain Pathos Crow, Zmax15"
+  ]
+ },
+ {
+  "slug": "d-class-contest",
+  "name": "D-Class Contest",
+  "hosts": "Decibelles & Dexanote",
+  "dates": "2016/09/11 - 2016/10/01",
+  "desc": "Writers were tasked with giving a new dimension to the the orange-jumpsuits ubiquitous in experiment logs and explorations.",
+  "win": [
+   "SCP-2439, Jack Ike",
+   "SCP-2669, Kalinin does not match any existing user name",
+   "History, Humanmale",
+   "2017 - 2018"
+  ]
+ },
+ {
+  "slug": "history-contest",
+  "name": "This Contest Is History!",
+  "hosts": "Harmony",
+  "dates": "2017/1/03 - 2017/2/06",
+  "desc": "SCPs and tales, all about the vast history of the world.",
+  "win": [
+   "SCP-2624, TyGently",
+   "Now Hollow Fires Burn Out To Black And Lights Are Guttering Low, Doctor Cimmerian"
+  ]
+ },
+ {
+  "slug": "scp3000contesthub",
+  "name": "SCP-3000 Contest",
+  "hosts": "SCP Administration",
+  "dates": "2017/3/05 - 2017/4/20",
+  "desc": "The contest for the coveted SCP-3000 spot, and entries in the SCP Wiki's most renowned genre: horror!",
+  "win": [
+   "SCP-3000 - Anantashesha, by A Random Day, djkaktus, & Joreth"
+  ]
+ },
+ {
+  "slug": "173-festival",
+  "name": "10 Years Birthday SCParty",
+  "hosts": "Dexanote",
+  "dates": "2017/6/08 - 2017/6/19",
+  "desc": "10 years after SCP-173 was posted, the wiki celebrated its first article with all sorts of articles about the statue.",
+  "win": [
+   "Everyone"
+  ]
+ },
+ {
+  "slug": "social-media-art-contest",
+  "name": "Social Media Art Contest",
+  "hosts": "Internet Outreach",
+  "dates": "2017/7/18 - 2017/8/30",
+  "desc": "The first art contest, displaying all the wonderful visual creativity of the SCP Community.",
+  "win": [
+   "Varied"
+  ]
+ },
+ {
+  "slug": "72-hour-jam-contest",
+  "name": "72 Hour Jam Contest",
+  "hosts": "ProcyonLotor & A Random Day",
+  "dates": "2018/2/17 - 2018/2/27",
+  "desc": "Authors were tasked with crafting and posting three articles back-to-back with only 24 hours apiece, conforming to three surprise themes. Clock's ticking.",
+  "win": [
+   "Rimple"
+  ]
+ },
+ {
+  "slug": "doomsday-contest",
+  "name": "Doomsday Contest",
+  "hosts": "ProcyonLotor & A Random Day",
+  "dates": "2018/04/21 - 2018/06/15",
+  "desc": "The SCP world has been extensively developed over the years - which is why in this contest, teams of authors figured out how to destroy it in the most bombastic ways.",
+  "win": [
+   "Team Clever Gentlemen - Weryllium, CadaverCommander, Modern_Erasmus, & fieldstone"
+  ]
+ },
+ {
+  "slug": "scp4000contesthub",
+  "name": "SCP-4000 Contest",
+  "hosts": "SCP Administration",
+  "dates": "2018/6/20 - 2018/8/08",
+  "desc": "The race for the SCP-4000 slot as Series 5 opened, all about history.",
+  "win": [
+   "Taboo, PeppersGhost"
+  ]
+ },
+ {
+  "slug": "halloween-contest-2018",
+  "name": "Halloween Contest 2018",
+  "hosts": "Dexanote",
+  "dates": "2018/9/30 - 2018/10/30",
+  "desc": "A seasonal contest to celebrate all the tropes and clichés of the spookiest holiday.",
+  "win": [
+   "MTF Sigma-5 \"Pumpkin Punchers\", Rounderhouse",
+   "2019 - 2020"
+  ]
+ },
+ {
+  "slug": "cliche-con-2019",
+  "name": "Cliché-Con 2019",
+  "hosts": "taylor_itkin & Uncle Nicolini",
+  "dates": "2018/12/14 - 2019/2/15",
+  "desc": "SCP authors were given a list of some of the most common clichés on the site and encouraged to subvert them - or even play them straight.",
+  "win": [
+   "SCP-4205, Woedenaz",
+   "SCP-3597, aismallard",
+   "SCP-4511, DrAnnoyingDog & Rounderhouse"
+  ]
+ },
+ {
+  "slug": "144-hour-jam-contest",
+  "name": "144-Hour Jam Contest",
+  "hosts": "ProcyonLotor & A Random Day",
+  "dates": "2019/3/09 - 2019/3/29",
+  "desc": "The triumphant return of Jamcon, doubled in length to 48 hours to write about shaggy dogs, pulp fiction, and dreams.",
+  "win": [
+   "SCP-4808, SCP-4804, & notgull's Proposal, notgull",
+   "SCP-4290, Barrels of Prose and Slugs of Pulp, & Sweeter Dreams Inc., NatVoltaic",
+   "SCP-4464, SCP-4494, & SCP-4744, Mortos"
+  ]
+ },
+ {
+  "slug": "collaboration-contest",
+  "name": "Collaboration Contest",
+  "hosts": "ProcyonLotor & A Random Day",
+  "dates": "2019/6/10 - 2019/7/16",
+  "desc": "Collaborative articles can be difficult, but this duos contest showed just how fruitful a good partnership can be.",
+  "win": [
+   "Land Of Honey & SCP-4475, KindlyTurtleClem & Lt Flops",
+   "SCP-4688 & Eric's Journal, notgull and Mew-ltiverse",
+   "Carroll 280: Barrels O'Hooch/Chicago Spirit Repeating Order (R-01221) & SCP-4256, Ihp & Uncle Nicolini"
+  ]
+ },
+ {
+  "slug": "scp5000contesthub",
+  "name": "SCP-5000 Contest",
+  "hosts": "ProcyonLotor",
+  "dates": "2019/12/15 - 2020/02/01",
+  "desc": "The contest for the SCP-5000 slot - themed around mysterious mystery.",
+  "win": [
+   "SCP-5000 - Why?, Tanhony"
+  ]
+ },
+ {
+  "slug": "144-hour-jam-contest-two",
+  "name": "144-Hour Jam Contest Two",
+  "hosts": "ProcyonLotor & A Random Day",
+  "dates": "2020/3/09 - 2020/3/29",
+  "desc": "Jamcon the Third, with the themes \"explosions\", \"delicious\", and \"more than meets the eye\".",
+  "win": [
+   "SCP-5983, Adoption Poster: Pearl!, & SCP-5149, Rounderhouse",
+   "Cool Guys Don't Look At Explosions, Project Proposal 2018-145: \"Drinking With the Jocks\", & SCP-5047, Uncle Nicolini"
+  ]
+ },
+ {
+  "slug": "exquisite-corpse-contest",
+  "name": "Exquisite Corpse Contest",
+  "hosts": "ProcyonLotor & A Random Day",
+  "dates": "2020/5/01 - 2020/6/29",
+  "desc": "Authors were assigned each other's containment procedures and object class, and told to build the best article they could without ever knowing their coauthor.",
+  "win": [
+   "SCP-5250, by Popsioak & Dyslexion"
+  ]
+ },
+ {
+  "slug": "canon-renaissance-contest",
+  "name": "Canon Renaissance Contest",
+  "hosts": "Modulum & ProcyonLotor",
+  "dates": "2020/8/27 - 2020/10/29",
+  "desc": "Many of the canons created in the original Canon Contest fell into a quiet slumber - this canon revived them with a bang, retouched to modern tastes.",
+  "win": [
+   "The Man In The White Suit, by Rounderhouse, Captain Kirby, Tufto, & Woedenaz",
+   "2021 - 2022"
+  ]
+ },
+ {
+  "slug": "cupid-contest-2021",
+  "name": "Cupid Contest 2021",
+  "hosts": "ProcyonLotor & taylor_itkin",
+  "dates": "2021/2/7 - 2021/2/28",
+  "desc": "Love is in the air. Better write about it.",
+  "win": [
+   "SCP-5659, Ralliston",
+   "This Cruel Moon, The_Spider_Queen",
+   "Critter Profile: Max!, R4_EX"
+  ]
+ },
+ {
+  "slug": "jam-con-2021",
+  "name": "JamCon 2021",
+  "hosts": "ProcyonLotor & taylor_itkin",
+  "dates": "2021/03/22 - 2021/04/01",
+  "desc": "Jamcon. Again! \"Marine\", \"corruption\", and \"what could possibly go wrong?\".",
+  "win": [
+   "SCP-5929, SCP-5383, & SCP-5377, Rounderhouse"
+  ]
+ },
+ {
+  "slug": "scp6000contesthub",
+  "name": "SCP-6000 Contest",
+  "hosts": "ProcyonLotor & taylor_itkin",
+  "dates": "2021/4/25 - 2021/7/02",
+  "desc": "The contest for the SCP-6000 slot, in tune with the theme of nature.",
+  "win": [
+   "SCP-6000 - The Serpent, the Moose, and the Wanderer's Library, Rounderhouse",
+   "MEMECON",
+   "Woedenaz",
+   "2021/6/11 - 2021/7/22",
+   "An unofficial contest to inject a little humor back into the wiki by playing off our favorite memes.",
+   "WINNER(S):",
+   "SCP-6599, J Dune & PlaguePJP",
+   "NIGHTMAREFEST",
+   "UraniumEmpire",
+   "2021/9/24 - 2021/11/13",
+   "An unofficial festival to celebrate the spookiest articles for three equally-spooky features.",
+   "WINNER(S):",
+   "SCP-6274, Rounderhouse",
+   "SCP-6061, Ecronak",
+   "SCP-6502, bigslothonmyface"
+  ]
+ },
+ {
+  "slug": "department-contest",
+  "name": "DEPARTMENT-CON 2022",
+  "hosts": "Rounderhouse",
+  "dates": "2022/1/21 - 2022/3/31",
+  "desc": "The various Departments and Divisions of the Foundation toil outside of the limelight, using their esoteric knowledge and niche specializations to keep the anomalous contained. This contest aimed to look at some of the lesser-known Foundation departments.",
+  "win": [
+   "Team Marge is canonically incapable of farting (Fire Suppression Department), by Uncle Nicolini, UraniumEmpire, & T Rutherford"
+  ]
+ },
+ {
+  "slug": "scp7000contesthub",
+  "name": "SCP-7000 Contest",
+  "hosts": "WhiteGuard & Naepic",
+  "dates": "2022/6/26 - 2022/8/29",
+  "desc": "The contest for the SCP-7000 slot, this time blessed with a rather \"lucky\" theme.",
+  "win": [
+   "SCP-7000 - The Loser, HarryBlank"
+  ]
+ },
+ {
+  "slug": "halloween-con-2022",
+  "name": "Halloweencon 2022",
+  "hosts": "Uncle Nicolini, Dexanote, Agent Whitney",
+  "dates": "2022/9/30 - 2022/10/31",
+  "desc": "A prose and art contest centering on what is probably the wiki's favorite holiday, Halloween!",
+  "win": [
+   "Makeup by J Dune (Writing Category)",
+   "and",
+   "Site-19 Security Data 19.2022.10.31 by IronShears (Art Category)",
+   "2023 - 2024"
+  ]
+ },
+ {
+  "slug": "coldpostcon",
+  "name": "ColdpostCon",
+  "hosts": "Modulum, Naepic, WhiteGuard",
+  "dates": "2023/1/2 - 2023/1/12",
+  "desc": "A winter contest themed around fast-paced writing without getting any outside critique!",
+  "win": [
+   "SCP-7311 by Rounderhouse (SCP Category)",
+   "and",
+   "The Nuclear Option by Captain Kirby (Non-SCP Category)",
+   "RomCon",
+   "UraniumEmpire",
+   "2023/5/8 - 2023/7/18",
+   "A romance-themed single-elimination original character tale tournament!",
+   "WINNER(S):",
+   "Agent Calendar's Hot Date, Agent Calendar's Hot Date 2, & Agent Calendar's Undervegas Hub by Rounderhouse"
+  ]
+ },
+ {
+  "slug": "goblincon",
+  "name": "GoblinCon",
+  "hosts": "stormbreath, Modulum, Naepic, WhiteGuard",
+  "dates": "2023/5/12 - 2023/6/16",
+  "desc": "A contest themed around filling previously-blocked by tech issues SCP slots, known internally as \"Goblin Slots.\"",
+  "win": [
+   "SCP-3775 by Kothardarastrix (Class of '76 Category)",
+   "SCP-5257 by Doctor Cimmerian and EmotionalEntropy (Glitches Category)",
+   "SCP-6467 by Uncle Nicolini, Rakkran and fairydoctor (Fantasy Goblins Category)",
+   "SCP-6109 by FLOORBOARDS (Battle Royale Category)",
+   "and",
+   "SCP-6183 by Billith, MontagueETC and Liryn (Deletions Category)"
+  ]
+ },
+ {
+  "slug": "remixcon2023",
+  "name": "RemixCon 2023",
+  "hosts": "Uncle Nicolini, Modulum and Naepic",
+  "dates": "2023/8/4 - 2023/9/11",
+  "desc": "Similarly to the Reimagining Contest of 2015, this contest is themed around remixing old/newer/any SCP articles!",
+  "win": [
+   "SCP-7918 by Long Arm Larry (SCP Category)",
+   "she’s worth it, i promise by LOVEMARGINAL (Tales Category)",
+   "Critter Profile: CACK Dealer! by Harmacy (GoI Format Category)",
+   "She is completely sentient and by Raddagher (Art Category)",
+   "and",
+   "Secure Facility Dossier: Site-387 by Anky swallow (Unsorted Category)"
+  ]
+ },
+ {
+  "slug": "scp8000contesthub",
+  "name": "SCP-8000 Contest",
+  "hosts": "Modulum, Naepic & WhiteGuard",
+  "dates": "2024/01/15 - 2024/3/11",
+  "desc": "The contest for the SCP-8000 slot, with the long-awaited and rather fantastic \"Fantasy\" theme.",
+  "win": [
+   "SCP-8000 - The Seal of Approval, by PlaguePJP"
+  ]
+ },
+ {
+  "slug": "wrathcon",
+  "name": "WRATHCON",
+  "hosts": "stormbreath, psychicprogrammer, Modulum, syuzhet, WhiteGuard, Naepic",
+  "dates": "2024/7/01 - 2024/8/01",
+  "desc": "The contest themed around Evil, where only the winner remains.",
+  "win": [
+   "Live Camera Feed of Site-69, where Everything is Fine, by Croquembouche",
+   "2025 - 2026"
+  ]
+ },
+ {
+  "slug": "pdcontest2025",
+  "name": "PUBLIC DOMAIN CON",
+  "hosts": "Rounderhouse, psychicprogrammer, syuzhet, Naepic",
+  "dates": "2025/1/25 - 2025/3/19",
+  "desc": "The contest dwelling in the realms of Public Domain, where many old characters are brought to life once more.",
+  "win": [
+   "Team Provisional Government of Occupied Third Law, Revolutionary Firing Squad, by TyGently, Intercedent,Anorrack",
+   "International Canon Contest",
+   "Jerden",
+   "2025/4/21 - 2025/6/02",
+   "An unofficial contest organized by the International Translation Archive in which each team chose a canon from another branch of the SCP Wiki to write for.",
+   "WINNER(S):",
+   "The Delilahs, by Uncle Nicolini, Guaire, Lemonsense & Diogene_s"
+  ]
+ },
+ {
+  "slug": "classic-con",
+  "name": "CLASSIC CON",
+  "hosts": "Modulum, psychicprogrammer, syuzhet, Naepic",
+  "dates": "2025/6/22 - 2025/7/20",
+  "desc": "1000 words. SCPs only. No format screw. Back to the very basic.",
+  "win": [
+   "SCP-8557 - Again, Narcissus?, by local lesbian commie"
+  ]
+ },
+ {
+  "slug": "scp9000contesthub",
+  "name": "SCP-9000 Contest",
+  "hosts": "Modulum, Naepic, syuzhet, sugarush",
+  "dates": "2025/8/23 - 2025/10/17",
+  "desc": "The contest for the SCP-9000 slot, with the triple-order theme of \"Structures, Constructs, Pattern\".",
+  "win": [
+   "SCP-9000 - The Trench, by J Dune",
+   "‡ Licensing / Citation",
+   "‡ Hide Licensing / Citation",
+   "Cite this page as:",
+   "\"Contest Archive\" by djkaktus, from the SCP Wiki. Source: https://scpwiki.com/contest-archive. Licensed under CC BY-SA.",
+   "For information on how to use this component, see the License Box component. To read about licensing policy, see the Licensing Guide."
+  ]
+ }
+]

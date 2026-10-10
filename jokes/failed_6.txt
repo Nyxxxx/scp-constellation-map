@@ -1,0 +1,2 @@
+scp-9000-j|WebFetch proxy HTTP 429 rate limited; proxy instructed not to retry
+scp-9139-j|page body reads (rating +12, no author shown) but its footer with tags and Discuss link is absent from the fetched text, and /norender/true returned a client error on every try

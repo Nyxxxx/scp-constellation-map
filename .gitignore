@@ -1,0 +1,9 @@
+scp-api/
+CLAUDE.local.md
+.claude/
+raw_wiki/
+__pycache__/
+out/*.png
+out/*.log
+out/preview*.html
+out/frame.html

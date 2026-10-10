@@ -1,0 +1,10 @@
+scp-meta-ex-j|WebFetch proxy HTTP 429 rate limited, retry disallowed
+scp-mystery-j|WebFetch proxy HTTP 429 rate limited, retry disallowed
+scp-numberonedoggo-j|rating and author not present in fetched page after two tries (discuss t-16663833, started 2024-01; tags: _cc _licensebox animal canine co-authored joke raisa safe scp)
+scp-tldr-j|rating not present in fetched page after two tries; norender fetch refused by WebFetch proxy HTTP 429, retry disallowed
+scp-wcpgw-j|WebFetch proxy HTTP 429 rate limited, retry disallowed
+scp-j-j|fetch error (target client error) on two tries; page likely does not exist
+scp-6184|fetch error (target client error) on two tries
+scp-5490|main page read (rating +3, no author shown) but discuss link and tags cut off; norender fetch failed twice (target client error)
+scp-6197|main page read (rating shown as "+18+x", no author shown) but discuss link and tags cut off; norender fetch failed three times (target client error)
+scp-6750|main page read (rating +32, no author shown) but discuss link and tags cut off; norender fetch failed twice (target client error)

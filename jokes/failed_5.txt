@@ -1,0 +1,4 @@
+scp-4463-j|WebFetch proxy returned HTTP 429 (rate limited) on both tries
+scp-5304-j|WebFetch returned "There was an error while fetching" on both tries (page likely missing)
+scp-7419-j|WebFetch returned "There was an error while fetching" on both tries (page likely missing)
+scp-7519-j|WebFetch returned "There was an error while fetching" on both tries (page likely missing)
