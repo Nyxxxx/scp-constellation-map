@@ -9,8 +9,9 @@
   --ink:#2e2e2e; --ink-2:#555555; --ink-3:#686868; --rule:#adadaa; --rule-soft:#d0d0cc; --dash:#8a8a87;
   --maroon:#660000; --red:#990011; --link:#bb0011; --visited:#882244; --goi-label:#8a5200;
   --band:#5c1010; --band-edge:#330000; --band-ink:#eeeeee; --band-sub:#f0f0c0; --block-shadow:rgba(102,0,0,.38);
-  --t-scp:#4a4a4a; --t-tale:#0e7c8b; --t-goi:#c77700; --t-joke:#b0307f; --region:#6a2aa3;
-  --c-safe:#1f8f4e; --c-euclid:#d19a00; --c-keter:#c8102e; --c-neut:#858585; --c-eso:#2b6cb0; --c-other:#b2b2af;
+  --t-scp:#4a4a4a; --t-tale:#0e7c8b; --t-goi:#c77700; --t-joke:#b0307f; --region:#1e1e1e;
+  /* object classes follow the wiki's Anomaly Classification Bar (Safe 0,159,107 · Euclid 255,211,0 · Keter 196,2,51), Euclid deepened for a light ground */
+  --c-safe:#009f6b; --c-euclid:#e8b900; --c-keter:#c40233; --c-neut:#55555c; --c-eso:#0087bd; --c-other:#b2b2af;
   --none:#bcbcb9; --r1:#f0b8b4; --r2:#e58a84; --r3:#d4554f; --r4:#b3261e; --r5:#6b0a0a;
   --tag-line:#555555; --page-line:#bb0011; --pick:#990011;
   --font-ui:Inter,"Segoe UI",Verdana,Helvetica,Arial,sans-serif;
@@ -22,23 +23,23 @@
   color-scheme:dark;
   --page:#161616; --ground:#1b1b1b; --block:#222222; --quote:#2a2a2a;
   --ink:#e8e6e3; --ink-2:#bdb9b4; --ink-3:#96918b; --rule:#555050; --rule-soft:#383434; --dash:#6e6868;
-  --maroon:#e0a3a3; --red:#f08a90; --link:#f48a92; --visited:#d99ab5; --goi-label:#e0a030;
+  --maroon:#e8e6e3; --red:#e5484d; --link:#ec6a6e; --visited:#c98a8a; --goi-label:#e0a030; --canon-label:#f08a90;
   --band:#3d0c0c; --band-edge:#1c0303; --band-ink:#eeeeee; --band-sub:#f0f0c0; --block-shadow:rgba(0,0,0,.5);
-  --t-scp:#bfbcb7; --t-tale:#3fb6c6; --t-goi:#e0a030; --t-joke:#f07cc0; --region:#d3b0ff;
-  --c-safe:#3fae6e; --c-euclid:#d9a520; --c-keter:#ef5350; --c-neut:#8f8f8f; --c-eso:#5b9bd5; --c-other:#565656;
+  --t-scp:#bfbcb7; --t-tale:#3fb6c6; --t-goi:#e0a030; --t-joke:#f07cc0; --region:#ffffff;
+  --c-safe:#00b37a; --c-euclid:#ffd300; --c-keter:#e0143f; --c-neut:#8a8a92; --c-eso:#2aa3d6; --c-other:#565656;
   --none:#4c4c4c; --r1:#5e2623; --r2:#8c322d; --r3:#c2443d; --r4:#ee6e64; --r5:#ffb9ae;
-  --tag-line:#c4c0ba; --page-line:#f48a92; --pick:#ffb0b6;
+  --tag-line:#c4c0ba; --page-line:#e5484d; --pick:#ffffff;
 }}
 :root[data-theme="dark"]{
   color-scheme:dark;
   --page:#161616; --ground:#1b1b1b; --block:#222222; --quote:#2a2a2a;
   --ink:#e8e6e3; --ink-2:#bdb9b4; --ink-3:#96918b; --rule:#555050; --rule-soft:#383434; --dash:#6e6868;
-  --maroon:#e0a3a3; --red:#f08a90; --link:#f48a92; --visited:#d99ab5; --goi-label:#e0a030;
+  --maroon:#e8e6e3; --red:#e5484d; --link:#ec6a6e; --visited:#c98a8a; --goi-label:#e0a030; --canon-label:#f08a90;
   --band:#3d0c0c; --band-edge:#1c0303; --band-ink:#eeeeee; --band-sub:#f0f0c0; --block-shadow:rgba(0,0,0,.5);
-  --t-scp:#bfbcb7; --t-tale:#3fb6c6; --t-goi:#e0a030; --t-joke:#f07cc0; --region:#d3b0ff;
-  --c-safe:#3fae6e; --c-euclid:#d9a520; --c-keter:#ef5350; --c-neut:#8f8f8f; --c-eso:#5b9bd5; --c-other:#565656;
+  --t-scp:#bfbcb7; --t-tale:#3fb6c6; --t-goi:#e0a030; --t-joke:#f07cc0; --region:#ffffff;
+  --c-safe:#00b37a; --c-euclid:#ffd300; --c-keter:#e0143f; --c-neut:#8a8a92; --c-eso:#2aa3d6; --c-other:#565656;
   --none:#4c4c4c; --r1:#5e2623; --r2:#8c322d; --r3:#c2443d; --r4:#ee6e64; --r5:#ffb9ae;
-  --tag-line:#c4c0ba; --page-line:#f48a92; --pick:#ffb0b6;
+  --tag-line:#c4c0ba; --page-line:#e5484d; --pick:#ffffff;
 }
 html,body{height:100%}
 body{background:var(--page);color:var(--ink);font-family:var(--font-ui);font-size:13px;line-height:1.45;overflow:hidden}
@@ -359,8 +360,8 @@ h1{margin:0;font-family:var(--font-head);font-weight:800;font-size:25px;line-hei
         <label class="opt"><input id="tNames" type="checkbox" checked><i></i><span>Region names</span></label>
         <label class="opt"><input id="tCanon" type="checkbox" checked><i></i><span>Canon names</span></label>
         <label class="opt"><input id="tGoi" type="checkbox" checked><i></i><span>GoI names</span></label>
-        <label class="opt"><input id="tRing" type="checkbox"><i></i><span>Outer ring</span><em>untagged pages</em></label>
         <label class="opt"><input id="tTime" type="checkbox" checked><i></i><span>Timeline</span></label>
+        <label class="opt"><input id="tRing" type="checkbox"><i></i><span>Outer ring</span><em>untagged pages</em></label>
       </div>
 
       <div class="side-block">
@@ -1588,7 +1589,7 @@ function renderPanel(){
 }
 
 /* ---------- key and filters ---------- */
-var CLASS_SECTIONS = [['Standard', [0,1,2,3,4]], ['Esoteric', [5,6,7,8,9,10,11,12,13]], ['Other', [14,15,16]]];
+var CLASS_SECTIONS = [['Standard', [0,1,2]], ['Esoteric', [5,6,7,8,9,10,11,12,13]], ['Other', [3,4,14,15,16]]];   // the esoteric group sits right under Keter
 var esoNames = (function(){ var s = new Set(); for (var n = 0; n < N; n++) if (D.ck[n] === 13) s.add(D.cn[n]); return s.size; })();
 function syncControls(){
   D.classKeys.forEach(function(_, ci){ var el = $('cls' + ci); if (el) el.checked = !!S.classOn[ci]; });

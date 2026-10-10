@@ -58,7 +58,13 @@ land in slightly different places, and region names are tied to each region's th
 ## Behaviour decided so far (do not change without asking)
 
 - A highlight closes only with the × of its chip (Escape also works). Clicking an empty spot only lets go of a selected page.
-- Outer ring hidden at launch; dots coloured by object class at launch; region names in violet; subtitle "Every SCP entry, tale and GoI format, mapped by the tags they share."
+- Colours (chosen 11 October 2026, variant "Wiki, refined" of `mockups/make_mockups.py`): object classes in the wiki's Anomaly
+  Classification Bar colours (Safe green, Euclid yellow, Keter red; Esoteric keeps a blue); no pink in the dark theme (menus and links
+  in true red); region names in neutral ink (white in dark, near-black in light); canon and GoI names keep their original italic
+  colours (canon `--canon-label`, GoI `--goi-label`). Map names must never share a colour with the dots.
+- Object class list: Safe, Euclid, Keter, then the Esoteric group, then Neutralized, Pending, Explained, Decommissioned, None listed.
+  Layers list ends with Timeline, then Outer ring.
+- Outer ring hidden at launch; dots coloured by object class at launch; subtitle "Every SCP entry, tale and GoI format, mapped by the tags they share."
 - Region, canon and GoI names win clicks over dots when zoomed out; their size follows their page count.
 - Cloud outlines are traced once as vector lines; nothing re-renders while zooming (the owner found the re-render "very annoying").
 - Selecting a dot dims the rest and lights the cloud of its region; clicking the selected dot again lets it go.
@@ -76,7 +82,9 @@ land in slightly different places, and region names are tied to each region's th
 - A layer of character names ("unreadable in all the noise").
 - "N of M shown" on the highlight chip.
 - Clicking outside a highlighted region to close it (replaced by the × only).
-- Region names coloured like their cloud, and a colour picker for region names (one violet for all).
+- Region names coloured like their cloud, and a colour picker for region names (one colour for all).
+- Colour directions "Paper dossier" and "Star atlas" (mocked up 11 October 2026, not chosen; still buildable with `mockups/make_mockups.py`),
+  and a "containment terminal" look (declined without a mock-up).
 - A black-to-white gradient for years (unreadable); the first blue-gradient look ("screams AI").
 
 ## Technical notes
@@ -101,10 +109,8 @@ land in slightly different places, and region names are tied to each region's th
    Download the 23 pages of `scp-wiki.wikidot.com/series-archive` (`/p/2` … `/p/23`) for the list, then each hub page, keep the HTML,
    and feed `make_hubs.py` (it expects `raw_content`, `tags`, `title`, `creator`, `created_at` per hub). Check a sample by eye against the wiki:
    the owner asked for careful work because a series is often a sub-story of a canon. Then remove the word "preview" from the menu note and the limits text.
-2. **Colour redesign.** Announced by the owner as the next topic; nothing decided. Earlier remarks: the look should stay close to the Foundation's;
-   object-class colours "don't look very great"; the light theme was once "a bit too bright". Directions offered once and never mocked up:
-   the current wiki look, a paper dossier (typewriter type, stamps, redaction bars), a containment terminal (dark, monochrome, class colours as the only colour),
-   a printed star atlas (engraved ink chart, regions lettered like constellations — closest to the original idea). Show variants on the same piece of map, in the owner's own browser.
+2. **Colour redesign.** Done on 11 October 2026 (see "Behaviour decided"). The guide's sentence on name colours ("Red italic names…
+   brown italic names") still matches, since canon and GoI colours were kept. An earlier remark, not yet addressed: the light theme was once "a bit too bright".
 3. **Reading order on the map** for a tale series: undecided between nothing, a thin line joining the dots in order, or small numbers next to the dots. Ask.
 
 ### B. Data that direct access to the wiki can complete or correct
