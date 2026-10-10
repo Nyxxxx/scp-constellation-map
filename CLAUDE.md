@@ -7,6 +7,9 @@ Personal notes about the owner and private links live in `CLAUDE.local.md`, whic
 
 ## Where things stand
 
+- Public site (GitHub Pages, branch `main`, root): https://nyxxxx.github.io/scp-constellation-map/ — `index.html` forwards to
+  `scp-constellation-map-standalone.html`, keeping the `#h=…&p=…` part. Repository: https://github.com/Nyxxxx/scp-constellation-map (public).
+  Publishing a change = `python make.py page`, test, commit, push; the site updates within a few minutes.
 - Built from `site/scp-constellation-map.html` (version 16 at the hand-over).
 - 18,083 pages, 58 regions, 58 canons, 54 GoIs, 49 contests, 42 tale series (preview), a timeline, highlight menus, search, light and dark themes.
 - Everything was tested in a headless browser only. **It has never been checked on a real phone or with a real mouse.**
