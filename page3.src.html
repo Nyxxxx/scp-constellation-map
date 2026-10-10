@@ -16,6 +16,7 @@
   --font-ui:Inter,"Segoe UI",Verdana,Helvetica,Arial,sans-serif;
   --font-head:"Nanum Gothic","Trebuchet MS",Arial,sans-serif;
   --gutter:16px;
+  --canon-label:var(--red); --font-label:var(--font-ui);
 }
 @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
   color-scheme:dark;
@@ -449,7 +450,7 @@ function h(tag, attrs){
 }
 
 /* ---------- colours: page tokens, re-read when the theme changes ---------- */
-var C = {}, FONT_UI = '', FONT_HEAD = '';
+var C = {}, FONT_UI = '', FONT_HEAD = '', FONT_LABEL = '';
 function isDark(){ var a = document.documentElement.getAttribute('data-theme'); return a === 'dark' || (a !== 'light' && !!window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches); }
 function hex2rgb(x){ x = x.replace('#', ''); if (x.length === 3) x = x[0]+x[0]+x[1]+x[1]+x[2]+x[2]; return [parseInt(x.substr(0,2),16), parseInt(x.substr(2,2),16), parseInt(x.substr(4,2),16)]; }
 // Year palettes and cloud hues are chosen per theme here because they are data colours, not page furniture.
@@ -462,14 +463,15 @@ var CLOUD_HUES = { light: ['#2a78d6','#eb6834','#1baf7a','#eda100','#e87ba4','#0
 var S = null;
 function readTokens(){
   var css = getComputedStyle(document.documentElement), t = function(n){ return css.getPropertyValue(n).trim(); }, th = isDark() ? 'dark' : 'light';
-  FONT_UI = t('--font-ui'); FONT_HEAD = t('--font-head');
+  FONT_UI = t('--font-ui'); FONT_HEAD = t('--font-head'); FONT_LABEL = t('--font-label') || FONT_UI;
   C.dark = th === 'dark'; C.ground = t('--ground'); C.ink = t('--ink'); C.ink2 = t('--ink-2'); C.ink3 = t('--ink-3'); C.red = t('--red'); C.pick = t('--pick');
   C.goiLabel = t('--goi-label'); C.tagLine = t('--tag-line'); C.pageLine = t('--page-line'); C.rule = t('--rule'); C.ruleSoft = t('--rule-soft');
   C.type = [t('--t-scp'), t('--t-tale'), t('--t-goi'), t('--t-joke')];
   C.cls = [t('--c-safe'), t('--c-euclid'), t('--c-keter'), t('--c-neut'), t('--c-eso'), t('--c-eso'), t('--c-other')];
   C.lvl = [t('--none'), t('--r1'), t('--r2'), t('--r3'), t('--r4'), t('--r5')];
   C.year = YEAR_PAL[S ? S.yearPal : 'eras'][th]; C.cloud = CLOUD_HUES[th];
-  C.region = t('--region');
+  var cl8 = t('--clouds').split(/\s*,\s*/); if (cl8.length === CLOUD_HUES.light.length) C.cloud = cl8;   // a theme may set its own eight cloud colours
+  C.region = t('--region'); C.canonLabel = t('--canon-label') || C.red;
 }
 
 /* ---------- derived data ---------- */
@@ -777,7 +779,7 @@ function buildHighlightCloud(){
     if (info.type === 'cluster') reg = info.value;
     else if (info.type === 'tag') D.clusters.forEach(function(cl, c){ if (cl.tag === info.value) reg = c; });
     key = info.type.charAt(0) + info.value;
-    hex = reg >= 0 ? C.cloud[REG_HUE[reg]] : info.type === 'group' || D.tagKind[info.value] === 2 ? C.goiLabel : D.tagKind[info.value] === 1 ? C.red : C.cloud[0];
+    hex = reg >= 0 ? C.cloud[REG_HUE[reg]] : info.type === 'group' || D.tagKind[info.value] === 2 ? C.goiLabel : D.tagKind[info.value] === 1 ? C.canonLabel : C.cloud[0];
     HL_SRC = 'hl';
   } else if (S.sel >= 0 && D.cluster[S.sel] >= 0){ reg = D.cluster[S.sel]; key = 'c' + reg; hex = C.cloud[REG_HUE[reg]]; HL_SRC = 'sel'; }
   else HL_SRC = '';
@@ -1041,7 +1043,7 @@ function draw(now){
         var c = it.c, cl = D.clusters[c], named = cl.tag >= 0, text = named ? cl.label : cl.label.toUpperCase(), cx = CX[c]*k + tx, cy = CY[c]*k + ty;
         if (cx < -120 || cy < -20 || cx > W + 120 || cy > H + 20) continue;
         // a region that is one canon or one GoI carries that name, in that name's style, instead of a second label
-        ctx.font = named ? 'italic 700 ' + (fs + .5).toFixed(1) + 'px ' + FONT_UI : '800 ' + fs.toFixed(1) + 'px ' + FONT_HEAD;
+        ctx.font = named ? 'italic 700 ' + (fs + .5).toFixed(1) + 'px ' + FONT_LABEL : '800 ' + fs.toFixed(1) + 'px ' + FONT_HEAD;
         if ('letterSpacing' in ctx) ctx.letterSpacing = named ? '0px' : '0.6px';
         var tw = ctx.measureText(text).width + 10, two = null, lh = fs + 3;
         if (narrow && tw > W * .62){   // a name wider than a small screen is set on two lines
@@ -1053,20 +1055,20 @@ function draw(now){
         if (!place(cx - tw/2, cy - bh2/2, tw, bh2)) continue;
         labelBoxes.push({ x: cx - tw/2, y: cy - bh2/2, w: tw, h: bh2, cluster: c });
         var on = HL_KEY.lastIndexOf('c' + c + '#', 0) === 0 || (named && !!info && info.type === 'tag' && info.value === cl.tag);   // the region whose cloud is lit
-        var lcol = named ? (cl.kind === 2 ? C.goiLabel : C.red) : C.region, la = hl && !on ? fade * .4 : Math.min(1, fade + (on ? .08 : 0));
+        var lcol = named ? (cl.kind === 2 ? C.goiLabel : C.canonLabel) : C.region, la = hl && !on ? fade * .4 : Math.min(1, fade + (on ? .08 : 0));
         if (two){ haloText(two[0], cx, cy - lh/2, lcol, la); haloText(two[1], cx, cy + lh/2, lcol, la); } else haloText(text, cx, cy, lcol, la);
       } else {
         var lm = D.landmarks[it.l];
         if (!lmOn || (lm.kind === 1 ? !S.canon : !S.goi)) continue;
         var lx2 = LX[it.l]*k + tx, ly2 = LY[it.l]*k + ty;
         if (lx2 < -80 || ly2 < -20 || lx2 > W + 80 || ly2 > H + 20) continue;
-        ctx.font = 'italic 600 ' + fs.toFixed(1) + 'px ' + FONT_UI;
+        ctx.font = 'italic 600 ' + fs.toFixed(1) + 'px ' + FONT_LABEL;
         if ('letterSpacing' in ctx) ctx.letterSpacing = '0px';
         var lw = ctx.measureText(lm.label).width + 8;
         if (!place(lx2 - lw/2, ly2 - bh/2, lw, bh)) continue;
         labelBoxes.push({ x: lx2 - lw/2, y: ly2 - bh/2, w: lw, h: bh, tag: lm.t });
         var lon = !!info && info.type === 'tag' && info.value === lm.t;
-        haloText(lm.label, lx2, ly2, lm.kind === 1 ? C.red : C.goiLabel, hl && !lon ? .4 : .95);
+        haloText(lm.label, lx2, ly2, lm.kind === 1 ? C.canonLabel : C.goiLabel, hl && !lon ? .4 : .95);
       }
     }
     if ('letterSpacing' in ctx) ctx.letterSpacing = '0px';
@@ -1538,7 +1540,7 @@ function renderPanel(){
     kids.push(h('div', { class: 'sec' }, h('div', { class: 'ptitle' }, 'How to read this map'),
       h('p', null, h('b', null, 'Each dot is one page of the SCP Wiki.'), ' Two pages sit close together when they share tags, and a rare tag pulls harder than a common one.'),
       h('p', null, h('b', null, 'Lines'), ' join each page to its three closest matches. ', h('b', { style: 'color:var(--region)' }, 'NAMES IN CAPITALS'), ' are regions: groups of pages that link mostly to each other. ',
-        h('b', { style: 'color:var(--red);font-style:italic' }, 'Red italic names'), ' are canons and ', h('b', { style: 'color:var(--goi-label);font-style:italic' }, 'brown italic names'), ' are groups of interest, placed where their pages gather.')));
+        h('b', { style: 'color:var(--canon-label);font-style:italic' }, 'Red italic names'), ' are canons and ', h('b', { style: 'color:var(--goi-label);font-style:italic' }, 'brown italic names'), ' are groups of interest, placed where their pages gather.')));
     var regs = D.clusters.map(function(c, ix){ return ix; }).sort(function(a, b){ return D.clusters[b].n - D.clusters[a].n; });
     kids.push(h('div', { class: 'sec' }, h('h2', null, 'The ' + regs.length + ' regions'),
       h('ul', { class: 'list regions' }, regs.map(function(c){
@@ -2029,7 +2031,7 @@ if (!FRAMED) $('linkBtn').hidden = false;
 applyHash();
 if (/[?&]scpdebug\b/.test(location.search)) window.__scp = { draw: draw, rebuild: rebuild, S: S, setRange: setRange, view: function(){ return { k: k, k0: k0, tx: tx, ty: ty, W: W, H: H, cost: cost }; }, groups: function(){ return CLOUD_GROUPS; }, X: X, Y: Y };   // test hook, only with ?scpdebug in the address
 if (document.fonts && document.fonts.load){
-  Promise.all([document.fonts.load('800 13px "Nanum Gothic"'), document.fonts.load('700 11px Inter'), document.fonts.load('italic 600 12px Inter')]).then(function(){ schedule(); drawHist(); }, schedule);
+  Promise.all([document.fonts.load('800 13px "Nanum Gothic"'), document.fonts.load('700 11px Inter'), document.fonts.load('italic 600 12px Inter'), document.fonts.load('800 13px ' + FONT_HEAD), document.fonts.load('italic 600 12px ' + FONT_LABEL)]).then(function(){ schedule(); drawHist(); }, schedule);
 }
 })();
 </script>

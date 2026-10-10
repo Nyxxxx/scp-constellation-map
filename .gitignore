@@ -7,3 +7,4 @@ out/*.png
 out/*.log
 out/preview*.html
 out/frame.html
+mockups/*.html
