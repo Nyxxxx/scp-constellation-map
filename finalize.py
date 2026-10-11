@@ -209,6 +209,23 @@ if os.path.exists("hubs.json"):
     d["meta"]["hubsFetched"] = max((v.get("fetched_at", "") for v in sh.values()), default="")
     print("tale series:", len(hl), "| pages in at least one:", len({n for x in hl for sc in x["q"] for n in sc[1]}))
 
+# ---- 7. the map through time (build_history.py): one layout per date, for the timeline animation.
+# For each frame, the positions of the pages written by then, in page order (the page knows which ones from their month);
+# -32768 where the page has no position in that frame (a page newer than the frames, or one that changed date).
+if os.path.exists("history.json"):
+    import base64
+    import numpy as np
+    hj = json.load(open("history.json", encoding="utf-8"))
+    hidx = {s.lower(): i for i, s in enumerate(hj["slugs"])}
+    cur = [hidx.get(s.lower(), -1) for s in d["slug"]]
+    frames = []
+    for k, c in enumerate(hj["cutoffs"]):
+        a = np.frombuffer(base64.b64decode(hj["pos"][k]), dtype="<i2").reshape(-1, 2)
+        out_ = [a[j] if j >= 0 else (-32768, -32768) for n, j in enumerate(cur) if d["mo"][n] <= c]
+        frames.append(base64.b64encode(np.array(out_, dtype="<i2").reshape(-1, 2).tobytes()).decode())
+    d["H"] = {"c": hj["cutoffs"], "p": frames}
+    print("map through time:", len(frames), "frames,", sum(len(f) for f in frames) // 1024, "KB")
+
 missing = sorted(set(titles) - set(added) - set(skipped))
 # joke entries: how many dates are estimates, and how many pages linked from the Joke SCPs hub did not make it onto the map
 jl = json.load(open("jokes_list.json")) if os.path.exists("jokes_list.json") else []

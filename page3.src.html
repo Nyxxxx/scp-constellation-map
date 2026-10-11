@@ -559,6 +559,36 @@ function computePositions(){
   }
   anchors(D.CA, CX, CY); anchors(D.LA, LX, LY);
 }
+
+/* ---------- the map through time: while the timeline ends before today, the dots take the layout of that date ----------
+   D.H holds one layout per date (build_history.py), computed as if only the pages written by then existed. Between two dates the
+   dots glide from one layout to the next; region clouds and names, which describe today's map, are hidden meanwhile. */
+var HC = D.H ? D.H.c : [], HF = [], X0 = null, Y0 = null, PAST = false, PLAY_T = 0, PLAY_DT = 70;
+if (D.H) D.H.p.forEach(function(b64, f){
+  var bin = atob(b64), a = new Int16Array(bin.length >> 1), q, j = 0, n;
+  for (q = 0; q < a.length; q++) a[q] = bin.charCodeAt(2*q) | (bin.charCodeAt(2*q+1) << 8);
+  var fx = new Float32Array(N).fill(NaN), fy = new Float32Array(N).fill(NaN);
+  for (n = 0; n < N; n++) if (D.mo[n] <= HC[f]){ if (a[2*j] !== -32768){ fx[n] = a[2*j]; fy[n] = a[2*j+1]; } j++; }
+  HF.push([fx, fy]);
+});
+function applyTime(m, regrid){   // m: the month shown, fractional while playing
+  if (!HF.length || !X0 || m >= HC[HC.length - 1]){
+    if (PAST){ X.set(X0); Y.set(Y0); PAST = false; buildGrid(); }
+    return;
+  }
+  var f0 = 0; while (f0 < HC.length - 2 && HC[f0 + 1] <= m) f0++;
+  var u = m <= HC[0] ? 0 : Math.min(1, (m - HC[f0]) / (HC[f0 + 1] - HC[f0]));
+  u = u * u * (3 - 2 * u);
+  var A = HF[f0], B = HF[m <= HC[0] ? f0 : f0 + 1];
+  for (var n = 0; n < N; n++){
+    var bx = B[0][n], by = B[1][n], ax = A[0][n], ay = A[1][n];
+    if (bx !== bx){ bx = X0[n]; by = Y0[n]; }        // no position in the later layout: today's
+    if (ax !== ax){ ax = bx; ay = by; }              // not yet written at the earlier date: it appears where the later layout puts it
+    X[n] = ax + (bx - ax) * u; Y[n] = ay + (by - ay) * u;
+  }
+  PAST = true;
+  if (regrid) buildGrid();
+}
 var CELL = 26, grid = new Map();
 function buildGrid(){
   grid = new Map();
@@ -580,6 +610,7 @@ function bucketEdges(a, b){
 /* Recompute what is visible, the draw lists and the links between visible pages. */
 function rebuild(){
   var M = MODES[S.mode], n, m, q;
+  applyTime(S.m1, true);
   HIST.fill(0); visCount = 0;
   var rLo = RSTEPS[S.r0], rHi = RSTEPS[S.r1], births = !!playing && !reduced && cost < 60, nowT = performance.now(), born = false;   // no animation when frames are already slow
   for (n = 0; n < N; n++){
@@ -943,6 +974,7 @@ function draw(now){
   raf = 0;
   var tStart = performance.now(), lite = cost > 24 && (tStart < busyUntil || !!playing);
   if (anim){ anim(now || tStart); if (anim) schedule(); }
+  if (playing && PAST){ applyTime(S.m1 + Math.min(1, (tStart - PLAY_T) / PLAY_DT), false); schedule(); }   // glide between months
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   ctx.clearRect(0, 0, W, H);
   // a selected page dims everything but itself and its closest pages; otherwise a highlight dims the rest
@@ -950,8 +982,8 @@ function draw(now){
   var zr = k/k0, zf = zoomFactor(), M = MODES[S.mode], cols = M.col(), order = M.order(), m, n, r, sx, sy, g, li;
   var dim = focus ? .09 : .12;
 
-  var hcOn = HLC_OK, back = hcOn ? .35 : 1, ca;   // the other clouds step back while one group's reach is shown
-  if (CLOUD_OK && S.cloud !== 'off'){
+  var hcOn = HLC_OK && !PAST, back = hcOn ? .35 : 1, ca;   // the other clouds step back while one group's reach is shown
+  if (CLOUD_OK && S.cloud !== 'off' && !PAST){
     ctx.globalAlpha = Math.min(1, 2.4 / zr) * back; ctx.drawImage(CLOUD, tx - 1100*k, ty - 1100*k, 2200*k, 2200*k); ctx.globalAlpha = 1;
     if (S.cloudStyle === 'outline'){ ca = Math.min(1, Math.max(.5, 2.4 / zr)) * back * .75; for (m = 0; m < CLOUD_GROUPS.length; m++) strokeLoops(CLOUD_GROUPS[m].loops, CLOUD_GROUPS[m].hex, ca, 1.5); }
   }
@@ -1044,7 +1076,7 @@ function draw(now){
     ctx.textAlign = 'left';
   }
 
-  var regOn = S.names && zr < 7, lmOn = (S.canon || S.goi) && zr > 1.5 && zr < 30;
+  var regOn = S.names && zr < 7 && !PAST, lmOn = (S.canon || S.goi) && zr > 1.5 && zr < 30 && !PAST;
   if (regOn || lmOn){
     var fade = zr < 4 ? .92 : .92 * (7 - zr) / 3, LO = labelOrder(), ps = phone() ? .9 : 1, narrow = W < 520;
     ctx.textAlign = 'center';
@@ -1770,7 +1802,8 @@ $('play').addEventListener('click', function(){
   if (playing){ stopPlay(); return; }
   if (S.m1 >= TL.b){ var from = S.m0 < TL.b ? S.m0 : TL.a; setRange(from, from); }
   $('play').textContent = 'Pause';
-  playing = setInterval(function(){ if (S.m1 >= TL.b){ stopPlay(); return; } setRange(S.m0, S.m1 + 1); }, tlYearView() ? 450 : reduced ? 220 : 70);
+  PLAY_DT = tlYearView() ? 450 : reduced ? 220 : 70; PLAY_T = performance.now();
+  playing = setInterval(function(){ if (S.m1 >= TL.b){ stopPlay(); return; } PLAY_T = performance.now(); setRange(S.m0, S.m1 + 1); }, PLAY_DT);
 });
 function setTimeline(on){
   S.timeline = on; $('timeline').hidden = !on; $('tTime').checked = on;
@@ -2022,7 +2055,7 @@ $('snap').textContent = D.meta.snapshot ? 'Data snapshot ' + D.meta.snapshot + '
 if (drawer()) setSide(false, true); else if (store('scpmap-side') === '0') setSide(false);
 if (!phone() && store('scpmap-panel') === '0') setPanel(false);
 if (phone()){ S.timeline = false; $('timeline').hidden = true; $('tTime').checked = false; }
-computePositions(); buildGrid();
+computePositions(); X0 = X.slice(); Y0 = Y.slice(); buildGrid();
 REG_HUE = assignHues(D.clusters.map(function(_, c){ return [CX[c], CY[c]]; }));
 renderClasses(); renderLegend(); renderPanel(); rebuild();
 if (window.ResizeObserver) new ResizeObserver(resize).observe(wrap); else window.addEventListener('resize', resize);
