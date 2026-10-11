@@ -7,7 +7,11 @@ that share tags sit close together. About 18,000 pages, grouped into 58 regions,
 contests and tale series, a timeline that replays how the map grew since 2008, search, and light and dark themes.
 It runs in any browser, needs no account, and is rebuilt every day from the latest copy of the wiki.
 
-Unofficial fan project, not affiliated with the SCP Wiki. How the map is made, and what it leaves out: **[METHODS.md](METHODS.md)**.
+Unofficial fan project, not affiliated with the SCP Wiki.
+
+**Methodology: [METHODS.md](METHODS.md)**: how tags are weighted (TF-IDF), how pages are compared (cosine similarity), how regions are
+found (Leiden), how positions are computed (UMAP), how region names were written, how the daily refresh and the timeline work, and what
+the map leaves out.
 
 ## How it works, in short
 
