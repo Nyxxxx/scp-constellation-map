@@ -1,11 +1,13 @@
 """Colour mock-ups: copies of the built map with another palette laid over it, and a page that shows them side by side.
 
-    python -X utf8 mockups/make_mockups.py        (after python make.py page)
+    python -X utf8 mockups/make_mockups.py              colour variants   (after python make.py page)
+    python -X utf8 mockups/make_mockups.py reading      reading-order variants, shown on one tale series (compare-reading.html)
 
 Each variant only overrides the colour and font settings at the top of page3.src.html; the real page is not changed.
 Writes mockups/<variant>.html and mockups/compare.html (not kept in git: rebuild them with this script).
 """
 import os
+import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "mockups")
@@ -71,6 +73,19 @@ VARIANTS = {
 }
 
 
+READING = {
+    "order-line": {"title": "Line", "note": "A thin line joins the pages in the hub's order; the first page carries a ring.",
+                   "fonts": "", "theme": None, "light": "--reading-order:line;", "dark": "--reading-order:line;"},
+    "order-numbers": {"title": "Numbers", "note": "Each page shows its place in the hub's list above its dot.",
+                      "fonts": "", "theme": None, "light": "--reading-order:num;", "dark": "--reading-order:num;"},
+    "order-both": {"title": "Line and numbers", "note": "Both together.",
+                   "fonts": "", "theme": None, "light": "--reading-order:line num;", "dark": "--reading-order:line num;"},
+}
+SERIES = "#h=u.antimemetics-division-hub"
+if sys.argv[1:] == ["reading"]:
+    VARIANTS = READING
+
+
 def build(name, v):
     # inserted in <head>, before the page's own style, so each rule is one step more specific than the rule it replaces
     css = ""
@@ -94,13 +109,15 @@ def build(name, v):
 for name, v in VARIANTS.items():
     build(name, v)
 
-cells = [("current", "Current (version 16)", "The map as published today.", "../scp-constellation-map-standalone.html")]
-cells += [(n, v["title"], v["note"], n + ".html") for n, v in VARIANTS.items()]
+reading = VARIANTS is READING
+hash_ = SERIES if reading else ""
+cells = [("current", "Current", "The map as published today" + (": the series is lit, with no order shown." if reading else "."), "../scp-constellation-map-standalone.html" + hash_)]
+cells += [(n, v["title"], v["note"], n + ".html" + hash_) for n, v in VARIANTS.items()]
 grid = "".join(
     '<section><header><b>{t}</b> <a href="{src}" target="_blank">open full screen ↗</a><p>{n}</p></header>'
     '<iframe src="{src}" loading="eager"></iframe></section>'.format(t=t, n=n, src=src) for _, t, n, src in cells)
-open(os.path.join(OUT, "compare.html"), "w", encoding="utf-8").write("""<!doctype html><html><head><meta charset="utf-8">
-<title>Colour variants</title><meta name="viewport" content="width=device-width,initial-scale=1">
+open(os.path.join(OUT, "compare-reading.html" if reading else "compare.html"), "w", encoding="utf-8").write("""<!doctype html><html><head><meta charset="utf-8">
+<title>""" + ("Reading order variants" if reading else "Colour variants") + """</title><meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
 :root{color-scheme:light dark}
 body{margin:0;font:13px system-ui,sans-serif;background:#2a2a2a;color:#eee}
@@ -110,4 +127,4 @@ header{padding:6px 10px}header p{margin:2px 0 0;color:#bbb;font-size:12px}header
 iframe{flex:1;border:0;width:100%;min-height:0;background:#fff}
 @media (max-width:900px){main{grid-template-columns:1fr;grid-auto-rows:90vh;height:auto}}
 </style></head><body><main>""" + grid + "</main></body></html>")
-print("wrote", ", ".join(n + ".html" for n in VARIANTS), "and compare.html in", OUT)
+print("wrote", ", ".join(n + ".html" for n in VARIANTS), "and", "compare-reading.html" if reading else "compare.html", "in", OUT)

@@ -17,7 +17,7 @@
   --font-ui:Inter,"Segoe UI",Verdana,Helvetica,Arial,sans-serif;
   --font-head:"Nanum Gothic","Trebuchet MS",Arial,sans-serif;
   --gutter:16px;
-  --canon-label:var(--red); --font-label:var(--font-ui);
+  --canon-label:var(--red); --font-label:var(--font-ui); --reading-order:none;
 }
 @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
   color-scheme:dark;
@@ -472,7 +472,7 @@ function readTokens(){
   C.lvl = [t('--none'), t('--r1'), t('--r2'), t('--r3'), t('--r4'), t('--r5')];
   C.year = YEAR_PAL[S ? S.yearPal : 'eras'][th]; C.cloud = CLOUD_HUES[th];
   var cl8 = t('--clouds').split(/\s*,\s*/); if (cl8.length === CLOUD_HUES.light.length) C.cloud = cl8;   // a theme may set its own eight cloud colours
-  C.region = t('--region'); C.canonLabel = t('--canon-label') || C.red;
+  C.region = t('--region'); C.canonLabel = t('--canon-label') || C.red; C.readOrder = t('--reading-order') || 'none';
 }
 
 /* ---------- derived data ---------- */
@@ -1004,6 +1004,15 @@ function draw(now){
   function ring(n0, extra, color, width){ ctx.strokeStyle = color; ctx.lineWidth = width; ctx.beginPath(); ctx.arc(X[n0]*k+tx, Y[n0]*k+ty, RAD[n0]*zf + extra, 0, 6.2832); ctx.stroke(); }
   function redot(n0){ ctx.fillStyle = nodeColor(n0); ctx.beginPath(); ctx.arc(X[n0]*k+tx, Y[n0]*k+ty, Math.max(2.2, RAD[n0]*zf), 0, 6.2832); ctx.fill(); }
   var visNb = function(n0){ return D.nb[n0].filter(function(q){ return VIS[q]; }); };
+  // a tale series shows its reading order: a thin line from page to page, and/or each page's number in the hub's list
+  var ro = S.hlInfo && S.hlInfo.hub != null && C.readOrder !== 'none' ? S.hlInfo.order : null;
+  if (ro && C.readOrder.indexOf('line') >= 0){
+    ctx.strokeStyle = C.ink; ctx.globalAlpha = .55; ctx.lineWidth = 1.2; ctx.lineJoin = 'round'; ctx.beginPath();
+    var started = false;
+    for (m = 0; m < ro.length; m++){ n = ro[m]; if (!VIS[n]) continue; sx = X[n]*k + tx; sy = Y[n]*k + ty; if (started) ctx.lineTo(sx, sy); else { ctx.moveTo(sx, sy); started = true; } }
+    ctx.stroke(); ctx.globalAlpha = 1;
+    for (m = 0; m < ro.length; m++) if (VIS[ro[m]]){ ring(ro[m], 3, C.ink, 1.5); break; }   // the first page carries a ring
+  }
   if (S.sel >= 0){
     var snb = visNb(S.sel).slice(0, 8);
     if (S.pageLinks){ spokes(S.sel, citeOut[S.sel], C.pageLine, .9, 1.25); spokes(S.sel, citeIn[S.sel], C.pageLine, .9, 1.25); }
@@ -1032,6 +1041,17 @@ function draw(now){
     return true;
   }
   if (S.sel >= 0){ nodeLabel(S.sel, true, 1, true); visNb(S.sel).slice(0, 8).forEach(function(q){ nodeLabel(q, true, .95, false); }); }
+  if (ro && C.readOrder.indexOf('num') >= 0){
+    ctx.font = '700 10.5px ' + FONT_UI; ctx.textAlign = 'center';
+    for (m = 0; m < ro.length; m++){
+      n = ro[m]; if (!VIS[n]) continue;
+      var nx = X[n]*k + tx, ny = Y[n]*k + ty - Math.max(2.2, RAD[n]*zf) - 7, nt = String(m + 1), nw = nt.length * 6.5 + 4;
+      if (nx < -10 || ny < -10 || nx > W + 10 || ny > H + 10 || !place(nx - nw/2, ny - 6, nw, 12)) continue;
+      labelBoxes.push({ x: nx - nw/2, y: ny - 6, w: nw, h: 12, node: n });
+      haloText(nt, nx, ny, C.ink, 1);
+    }
+    ctx.textAlign = 'left';
+  }
 
   var regOn = S.names && zr < 7, lmOn = (S.canon || S.goi) && zr > 1.5 && zr < 30;
   if (regOn || lmOn){
