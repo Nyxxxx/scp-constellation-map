@@ -89,8 +89,9 @@ async def main():
         # 6. limits text
         await pg.click("#filterClear"); await pg.wait_for_timeout(200)
         txt = await pg.evaluate("document.getElementById('pbody').textContent")
-        i = txt.find("Pages added from the live wiki"); print("   ", txt[i:i+820]); j = txt.find("Source."); print("   ", txt[j:j+420])
-        check("limits mention jokes", "396 joke entries" in txt and "undefined" not in txt and "NaN" not in txt)
+        j = txt.find("Source."); print("   ", txt[j:j+420])
+        check("limits: short, with the added pages and the full method", "589 Lost, SCP-001 and joke entries" in txt and "joke entries could not be read" in txt
+              and "METHODS.md on GitHub" in txt and "undefined" not in txt and "NaN" not in txt)
         # 7. estimated date label
         pg3 = await ctxt.new_page(); await pg3.goto(URL + "#p=scp-l100"); await pg3.wait_for_timeout(2400)
         t3 = await pg3.evaluate("document.getElementById('pbody').textContent"); check("lost entry: last edited", "Last edited:" in t3)

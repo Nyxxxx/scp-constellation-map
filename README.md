@@ -15,6 +15,7 @@ works offline; only the fonts need an internet connection.
 
 | File or folder | What it is |
 |---|---|
+| `METHODS.md` | Sources, method and limits in full, with every count. The map's own "Sources and limits" section is the short version and links here. |
 | `page3.src.html` | The page itself: layout, styles and all the code. The data is inserted where it says `/*__DATA__*/`. |
 | `out/data.json` | The finished data the page reads (18,083 pages, positions, regions, tags, descriptions). |
 | `out/data4.json` | The raw result of the layout computation, before the last step. Kept so the last step can be run again without recomputing. |

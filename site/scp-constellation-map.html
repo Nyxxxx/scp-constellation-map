@@ -1537,7 +1537,7 @@ function renderPanel(){
     var split = classSplit(S.hl); if (split) kids.push(split);
     var rt = info.right || function(q){ return fmt(D.rating[q]); };
     if (hb){   // a tale series: the hub's own sections, numbered straight through
-      var hsec = h('div', { class: 'sec' }, h('h2', null, 'Reading order given by the hub')), start = 0;
+      var hsec = h('div', { class: 'sec' }), start = 0;
       hb.q.forEach(function(sc){
         if (sc[0]) hsec.appendChild(h('h3', { class: 'subh' }, sc[0]));
         hsec.appendChild(h('ol', { class: 'list num', style: 'counter-reset:r ' + start }, sc[1].map(function(q){ return row(q, rt(q), ''); })));
@@ -1569,34 +1569,20 @@ function renderPanel(){
       h('div', { class: 'stats' }, fmt(D.meta.scp) + ' SCP entries · ' + fmt(D.meta.tales) + ' tales · ' + fmt(D.meta.goi) + ' GoI formats · ' + fmt(D.cites.length / 2) + ' page links')));
     var lim = function(head){ return h('li', null, h('b', null, head + ' '), Array.prototype.slice.call(arguments, 1)); };
     var snap = new Date(D.meta.snapshot + 'T12:00:00'), snapText = isNaN(snap) ? D.meta.snapshot : snap.getDate() + ' ' + ['January','February','March','April','May','June','July','August','September','October','November','December'][snap.getMonth()] + ' ' + snap.getFullYear();
-    var noRegion = 0, nMine = 0, nArch = 0, nGoiBare = 0, q3;
-    for (q3 = 0; q3 < N; q3++) if (D.cluster[q3] < 0) noRegion++;
-    for (q3 in (D.contests || {})){ if (D.contests[q3].mine) nMine++; else nArch++; }
-    D.tags.forEach(function(_, t){ if (D.tagKind[t] === 2 && !(D.notes && D.notes[t])) nGoiBare++; });
-    var intl = D.seriesNames.indexOf('International');
+    var nMine = 0, q3;
+    for (q3 in (D.contests || {})) if (D.contests[q3].mine) nMine++;
+    var ext = function(href, text){ return h('a', { href: href, target: '_blank', rel: 'noopener' }, text); };
     kids.push(h('div', { class: 'sec' }, h('h2', null, 'Sources and limits of this map'),
       h('ul', { class: 'limits' },
-        lim('Source.', 'Titles, tags, ratings, authors, creation dates, page text and links come from ', h('a', { href: 'https://github.com/scp-data/scp-api', target: '_blank', rel: 'noopener' }, 'scp-data/scp-api'),
-          ', a public GitHub repository that republishes a regular crawl of scp-wiki.wikidot.com. The copy used here was downloaded on ' + snapText + '. It contains ' + fmt(D.meta.src[0]) + ' SCP entries, ' +
-          fmt(D.meta.src[1]) + ' tales and ' + fmt(D.meta.src[2]) + ' GoI formats. Edits, votes and tag changes made after that date are not reflected.'),
-        lim('Coverage.', 'Only the English-language wiki is covered. The other language branches and the International Translation Archive are absent, apart from ' + (intl >= 0 ? SERIES_N[intl] : 'a few') +
-          ' translated entries hosted on the English wiki. Hubs, art pages, essays, author pages, supplements and deleted pages are not in the dataset.'),
-        lim('Pages added from the live wiki.', 'The dataset stores SCP entries under their number, so the SCP-001 proposals overwrite one another and a single one remains; the Lost SCP Series and most joke entries are absent. ' + fmt(D.meta.lost) + ' Lost entries, ' +
-          fmt(D.meta.p001Added) + ' SCP-001 proposals and ' + fmt(D.meta.jokesAdded) + ' joke entries were therefore read one by one from the live wiki on 9 and 10 October 2026 (tags, rating, author and date), and take part in the layout like any other page. SCP-001 proposals and joke entries carry the date their discussion thread was opened; for ' + fmt(D.meta.jokesApprox) + ' joke entries that date is estimated from the number of the thread. Lost entries carry their last-edit date. ' +
-          fmt(D.meta.jokesMissing) + ' joke entries listed on the Joke SCPs hub are not on the map: their page could not be read or shows no rating.'),
-        lim('Placement.', 'Positions are computed from tags alone. ' + fmt(D.meta.tagsUsed) + ' of ' + fmt(D.tags.length) + ' tags are used; contest tags and housekeeping tags such as co-authored, illustrated or featured are excluded. Tags are weighted by rarity (TF-IDF), pages are compared by cosine similarity, and each page is linked to its ten most similar pages. The layout is produced by UMAP, a dimension-reduction method, then stretched radially to open up the dense centre. UMAP keeps similar pages close but does not preserve distances, and its result depends on a random seed: which pages are neighbours is meaningful, exact distances and absolute positions are not. A page with few or imprecise tags is placed accordingly. ' +
-          fmt(D.meta.byLinks) + ' pages that share no tag with any other page are placed next to the pages they link to, and ' + fmt(D.meta.loose) + ' pages with neither a shared tag nor a link are placed on the outer ring.'),
-        lim('Regions.', 'The ' + D.clusters.length + ' regions are communities detected by the Leiden algorithm in the network of nearest-neighbour links. Communities of fewer than 40 pages are not shown, which leaves ' + fmt(noRegion) + ' pages without a region. Membership of a region and position on the map are computed separately, so about 6% of pages lie outside the outline of their own region. An outline marks where the pages of a region are dense; it is not a boundary that contains all of them. Region names and descriptions are AI-generated from the most frequent tags and the highest-rated pages of each region. They are not categories used by the wiki and do not describe every page of a region.'),
-        lim('Object classes.', 'Classes are extracted from the page source: from the Anomaly Classification System bar on the ' + fmt(D.meta.acs) + ' entries that use it, otherwise from the "Object Class" line. Unusual page formats can be misread. For the pages added from the live wiki, the class is taken from their tags.'),
-        lim('Dates, ratings and lengths.', 'Dates are the creation dates given by the dataset; a rewritten page keeps the date of the original. Ratings are those of the download date. Word counts are computed from the plain text of each page and can differ from the lists kept on the wiki.'),
-        HUBS.length ? lim('Tale series.', D.meta.hubsFromWiki ?
-          'The Tale series menu lists ' + HUBS.length + ' of the ' + fmt(D.meta.hubsListed) + ' series hubs on the Series Archive of the wiki. ' +
-          (D.meta.hubsRead - D.meta.hubsFromWiki) + ' hubs were read from the source dataset, which holds only the hubs whose title begins with a digit, A or B; the other ' +
-          D.meta.hubsFromWiki + ' were downloaded from the wiki' + (D.meta.hubsFetched ? ' on ' + (function(p){ return +p[2] + ' ' + ['January','February','March','April','May','June','July','August','September','October','November','December'][+p[1] - 1] + ' ' + p[0]; })(D.meta.hubsFetched.split('-')) : '') + '. ' +
-          (D.meta.hubsRead - HUBS.length) + ' hubs are left out because fewer than two of the pages they link to are on the map: their pages belong to other language branches or are newer than the dataset, or their list is built in a way the extraction cannot read. ' +
-          ((D.meta.hubsManual || []).length ? 'The reading list of ' + D.meta.hubsManual.join(', ') + ' is drawn by a script on its hub; it was copied from that script by hand. ' : '') + 'Each other reading list'
-          : 'The Tale series menu lists ' + HUBS.length + ' series, read from the series hubs present in the source dataset. Each reading list is extracted automatically from the hub page: links placed in lists, headings and tables are kept in the order of the page, links inside running text are left out, and the section names are the headings of the hub. A page can be missing or sit under the wrong heading when a hub has an unusual layout. The canons and GoIs given for a series are the canon and GoI tags carried by its hub page.') : null,
-        lim('Contests, GoIs and canons.', 'The contest list follows the Contest Archive of the wiki. ' + nArch + ' contests carry the description and winners given by the archive, word for word. ' + nMine + ' events absent from the archive carry an AI-generated summary of their own page. Contests described or tagged as unofficial are excluded. GoI and canon descriptions are quoted from the Groups of Interest page and the Canon Hub of the wiki; ' + nGoiBare + ' GoI tags have no entry there and therefore no description. Canon tags were matched to the Canon Hub by name. GoI tags are those the wiki uses to label GoI formats.'))));
+        lim('Source.', 'A copy of the English SCP Wiki published by ', ext('https://github.com/scp-data/scp-api', 'scp-data/scp-api'), ', downloaded on ' + snapText + '; later edits, votes and tag changes are not shown. ' +
+          fmt(D.meta.lost + D.meta.p001Added + D.meta.jokesAdded) + ' Lost, SCP-001 and joke entries missing from that copy, and the tale series hubs, were read from the wiki directly.'),
+        lim('Coverage.', 'The English wiki only: no other language branch, and no hubs, essays, art or author pages. ' + fmt(D.meta.jokesMissing) + ' joke entries could not be read.'),
+        lim('Placement.', 'Positions come from shared tags only, weighted by rarity. Pages close together share tags; exact distances and absolute positions carry no meaning.'),
+        lim('Regions.', 'The ' + D.clusters.length + ' regions are groups of similar pages found automatically. Their names and descriptions are AI-generated and are not categories of the wiki.'),
+        lim('Classes and dates.', 'Read from each page, and can be wrong on unusual formats. A rewritten page keeps the date of the original.'),
+        HUBS.length ? lim('Tale series.', HUBS.length + ' of the ' + fmt(D.meta.hubsListed) + ' series on the wiki’s Series Archive. Reading lists are extracted automatically from each hub and can differ from it when a hub has an unusual layout.') : null,
+        lim('Descriptions.', 'Contest, GoI and canon texts are quoted from the wiki; ' + nMine + ' contests absent from its Contest Archive carry an AI-generated summary.'),
+        lim('Full method.', 'Every count, method and known gap: ', ext('https://github.com/Nyxxxx/scp-constellation-map/blob/main/METHODS.md', 'METHODS.md on GitHub'), '.'))));
   }
   body.replaceChildren.apply(body, kids);
   body.scrollTop = 0;

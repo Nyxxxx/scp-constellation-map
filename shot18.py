@@ -27,7 +27,7 @@ async def main():
         check("series highlighted", await pg.evaluate("document.getElementById('filterName').textContent") == "Tale series: Antimemetics Division Hub", await pg.evaluate("document.getElementById('filterName').textContent"))
         check("hash", await pg.evaluate("location.hash") == "#h=u.antimemetics-division-hub", await pg.evaluate("location.hash"))
         body = await pg.evaluate("document.getElementById('pbody').innerText")
-        check("panel: reading order and sections", "Reading order given by the hub" in body and "There Is No Antimemetics Division" in body and "Hub page on the wiki" in body and "undefined" not in body, body[:300])
+        check("panel: reading order and sections", "Reading order given by the hub" not in body and "numbers on the map" in body and "There Is No Antimemetics Division" in body and "Hub page on the wiki" in body and "undefined" not in body, body[:300])
         nums = await pg.evaluate("document.querySelectorAll('#pbody ol.list.num li').length"); check("33 numbered rows", nums == 33, nums)
         last = await pg.evaluate("getComputedStyle(document.querySelector('#pbody ol.list.num:last-of-type li:last-child'), '::before').content"); check("numbering runs through the sections", "counter" in last or last != "none", last)
         await pg.screenshot(path="out/r15-hub.png")
