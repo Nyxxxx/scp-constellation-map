@@ -155,12 +155,16 @@ def blurb_of(raw):
     return "\n".join(p for p in ps if p)
 
 
+import os
+MANUAL = json.load(open("series_overrides.json", encoding="utf-8")) if os.path.exists("series_overrides.json") else {}
 res = []
 for slug, v in sorted(hubs.items()):
     tags = v.get("tags") or []
     if "series-hub" not in tags: continue
     raw = v.get("raw_content") or ""
     secs, mode, off, every = parse(slug.lower(), raw)
+    if slug.lower() in MANUAL:   # a list entered by hand from the hub (see series_overrides.json)
+        secs = [[nm, [p for p in pages if p in on_map]] for nm, pages in MANUAL[slug.lower()]["sections"]]; mode = "manual"; every = sum(len(p) for _, p in secs)
     n = sum(len(p) for _, p in secs)
     title = clean(re.sub(r"\s*-\s*SCP Foundation$", "", v.get("title") or slug))
     res.append({"slug": slug, "title": title, "date": (v.get("created_at") or "")[:7], "author": v.get("creator") or "",

@@ -7482,11 +7482,28 @@
   "blurb": "",
   "canons": [],
   "gois": [],
-  "sections": [],
-  "n": 0,
-  "mode": "prose",
+  "sections": [
+   [
+    "",
+    [
+     "scp-9911",
+     "scp-8984",
+     "scp-9770",
+     "scp-9660",
+     "scp-9490",
+     "scp-9220",
+     "scp-9880",
+     "scp-9330",
+     "scp-8483",
+     "scp-9987",
+     "scp-9423"
+    ]
+   ]
+  ],
+  "n": 11,
+  "mode": "manual",
   "off": 0,
-  "every": 0,
+  "every": 11,
   "src": "wiki"
  },
  {

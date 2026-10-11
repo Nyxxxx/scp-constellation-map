@@ -32,6 +32,7 @@ works offline; only the fonts need an internet connection.
 | `make_notes.py` → `notes.json` | GoI and canon descriptions copied from the wiki's Groups of Interest page and Canon Hub. |
 | `fetch_series.py` → `series_hubs.json` | Downloads the wiki's Series Archive and every series hub it lists (one request per second; pages kept in `raw_wiki/`, never fetched twice). |
 | `make_hubs.py` → `hubs.json` | The tale series: reading lists extracted from the series hubs (the dataset's 44, plus the rest downloaded from the wiki). |
+| `series_overrides.json` | Reading lists entered by hand, with their source, for hubs whose list the extraction cannot read (SCP Anthology 2025). |
 | `mockups/` | Colour variants (`make_mockups.py`) and a spot-check page for tale series (`make_series_check.py`). Their output is not kept in git. |
 | `region_names.json` | Names and one-line descriptions of the regions (written with an AI assistant; the page says so). Keyed by the three most typical tags of each region. |
 | `fuzz.py`, `shot17.py`, `shot18.py` | Automatic browser tests (random clicking on five screen sizes; checks of the latest changes). |

@@ -195,6 +195,7 @@ if os.path.exists("hubs.json"):
     hl, hubs_read = [], json.load(open("hubs.json"))
     d["meta"]["hubsRead"] = len(hubs_read)
     d["meta"]["hubsFromWiki"] = sum(1 for r in hubs_read if r.get("src") == "wiki")
+    d["meta"]["hubsManual"] = [r["title"] for r in hubs_read if r.get("mode") == "manual"]
     for r in hubs_read:
         secs = [[nm, [slug_idx[p] for p in pages if p in slug_idx]] for nm, pages in r["sections"]]
         secs = [sc for sc in secs if sc[1]]

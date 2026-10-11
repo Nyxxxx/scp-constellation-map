@@ -67,6 +67,13 @@ for i, (slug, v) in enumerate(listed.items()):
     soup = BeautifulSoup(html, "lxml")
     body = soup.find(id="page-content")
     tags = [t.get_text(strip=True) for t in soup.select("div.page-tags a")]
+    # some hubs put their list in an embedded "html block" (an iframe at /<slug>/html/...): its content is read as part of the hub
+    if body:
+        for k, fr in enumerate(body.find_all("iframe", src=re.compile(r"^/[^/]+/html/"))):
+            inner = BeautifulSoup(get(SITE + fr["src"], os.path.join(RAW, "hubs", "%s.frame%d.html" % (slug, k + 1))), "lxml")
+            box = soup.new_tag("div", attrs={"class": "html-block-content"})
+            for el in list((inner.body or inner).children): box.append(el)
+            fr.replace_with(box)
     fetched = datetime.datetime.fromtimestamp(os.path.getmtime(path)).strftime("%Y-%m-%d")
     out[slug] = dict(v, url=SITE + "/" + slug, tags=tags, fetched_at=fetched, raw_content=str(body) if body else "")
     if fresh and (i + 1) % 20 == 0: print("  ", i + 1, "of", len(listed), flush=True)

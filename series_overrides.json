@@ -1,0 +1,7 @@
+{
+ "_about": "Reading lists entered by hand for hubs whose list the extraction cannot read. Each entry gives its source. Read by make_hubs.py.",
+ "scp-anthology-2025": {
+  "why": "The hub draws its list with a script inside an embedded html block (raw_wiki/hubs/scp-anthology-2025.frame1.html); the eleven entries, in the hub's order from Malkuth to Daat, are copied from that script. They are also exactly the pages tagged tree-of-life.",
+  "sections": [["", ["scp-9911", "scp-8984", "scp-9770", "scp-9660", "scp-9490", "scp-9220", "scp-9880", "scp-9330", "scp-8483", "scp-9987", "scp-9423"]]]
+ }
+}
