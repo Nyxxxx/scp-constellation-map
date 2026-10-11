@@ -79,6 +79,10 @@ The snapshot date is read from the dataset's last commit. A second dataset copy 
   Classification Bar colours (Safe green, Euclid yellow, Keter red; Esoteric keeps a blue); no pink in the dark theme (menus and links
   in true red); region names in neutral ink (white in dark, near-black in light); canon and GoI names keep their original italic
   colours (canon `--canon-label`, GoI `--goi-label`). Map names must never share a colour with the dots.
+- Timeline (11 October 2026, owner's request, after Obsidian's graph view): while the timeline's end is in the past, dots take the layout
+  of that date: yearly layouts from `scripts/build_history.py` (computed backwards from today, size growing with page count as a quarter
+  power), stored in `data/history.json`, glided between while playing; clouds and region/canon/GoI names hidden meanwhile. Same map for
+  every visitor (owner's wish). Not recomputed by the daily refresh. Possible later: six-monthly frames (smoother; ~15 more minutes, +0.7 MB).
 - Object class list: Safe, Euclid, Keter, then the Esoteric group, then Neutralized, Pending, Explained, Decommissioned, None listed.
   Layers list ends with Timeline, then Outer ring.
 - Outer ring hidden at launch; dots coloured by object class at launch; subtitle "Every SCP entry, tale and GoI format, mapped by the tags they share."
@@ -184,7 +188,8 @@ The snapshot date is read from the dataset's last commit. A second dataset copy 
 26. **Test on real devices:** phone done on 11 October 2026 (runs well). Still to try: a trackpad, a large screen, a slow phone.
 27. **Soft cloud fills** are a fixed-size picture, slightly soft when zoomed far in (a compromise chosen to avoid re-rendering). They could be drawn as shapes like the outlines.
 28. **True live physics** (dragging dots and reshaping the map as in Obsidian) needs a GPU drawing engine such as the one behind Cosmograph, and a rebuild of the drawing layer.
-    Parked: the owner liked the idea early on, then chose to keep the fixed layout.
+    Parked: the owner liked the idea early on, then chose to keep the fixed layout. On 11 October 2026 the owner asked to keep it as a possible
+    separate side project, explored with the tinkering tools, not as a change to the main map (which should stay the same for everyone).
 29. **A map by meaning** instead of by tags: place pages by what their text says (the dataset holds the full text). An alternative view from the very first discussion; heavy to compute.
 30. **Page links that pull.** Positions come from tags only; real links between pages could attract as well, which gives a different map.
 
