@@ -1631,7 +1631,7 @@ function renderPanel(){
     $('pheadText').textContent = phone() ? 'How to read this map' : 'Guide';
     kids.push(h('div', { class: 'sec' }, h('div', { class: 'ptitle' }, 'How to read this map'),
       h('p', null, h('b', null, 'Each dot is one page of the SCP Wiki.'), ' Two pages sit close together when they share tags, and a rare tag pulls harder than a common one.'),
-      h('p', null, h('b', null, 'Lines'), ' join each page to its three closest matches. ', h('b', { style: 'color:var(--region)' }, 'NAMES IN CAPITALS'), ' are regions: groups of pages that link mostly to each other. ',
+      h('p', null, h('b', null, 'Lines'), ' join each page to its three closest matches. ', h('b', { style: 'color:var(--region)' }, 'NAMES IN CAPITALS'), ' are regions: groups of pages that share many tags. ',
         h('b', { style: 'color:var(--canon-label);font-style:italic' }, 'Red italic names'), ' are canons and ', h('b', { style: 'color:var(--goi-label);font-style:italic' }, 'brown italic names'), ' are groups of interest, placed where their pages gather.')));
     var regs = D.clusters.map(function(c, ix){ return ix; }).sort(function(a, b){ return D.clusters[b].n - D.clusters[a].n; });
     kids.push(h('div', { class: 'sec' }, h('h2', null, 'The ' + regs.length + ' regions'),
