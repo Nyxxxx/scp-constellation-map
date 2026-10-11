@@ -85,6 +85,7 @@ land in slightly different places, and region names are tied to each region's th
 - Region names coloured like their cloud, and a colour picker for region names (one colour for all).
 - Colour directions "Paper dossier" and "Star atlas" (mocked up 11 October 2026, not chosen; still buildable with `mockups/make_mockups.py`),
   and a "containment terminal" look (declined without a mock-up).
+- A line joining the pages of a tale series in reading order, alone or with the numbers (mocked up 11 October 2026: "a bit confusing").
 - A black-to-white gradient for years (unreadable); the first blue-gradient look ("screams AI").
 
 ## Technical notes
@@ -113,7 +114,8 @@ land in slightly different places, and region names are tied to each region's th
    extraction cannot read: Mississippi Blues, World of Wolves, SCP Origins, SCP Anthology 2025, the SAPPHIRE Chronicles).
 2. **Colour redesign.** Done on 11 October 2026 (see "Behaviour decided"). The guide's sentence on name colours ("Red italic names…
    brown italic names") still matches, since canon and GoI colours were kept. An earlier remark, not yet addressed: the light theme was once "a bit too bright".
-3. **Reading order on the map** for a tale series: undecided between nothing, a thin line joining the dots in order, or small numbers next to the dots. Ask.
+3. **Reading order on the map: done on 11 October 2026.** A selected tale series shows each page's place in the hub's list as a small number
+   above its dot (hidden where numbers would overlap; they appear when zooming in). The series panel says so.
 
 ### B. Data that direct access to the wiki can complete or correct
 

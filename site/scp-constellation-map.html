@@ -17,8 +17,7 @@
   --font-ui:Inter,"Segoe UI",Verdana,Helvetica,Arial,sans-serif;
   --font-head:"Nanum Gothic","Trebuchet MS",Arial,sans-serif;
   --gutter:16px;
-  --canon-label:var(--red); --font-label:var(--font-ui); --reading-order:none;
-}
+  --canon-label:var(--red); --font-label:var(--font-ui);}
 @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
   color-scheme:dark;
   --page:#161616; --ground:#1b1b1b; --block:#222222; --quote:#2a2a2a;
@@ -472,8 +471,7 @@ function readTokens(){
   C.lvl = [t('--none'), t('--r1'), t('--r2'), t('--r3'), t('--r4'), t('--r5')];
   C.year = YEAR_PAL[S ? S.yearPal : 'eras'][th]; C.cloud = CLOUD_HUES[th];
   var cl8 = t('--clouds').split(/\s*,\s*/); if (cl8.length === CLOUD_HUES.light.length) C.cloud = cl8;   // a theme may set its own eight cloud colours
-  C.region = t('--region'); C.canonLabel = t('--canon-label') || C.red; C.readOrder = t('--reading-order') || 'none';
-}
+  C.region = t('--region'); C.canonLabel = t('--canon-label') || C.red;}
 
 /* ---------- derived data ---------- */
 var X = new Float32Array(N), Y = new Float32Array(N), RAD = new Float32Array(N);
@@ -1004,15 +1002,8 @@ function draw(now){
   function ring(n0, extra, color, width){ ctx.strokeStyle = color; ctx.lineWidth = width; ctx.beginPath(); ctx.arc(X[n0]*k+tx, Y[n0]*k+ty, RAD[n0]*zf + extra, 0, 6.2832); ctx.stroke(); }
   function redot(n0){ ctx.fillStyle = nodeColor(n0); ctx.beginPath(); ctx.arc(X[n0]*k+tx, Y[n0]*k+ty, Math.max(2.2, RAD[n0]*zf), 0, 6.2832); ctx.fill(); }
   var visNb = function(n0){ return D.nb[n0].filter(function(q){ return VIS[q]; }); };
-  // a tale series shows its reading order: a thin line from page to page, and/or each page's number in the hub's list
-  var ro = S.hlInfo && S.hlInfo.hub != null && C.readOrder !== 'none' ? S.hlInfo.order : null;
-  if (ro && C.readOrder.indexOf('line') >= 0){
-    ctx.strokeStyle = C.ink; ctx.globalAlpha = .55; ctx.lineWidth = 1.2; ctx.lineJoin = 'round'; ctx.beginPath();
-    var started = false;
-    for (m = 0; m < ro.length; m++){ n = ro[m]; if (!VIS[n]) continue; sx = X[n]*k + tx; sy = Y[n]*k + ty; if (started) ctx.lineTo(sx, sy); else { ctx.moveTo(sx, sy); started = true; } }
-    ctx.stroke(); ctx.globalAlpha = 1;
-    for (m = 0; m < ro.length; m++) if (VIS[ro[m]]){ ring(ro[m], 3, C.ink, 1.5); break; }   // the first page carries a ring
-  }
+  // a tale series shows its reading order: each page's number in the hub's list, above its dot
+  var ro = S.hlInfo && S.hlInfo.hub != null ? S.hlInfo.order : null;
   if (S.sel >= 0){
     var snb = visNb(S.sel).slice(0, 8);
     if (S.pageLinks){ spokes(S.sel, citeOut[S.sel], C.pageLine, .9, 1.25); spokes(S.sel, citeIn[S.sel], C.pageLine, .9, 1.25); }
@@ -1041,7 +1032,7 @@ function draw(now){
     return true;
   }
   if (S.sel >= 0){ nodeLabel(S.sel, true, 1, true); visNb(S.sel).slice(0, 8).forEach(function(q){ nodeLabel(q, true, .95, false); }); }
-  if (ro && C.readOrder.indexOf('num') >= 0){
+  if (ro){
     ctx.font = '700 10.5px ' + FONT_UI; ctx.textAlign = 'center';
     for (m = 0; m < ro.length; m++){
       n = ro[m]; if (!VIS[n]) continue;
@@ -1538,7 +1529,7 @@ function renderPanel(){
         h('p', null, h('b', null, 'Hub page created by: '), hb.a + (ym.length === 2 ? ', ' + monthName((+ym[0] - 2008) * 12 + (+ym[1] - 1)) : '')),
         belongs.length ? h('p', null, h('b', null, 'Belongs to: '), belongs) : null,
         h('p', { class: 'clinks' }, h('a', { href: WIKI + hb.s, target: '_blank', rel: 'noopener' }, 'Hub page on the wiki ↗')),
-        h('p', { class: 'note' }, (hb.b ? 'Description as written on the hub page. ' : '') + 'The list below follows the hub page, in its order and under its headings. It was extracted automatically and can differ from the page when the hub has an unusual layout.' +
+        h('p', { class: 'note' }, (hb.b ? 'Description as written on the hub page. ' : '') + 'The list below follows the hub page, in its order and under its headings; the numbers on the map give each page\'s place in it. It was extracted automatically and can differ from the page when the hub has an unusual layout.' +
           (hb.off ? ' ' + fmt(hb.off) + (hb.off === 1 ? ' page listed by the hub is' : ' pages listed by the hub are') + ' not on the map.' : '')));
     }
     kids.push(h('div', { class: 'sec' }, h('div', { class: 'kind' }, parts[0]), h('div', { class: 'ptitle' }, parts.slice(1).join(': ')), extra,
