@@ -93,6 +93,10 @@ the daily data refreshes are not listed.
   the map while playing (stops if the user zooms or drags); at today, clouds and names fade in over 1.8 s and the view flies to the full map.
   Opening (owner's request): Play from the start shows SCP-173 alone, very close, then the 238 pages of 2008 one by one in creation order
   (`D.H.first`, from the dataset's timestamps, written by `scripts/finalize.py`) over 14 s, the view pulling back as they appear.
+- Left column (11 October 2026, layout "B" chosen among four mock-ups, `mockups/make_mockups.py columns`): group "Filter the pages"
+  (Show, Object class, Rating, Length) then group "Display" (Colour dots by, Background clouds, Layers). Length filter on word counts,
+  steps 0 to 30,000+, quick buttons Under 1k / 1k to 3k / 3k+ / 10k+ (owner: no explanatory note under it; buttons on one line;
+  underlines must not break at commas).
 - Object class list: Safe, Euclid, Keter, then the Esoteric group, then Neutralized, Pending, Explained, Decommissioned, None listed.
   Layers list ends with Timeline, then Outer ring.
 - Outer ring hidden at launch; dots coloured by object class at launch; subtitle "Every SCP entry, tale and GoI format, mapped by the tags they share."

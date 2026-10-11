@@ -5,6 +5,11 @@ The map's data are also refreshed every day from the newest crawl of the wiki; t
 
 ## 11 October 2026
 
+**Filters**
+- New **Length** filter in the left column: a slider on word counts (0 to 30,000+), with quick choices Under 1k, 1k to 3k, 3k+ and 10k+.
+- The left column is now in two parts: **Filter the pages** (Show, Object class, Rating, Length) first, then **Display**
+  (Colour dots by, Background clouds, Layers).
+
 **Timeline**
 - The timeline now replays how the map grew: before today, the map shows a layout computed for the end of each year from the pages
   written by then, and the dots glide from one year to the next.

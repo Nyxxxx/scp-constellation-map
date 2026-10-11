@@ -121,7 +121,8 @@ h1{margin:0;font-family:var(--font-head);font-weight:800;font-size:25px;line-hei
 .fold summary .opt{flex:1}
 .fold .rows{padding:7px 0 2px 21px}
 .subhead{font-size:11px;color:var(--ink-3);margin-top:2px;display:flex;justify-content:space-between;gap:8px}
-.mini{border:0;background:transparent;padding:0;color:var(--link);cursor:pointer;font-size:11.5px;text-decoration:underline}
+.mini{border:0;background:transparent;padding:0;color:var(--link);cursor:pointer;font-size:11.5px;text-decoration:underline;text-decoration-skip-ink:none;white-space:nowrap}
+.side .group{margin:6px 2px -2px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}   /* "Filter the pages", "Display" */
 .side select{width:100%;height:28px;border:1px solid var(--rule);border-radius:4px;background:var(--block);padding:0 6px}
 .field{display:flex;flex-direction:column;gap:3px}
 .field label{font-size:11.5px;color:var(--ink-2);display:flex;justify-content:space-between;gap:8px}
@@ -310,7 +311,8 @@ h1{margin:0;font-family:var(--font-head);font-weight:800;font-size:25px;line-hei
     <aside class="side" id="side" aria-label="Key and filters">
       <div class="colhead"><b>Key and filters</b><button class="x" id="sideClose" type="button">Close</button></div>
 
-      <div class="side-block">
+      <div class="group">Filter the pages</div>
+      <div class="side-block" id="blkShow">
         <div class="heading">Show <span id="shown"></span></div>
         <label class="opt"><input id="ty0" type="checkbox" checked><i id="tsw0"></i><span>SCP entries</span><em id="tc0"></em></label>
         <label class="opt"><input id="ty1" type="checkbox" checked><i id="tsw1"></i><span>Tales</span><em id="tc1"></em></label>
@@ -319,7 +321,13 @@ h1{margin:0;font-family:var(--font-head);font-weight:800;font-size:25px;line-hei
         <div class="note">Hiding pages only hides their dots. Nothing else moves.</div>
       </div>
 
-      <div class="side-block">
+      <div class="side-block" id="blkClass">
+        <div class="heading">Object class <span>SCP entries</span></div>
+        <div class="subhead"><span>Tick the classes to show</span><span><button class="mini" id="clsAll" type="button">all</button> · <button class="mini" id="clsNone" type="button">none</button></span></div>
+        <div id="classes"></div>
+      </div>
+
+      <div class="side-block" id="blkRating">
         <div class="heading">Rating <span>votes on the wiki</span></div>
         <div class="sizes" id="sizes"></div>
         <div class="subhead"><span>Show ratings: <b id="ratText"></b></span><button class="mini" id="ratAll" type="button">all</button></div>
@@ -330,7 +338,18 @@ h1{margin:0;font-family:var(--font-head);font-weight:800;font-size:25px;line-hei
         <div class="quick" id="ratQuick"></div>
       </div>
 
-      <div class="side-block">
+      <div class="side-block" id="blkLength">
+        <div class="heading">Length <span>words</span></div>
+        <div class="subhead"><span>Show lengths: <b id="lenText"></b></span><button class="mini" id="lenAll" type="button">all</button></div>
+        <div class="rat"><div class="rat-fill" id="lenFill"></div>
+          <input class="rat-range" id="len0" type="range" min="0" step="1" aria-label="Shortest length shown">
+          <input class="rat-range" id="len1" type="range" min="0" step="1" aria-label="Longest length shown"></div>
+        <div class="rat-ends" id="lenEnds"></div>
+        <div class="quick" id="lenQuick"></div>
+      </div>
+
+      <div class="group">Display</div>
+      <div class="side-block" id="blkColour">
         <div class="heading">Colour dots by</div>
         <select id="mode" aria-label="Colour dots by">
           <option value="type">Kind of page</option>
@@ -344,7 +363,7 @@ h1{margin:0;font-family:var(--font-head);font-weight:800;font-size:25px;line-hei
         <div class="legend" id="legend"></div>
       </div>
 
-      <div class="side-block">
+      <div class="side-block" id="blkClouds">
         <div class="heading">Background clouds</div>
         <div class="field"><label for="cloudSrc">Show the extent of</label>
           <select id="cloudSrc"><option value="region">Regions</option><option value="goi">GoIs</option><option value="canon">Canons</option><option value="off">Nothing</option></select></div>
@@ -352,7 +371,7 @@ h1{margin:0;font-family:var(--font-head);font-weight:800;font-size:25px;line-hei
           <select id="cloudStyle"><option value="fill">Soft fill</option><option value="outline">Outlines</option></select></div>
       </div>
 
-      <div class="side-block">
+      <div class="side-block" id="blkLayers">
         <div class="heading">Layers</div>
         <label class="opt"><input id="tTag" type="checkbox" checked><i class="line" style="border-color:var(--tag-line)"></i><span>Tag links</span><em>3 closest</em></label>
         <label class="opt"><input id="tPage" type="checkbox"><i class="line" style="border-color:var(--page-line)"></i><span>Page links</span><em>hyperlinks</em></label>
@@ -361,12 +380,6 @@ h1{margin:0;font-family:var(--font-head);font-weight:800;font-size:25px;line-hei
         <label class="opt"><input id="tGoi" type="checkbox" checked><i></i><span>GoI names</span></label>
         <label class="opt"><input id="tTime" type="checkbox" checked><i></i><span>Timeline</span></label>
         <label class="opt"><input id="tRing" type="checkbox"><i></i><span>Outer ring</span><em>untagged pages</em></label>
-      </div>
-
-      <div class="side-block">
-        <div class="heading">Object class <span>SCP entries</span></div>
-        <div class="subhead"><span>Tick the classes to show</span><span><button class="mini" id="clsAll" type="button">all</button> · <button class="mini" id="clsNone" type="button">none</button></span></div>
-        <div id="classes"></div>
       </div>
 
       <div class="src">Text and tags from the <a href="https://scp-wiki.wikidot.com/" target="_blank" rel="noopener">SCP Wiki</a>, licensed <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>. Unofficial fan map, shared under the same licence. <span id="snap"></span></div>
@@ -484,6 +497,8 @@ var RMIN = 1e9, RMAX = -1e9;
 for (i = 0; i < N; i++){ if (D.rating[i] < RMIN) RMIN = D.rating[i]; if (D.rating[i] > RMAX) RMAX = D.rating[i]; }
 // The rating slider moves over these steps instead of a straight scale, because half the wiki sits under 70 and the top reaches five figures.
 var RSTEPS = [RMIN, 0, 10, 20, 30, 50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1500, 2000, 3000, 5000, RMAX], RK = RSTEPS.length - 1;
+var WMAX = 0; for (i = 0; i < N; i++) if (D.wc[i] > WMAX) WMAX = D.wc[i];
+var WSTEPS = [0, 250, 500, 750, 1000, 1500, 2000, 2500, 3000, 4000, 5000, 7500, 10000, 15000, 20000, 30000, Math.max(30001, WMAX)], WK = WSTEPS.length - 1;   // word counts
 var APPROX = new Uint8Array(N); (D.approx || []).forEach(function(n){ APPROX[n] = 1; });
 var CG = new Uint8Array(N);
 for (i = 0; i < N; i++) CG[i] = D.ck[i] >= 0 ? D.classGroup[D.ck[i]] : 6;
@@ -509,7 +524,7 @@ function fullName(n){ return D.id[n] ? D.id[n] + (D.title[n] ? '  ' + D.title[n]
 function className(n){ return D.names[D.cn[n]]; }
 
 /* ---------- state ---------- */
-S = { mode: 'class', yearPal: 'eras', types: [1,1,1], jokes: 1, classOn: D.classKeys.map(function(){ return 1; }), m0: MMIN, m1: MMAX, r0: 0, r1: RK, timeline: true,
+S = { mode: 'class', yearPal: 'eras', types: [1,1,1], jokes: 1, classOn: D.classKeys.map(function(){ return 1; }), m0: MMIN, m1: MMAX, r0: 0, r1: RK, w0: 0, w1: WK, timeline: true,
       tagLinks: true, pageLinks: false, names: true, canon: true, goi: true, ring: false, cloud: 'region', cloudStyle: 'fill',
       sel: -1, hover: -1, hl: null, hlInfo: null };
 var SH = { g: D.meta.defaultGather, l: 0, e: D.meta.defaultEven };
@@ -653,9 +668,9 @@ function rebuild(){
   var M = MODES[S.mode], n, m, q;
   applyTime(S.m1, true);
   HIST.fill(0); visCount = 0;
-  var rLo = RSTEPS[S.r0], rHi = RSTEPS[S.r1], births = !!playing && !reduced && cost < 60, nowT = performance.now(), born = false;   // no animation when frames are already slow
+  var rLo = RSTEPS[S.r0], rHi = RSTEPS[S.r1], wLo = WSTEPS[S.w0], wHi = WSTEPS[S.w1], births = !!playing && !reduced && cost < 60, nowT = performance.now(), born = false;   // no animation when frames are already slow
   for (n = 0; n < N; n++){
-    var ok = S.types[D.type[n]] && (D.ck[n] < 0 || S.classOn[D.ck[n]]) && (S.jokes || !JOKE[n]) && (S.ring || !RINGF[n]) && D.rating[n] >= rLo && D.rating[n] <= rHi;
+    var ok = S.types[D.type[n]] && (D.ck[n] < 0 || S.classOn[D.ck[n]]) && (S.jokes || !JOKE[n]) && (S.ring || !RINGF[n]) && D.rating[n] >= rLo && D.rating[n] <= rHi && D.wc[n] >= wLo && D.wc[n] <= wHi;
     if (ok) HIST[D.mo[n]]++;
     ok = ok && D.mo[n] >= S.m0 && D.mo[n] <= S.m1 && (INTRO_N < 0 || FIRST_RANK[n] < INTRO_N);   // during the opening, only the pages revealed so far
     if (ok){ visCount++; if (births && !VIS[n]){ BORN[n] = nowT; born = true; } }
@@ -1352,6 +1367,7 @@ function reveal(n){
   if (D.ck[n] >= 0 && !S.classOn[D.ck[n]]){ S.classOn[D.ck[n]] = 1; changed = true; }
   if (D.mo[n] < S.m0 || D.mo[n] > S.m1){ TL.a = MMIN; TL.b = MMAX; S.m0 = MMIN; S.m1 = MMAX; changed = true; }
   if (D.rating[n] < RSTEPS[S.r0] || D.rating[n] > RSTEPS[S.r1]){ S.r0 = 0; S.r1 = RK; syncRating(); changed = true; }
+  if (D.wc[n] < WSTEPS[S.w0] || D.wc[n] > WSTEPS[S.w1]){ S.w0 = 0; S.w1 = WK; syncLength(); changed = true; }
   if (RINGF[n] && !S.ring){ S.ring = true; $('tRing').checked = true; changed = true; }
   if (changed){ syncControls(); layoutTimeline(); rebuild(); }
 }
@@ -1777,6 +1793,36 @@ $('ratAll').addEventListener('click', function(){ setRating(0, RK); });
   $('ratQuick').appendChild(h('button', { type: 'button', class: 'mini', on: { click: function(){ setRating(q[1], q[2]); } } }, q[0]));
 });
 syncRating();
+
+/* ---------- length filter: the same track and handles, on word counts ---------- */
+var len0 = $('len0'), len1 = $('len1');
+len0.max = len1.max = WK;
+function lenPos(ix){ return 'calc(7px + (100% - 14px) * ' + (ix / WK).toFixed(4) + ')'; }
+function syncLength(){
+  var a = S.w0, b = S.w1;
+  len0.value = a; len1.value = b;
+  len0.style.zIndex = a > WK / 2 ? 2 : 1; len1.style.zIndex = a > WK / 2 ? 1 : 2;
+  $('lenFill').style.left = lenPos(a); $('lenFill').style.width = 'calc((100% - 14px) * ' + ((b - a) / WK).toFixed(4) + ')';
+  $('lenText').textContent = a === 0 && b === WK ? 'all' : a === 0 ? 'up to ' + fmt(WSTEPS[b]) + ' words' : b === WK ? fmt(WSTEPS[a]) + ' words and more' : fmt(WSTEPS[a]) + ' to ' + fmt(WSTEPS[b]) + ' words';
+  $('lenAll').hidden = a === 0 && b === WK;
+  len0.setAttribute('aria-valuetext', fmt(WSTEPS[a]) + ' words'); len1.setAttribute('aria-valuetext', fmt(WSTEPS[b]) + ' words');
+}
+function setLength(a, b){
+  a = Math.max(0, Math.min(WK - 1, a)); b = Math.max(a + 1, Math.min(WK, b));
+  var same = a === S.w0 && b === S.w1; S.w0 = a; S.w1 = b; syncLength(); if (!same) rebuild();
+}
+len0.addEventListener('input', function(){ setLength(Math.min(+len0.value, S.w1 - 1), S.w1); });
+len1.addEventListener('input', function(){ setLength(S.w0, Math.max(+len1.value, S.w0 + 1)); });
+$('lenAll').addEventListener('click', function(){ setLength(0, WK); });
+[0, 4, 8, 12, WK].forEach(function(ix){
+  var sp = h('span', null, ix === WK ? fmt(WSTEPS[ix]) : WSTEPS[ix] >= 1000 ? fmt(WSTEPS[ix] / 1000) + 'k' : fmt(WSTEPS[ix]));
+  if (ix === 0) sp.style.left = '0'; else if (ix === WK) sp.style.right = '0'; else { sp.style.left = lenPos(ix); sp.style.transform = 'translateX(-50%)'; }
+  $('lenEnds').appendChild(sp);
+});
+[['Under 1k', 0, 4], ['1k to 3k', 4, 8], ['3k+', 8, WK], ['10k+', 12, WK]].forEach(function(q){
+  $('lenQuick').appendChild(h('button', { type: 'button', class: 'mini', on: { click: function(){ setLength(q[1], q[2]); } } }, q[0]));
+});
+syncLength();
 
 /* ---------- timeline: histogram by month, two handles, click a year to zoom into it ---------- */
 var hist = $('hist'), hctx = hist.getContext('2d'), playing = 0, TL = { a: MMIN, b: MMAX }, THUMB = 8, tlBw = 1;

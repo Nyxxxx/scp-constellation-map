@@ -1,11 +1,13 @@
 """Colour mock-ups: copies of the built map with another palette laid over it, and a page that shows them side by side.
 
-    python -X utf8 mockups/make_mockups.py        (after python make.py page)
+    python -X utf8 mockups/make_mockups.py            colour variants      (after python make.py page)
+    python -X utf8 mockups/make_mockups.py columns    arrangements of the left column (compare-columns.html)
 
 Each variant only overrides the colour and font settings at the top of page3.src.html; the real page is not changed.
 Writes mockups/<variant>.html and mockups/compare.html (not kept in git: rebuild them with this script).
 """
 import os
+import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "mockups")
@@ -69,6 +71,50 @@ VARIANTS = {
   --clouds:#3b4a7a,#4a5a8a,#5a4a7a,#3a5a6a,#6a5a3a,#4a6a5a,#5a3a5a,#46467a;""",
     },
 }
+
+# Column layouts: each variant only rearranges the blocks of the left column ("Key and filters") once the page has started.
+COLUMN_JS = r"""<script>(function(){
+  var side = document.getElementById('side'), end = side.querySelector('.src');
+  function group(t){ var d = document.createElement('div'); d.textContent = t;
+    d.style.cssText = 'margin:16px 4px 2px;font:700 11px var(--font-ui);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)'; return d; }
+  function merge(){   // Length moves into the Rating block, under a small heading of its own
+    var r = document.getElementById('blkRating'), l = document.getElementById('blkLength');
+    r.querySelector('.heading').firstChild.textContent = 'Rating and length ';
+    var sub = document.createElement('div'); sub.className = 'subhead'; sub.style.marginTop = '14px';
+    var b = document.createElement('b'); b.textContent = 'Length'; var sp = document.createElement('span'); sp.textContent = 'words';
+    sub.appendChild(b); sub.appendChild(sp); r.appendChild(sub);
+    Array.prototype.slice.call(l.children, 1).forEach(function(c){ r.appendChild(c); }); l.remove();
+  }
+  var ORDER = %s, MERGE = %s;
+  if (MERGE) merge();
+  ORDER.forEach(function(x){ side.insertBefore(x.charAt(0) === '#' ? document.getElementById(x.slice(1)) : group(x), end); });
+})();</script>"""
+COLUMNS = {
+    "col-a": {"title": "A · Today's order", "note": "Length is a block of its own, right below Rating. Nothing else moves.",
+              "order": [], "merge": False},
+    "col-b": {"title": "B · Filters first", "note": "Filter the pages: Show, Object class, Rating, Length. Then Display: colours, clouds, layers.",
+              "order": ["Filter the pages", "#blkShow", "#blkClass", "#blkRating", "#blkLength", "Display", "#blkColour", "#blkClouds", "#blkLayers"], "merge": False},
+    "col-c": {"title": "C · Filters first, rating and length together", "note": "As B, with Rating and Length in one block.",
+              "order": ["Filter the pages", "#blkShow", "#blkClass", "#blkRating", "Display", "#blkColour", "#blkClouds", "#blkLayers"], "merge": True},
+    "col-d": {"title": "D · Colour key first", "note": "What the colours mean on top, then the filters (rating and length together), then the display settings.",
+              "order": ["#blkColour", "Filter the pages", "#blkShow", "#blkClass", "#blkRating", "Display", "#blkLayers", "#blkClouds"], "merge": True},
+}
+
+if sys.argv[1:] == ["columns"]:
+    import json as _json
+    for name, v in COLUMNS.items():
+        js = COLUMN_JS % (_json.dumps(v["order"]), "true" if v["merge"] else "false")
+        open(os.path.join(OUT, name + ".html"), "w", encoding="utf-8").write(BASE.replace("</body>", js + "</body>", 1))
+    rows = "".join('<section><header><b>{t}</b> <a href="{n}.html" target="_blank">open full screen ↗</a><p>{d}</p></header>'
+                   '<iframe src="{n}.html" loading="lazy"></iframe></section>'.format(t=v["title"], d=v["note"], n=n) for n, v in COLUMNS.items())
+    open(os.path.join(OUT, "compare-columns.html"), "w", encoding="utf-8").write("""<!doctype html><html><head><meta charset="utf-8">
+<title>Column layouts</title><meta name="viewport" content="width=device-width,initial-scale=1"><style>
+:root{color-scheme:light dark}body{margin:0;font:14px system-ui,sans-serif;background:#2a2a2a;color:#eee}
+section{margin:0 0 18px;background:#111}header{padding:8px 12px}header p{margin:2px 0 0;color:#bbb}header a{color:#9cf;margin-left:8px}
+iframe{display:block;border:0;width:100%;height:92vh;background:#fff}
+</style></head><body><p style="padding:8px 12px">Four arrangements of the left column, one under the other (scroll down). Each is a working map.</p>""" + rows + "</body></html>")
+    print("wrote", ", ".join(n + ".html" for n in COLUMNS), "and compare-columns.html in", OUT)
+    sys.exit(0)
 
 
 def build(name, v):
