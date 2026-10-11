@@ -1,6 +1,7 @@
 """The map through time: one layout per date, as if only the pages written by then existed, for the timeline animation.
 
-Usage: python -X utf8 build_history.py out/data.json history.json [months between frames, default 12]
+Usage: python -X utf8 scripts/build_history.py out/data.json data/history.json [months between frames, default 12]
+(then python make.py data). Not part of the daily refresh: run it by hand when the past should be recomputed (about 15 minutes).
 
 Frames are computed backwards from today's map: the pages written after a date are removed and the layout relaxes (UMAP, starting
 from the positions of the frame after it), then it is spread like the page spreads today's map and turned and scaled onto that

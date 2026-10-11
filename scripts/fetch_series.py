@@ -1,6 +1,6 @@
 """Downloads the wiki's Series Archive and every series hub it lists, and writes them in the dataset's hub format.
 
-Usage: python -X utf8 fetch_series.py series_hubs.json
+Usage: python -X utf8 scripts/fetch_series.py data/series_hubs.json      (run by make.py all)
 
 Polite: one request per second at most. Every downloaded page is kept in raw_wiki/ and never fetched again
 (delete a file to fetch it anew), so the extraction can be re-run offline.

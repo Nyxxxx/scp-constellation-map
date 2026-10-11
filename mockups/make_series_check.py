@@ -5,7 +5,7 @@
 import html, json, os, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-hubs = {r["slug"]: r for r in json.load(open(os.path.join(ROOT, "hubs.json"), encoding="utf-8"))}
+hubs = {r["slug"]: r for r in json.load(open(os.path.join(ROOT, "data", "hubs.json"), encoding="utf-8"))}
 d = json.load(open(os.path.join(ROOT, "out", "data.json"), encoding="utf-8"))
 title = {s.lower(): (d["title"][i] or s) for i, s in enumerate(d["slug"])}
 name = {s.lower(): s for s in d["slug"]}

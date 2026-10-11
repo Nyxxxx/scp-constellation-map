@@ -1,7 +1,7 @@
 import asyncio, random, sys
 from playwright.async_api import async_playwright
 import os
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # the project folder (the tests live in tests/)
 URL = "file://" + ROOT + "/out/preview.html"
 async def run(seed, vw, vh, scheme, touch):
     random.seed(seed)

@@ -2,7 +2,7 @@
 import asyncio, json, re, sys
 from playwright.async_api import async_playwright
 import os
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # the project folder (the tests live in tests/)
 URL = "file://" + ROOT + "/out/preview.html"
 ok = True
 def check(name, cond, extra=""):
@@ -95,7 +95,7 @@ async def main():
         # 7. estimated date label
         pg3 = await ctxt.new_page(); await pg3.goto(URL + "#p=scp-l100"); await pg3.wait_for_timeout(2400)
         t3 = await pg3.evaluate("document.getElementById('pbody').textContent"); check("lost entry: last edited", "Last edited:" in t3)
-        slug = json.load(open("extra_pages.json")); est = [r["slug"] for r in slug if r["group"] == "joke" and r["approx"]][0]
+        slug = json.load(open("data/extra_pages.json")); est = [r["slug"] for r in slug if r["group"] == "joke" and r["approx"]][0]
         await pg3.goto(URL + "#p=" + est); await pg3.reload(); await pg3.wait_for_timeout(2400)
         t3 = await pg3.evaluate("document.getElementById('pbody').textContent"); check("joke with estimated date", "(estimated)" in t3, est)
         await pg3.close()

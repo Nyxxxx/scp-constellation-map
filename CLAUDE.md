@@ -3,6 +3,9 @@
 An interactive map of the English SCP Wiki: every SCP entry, tale and GoI format is a dot, placed by the tags the pages share.
 The map was first built in a cloud session (9 and 10 October 2026); this file carries its decisions and backlog forward.
 `README.md` lists the files and the commands. Read both before changing anything.
+Layout (since 11 October 2026): `make.py` at the top runs everything from the project folder; build steps in `scripts/`, their inputs
+and lists in `data/`, the page source in `page/`, tests in `tests/`, computed data in `out/`. The published page stays at
+`scp-constellation-map-standalone.html` (top level) so shared links keep working. The README is written for outside readers.
 Personal notes about the owner and private links live in `CLAUDE.local.md`, which is kept out of the repository. Read it too when present.
 
 ## Where things stand
@@ -18,12 +21,12 @@ Personal notes about the owner and private links live in `CLAUDE.local.md`, whic
 ## Daily refresh (GitHub Actions)
 
 `.github/workflows/daily-refresh.yml` runs every day at 06:40 UTC (and by hand from the Actions tab): newest dataset snapshot,
-`make.py all --no-wiki` (refresh; tale series stay as in `hubs.json`), `make.py test`, then a commit by github-actions[bot] and a push,
+`make.py all --no-wiki` (refresh; tale series stay as in `data/hubs.json`), `make.py test`, then a commit by github-actions[bot] and a push,
 which republishes the site. Nothing is published if a step fails; GitHub emails the owner. `out/dataset_commit.txt` records the dataset
 commit last used, so a day without a new crawl does nothing.
 **Before working on this computer, run `git pull`**: the bot commits to `main` every day. Text files are stored with LF line endings (`.gitattributes`).
 Not refreshed by the bot: the tale series hubs (run `python make.py all` locally, which downloads them politely), the pages read by hand
-from the live wiki (`extra_pages.json`, Lost/001/jokes), contests absent from the archive, region names (only needed after `--fresh`).
+from the live wiki (`data/extra_pages.json`, Lost/001/jokes), contests absent from the archive, region names (only needed after `--fresh`).
 
 ## Setup (Windows)
 
@@ -43,7 +46,7 @@ Tested on Windows 10 x64 with Python 3.12.10 and Git 2.55. Node is optional.
    ```
 5. `python make.py page`, then `python make.py test`. Both should pass before any change.
    On Windows the rebuilt pages use Windows line endings (CRLF), so they differ from a cloud build by line endings only.
-   In `fuzz.py` output, "act errors" are the random clicker missing a button that is not on screen; only "page errors" are faults.
+   In `tests/fuzz.py` output, "act errors" are the random clicker missing a button that is not on screen; only "page errors" are faults.
 6. History: `git init` here (the `.gitignore` already excludes `scp-api/`, `raw_wiki/`, `out/*.png`, `__pycache__/`), `git config core.autocrlf false`,
    and a first commit. Commit after each validated change.
 7. On Windows always start the scripts through `make.py` or with `python -X utf8`: they open files without naming the encoding.
@@ -52,7 +55,7 @@ Tested on Windows 10 x64 with Python 3.12.10 and Git 2.55. Node is optional.
 `out/data4.prev.json`). Pages whose tags did not change keep their exact position and region; new or retagged pages go to the middle of
 their closest pages and join the region of most of them; region names, name labels and their anchors are kept. Tested with the 11 October
 crawl: 17,991 of 18,073 dots unchanged, 6 new pages, 10 deleted, 80 retagged. Do **not** run `python make.py all --fresh` casually:
-it recomputes the layout (UMAP) and the regions (Leiden), moves every dot, and new regions need names in `region_names.json`.
+it recomputes the layout (UMAP) and the regions (Leiden), moves every dot, and new regions need names in `data/region_names.json`.
 The snapshot date is read from the dataset's last commit. A second dataset copy may sit in `scp-api-new/` (git worktree, ignored).
 
 ## How changes are decided
@@ -104,7 +107,7 @@ The snapshot date is read from the dataset's last commit. A second dataset copy 
 
 ## Technical notes
 
-- One self-contained HTML page, canvas 2D, no framework. All code lives in one IIFE in `page3.src.html`; the data is inserted at `/*__DATA__*/`.
+- One self-contained HTML page, canvas 2D, no framework. All code lives in one IIFE in `page/page3.src.html`; the data is inserted at `/*__DATA__*/`.
 - State is in `S`; `rebuild()` recomputes what is visible, `draw()` paints the map, `drawHover()` paints the hovered dot on a second canvas laid over the first.
 - `?scpdebug` in the address exposes `window.__scp` for tests.
 - Pipeline: tags → roles (hidden, class, housekeeping, content) → TF-IDF → cosine, 10 nearest pages → Leiden communities (regions, 40 pages minimum) → UMAP (seed 42) → radial spread of the centre in the page.
@@ -120,7 +123,7 @@ The snapshot date is read from the dataset's last commit. A second dataset copy 
 
 ### A. Validated by the owner, waiting to be done
 
-1. **Tale series menu: done on 11 October 2026.** `fetch_series.py` downloads the Series Archive (268 hubs) into `raw_wiki/`; `make_hubs.py`
+1. **Tale series menu: done on 11 October 2026.** `scripts/fetch_series.py` downloads the Series Archive (268 hubs) into `raw_wiki/`; `scripts/make_hubs.py`
    reads the dataset's 44 plus the rest; 253 series have two pages or more on the map. Owner spot-checked 8 (Olympia Project, Team Bird,
    Kit's Home, Revolution Earth, The Ballad of Neapolio, Schlangenkrieg: fine). SCP Anthology 2022 was missing 23 of 33 entries (one paragraph
    of "link + text" lines): fixed with the list-paragraph rule. Manhattan Crisis Hub: half its links are Japanese-branch or nonexistent pages,
@@ -134,7 +137,7 @@ The snapshot date is read from the dataset's last commit. A second dataset copy 
 ### B. Data that direct access to the wiki can complete or correct
 
 4. **Missing joke entries (25):** 13 refused by the reader (scp-056-j, 067-j, 069-j, 078-j, 273-j, 2006-j, 2041-j, 4463-j, 9000-j, meta-ex-j, mystery-j, wcpgw-j, tldr-j),
-   10 unreadable or absent, 2 without rating. Lists in `README.md` and `jokes/failed_*.txt`.
+   10 unreadable or absent, 2 without rating. Lists in `README.md` and `data/jokes/failed_*.txt`.
 5. **Missing Lost entries:** SCP-L033, SCP-L076, SCP-L744.
 6. **Re-read all 589 hand-added pages from their HTML** (129 Lost, 64 SCP-001 proposals, 396 jokes) to check tags, ratings and authors, and to fill what the reader
    could not give: real posting dates (Lost entries carry last-edit dates, 20 jokes an estimate, proposals the date of their discussion thread),

@@ -191,8 +191,8 @@ if "scp-7537" in slug_idx and not d["title"][slug_idx["scp-7537"]].strip():
 print("repairs (end):", dict(fixed))
 
 # ---- 6. tale series: the reading lists extracted from the series hubs (make_hubs.py), with the canons and GoIs their hub page is tagged with
-if os.path.exists("hubs.json"):
-    hl, hubs_read = [], json.load(open("hubs.json"))
+if os.path.exists("data/hubs.json"):
+    hl, hubs_read = [], json.load(open("data/hubs.json"))
     d["meta"]["hubsRead"] = len(hubs_read)
     d["meta"]["hubsFromWiki"] = sum(1 for r in hubs_read if r.get("src") == "wiki")
     d["meta"]["hubsManual"] = [r["title"] for r in hubs_read if r.get("mode") == "manual"]
@@ -204,7 +204,7 @@ if os.path.exists("hubs.json"):
                    "k": [tag_idx[t] for t in r["canons"] + r["gois"] if t in tag_idx], "q": secs, "off": r["off"]})
     d["hubs"] = hl
     # how many series the wiki's Series Archive lists, counted when it was downloaded (fetch_series.py); the estimate otherwise
-    sh = json.load(open("series_hubs.json", encoding="utf-8")) if os.path.exists("series_hubs.json") else {}
+    sh = json.load(open("data/series_hubs.json", encoding="utf-8")) if os.path.exists("data/series_hubs.json") else {}
     d["meta"]["hubsListed"] = len(sh) or HUBS_ON_WIKI
     d["meta"]["hubsFetched"] = max((v.get("fetched_at", "") for v in sh.values()), default="")
     print("tale series:", len(hl), "| pages in at least one:", len({n for x in hl for sc in x["q"] for n in sc[1]}))
@@ -212,10 +212,10 @@ if os.path.exists("hubs.json"):
 # ---- 7. the map through time (build_history.py): one layout per date, for the timeline animation.
 # For each frame, the positions of the pages written by then, in page order (the page knows which ones from their month);
 # -32768 where the page has no position in that frame (a page newer than the frames, or one that changed date).
-if os.path.exists("history.json"):
+if os.path.exists("data/history.json"):
     import base64
     import numpy as np
-    hj = json.load(open("history.json", encoding="utf-8"))
+    hj = json.load(open("data/history.json", encoding="utf-8"))
     hidx = {s.lower(): i for i, s in enumerate(hj["slugs"])}
     cur = [hidx.get(s.lower(), -1) for s in d["slug"]]
     frames = []
@@ -228,7 +228,7 @@ if os.path.exists("history.json"):
 
 missing = sorted(set(titles) - set(added) - set(skipped))
 # joke entries: how many dates are estimates, and how many pages linked from the Joke SCPs hub did not make it onto the map
-jl = json.load(open("jokes_list.json")) if os.path.exists("jokes_list.json") else []
+jl = json.load(open("data/jokes_list.json")) if os.path.exists("data/jokes_list.json") else []
 d["meta"].update(n=len(d["type"]), lostSeries=LOST, lostMissing=[s_.upper() for s_ in missing],
                  jokesApprox=sum(1 for n in d.get("approx", []) if d["series"][n] != LOST),
                  jokesMissing=sum(1 for r in jl if r[0].lower() not in slug_idx and re.match(r"^scp-.+-j$", r[0].lower())))   # the hub also links essays, themes and collections, which are not entries

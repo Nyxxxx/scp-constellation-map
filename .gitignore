@@ -8,7 +8,7 @@ out/*.log
 out/preview*.html
 out/frame.html
 mockups/*.html
-series_hubs.json
+data/series_hubs.json
 scp-api-new/
 out/data4.prev.json
 out/data4.test*.json

@@ -236,12 +236,13 @@ for s in range(0, N, 1000):
     S = (X[s:s + 1000] @ XT).toarray()
     for r in range(S.shape[0]):
         S[r, s + r] = -1.0
-    part = np.argpartition(-S, KMAX + 8, axis=1)[:, :KMAX + 8]
-    ps = np.take_along_axis(S, part, axis=1)
-    # equally similar pages are ordered by their place in the list, so the result does not depend on the machine
-    order = np.lexsort((part, -np.round(ps, 6)), axis=1)[:, :KMAX]
+    # one exact ranking: similarity rounded to 6 decimals, then the page's place in the list for equally similar pages,
+    # so the neighbours do not depend on the machine or on how ties happen to be broken
+    key = np.rint(S * 1e6).astype(np.int64) * N + (N - 1 - np.arange(N, dtype=np.int64))[None, :]
+    part = np.argpartition(-key, KMAX, axis=1)[:, :KMAX]
+    order = np.argsort(-np.take_along_axis(key, part, axis=1), axis=1)
     nb_idx[s:s + 1000] = np.take_along_axis(part, order, axis=1)
-    nb_sim[s:s + 1000] = np.take_along_axis(ps, order, axis=1)
+    nb_sim[s:s + 1000] = np.take_along_axis(S, nb_idx[s:s + 1000].astype(np.intp), axis=1)
 
 # ---------------------------------------------------------------- regions (from tags only, the same for every layout)
 import igraph as ig  # noqa: E402

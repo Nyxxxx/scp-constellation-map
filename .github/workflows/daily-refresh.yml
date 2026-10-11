@@ -64,7 +64,7 @@ jobs:
           echo "${{ steps.data.outputs.sha }}" > out/dataset_commit.txt
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A out site scp-constellation-map-standalone.html contests.json notes.json extra_pages.json
+          git add -A out site scp-constellation-map-standalone.html data
           if git diff --cached --quiet; then echo "No change to publish."; exit 0; fi
           git commit -q -m "Daily refresh: dataset of ${{ steps.data.outputs.date }} (${{ steps.data.outputs.sha }})"
           git push

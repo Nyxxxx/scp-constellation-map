@@ -1,7 +1,7 @@
 """Round 15 checks: region names on phones, search box emptied, colour key on the map, tale series menu."""
 import asyncio, json, os, sys
 from playwright.async_api import async_playwright
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # the project folder (the tests live in tests/)
 URL = "file://" + ROOT + "/out/preview.html"
 ok = True
 def check(name, cond, extra=""):

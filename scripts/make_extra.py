@@ -23,15 +23,15 @@ def add(group, slug, pid, title, typ, rating, author, ym, tags, approx):
                 "ym": ym, "tags": tags.split(), "approx": bool(approx)})
 
 # ---- Lost SCP Series: dates are last-edit months
-titles = {r["slug"]: r for r in json.load(open("lost_titles.json"))}
-for line in open("lost_raw.txt", encoding="utf-8"):
+titles = {r["slug"]: r for r in json.load(open("data/lost_titles.json"))}
+for line in open("data/lost_raw.txt", encoding="utf-8"):
     slug, rating, author, ym, tags = line.rstrip("\n").split("|")
     if "scp" in tags.split():
         add("lost", slug, titles[slug]["id"], titles[slug]["title"], 0, rating, author, ym, tags, True)
 
 # ---- SCP-001 proposals: dates are the opening of each discussion thread
-raw = {l.split("|")[0]: l.rstrip("\n").split("|") for l in open("p001_raw.txt", encoding="utf-8") if l.strip()}
-for l in open("p001_list.txt", encoding="utf-8"):
+raw = {l.split("|")[0]: l.rstrip("\n").split("|") for l in open("data/p001_raw.txt", encoding="utf-8") if l.strip()}
+for l in open("data/p001_list.txt", encoding="utf-8"):
     if not l.strip(): continue
     slug, code, name = l.rstrip("\n").split("|")
     if slug in raw:
@@ -41,7 +41,7 @@ for l in open("p001_list.txt", encoding="utf-8"):
 # ---- joke entries
 MON = {m: i + 1 for i, m in enumerate("Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split())}
 anchors = []
-for l in open("p001_dates.txt"):
+for l in open("data/p001_dates.txt"):
     t, d, m, y = l.split(); anchors.append((int(t), datetime.date(int(y), MON[m], int(d)).toordinal()))
 anchors.sort()
 def estimate(thread):
@@ -50,9 +50,9 @@ def estimate(thread):
             d = datetime.date.fromordinal(round(d0 + (d1 - d0) * (thread - t0) / (t1 - t0))); return f"{d.year}-{d.month:02d}"
     (t0, d0), (t1, d1) = anchors[-2], anchors[-1]
     d = datetime.date.fromordinal(min(datetime.date(2026, 10, 9).toordinal(), round(d1 + (d1 - d0) * (thread - t1) / (t1 - t0)))); return f"{d.year}-{d.month:02d}"
-threads = dict(l.split() for l in open("jokes/missing_threads.txt") if l.strip())
-hub = {r[0]: r for r in json.load(open("jokes_list.json"))}
-lines = [l.rstrip("\n") for f in sorted(glob.glob("jokes/part_*.txt")) for l in open(f, encoding="utf-8") if l.strip()]
+threads = dict(l.split() for l in open("data/jokes/missing_threads.txt") if l.strip())
+hub = {r[0]: r for r in json.load(open("data/jokes_list.json"))}
+lines = [l.rstrip("\n") for f in sorted(glob.glob("data/jokes/part_*.txt")) for l in open(f, encoding="utf-8") if l.strip()]
 lines.append("scp-1047-j|+60|TroyL|2022-10|_licensebox esoteric-class joke redirect scp")      # reads only with /noredirect/true
 unread = []
 for l in lines:

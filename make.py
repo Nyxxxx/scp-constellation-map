@@ -60,9 +60,14 @@ def need_raw():
         sys.exit("The dataset was not found in " + RAW + ".\nGet the snapshot as described in README.md (a full git clone is about 16.6 GB),\nor pass its docs/data/scp folder with --raw.")
 
 
+def S(name): return os.path.join("scripts", name)    # the build scripts
+def D(name): return os.path.join("data", name)       # their inputs, and the lists they write
+def T(name): return os.path.join("tests", name)      # the automatic tests
+
+
 def page():
     os.makedirs("out", exist_ok=True); os.makedirs("site", exist_ok=True)
-    run("assemble.py", "page3.src.html", os.path.join("out", "data.json"), os.path.join("site", "scp-constellation-map.html"))
+    run(S("assemble.py"), os.path.join("page", "page3.src.html"), os.path.join("out", "data.json"), os.path.join("site", "scp-constellation-map.html"))
     body = open(os.path.join("site", "scp-constellation-map.html"), encoding="utf-8").read()
     whole = ('<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
              '<style>:root{color-scheme:light}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style></head><body>' + body + '</body></html>')
@@ -78,7 +83,8 @@ def page():
 def data():
     need_raw()
     built = os.path.join("out", "data4.json")
-    run("finalize.py", built, "lost_raw.txt", "lost_titles.json", os.path.join("out", "data.json"), "contests.json", "notes.json", "p001_raw.txt", "p001_list.txt", RAW)
+    run(S("finalize.py"), built, D("lost_raw.txt"), D("lost_titles.json"), os.path.join("out", "data.json"), D("contests.json"), D("notes.json"),
+        D("p001_raw.txt"), D("p001_list.txt"), RAW)
 
 
 if step == "page":
@@ -89,19 +95,19 @@ elif step == "all":
     need_raw()
     hubs = os.path.join(RAW, "hubs", "index.json"); built = os.path.join("out", "data4.json")
     os.makedirs("out", exist_ok=True)
-    run("make_extra.py", RAW, "extra_pages.json")
-    run("make_contests.py", hubs, "contests_base.json", "contests.json")
+    run(S("make_extra.py"), RAW, D("extra_pages.json"))
+    run(S("make_contests.py"), hubs, D("contests_base.json"), D("contests.json"))
     keep = []
     if not FRESH and os.path.exists(built):     # the previous build is the starting point of the new one
         prev = os.path.join("out", "data4.prev.json"); shutil.copyfile(built, prev); keep = ["--prev", prev]
-    run("build.py", RAW, built, "region_names.json", snapshot_date(), "extra_pages.json", *keep)
-    run("make_notes.py", hubs, built, "notes.json")
+    run(S("build.py"), RAW, built, D("region_names.json"), snapshot_date(), D("extra_pages.json"), *keep)
+    run(S("make_notes.py"), hubs, built, D("notes.json"))
     if not NO_WIKI:
-        run("fetch_series.py", "series_hubs.json")   # the wiki's Series Archive and its hubs; pages already in raw_wiki/ are not fetched again
-        run("make_hubs.py", RAW, built, "hubs.json", "series_hubs.json")
+        run(S("fetch_series.py"), D("series_hubs.json"))   # the wiki's Series Archive and its hubs; pages already in raw_wiki/ are not fetched again
+        run(S("make_hubs.py"), RAW, built, D("hubs.json"), D("series_hubs.json"))
     data(); page()
 elif step == "test":
-    run("shot17.py"); run("shot18.py"); run("fuzz.py")
+    run(T("shot17.py")); run(T("shot18.py")); run(T("fuzz.py"))
 elif step == "preview":
     # a small web server for this folder, on this computer only, and the map opened in the default browser
     import functools, http.server, socket, webbrowser

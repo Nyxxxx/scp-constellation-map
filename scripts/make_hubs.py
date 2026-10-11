@@ -156,7 +156,7 @@ def blurb_of(raw):
 
 
 import os
-MANUAL = json.load(open("series_overrides.json", encoding="utf-8")) if os.path.exists("series_overrides.json") else {}
+MANUAL = json.load(open("data/series_overrides.json", encoding="utf-8")) if os.path.exists("data/series_overrides.json") else {}
 res = []
 for slug, v in sorted(hubs.items()):
     tags = v.get("tags") or []
