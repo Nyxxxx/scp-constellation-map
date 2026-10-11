@@ -68,7 +68,8 @@ Everything goes through `make.py`:
 |---|---|---|
 | `python make.py page` | after editing `page3.src.html` (texts, colours, behaviour) | no |
 | `python make.py data` | after editing contests, GoI/canon notes or tale series | yes |
-| `python make.py all` | after changing which tags count, the region names or the dataset; about 2 minutes | yes |
+| `python make.py all` | after a new copy of the dataset: a refresh that keeps every existing dot in place and adds the new pages | yes |
+| `python make.py all --fresh` | a new layout from scratch (every dot moves, new regions need names); about 2 minutes | yes |
 | `python make.py test` | the automatic browser tests | no |
 
 `python make.py page` writes `scp-constellation-map-standalone.html` (to open in a browser) and `site/scp-constellation-map.html`

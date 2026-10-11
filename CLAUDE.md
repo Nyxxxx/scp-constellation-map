@@ -38,8 +38,12 @@ Tested on Windows 10 x64 with Python 3.12.10 and Git 2.55. Node is optional.
    and a first commit. Commit after each validated change.
 7. On Windows always start the scripts through `make.py` or with `python -X utf8`: they open files without naming the encoding.
 
-Do **not** run `python make.py all` casually. It recomputes the layout; on another machine or with other library versions the dots can
-land in slightly different places, and region names are tied to each region's three most typical tags. `out/data4.json` is the reference layout.
+`python make.py all` is a **refresh** (since 11 October 2026): it starts from `out/data4.json` (the reference layout, copied to
+`out/data4.prev.json`). Pages whose tags did not change keep their exact position and region; new or retagged pages go to the middle of
+their closest pages and join the region of most of them; region names, name labels and their anchors are kept. Tested with the 11 October
+crawl: 17,991 of 18,073 dots unchanged, 6 new pages, 10 deleted, 80 retagged. Do **not** run `python make.py all --fresh` casually:
+it recomputes the layout (UMAP) and the regions (Leiden), moves every dot, and new regions need names in `region_names.json`.
+The snapshot date is read from the dataset's last commit. A second dataset copy may sit in `scp-api-new/` (git worktree, ignored).
 
 ## How changes are decided
 
@@ -146,8 +150,12 @@ land in slightly different places, and region names are tied to each region's th
 
 18. **A refresh command:** update the dataset, re-read the hand-added pages, rebuild, test, in one go. The map is a snapshot of 9 October 2026.
 19. **A schedule** for that refresh (a scheduled task, or an automatic job on the hosting side).
-20. **A layout that stays recognisable from one refresh to the next.** Today a recompute moves every dot. Start the new layout from the previous positions,
-    and match regions to their old names by shared members instead of by their three top tags, so names survive.
+20. **Layout that stays recognisable: done on 11 October 2026** (see "Setup"). Tried first and dropped: re-running UMAP from the previous
+    positions, even gently (60 to 200 rounds, learning rate 0.1 to 1): median moves of 20 to 40 units on a radius of 1000, and UMAP's
+    per-axis rescaling of the starting positions alone moved dots by about 16. Freezing positions was chosen instead. Known cost: over months
+    the layout drifts from what a fresh computation would give; a deliberate `--fresh` rebuild resets it (and needs region names).
+    Also: equally similar neighbours are now ordered by page index, so neighbour lists no longer depend on the machine (this changed the
+    order of ties once, in about 7,000 lists).
 21. **Version history** with git, one commit per validated change.
 
 ### D. Publishing

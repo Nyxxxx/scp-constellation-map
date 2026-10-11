@@ -1,6 +1,11 @@
 """Build the data file for the SCP Constellation Map (SCP entries + tales + GoI formats).
 
-Usage: python3 -I build.py <data dir: .../docs/data/scp> <output json> <region names json> [snapshot date] [extra pages json]
+Usage: python3 -I build.py <data dir: .../docs/data/scp> <output json> <region names json> [snapshot date] [extra pages json] [--prev previous output json]
+
+With --prev (a refresh), the map is kept from one build to the next: every page placed by its tags whose tags have not changed keeps
+its exact position; a new page, or one whose tags changed, is placed at the middle of its closest pages. The regions are searched again
+starting from the previous regions, and each region that continues a previous one (sharing at least half of its pages) keeps its name.
+Without --prev, the layout is computed afresh (UMAP), which moves every page.
 
 The extra pages (Lost SCP Series, SCP-001 proposals, joke entries read from the live wiki; see make_extra.py) are treated like any other page:
 they take part in the comparison, the regions and the layout.
@@ -21,9 +26,14 @@ import scipy.sparse as sp
 from bs4 import BeautifulSoup
 from scipy.spatial import cKDTree
 
-BASE, OUT, NAMES_FILE = sys.argv[1], sys.argv[2], sys.argv[3]
-SNAPSHOT = sys.argv[4] if len(sys.argv) > 4 else ""
-EXTRA = json.load(open(sys.argv[5], encoding="utf-8")) if len(sys.argv) > 5 else []
+ARGS = sys.argv[1:]
+PREV_FILE = None
+if "--prev" in ARGS:
+    _i = ARGS.index("--prev"); PREV_FILE = ARGS[_i + 1]; del ARGS[_i:_i + 2]
+BASE, OUT, NAMES_FILE = ARGS[0], ARGS[1], ARGS[2]
+SNAPSHOT = ARGS[3] if len(ARGS) > 3 else ""
+EXTRA = json.load(open(ARGS[4], encoding="utf-8")) if len(ARGS) > 4 else []
+PREV = json.load(open(PREV_FILE, encoding="utf-8")) if PREV_FILE and os.path.exists(PREV_FILE) else None
 SEED = 42
 K_STORE = 10            # neighbours kept per page
 K_GRAPH = 10            # neighbours used to find regions
@@ -226,9 +236,10 @@ for s in range(0, N, 1000):
     S = (X[s:s + 1000] @ XT).toarray()
     for r in range(S.shape[0]):
         S[r, s + r] = -1.0
-    part = np.argpartition(-S, KMAX, axis=1)[:, :KMAX]
+    part = np.argpartition(-S, KMAX + 8, axis=1)[:, :KMAX + 8]
     ps = np.take_along_axis(S, part, axis=1)
-    order = np.argsort(-ps, axis=1, kind="stable")
+    # equally similar pages are ordered by their place in the list, so the result does not depend on the machine
+    order = np.lexsort((part, -np.round(ps, 6)), axis=1)[:, :KMAX]
     nb_idx[s:s + 1000] = np.take_along_axis(part, order, axis=1)
     nb_sim[s:s + 1000] = np.take_along_axis(ps, order, axis=1)
 
@@ -247,14 +258,40 @@ for i in range(N):
         edges[(a, b)] = max(edges.get((a, b), 0.0), float(s))
 g = ig.Graph(n=N, edges=list(edges), directed=False)
 g.es["weight"] = list(edges.values())
-part = leidenalg.find_partition(g, leidenalg.RBConfigurationVertexPartition, weights="weight",
-                                resolution_parameter=1.0, seed=SEED, n_iterations=-1)
-member = np.array(part.membership)
-sizes = collections.Counter(member.tolist())
-big = [c for c, n in sizes.most_common() if n >= MIN_CLUSTER]
-remap = {c: i for i, c in enumerate(big)}
-cluster = np.array([remap.get(c, -1) for c in member])
-cluster[~has_vec] = -1
+# the previous build, matched page by page through the address of each page
+old_of = np.full(N, -1)
+if PREV:
+    _pi = {s.lower(): i for i, s in enumerate(PREV["slug"])}
+    old_of = np.array([_pi.get(p["src"]["link"].lower(), -1) for p in pages])
+    prev_pos = np.array(PREV["P"][0], dtype=float).reshape(-1, 2)
+    prev_cluster = np.array(PREV["cluster"])
+    print(f"previous build: {len(PREV['slug'])} pages, {int((old_of >= 0).sum())} of them still here, {int((old_of < 0).sum())} new", flush=True)
+def tagset_now(i): return {shown[t] for t in node_tags[i] if used[t]}
+def tagset_prev(o): return {PREV["tags"][t] for t in PREV["tg"][o] if PREV["tagUsed"][t]}
+same_tags = np.array([PREV is not None and old_of[i] >= 0 and tagset_now(i) == tagset_prev(old_of[i]) for i in range(N)])
+if PREV:
+    # A refresh keeps the regions: a page whose tags have not changed stays in its region; a new page, or one whose tags changed,
+    # joins the region of most of its closest pages (at least half of those that have a region), or none.
+    big = list(range(len(PREV["clusters"])))
+    cluster = np.full(N, -1)
+    cluster[same_tags] = prev_cluster[old_of[same_tags]]
+    for i in np.where(~same_tags & has_vec)[0]:
+        votes = collections.Counter(int(cluster[j]) for j, s in zip(nb_idx[i, :K_GRAPH], nb_sim[i, :K_GRAPH]) if s > 0.05 and same_tags[j] and cluster[j] >= 0)
+        if votes:
+            c, n_ = votes.most_common(1)[0]
+            if n_ >= 0.5 * sum(votes.values()): cluster[i] = c
+    cluster[~has_vec] = -1
+    print(f"refresh: {int(same_tags.sum())} pages keep their region; {int((~same_tags & has_vec).sum())} new or retagged pages joined "
+          f"{int(((~same_tags) & (cluster >= 0)).sum())} times a region", flush=True)
+else:
+    part = leidenalg.find_partition(g, leidenalg.RBConfigurationVertexPartition, weights="weight",
+                                    resolution_parameter=1.0, seed=SEED, n_iterations=-1)
+    member = np.array(part.membership)
+    sizes = collections.Counter(member.tolist())
+    big = [c for c, n in sizes.most_common() if n >= MIN_CLUSTER]
+    remap = {c: i for i, c in enumerate(big)}
+    cluster = np.array([remap.get(c, -1) for c in member])
+    cluster[~has_vec] = -1
 
 # ---------------------------------------------------------------- page links (hyperlinks between pages)
 cites = set()
@@ -292,9 +329,9 @@ def features(gv, lv):
     return sp.hstack([X, gv * onehot, lv * Lm]).tocsr()[hv]
 
 
-def run(F, init, epochs):
+def run(F, init, epochs, rate=1.0):
     return umap.UMAP(n_neighbors=20, min_dist=MIN_DIST, spread=1.0, metric="cosine", random_state=SEED, n_epochs=epochs, init=init,
-                     repulsion_strength=0.5, negative_sample_rate=3).fit_transform(F)
+                     repulsion_strength=0.5, negative_sample_rate=3, learning_rate=rate).fit_transform(F)
 
 
 def normalise(e, ref=None):
@@ -311,23 +348,39 @@ def normalise(e, ref=None):
 
 
 F0 = features(GATHER[DEFAULT_G], 0.0)
-init = TruncatedSVD(n_components=2, random_state=SEED).fit_transform(F0)
-init = (init - init.mean(axis=0)) / init.std(axis=0) * 4.0 + np.random.RandomState(SEED).normal(0, 0.05, init.shape)
-raw = {}
-raw[(DEFAULT_G, 0)] = run(F0, init, 400)
-print("layout base done", flush=True)
-for gi in range(len(GATHER)):
-    if gi != DEFAULT_G:
-        raw[(gi, 0)] = run(features(GATHER[gi], 0.0), raw[(DEFAULT_G, 0)], 200)
-        print("layout", gi, 0, "done", flush=True)
-for li in range(1, len(LINKPULL)):
-    for gi in range(len(GATHER)):
-        raw[(gi, li)] = run(features(GATHER[gi], LINKPULL[li]), raw[(gi, li - 1)], 200)
-        print("layout", gi, li, "done", flush=True)
-ref = normalise(raw[(DEFAULT_G, 0)])
+import zlib  # noqa: E402
+# small offsets drawn from each page's own address, so they do not change when other pages come or go
+_h = [zlib.crc32(p["src"]["link"].lower().encode()) for p in pages]
+jit_ang = np.array([(x % 3600) / 3600 * 2 * math.pi for x in _h])
+jit_r = np.array([6 + (x // 3600 % 1000) / 100 for x in _h])
 
-rng = np.random.RandomState(SEED)
-jit_ang, jit_r = rng.uniform(0, 2 * math.pi, N), rng.uniform(6, 16, N)
+prev_placed = np.array(PREV["placed"]) if PREV else None
+stable = PREV is not None and sum(1 for i in hv if old_of[i] >= 0 and prev_placed[old_of[i]] == 0) >= 100
+raw = {}
+if stable:
+    # A refresh keeps the map: a page that was placed by its tags last time and whose tags have not changed stays exactly where it was.
+    # A new page, or one whose tags changed, goes to the middle of its closest pages that stayed, with a small offset of its own.
+    # The layout is computed afresh only on request (make.py all --fresh).
+    stay = np.array([same_tags[i] and prev_placed[old_of[i]] == 0 for i in hv])
+    ref = np.zeros((len(hv), 2))
+    ref[stay] = prev_pos[old_of[hv[stay]]]
+    stay_set = {int(i) for i in hv[stay]}
+    k_of = {int(i): k_ for k_, i in enumerate(hv)}
+    centre = np.median(ref[stay], axis=0)
+    for k_, i in enumerate(hv):
+        if stay[k_]: continue
+        near = [ref[k_of[int(j)]] for j, s in zip(nb_idx[i, :K_STORE], nb_sim[i, :K_STORE]) if int(j) in stay_set and s > 0.05][:5]
+        base = np.median(near, axis=0) if near else centre
+        ref[k_] = base + (jit_r[i] * math.cos(jit_ang[i]), jit_r[i] * math.sin(jit_ang[i]))
+    n_new = int(sum(1 for i in hv if old_of[i] < 0))
+    print(f"refresh: {int(stay.sum())} pages stay in place; {n_new} new pages and {int((~stay).sum()) - n_new} pages whose tags changed "
+          f"are placed beside their closest pages", flush=True)
+else:
+    init = TruncatedSVD(n_components=2, random_state=SEED).fit_transform(F0)
+    init = (init - init.mean(axis=0)) / init.std(axis=0) * 4.0 + np.random.RandomState(SEED).normal(0, 0.05, init.shape)
+    raw[(DEFAULT_G, 0)] = run(F0, init, 400)
+    print("layout base done", flush=True)
+    ref = normalise(raw[(DEFAULT_G, 0)])
 ring = [i for i in np.where(~has_vec)[0] if not any(has_vec[j] for j in link_nb[i])]
 RING = set(ring)
 by_links = np.array([(not has_vec[i]) and i not in RING for i in range(N)])
@@ -337,12 +390,22 @@ for gi in range(len(GATHER)):
         pos = np.zeros((N, 2))
         pos[hv] = ref if (gi, li) == (DEFAULT_G, 0) else normalise(raw[(gi, li)], ref)
         for i in np.where(by_links)[0]:
+            if stable and old_of[i] >= 0 and prev_placed[old_of[i]] == 1:
+                pos[i] = prev_pos[old_of[i]]; continue      # placed by its links last time too: keeps its spot
             nbrs = [j for j in link_nb[i] if has_vec[j]]
             pos[i] = np.median(pos[nbrs], axis=0) + (jit_r[i] * 0.4 * math.cos(jit_ang[i]), jit_r[i] * 0.4 * math.sin(jit_ang[i]))
         for n_, i in enumerate(ring):
-            ang = 2 * math.pi * n_ / max(1, len(ring)) + 0.6
-            pos[i] = (1085 * math.cos(ang), 1085 * math.sin(ang))
+            if PREV and old_of[i] >= 0 and prev_placed[old_of[i]] == 2:
+                pos[i] = prev_pos[old_of[i]]      # a page already on the outer ring keeps its spot
+            else:
+                ang = 2 * math.pi * n_ / max(1, len(ring)) + 0.6 if not PREV else jit_ang[i]
+                pos[i] = (1085 * math.cos(ang), 1085 * math.sin(ang))
         LAYOUTS.append(pos)
+if PREV:
+    _here = old_of >= 0
+    _d = np.sqrt(((LAYOUTS[0][_here] - prev_pos[old_of[_here]]) ** 2).sum(axis=1))
+    print(f"compared with the previous build (map radius 1000): {int((_d < 0.5).sum())} of {int(_here.sum())} pages did not move; "
+          f"of those that did, median {np.median(_d[_d >= 0.5]) if (_d >= 0.5).any() else 0:.0f}, max {_d.max():.0f}", flush=True)
 
 
 def spread(pos, even):
@@ -447,6 +510,7 @@ def densest(p, radius):
     return p[tree.query_ball_point(p[int(counts.argmax())], radius)].mean(axis=0)
 
 
+heir = {c: c for c in big} if PREV else {}     # in a refresh every region continues the previous one of the same number
 clusters, unify = [], set()
 for c in range(len(big)):
     idx = np.where(cluster == c)[0]
@@ -458,6 +522,8 @@ for c in range(len(big)):
             scored.append((share_in * math.log(share_in / share_all), t))
     top = [t for _, t in sorted(scored, reverse=True)[:6]]
     sig = "|".join(shown[t] for t in top[:3])
+    if c in heir:      # a region that continues a previous one keeps its key, and so its name and description
+        sig = PREV["clusters"][heir[c]]["sig"]
     entry = REGION_NAMES.get(sig, {})
     cl = {"tags": top, "n": int(len(idx)), "sig": sig, "desc": entry.get("desc", ""), "tag": -1, "kind": 0}
     if entry.get("tag") in tag_idx:
@@ -492,17 +558,43 @@ for t, mem in tag_members.items():
         continue
     landmarks.append({"t": int(t), "label": pretty(name), "kind": {"canon": 1, "goi": 2, "tag": 0}[kd], "n": n})
 landmarks.sort(key=lambda d: (0 if d["kind"] else 1, -d["n"]))
-landmarks = landmarks[:260]
+if PREV:
+    # a refresh keeps the previous names on the map (as long as their tag still has 10 pages or more); names that now qualify take the places of those that left
+    keep, before = [], set()
+    for l in PREV["landmarks"]:
+        name = PREV["tags"][l["t"]]; before.add(name)
+        t = tag_idx.get(name)
+        if t is not None and t not in unify and len(tag_members[t]) >= 10:
+            keep.append({"t": int(t), "label": pretty(name), "kind": l["kind"], "n": len(tag_members[t])})
+    landmarks = (keep + [l for l in landmarks if shown[l["t"]] not in before])[:max(260, len(keep))]   # new names only fill freed places
+else:
+    landmarks = landmarks[:260]
 
 CA, LA = [], []    # anchors per layout, in the same order as LAYOUTS
+# in a refresh, a region or a name whose pages are the same as before keeps its anchor
+slug_l = [p["src"]["link"].lower() for p in pages]
+prev_ca, prev_la = {}, {}
+if PREV:
+    pslug = [s.lower() for s in PREV["slug"]]
+    pmem = collections.defaultdict(set)
+    for i, c in enumerate(PREV["cluster"]):
+        if c >= 0: pmem[c].add(pslug[i])
+    pca = PREV["CA"][0]
+    prev_ca = {c: (frozenset(pmem[c]), (pca[2 * c], pca[2 * c + 1])) for c in pmem}
+    pla = PREV["LA"][0]
+    for q, l in enumerate(PREV["landmarks"]):
+        prev_la[PREV["tags"][l["t"]]] = (frozenset(pslug[i] for i, ts in enumerate(PREV["tg"]) if l["t"] in ts), (pla[2 * q], pla[2 * q + 1]))
 for pos in LAYOUTS:
     ca = []
     for c in range(len(big)):
-        a = densest(pos[cluster == c], 40)
+        mem = frozenset(slug_l[i] for i in np.where(cluster == c)[0])
+        a = prev_ca[c][1] if c in prev_ca and prev_ca[c][0] == mem else densest(pos[cluster == c], 40)
         ca += [int(round(a[0])), int(round(a[1]))]
     la = []
     for l in landmarks:
-        a = densest(pos[tag_members[l["t"]]], 32)
+        name = shown[l["t"]]
+        mem = frozenset(slug_l[i] for i in tag_members[l["t"]])
+        a = prev_la[name][1] if name in prev_la and prev_la[name][0] == mem else densest(pos[tag_members[l["t"]]], 32)
         la += [int(round(a[0])), int(round(a[1]))]
     CA.append(ca); LA.append(la)
 

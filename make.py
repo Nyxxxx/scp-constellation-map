@@ -2,11 +2,14 @@
 
     python make.py page     put the data into the page            (after editing page3.src.html)
     python make.py data     last data step, then the page         (after editing contests, GoI/canon notes or tale series)
-    python make.py all      everything, layout included           (after changing tags, region names or the dataset; about 2 minutes)
+    python make.py all      everything, from the dataset           (after a new copy of the dataset, or changing tags or region names)
     python make.py test     the automatic browser tests
 
+"all" keeps the map: pages already on it stay where they are and keep their region, new pages are placed beside their closest pages.
+"all --fresh" computes the layout and the regions anew (UMAP and Leiden; about 2 minutes): every dot moves and new regions need names.
+
 "data" and "all" need the dataset: a copy of https://github.com/scp-data/scp-api, by default in the folder scp-api/ next to this file.
-Options:  --raw PATH   where the dataset's docs/data/scp folder is      --snapshot YYYY-MM-DD   date of that copy (default 2026-10-09)
+Options:  --raw PATH   where the dataset's docs/data/scp folder is      --snapshot YYYY-MM-DD   date of that copy (default: the date of its last commit)
 
 Every script is started with "-X utf8", so Windows reads and writes the files as UTF-8 like the other systems do.
 """
@@ -27,8 +30,19 @@ def opt(name, default):
 
 
 RAW = opt("--raw", os.path.join("scp-api", "docs", "data", "scp"))
-SNAPSHOT = opt("--snapshot", "2026-10-09")
+SNAPSHOT = opt("--snapshot", "")
+FRESH = "--fresh" in args
+if FRESH: args.remove("--fresh")
 step = args[0] if args else "page"
+
+
+def snapshot_date():
+    """The date of the dataset copy: given with --snapshot, or the date of the last commit of the dataset folder."""
+    if SNAPSHOT: return SNAPSHOT
+    git = shutil.which("git")
+    r = subprocess.run([git, "-C", RAW, "log", "-1", "--format=%cs"], capture_output=True, text=True) if git else None
+    if r and r.returncode == 0 and r.stdout.strip(): return r.stdout.strip()
+    sys.exit("The date of the dataset copy could not be read: pass it with --snapshot YYYY-MM-DD.")
 
 
 def run(script, *a):
@@ -73,7 +87,10 @@ elif step == "all":
     os.makedirs("out", exist_ok=True)
     run("make_extra.py", RAW, "extra_pages.json")
     run("make_contests.py", hubs, "contests_base.json", "contests.json")
-    run("build.py", RAW, built, "region_names.json", SNAPSHOT, "extra_pages.json")
+    keep = []
+    if not FRESH and os.path.exists(built):     # the previous build is the starting point of the new one
+        prev = os.path.join("out", "data4.prev.json"); shutil.copyfile(built, prev); keep = ["--prev", prev]
+    run("build.py", RAW, built, "region_names.json", snapshot_date(), "extra_pages.json", *keep)
     run("make_notes.py", hubs, built, "notes.json")
     run("fetch_series.py", "series_hubs.json")   # the wiki's Series Archive and its hubs; pages already in raw_wiki/ are not fetched again
     run("make_hubs.py", RAW, built, "hubs.json", "series_hubs.json")
