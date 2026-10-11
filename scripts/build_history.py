@@ -3,9 +3,10 @@
 Usage: python -X utf8 scripts/build_history.py out/data.json data/history.json [months between frames, default 12]
 (then python make.py data). Not part of the daily refresh: run it by hand when the past should be recomputed (about 15 minutes).
 
-Frames are computed backwards from today's map: the pages written after a date are removed and the layout relaxes (UMAP, starting
-from the positions of the frame after it), then it is spread like the page spreads today's map and turned and scaled onto that
-next frame. Consecutive frames therefore flow into each other, and the last frame is today's map exactly.
+Frames are computed backwards from today's map: the pages written after a date are removed and the layout relaxes a little (a short,
+gentle UMAP run starting from the positions of the frame after it, carried back onto that frame, of which half the change is kept),
+then it is scaled to its size for that date. Consecutive frames therefore flow into each other with small moves, and the last frame
+is today's map exactly. (A first version let each year relax fully: dots crossed the map and clusters could not be seen forming.)
 Tags are those of today: the dataset keeps no history of tags. Pages placed by their links follow their linked pages;
 pages on the outer ring stay where they are.
 
@@ -20,6 +21,8 @@ import umap
 DATA, OUT = sys.argv[1], sys.argv[2]
 STEP = int(sys.argv[3]) if len(sys.argv) > 3 else 12
 SEED, ABSENT = 42, -32768
+# how much a year's layout may differ from the next one: a short, gentle UMAP run, of which only a part is kept
+EPOCHS, RATE, BLEND = 60, 0.3, 0.5
 d = json.load(open(DATA, encoding="utf-8"))
 N = len(d["slug"])
 mo = np.array(d["mo"]); placed = np.array(d["placed"]); cluster = np.array(d["cluster"])
@@ -92,6 +95,13 @@ def align(src, dst):
 N_TAGGED = int((placed == 0).sum())
 _t = today[placed == 0]
 R_TODAY = np.percentile(np.sqrt(((_t - np.median(_t, axis=0)) ** 2).sum(axis=1)), 98.5)
+def affine(src, dst):
+    """The linear map (with shift) that best carries src onto dst: undoes UMAP's separate stretching of width and height."""
+    A = np.hstack([src, np.ones((len(src), 1))])
+    M, *_ = np.linalg.lstsq(A, dst, rcond=None)
+    return lambda p: np.hstack([p, np.ones((len(p), 1))]) @ M
+
+
 frames = [None] * len(cutoffs)
 frames[-1] = today.copy()
 for k in range(len(cutoffs) - 2, -1, -1):
@@ -100,16 +110,18 @@ for k in range(len(cutoffs) - 2, -1, -1):
     tagged = np.where(here & (placed == 0))[0]
     pos = np.full((N, 2), np.nan)
     if len(tagged) >= 30:
+        # the next frame without its size step, so that only real movement is measured and kept small
+        base = nxt[tagged]
+        mid_n = np.median(base, axis=0)
+        r_n = np.percentile(np.sqrt(((base - mid_n) ** 2).sum(axis=1)), 98.5)
         F, ok = features(tagged)
-        init = nxt[tagged] / 250.0 + np.random.RandomState(SEED).normal(0, 0.01, (len(tagged), 2))
+        init = base / 250.0 + np.random.RandomState(SEED).normal(0, 0.01, (len(tagged), 2))
         nn = min(20, len(tagged) - 1)
-        emb = umap.UMAP(n_neighbors=nn, min_dist=0.3, spread=1.0, metric="cosine", random_state=SEED, n_epochs=200, init=init,
-                        repulsion_strength=0.5, negative_sample_rate=3).fit_transform(F)
-        emb = emb - np.median(emb, axis=0)
-        emb = emb / np.percentile(np.sqrt((emb ** 2).sum(axis=1)), 98.5) * 1000.0
-        tmp = np.zeros((N, 2)); tmp[tagged] = emb
-        emb = spread(tmp, tagged)[tagged]
-        emb = align(emb, nxt[tagged])(emb)
+        emb = umap.UMAP(n_neighbors=nn, min_dist=0.3, spread=1.0, metric="cosine", random_state=SEED, n_epochs=EPOCHS, init=init,
+                        learning_rate=RATE, repulsion_strength=0.5, negative_sample_rate=3).fit_transform(F)
+        emb = affine(emb, base)(emb)                      # back onto the next frame (UMAP stretches width and height separately)
+        emb = base + BLEND * (emb - base)                 # keep only part of the reorganisation, so dots drift instead of jumping
+        moved = np.sqrt(((emb - base) ** 2).sum(axis=1)) / r_n * 1000.0
         # size: the map grows with the number of pages (a quarter power: about a third of today's size in 2008), around its own middle
         target = R_TODAY * (len(tagged) / N_TAGGED) ** 0.25
         mid = np.median(emb, axis=0)
@@ -117,15 +129,15 @@ for k in range(len(cutoffs) - 2, -1, -1):
         pos[tagged] = mid + (emb - mid) * (target / max(r98, 1e-9))
     else:
         pos[tagged] = nxt[tagged]
+        moved = np.zeros(1)
     # pages placed by their links: beside their linked pages of that date, or where they will be next
     for i in np.where(here & (placed == 1))[0]:
         nb = [j for j in link_nb[i] if here[j] and placed[j] == 0]
         pos[i] = np.median(pos[nb], axis=0) + jit[i] if nb else nxt[i]
     pos[here & ring] = today[here & ring]
     frames[k] = pos
-    moved = np.sqrt(((pos[tagged] - nxt[tagged]) ** 2).sum(axis=1)) if len(tagged) else np.zeros(1)
-    print(f"  {2008 + cutoffs[k] // 12}-{cutoffs[k] % 12 + 1:02d}: {int(here.sum())} pages; "
-          f"compared with the next frame, median move {np.median(moved):.0f}, 90% under {np.percentile(moved, 90):.0f}", flush=True)
+    print(f"  {2008 + cutoffs[k] // 12}-{cutoffs[k] % 12 + 1:02d}: {int(here.sum())} pages; compared with the next frame "
+          f"(at the same size, radius 1000): median move {np.median(moved):.0f}, 90% under {np.percentile(moved, 90):.0f}", flush=True)
 
 
 def pack(pos, k):
