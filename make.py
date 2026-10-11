@@ -6,6 +6,7 @@
     python make.py test     the automatic browser tests
 
 "all" keeps the map: pages already on it stay where they are and keep their region, new pages are placed beside their closest pages.
+"all --no-wiki" does the same without downloading the series hubs from the wiki (the tale series stay as in hubs.json).
 "all --fresh" computes the layout and the regions anew (UMAP and Leiden; about 2 minutes): every dot moves and new regions need names.
 
 "data" and "all" need the dataset: a copy of https://github.com/scp-data/scp-api, by default in the folder scp-api/ next to this file.
@@ -33,6 +34,8 @@ RAW = opt("--raw", os.path.join("scp-api", "docs", "data", "scp"))
 SNAPSHOT = opt("--snapshot", "")
 FRESH = "--fresh" in args
 if FRESH: args.remove("--fresh")
+NO_WIKI = "--no-wiki" in args     # do not download the series hubs from the wiki: hubs.json is kept as it is (the daily job)
+if NO_WIKI: args.remove("--no-wiki")
 step = args[0] if args else "page"
 
 
@@ -92,8 +95,9 @@ elif step == "all":
         prev = os.path.join("out", "data4.prev.json"); shutil.copyfile(built, prev); keep = ["--prev", prev]
     run("build.py", RAW, built, "region_names.json", snapshot_date(), "extra_pages.json", *keep)
     run("make_notes.py", hubs, built, "notes.json")
-    run("fetch_series.py", "series_hubs.json")   # the wiki's Series Archive and its hubs; pages already in raw_wiki/ are not fetched again
-    run("make_hubs.py", RAW, built, "hubs.json", "series_hubs.json")
+    if not NO_WIKI:
+        run("fetch_series.py", "series_hubs.json")   # the wiki's Series Archive and its hubs; pages already in raw_wiki/ are not fetched again
+        run("make_hubs.py", RAW, built, "hubs.json", "series_hubs.json")
     data(); page()
 elif step == "test":
     run("shot17.py"); run("shot18.py"); run("fuzz.py")

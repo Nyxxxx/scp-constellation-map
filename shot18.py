@@ -1,5 +1,5 @@
 """Round 15 checks: region names on phones, search box emptied, colour key on the map, tale series menu."""
-import asyncio, json, os
+import asyncio, json, os, sys
 from playwright.async_api import async_playwright
 ROOT = os.path.dirname(os.path.abspath(__file__))
 URL = "file://" + ROOT + "/out/preview.html"
@@ -28,7 +28,7 @@ async def main():
         check("hash", await pg.evaluate("location.hash") == "#h=u.antimemetics-division-hub", await pg.evaluate("location.hash"))
         body = await pg.evaluate("document.getElementById('pbody').innerText")
         check("panel: reading order and sections", "Reading order given by the hub" not in body and "numbers on the map" in body and "There Is No Antimemetics Division" in body and "Hub page on the wiki" in body and "undefined" not in body, body[:300])
-        nums = await pg.evaluate("document.querySelectorAll('#pbody ol.list.num li').length"); check("33 numbered rows", nums == 33, nums)
+        nums = await pg.evaluate("document.querySelectorAll('#pbody ol.list.num li').length"); check("numbered rows (33 when written; a deleted page lowers it)", nums >= 30, nums)
         last = await pg.evaluate("getComputedStyle(document.querySelector('#pbody ol.list.num:last-of-type li:last-child'), '::before').content"); check("numbering runs through the sections", "counter" in last or last != "none", last)
         await pg.screenshot(path="out/r15-hub.png")
         # menu
@@ -78,4 +78,5 @@ async def main():
         check("no page errors (phone)", not e2, e2)
         await b.close()
     print("ALL OK" if ok else "SOME FAILED")
+    if not ok: sys.exit(1)    # so that make.py, and the daily job, stop here
 asyncio.run(main())

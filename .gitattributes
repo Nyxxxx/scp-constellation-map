@@ -1,0 +1,3 @@
+# Text files are stored with Unix line endings (LF), whatever computer builds them,
+# so a build on Windows and the daily build on GitHub do not differ by line endings alone.
+* text=auto eol=lf

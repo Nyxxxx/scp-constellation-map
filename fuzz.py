@@ -1,4 +1,4 @@
-import asyncio, random
+import asyncio, random, sys
 from playwright.async_api import async_playwright
 import os
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -84,8 +84,12 @@ async def run(seed, vw, vh, scheme, touch):
         for e in [e for e in errs if e.startswith('ACT')][:3]: print("   ", e)
         if state["nan"]:
             print("    NaN/undefined text:", await pg.evaluate("(document.getElementById('app').innerText.match(/.{0,60}(NaN|undefined).{0,40}/g)||[]).slice(0,3)"))
+        if real or state["ov"] or state["nan"]: BAD.append(seed)
         await b.close()
+BAD = []    # runs with a page error, a page wider than the screen, or NaN/undefined in the text
 async def main():
     for seed, (vw, vh, sc, touch) in enumerate([(1440,900,"light",False),(390,780,"dark",True),(1024,700,"dark",False),(1440,900,"dark",False),(820,1100,"light",True)]):
         await run(seed + 31, vw, vh, sc, touch)
+    print("ALL OK" if not BAD else "SOME FAILED: seeds " + str(BAD))
+    if BAD: sys.exit(1)
 asyncio.run(main())

@@ -1,0 +1,71 @@
+# Every morning: take the newest copy of the scp-data/scp-api dataset, refresh the map (existing dots keep their place),
+# run the automatic tests, and publish only if they pass. If anything fails, nothing is published and GitHub emails the owner.
+# Can also be started by hand: Actions tab → Daily refresh → Run workflow.
+name: Daily refresh
+
+on:
+  schedule:
+    - cron: "40 6 * * *"      # 06:40 UTC (08:40 in Paris in summer), after the dataset's own daily crawl (about 05:00 UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write             # to save the refreshed map
+  pages: write                # to ask GitHub Pages to republish
+
+concurrency:
+  group: daily-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Libraries and test browser
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Newest copy of the dataset (one snapshot, about 1 GB)
+        id: data
+        run: |
+          git init -q scp-api
+          git -C scp-api remote add origin https://github.com/scp-data/scp-api
+          git -C scp-api fetch -q --depth 1 origin HEAD
+          git -C scp-api checkout -q FETCH_HEAD
+          sha=$(git -C scp-api rev-parse HEAD)
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
+          echo "date=$(git -C scp-api log -1 --format=%cs)" >> "$GITHUB_OUTPUT"
+          if [ "$sha" = "$(cat out/dataset_commit.txt 2>/dev/null)" ]; then
+            echo "same=1" >> "$GITHUB_OUTPUT"
+            echo "The dataset has not changed since the last refresh; nothing to do."
+          fi
+
+      - name: Refresh the map
+        if: steps.data.outputs.same != '1'
+        run: python make.py all --no-wiki
+
+      - name: Automatic tests
+        if: steps.data.outputs.same != '1'
+        run: python make.py test
+
+      - name: Publish
+        if: steps.data.outputs.same != '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "${{ steps.data.outputs.sha }}" > out/dataset_commit.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A out site scp-constellation-map-standalone.html contests.json notes.json extra_pages.json
+          if git diff --cached --quiet; then echo "No change to publish."; exit 0; fi
+          git commit -q -m "Daily refresh: dataset of ${{ steps.data.outputs.date }} (${{ steps.data.outputs.sha }})"
+          git push
+          gh api -X POST "repos/${{ github.repository }}/pages/builds" || echo "Pages will republish on its own."

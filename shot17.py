@@ -1,5 +1,5 @@
 """Round 14 checks: highlights close only with the x, hover layer, links in the address, copy link, framed mode, new counts."""
-import asyncio, json
+import asyncio, json, re, sys
 from playwright.async_api import async_playwright
 import os
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -17,7 +17,7 @@ async def main():
         pg.on("pageerror", lambda e: errs.append(str(e)[:300]))
         await pg.goto(URL + "?scpdebug"); await pg.wait_for_timeout(2500)
         stats = await pg.evaluate("document.querySelector('.stats') ? document.querySelector('.stats').textContent : ''")
-        check("stats line", "10,483" in stats.replace(" ", ",").replace(" ", ",") or "10483" in stats or "10 483" in stats, stats)
+        check("stats line", re.search(r"\d[\d,\u00a0\u202f ]{3,} SCP entries", stats) is not None, stats)   # the count changes with each refresh
         box = await pg.locator("#sky").bounding_box()
         # 1. highlight a region via search, click empty spots, highlight stays
         await pg.fill("#q", "Humanoids"); await pg.wait_for_timeout(300)
@@ -112,4 +112,5 @@ async def main():
         check("no page errors", not errs, errs)
         await b.close()
     print("ALL OK" if ok else "SOME FAILED")
+    if not ok: sys.exit(1)    # so that make.py, and the daily job, stop here
 asyncio.run(main())
