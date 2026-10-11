@@ -83,6 +83,11 @@ The snapshot date is read from the dataset's last commit. A second dataset copy 
   of that date: yearly layouts from `scripts/build_history.py` (computed backwards from today, size growing with page count as a quarter
   power), stored in `data/history.json`, glided between while playing; clouds and region/canon/GoI names hidden meanwhile. Same map for
   every visitor (owner's wish). Not recomputed by the daily refresh. Possible later: six-monthly frames (smoother; ~15 more minutes, +0.7 MB).
+  Second round (owner's feedback "too fast, moves too much, no ending"): 220 ms per month (~50 s in all); yearly steps gentle (UMAP 60
+  epochs, rate 0.3, half the change kept, affine fit back onto the next year: median move 20-50 per year instead of 60-200); camera follows
+  the map while playing (stops if the user zooms or drags); at today, clouds and names fade in over 1.8 s and the view flies to the full map.
+  Opening (owner's request): Play from the start shows SCP-173 alone, very close, then the 238 pages of 2008 one by one in creation order
+  (`D.H.first`, from the dataset's timestamps, written by `scripts/finalize.py`) over 14 s, the view pulling back as they appear.
 - Object class list: Safe, Euclid, Keter, then the Esoteric group, then Neutralized, Pending, Explained, Decommissioned, None listed.
   Layers list ends with Timeline, then Outer ring.
 - Outer ring hidden at launch; dots coloured by object class at launch; subtitle "Every SCP entry, tale and GoI format, mapped by the tags they share."
