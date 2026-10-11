@@ -41,6 +41,15 @@ Positions are computed from tags alone. Object class and kind of page set colour
 - 378 pages that share no tag with any other page are placed next to the pages they link to, and 748 pages with neither a shared tag nor
   a link are placed on the outer ring (hidden at launch; shown with Layers → Outer ring).
 
+## Timeline
+
+Playing the timeline, or moving its end handle into the past, shows the map as it would have been laid out at that date: one layout per
+year (end of December 2008 to 2025, then today), each computed as if only the pages written by then existed (`scripts/build_history.py`).
+The layouts are computed backwards from today's map, each starting from the positions of the year after it, so consecutive years flow into
+each other; between two years the dots glide from one layout to the next. The size of each layout grows with its number of pages
+(238 pages at the end of 2008). Tags are those of today: the dataset keeps no history of tags. Region outlines and names describe today's
+map and are hidden while the timeline is in the past. Pages added by the daily refresh have no past layout and appear in today's map.
+
 ## Regions
 
 The 58 regions are communities detected by the Leiden algorithm in the network of nearest-neighbour links. Communities of fewer than

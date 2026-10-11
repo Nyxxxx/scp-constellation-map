@@ -1611,6 +1611,7 @@ function renderPanel(){
         lim('Coverage.', 'The English wiki only: no other language branch, and no hubs, essays, art or author pages. ' + fmt(D.meta.jokesMissing) + ' joke entries could not be read.'),
         lim('Placement.', 'Positions come from shared tags only, weighted by rarity. Pages close together share tags; exact distances and absolute positions carry no meaning.'),
         lim('Regions.', 'The ' + D.clusters.length + ' regions are groups of similar pages found automatically. Their names and descriptions are AI-generated and are not categories of the wiki.'),
+        D.H ? lim('Timeline.', 'Before today, the map shows a layout computed for the end of each year from the pages written by then, with today’s tags: the wiki keeps no history of tags.') : null,
         lim('Classes and dates.', 'Read from each page, and can be wrong on unusual formats. A rewritten page keeps the date of the original.'),
         HUBS.length ? lim('Tale series.', HUBS.length + ' of the ' + fmt(D.meta.hubsListed) + ' series on the wiki’s Series Archive. Reading lists are extracted automatically from each hub and can differ from it when a hub has an unusual layout.') : null,
         lim('Descriptions.', 'Contest, GoI and canon texts are quoted from the wiki; ' + nMine + ' contests absent from its Contest Archive carry an AI-generated summary.'),
