@@ -1,4 +1,4 @@
-scp-api/
+﻿scp-api/
 CLAUDE.local.md
 .claude/
 raw_wiki/
@@ -12,3 +12,4 @@ series_hubs.json
 scp-api-new/
 out/data4.prev.json
 out/data4.test*.json
+out/data.test*.json
