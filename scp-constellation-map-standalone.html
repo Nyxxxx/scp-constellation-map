@@ -438,6 +438,7 @@ function h(tag, attrs){
     if (k === 'class') el.className = attrs[k];
     else if (k === 'on') { for (var ev in attrs.on) el.addEventListener(ev, attrs.on[ev]); }
     else if (k === 'style') el.style.cssText = attrs[k];
+    else if (k === 'href' && !/^(https?:\/\/|#)/i.test(String(attrs[k]))) continue;   // only ordinary web links: an address copied from the wiki can never run code
     else if (attrs[k] != null) el.setAttribute(k, attrs[k]);
   }
   for (i = 2; i < arguments.length; i++){
