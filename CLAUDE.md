@@ -15,6 +15,16 @@ Personal notes about the owner and private links live in `CLAUDE.local.md`, whic
 - Automatic tests run in a headless browser. On 11 October 2026 the owner opened the public site on a real phone: "runs extremely well".
   Not yet tried: a trackpad, a large screen, an older or slower phone.
 
+## Daily refresh (GitHub Actions)
+
+`.github/workflows/daily-refresh.yml` runs every day at 06:40 UTC (and by hand from the Actions tab): newest dataset snapshot,
+`make.py all --no-wiki` (refresh; tale series stay as in `hubs.json`), `make.py test`, then a commit by github-actions[bot] and a push,
+which republishes the site. Nothing is published if a step fails; GitHub emails the owner. `out/dataset_commit.txt` records the dataset
+commit last used, so a day without a new crawl does nothing.
+**Before working on this computer, run `git pull`**: the bot commits to `main` every day. Text files are stored with LF line endings (`.gitattributes`).
+Not refreshed by the bot: the tale series hubs (run `python make.py all` locally, which downloads them politely), the pages read by hand
+from the live wiki (`extra_pages.json`, Lost/001/jokes), contests absent from the archive, region names (only needed after `--fresh`).
+
 ## Setup (Windows)
 
 Tested on Windows 10 x64 with Python 3.12.10 and Git 2.55. Node is optional.
