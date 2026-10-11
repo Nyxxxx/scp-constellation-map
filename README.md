@@ -1,15 +1,18 @@
-# SCP Constellation Map — project files
+# SCP Constellation Map
 
-Backup of 10 October 2026 (artifact version 16). The map shows every SCP entry, tale and GoI format of the English SCP Wiki
-as a dot, placed by the tags the pages share.
+## ➜ [Open the map: nyxxxx.github.io/scp-constellation-map](https://nyxxxx.github.io/scp-constellation-map/)
 
-## To look at the map
+An interactive map of the English SCP Wiki: every SCP entry, tale and GoI format is a dot, placed by the tags the pages share.
+Updated every day from the wiki. Free, no account. Unofficial fan project; content from the SCP Wiki under CC BY-SA 3.0.
+How it is made, and its limits: [METHODS.md](METHODS.md).
 
-Open `scp-constellation-map-standalone.html` in a browser (double-click). It is the whole map in one file and
-works offline; only the fonts need an internet connection.
+## To look at this computer's copy (changes not yet published)
 
-`site/scp-constellation-map.html` is the same page in the form that is published as a Claude artifact
-(no surrounding `<html>` wrapper).
+Double-click **`Preview the map.bat`** in this folder: it opens the map in the default browser through a small local web server.
+Keep the black window open while looking; close it to stop. (Same as `python make.py preview`.)
+
+`scp-constellation-map-standalone.html` is the whole map in one file; `site/scp-constellation-map.html` is the same page without
+the surrounding `<html>` wrapper.
 
 ## What is in this folder
 

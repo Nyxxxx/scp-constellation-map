@@ -4,6 +4,7 @@
     python make.py data     last data step, then the page         (after editing contests, GoI/canon notes or tale series)
     python make.py all      everything, from the dataset           (after a new copy of the dataset, or changing tags or region names)
     python make.py test     the automatic browser tests
+    python make.py preview  open this computer's copy of the map in the browser (also: double-click "Preview the map.bat")
 
 "all" keeps the map: pages already on it stay where they are and keep their region, new pages are placed beside their closest pages.
 "all --no-wiki" does the same without downloading the series hubs from the wiki (the tale series stay as in hubs.json).
@@ -101,5 +102,19 @@ elif step == "all":
     data(); page()
 elif step == "test":
     run("shot17.py"); run("shot18.py"); run("fuzz.py")
+elif step == "preview":
+    # a small web server for this folder, on this computer only, and the map opened in the default browser
+    import functools, http.server, socket, webbrowser
+    port = 8765
+    with socket.socket() as s_:
+        busy = s_.connect_ex(("127.0.0.1", port)) == 0     # already running (another window, or the Claude app)
+    url = "http://localhost:%d/scp-constellation-map-standalone.html" % port
+    webbrowser.open(url)
+    if busy:
+        print("The preview server is already running. Opened", url)
+    else:
+        print("Map opened at", url, "\nKeep this window open while you look at the map; close it to stop.")
+        handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=ROOT)
+        http.server.ThreadingHTTPServer(("127.0.0.1", port), handler).serve_forever()
 else:
     sys.exit(__doc__)
