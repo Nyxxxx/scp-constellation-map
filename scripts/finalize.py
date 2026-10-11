@@ -226,6 +226,19 @@ if os.path.exists("data/history.json"):
     d["H"] = {"c": hj["cutoffs"], "p": frames}
     print("map through time:", len(frames), "frames,", sum(len(f) for f in frames) // 1024, "KB")
 
+# ---- 8. the opening of the timeline: the pages of the first year in the order they were created (to the minute, from the dataset),
+# SCP-173 first, so the animation can let them appear one by one around it
+if len(sys.argv) > 9 and "H" in d:
+    when = {}
+    for kind in ("items", "tales", "goi"):
+        for k2, v in json.load(open(RAW + "/" + kind + "/index.json")).items():
+            when[str(v.get("link", k2)).lower()] = v.get("created_at") or ""
+    y1 = d["H"]["c"][0]          # the first frame: the end of the first year
+    first = [n for n in range(NALL) if d["mo"][n] <= y1]
+    first.sort(key=lambda n: (d["slug"][n].lower() != "scp-173", when.get(d["slug"][n].lower()) or "9999", n))
+    d["H"]["first"] = first
+    print("timeline opening:", len(first), "pages of the first year, starting with", [d["id"][n] or d["title"][n] for n in first[:6]])
+
 missing = sorted(set(titles) - set(added) - set(skipped))
 # joke entries: how many dates are estimates, and how many pages linked from the Joke SCPs hub did not make it onto the map
 jl = json.load(open("data/jokes_list.json")) if os.path.exists("data/jokes_list.json") else []

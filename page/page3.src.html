@@ -584,13 +584,35 @@ function timeU(m){   // the frame before m, and how far m is toward the next one
   var u = m <= HC[0] ? 0 : Math.min(1, (m - HC[f0]) / (HC[f0 + 1] - HC[f0]));
   return [f0, m <= HC[0] ? f0 : f0 + 1, u * u * (3 - 2 * u)];
 }
+/* The opening: the pages of the first year appear one by one in the order they were created, SCP-173 first (D.H.first). */
+var FIRST = D.H && D.H.first ? D.H.first : [], FIRST_RANK = new Int32Array(N).fill(2147483647), INTRO_N = -1, INTRO_T = 0, INTRO_MS = 14000, CAM_LAST = 0;
+FIRST.forEach(function(n, q){ FIRST_RANK[n] = q; });
 function followCamera(m, now){   // while playing: the view frames the map of that date, zoomed in on the small early maps
   if (!CAM || !HM.length) return;
-  var t = timeU(Math.min(m, HC[HC.length - 1])), a = HM[t[0]], b = HM[t[1]], u = t[2];
-  var cx = a[0] + (b[0] - a[0]) * u, cy = a[1] + (b[1] - a[1]) * u, r = a[2] + (b[2] - a[2]) * u, rT = HM[HM.length - 1][2];
-  var kk = k0 * Math.max(1, Math.min(5, rT / Math.max(r, 1))), vb = viewBox();
-  var tx1 = vb.x + vb.w/2 - cx*kk, ty1 = vb.y + vb.h/2 - cy*kk, e = Math.min(1, (now - CAM_T) / 900);   // eases in from where the view was
-  k = k + (kk - k) * e; tx = tx + (tx1 - tx) * e; ty = ty + (ty1 - ty) * e;
+  var cx, cy, r, rT = HM[HM.length - 1][2];
+  if (INTRO_N >= 0){
+    // the opening: frame the pages shown so far (one page: very close), so the view pulls back as they appear
+    var xs = [], ys = [], q, n;
+    for (q = 0; q < Math.min(INTRO_N, FIRST.length); q++){ n = FIRST[q]; if (!RINGF[n]){ xs.push(X[n]); ys.push(Y[n]); } }
+    if (!xs.length) return;
+    xs.sort(function(p, q2){ return p - q2; }); ys.sort(function(p, q2){ return p - q2; });
+    cx = xs[xs.length >> 1]; cy = ys[ys.length >> 1];
+    var dd = [];
+    for (q = 0; q < Math.min(INTRO_N, FIRST.length); q++){ n = FIRST[q]; if (!RINGF[n]) dd.push(Math.hypot(X[n] - cx, Y[n] - cy)); }
+    dd.sort(function(p, q2){ return p - q2; });
+    r = Math.max(22, dd[Math.floor((dd.length - 1) * .97)]);
+  } else {
+    var t = timeU(Math.min(m, HC[HC.length - 1])), a = HM[t[0]], b = HM[t[1]], u = t[2];
+    cx = a[0] + (b[0] - a[0]) * u; cy = a[1] + (b[1] - a[1]) * u; r = a[2] + (b[2] - a[2]) * u;
+  }
+  var kk = k0 * Math.max(1, Math.min(INTRO_N >= 0 ? 24 : 5, rT / Math.max(r, 1))), vb = viewBox();
+  // follows smoothly (about a quarter of a second behind), so the view glides instead of jumping when a page appears
+  var dt = Math.min(100, Math.max(0, now - CAM_LAST)), s = CAM_LAST ? 1 - Math.exp(-dt / 260) : 1; CAM_LAST = now;
+  var lk = Math.log(k) + (Math.log(kk) - Math.log(k)) * s, k1 = Math.exp(lk);
+  // keep the point at the centre of the view moving toward the target centre
+  var ccx = (vb.x + vb.w/2 - tx) / k, ccy = (vb.y + vb.h/2 - ty) / k;
+  ccx += (cx - ccx) * s; ccy += (cy - ccy) * s;
+  k = k1; tx = vb.x + vb.w/2 - ccx * k; ty = vb.y + vb.h/2 - ccy * k;
 }
 function applyTime(m, regrid){   // m: the month shown, fractional while playing
   if (!HF.length || !X0 || m >= HC[HC.length - 1]){
@@ -634,7 +656,7 @@ function rebuild(){
   for (n = 0; n < N; n++){
     var ok = S.types[D.type[n]] && (D.ck[n] < 0 || S.classOn[D.ck[n]]) && (S.jokes || !JOKE[n]) && (S.ring || !RINGF[n]) && D.rating[n] >= rLo && D.rating[n] <= rHi;
     if (ok) HIST[D.mo[n]]++;
-    ok = ok && D.mo[n] >= S.m0 && D.mo[n] <= S.m1;
+    ok = ok && D.mo[n] >= S.m0 && D.mo[n] <= S.m1 && (INTRO_N < 0 || FIRST_RANK[n] < INTRO_N);   // during the opening, only the pages revealed so far
     if (ok){ visCount++; if (births && !VIS[n]){ BORN[n] = nowT; born = true; } }
     VIS[n] = ok ? 1 : 0;
   }
@@ -994,7 +1016,7 @@ function draw(now){
   var tStart = performance.now(), lite = cost > 24 && (tStart < busyUntil || !!playing);
   if (anim){ anim(now || tStart); if (anim) schedule(); }
   if (playing){   // glide between months, and let the camera follow
-    var mm = S.m1 + Math.min(1, (tStart - PLAY_T) / PLAY_DT);
+    var mm = INTRO_N >= 0 ? HC[0] : S.m1 + Math.min(1, (tStart - PLAY_T) / PLAY_DT);   // the opening holds the first year's layout
     if (PAST) applyTime(mm, false);
     followCamera(mm, tStart); schedule();
   }
@@ -1826,16 +1848,28 @@ $('tlAll').addEventListener('click', function(){ setView(MMIN, MMAX); });
 function stopPlay(){
   if (!playing) return;
   clearInterval(playing); playing = 0; $('play').textContent = 'Play';
+  if (INTRO_N >= 0){ INTRO_N = -1; rebuild(); }          // paused during the opening: the whole first year shows
   if (CAM && S.m1 >= HC[HC.length - 1]) fitAll(true);    // the end of the story: a last, smooth zoom out to the whole map
   CAM = false; schedule();
 }
+function stepMonth(){ if (S.m1 >= TL.b){ stopPlay(); return; } PLAY_T = performance.now(); setRange(S.m0, S.m1 + 1); }
 $('play').addEventListener('click', function(){
   if (playing){ stopPlay(); return; }
   if (S.m1 >= TL.b){ var from = S.m0 < TL.b ? S.m0 : TL.a; setRange(from, from); }
   $('play').textContent = 'Pause';
   PLAY_DT = tlYearView() ? 450 : reduced ? 400 : 220; PLAY_T = performance.now();     // about 45 seconds from 2008 to today
-  CAM = HF.length > 0 && !tlYearView() && !reduced; CAM_T = PLAY_T;
-  playing = setInterval(function(){ if (S.m1 >= TL.b){ stopPlay(); return; } PLAY_T = performance.now(); setRange(S.m0, S.m1 + 1); }, PLAY_DT);
+  CAM = HF.length > 0 && !tlYearView() && !reduced; CAM_T = CAM_LAST = PLAY_T;
+  if (CAM && FIRST.length && TL.a === MMIN && S.m0 === MMIN && S.m1 <= HC[0]){
+    // the opening: SCP-173 alone, then the first year's pages one by one in the order they were created, slowly at first
+    INTRO_N = 1; INTRO_T = PLAY_T; setRange(S.m0, HC[0]);
+    playing = setInterval(function(){
+      var p = Math.min(1, (performance.now() - INTRO_T) / INTRO_MS), n = Math.max(1, Math.ceil(FIRST.length * Math.pow(p, 2.2)));
+      if (n !== INTRO_N){ INTRO_N = n; rebuild(); }
+      if (p >= 1){ clearInterval(playing); INTRO_N = -1; rebuild(); PLAY_T = performance.now(); playing = setInterval(stepMonth, PLAY_DT); }
+    }, 40);
+    return;
+  }
+  playing = setInterval(stepMonth, PLAY_DT);
 });
 function setTimeline(on){
   S.timeline = on; $('timeline').hidden = !on; $('tTime').checked = on;
