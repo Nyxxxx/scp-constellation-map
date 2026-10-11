@@ -13,6 +13,8 @@ Unofficial fan project, not affiliated with the SCP Wiki.
 found (Leiden), how positions are computed (UMAP), how region names were written, how the daily refresh and the timeline work, and what
 the map leaves out.
 
+**What's new: [CHANGELOG.md](CHANGELOG.md)**, the list of changes by date.
+
 ## How it works, in short
 
 1. **Data.** Titles, tags, ratings, authors and dates come from [scp-data/scp-api](https://github.com/scp-data/scp-api), a public daily

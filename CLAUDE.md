@@ -58,6 +58,11 @@ crawl: 17,991 of 18,073 dots unchanged, 6 new pages, 10 deleted, 80 retagged. Do
 it recomputes the layout (UMAP) and the regions (Leiden), moves every dot, and new regions need names in `data/region_names.json`.
 The snapshot date is read from the dataset's last commit. A second dataset copy may sit in `scp-api-new/` (git worktree, ignored).
 
+## Changelog
+
+`CHANGELOG.md` lists visible changes by date, in plain words for visitors (newest first). Add an entry with every published change;
+the daily data refreshes are not listed.
+
 ## How changes are decided
 
 - For any choice of look (colours, type, layout), show two to four options side by side on the real map and wait for a pick. Apply nothing aesthetic unasked.
