@@ -79,7 +79,7 @@
   "title": "The Black Queen",
   "p": [
    "Little is known about the person of interest known as the Black Queen. Her identity, motives, affiliation and actions are all in doubt due to a mass of contradictory reports. It is unclear if multiple individuals utilize the title of Black Queen, or if some anomalous factor is at play to explain this discrepancy. Whatever the case, this group of interest outwardly presents under one pseudonym.",
-   "The Black Queen has been reported to operate independently, in a group of other Black Queens, or in affiliation with other groups of interest. The Black Queen has been seen cooperating with MC&D, the Chaos Insurgency and the Chicago Spectre as well as several other GOIs. Her most consistent relationship seems to be with the Serpent’s Hand, with several sources claiming that the Black Queen is a monicker of “L.S.”, rumored leader of the group. Others claim that this apparent connection is simply due to the usage of The Wanderers' Library. by both groups, and that the Black Queens use the initials ‘L.S.” to refer to “Little Sisters”, a term for novice Black Queens.",
+   "The Black Queen has been reported to operate independently, in a group of other Black Queens, or in affiliation with other groups of interest. The Black Queen has been seen cooperating with Marshall, Carter & Dark, the Chaos Insurgency and the Chicago Spectre, as well as several other Groups of Interest. Her most consistent relationship seems to be with the Serpent’s Hand, with several sources claiming that the Black Queen is a monicker of “L.S.”, rumored leader of the group. Others claim that this apparent connection is simply due to the usage of The Wanderers' Library. by both groups, and that the Black Queens use the initials ‘L.S.” to refer to “Little Sisters”, a term for novice Black Queens.",
    "Conversely, the Black Queen has shown herself to be consistently hostile towards the Foundation. She has herself claimed to be “Alison Chao”, the daughter of Leanne Chao and Dr. Charles Gears, stating that her animosity stems from the belief that the Foundation forcibly enlisted her father. Due to genetic inconsistencies in retrieved biological matter, and indications of multiversal transit this claim cannot be conclusively verified. Regardless, the Black Queen seemingly believes this to be true, with many of her attacks on the Foundation relating in some capacity to Dr. Gears and his work.",
    "Despite nominally being one individual or a small group with few resources, the Black Queen has shown herself to be very effective in disrupting Foundation operations, displaying in-depth knowledge of Foundation structures, activities and contained anomalies, repeatedly breaching Foundation security."
   ],
@@ -172,9 +172,10 @@
   "kind": "goi",
   "title": "The Daevites",
   "p": [
-   "The information contained within this file cannot be authenticated with 100% certainty, due to the anomalous nature of content. As with all atemporal retrocausal anomalies, a healthy skepticism is recommended when discussing or researching the information on the Daevas.",
-   "If, in reviewing this file, you notice inaccuracies or discrepancies with baseline reality, please report to your on-Site RAISA representative.",
-   "— Maria Jones, Director, RAISA"
+   "The information contained within this file cannot be authenticated with 100% certainty, due to the anomalous nature of content. As with all atemporal retrocausal anomalies, a healthy skepticism is recommended when discussing or researching the information on the Daevas. If, in reviewing this file, you notice inaccuracies or discrepancies with baseline reality, please report to your on-Site RAISA representative. —Maria Jones, RAISA Director",
+   "The Daevite Empire was an ancient civilization originating in what is now south-central Siberia. The Empire represented a stratified society structured around systemic slavery, military conquest through various anomalous means, ancestor worship, ritualized human sacrifice, and the widespread usage of thaumaturgical practices.",
+   "The history of the Daevite Empire is nebulous and awash with mystery due to the influence of SCP-140: a book entitled “A Chronicle of the Daevas” which has the anomalous effect of retroactive temporal causality. If SCP-140 comes into contact with any fluid suitable for writing, including human blood, its account of the Daevite civilization's history expands - often pushing its final collapse closer to the present - and baseline reality retroactively changes to reflect this new history. Projections suggest a high-casualty CK-class restructuring scenario should the Empire reemerge in the modern day through retrocasual means.",
+   "Historical accounts and archaeological findings suggest that the Empire began as a loosely connected series of Neolithic city-states later united by a strongly-matriarchal aristocracy (the \"Daeva\") with potential anomalous enhancements. Religious practices were then centered around the veneration of life (the \"Font\"), with blood being the medium by which life travels. Other accounts detail extensive conflict with the ancient Chinese, Mongol, and Ortothan states and other neighboring civilizations, as well as slave revolts spearheaded by the precursor to the modern Sarkic Cults. However, it is important to understand that by the very nature of SCP-140, the history of the Daevites has changed numerous times: what specifics can be read about the development of their Empire must be taken with scholarly skepticism by virtue of their atemporal nature."
   ],
   "num": "GoI-140",
   "alt": "",
@@ -191,7 +192,7 @@
    "In recent years, Dark Sushi has rapidly grown within in the paranormal food community, which may have been accomplished through psychological manipulation techniques utilized by the group, and most members have no qualms about using violence and heavy-handed coercion. The Foundation remains vigilant for Dark Sushi as it continues to expand and establish links with other Groups of Interest."
   ],
   "num": "",
-  "alt": "闇寿司 (Yamisushi) (Japanese)",
+  "alt": "闇寿司 (Yamizushi) (Japanese)",
   "url": "https://scp-wiki.wikidot.com/yamizushi-hub",
   "hub": "https://scp-wiki.wikidot.com/groups-of-interest#dark-sushi"
  },
@@ -211,8 +212,10 @@
   "kind": "goi",
   "title": "Doctor Wondertainment",
   "p": [
-   "Doctor Wondertainment, whether an individual or collective entity, is capable of producing anomalous artifacts and entities which thematically resemble children's toys. The nature of these objects and devices varies, although all were clearly intended to be utilized by children. In addition, Doctor Wondertainment is responsible for the creation of the Little Misters, anomalous humanoids altered for collectability. Dr. Wondertainment is known to have targeted Foundation personnel in the past and their feelings towards the Foundation appear to be ambiguous. See the entry for Isabel Wondertainment on the Personnel Dossier for more information.",
-   "Links to the Factory have been speculated but are unconfirmed."
+   "Overview Dr. Wondertainment is an individual or group capable of producing anomalous objects and entities. Most of these anomalies resemble common children’s toys, but Dr. Wondertainment branding has also been found on other products, including video games and breakfast cereal. Also of note are the “Little Misters”, a series of anomalous humanoids that appear intended as collectables.",
+   "Little concrete information is available about Dr. Wondertainment as either an individual or an organization, and estimates of its size range from a single person with anomalous abilities to a large corporation with hundreds of employees and dozens of departments. Multiple individuals have been identified as \"Doctor Wondertainment\", but it is unclear whether the title represents the group's founder, their current successor, or simply a brand mascot.",
+   "Although the Foundation actively obstructs Dr. Wondertainment's commercial activities by containing their merchandise, they appear to regard this as both a cost of doing business and an opportunity for free product testing, and have even expressed appreciation for the Foundation’s efforts. Despite this lack of overt hostility, they remain a threat to normalcy due to their continued production and distribution of anomalies.",
+   "On occasion, Marshall, Carter and Dark has been involved in the sale of Dr. Wondertainment products, and commercial ties between the two groups are being investigated. A link between Dr. Wondertainment and the Factory is suspected, since both are capable of mass-producing anomalies, but this has not yet been confirmed."
   ],
   "num": "GoI-386",
   "alt": "",
@@ -223,7 +226,10 @@
   "kind": "goi",
   "title": "The Factory",
   "p": [
-   "Little is known about The Factory. Excursions into facilities purported to be operated by them have yielded limited results, and no concrete conclusions have been reached except that they seem capable of manufacturing anomalous artifacts — and that they use mass-production techniques to do so."
+   "The Factory is a brand name associated with a wide variety of anomalous objects, all of which appear to have been mass-produced using specialized equipment. Little is known about the actual group responsible for these products, their means of production, or their motives for selling them to consumers.",
+   "The Factory appears to operate in partnership with existing manufacturing plants, or by reopening and repurposing previously abandoned facilities. The workers in these buildings are frequently injured by the equipment they use, but are coerced into continuing to work, often relying on crude mechanical prostheses. It is believed that one or more anomalous entities are responsible for the recruitment and management of the Factory's human personnel. Recovered documents occasionally reference an individual known as “The Investor\", but little is known about this figure or about its role within the company.",
+   "The Factory has had a number of commercial relationships with other Groups of Interest, including Marshall, Carter, & Dark and The Chicago Spirit. The paranormal community regards the Factory with suspicion or outright hostility, both due to the dangers posed by their products and their notorious mistreatment of their employees. However, many paratechnology companies still make use of anomalous materials and components produced by the Factory, primarily due to a lack of affordable alternatives.",
+   "Past connections between the Foundation and The Factory are currently under internal investigation."
   ],
   "num": "",
   "alt": "",
@@ -314,12 +320,12 @@
   "kind": "goi",
   "title": "GRU Division \"P\"",
   "p": [
-   "Originally known as the ЧД АКН (\"ChD AKN\", or Fourth Department Abnormal Occurrences Commission), it was established in early 1935 by direct decree of J. V. Stalin, its first task being the investigation of the murder of S. M. Kirov.",
-   "During WWII, the Commission expanded into the newly reorganized GRU as Division \"P\" - Psychotronics, working to counteract anomalous threats from the SS, Ahnenerbe, and the Vatican, and to capture and study anomalous artifacts both at home and abroad for the benefit of the Soviet government. Division \"P\" has carried on with this role throughout the Cold War, making Foundation operations in the countries of the Comintern difficult.",
-   "After 1991, rapid restructuring, coupled with budget cuts and the decommissioning or sale of significant assets, resulted in numerous defections of their personnel (A significant proportion of both Chaos Insurgency and MC&D operatives in Eastern Europe originated from GRU Division \"P\" ranks) and the flooding of the European black market with anomalous items formerly in their possession. Currently, this Group of Interest poses little direct threat to the Foundation."
+   "A division of the Main Intelligence Directorate (GRU) of both the Soviet Union and the Russian Federation, the \"P\" is an abbreviation of Psychotronics, a term for psychic abilities widely used in Soviet paranormal research. Throughout its existence, Division \"P\" focused on the acquisition and creation of anomalies useful for furthering the economic and political objectives of the Soviet Union. The GRU-P was also tasked with anomalous surveillance of the Soviet Union's adversaries, as well as the suppression of paranormal criminal and religious groups.",
+   "The department was originally established in early 1935 as the ЧД АКН (\"ChD AKN\", or Fourth Department Abnormal Occurrences Commission), tasked by direct decree of Josef Stalin with investigating the murder of Sergei Kirov. During the Second World War, the Commission was expanded into a division of the newly reorganized GRU, and focused on developing paranormal weaponry and countering anomalous threats from Nazi Germany. During the Cold War, the organization shifted its focus to the USA and its allies, escalating tensions with capitalist countries by developing anomalous weapons of mass destruction. The Soviet Union did not regard the Foundation as a neutral party in this conflict, and the GRU-P seized control of Foundation facilities and anomalies, constraining Foundation operations in the Soviet Bloc.",
+   "After 1991, rapid restructuring and budget cuts resulted in GRU Division \"P\" losing numerous anomalies and personnel. While many were acquired by the Foundation, the European black market was flooded with anomalous items formerly held by the GRU-P, and numerous personnel were recruited into the private sector (particularly by Marshal, Carter and Dark) or by the Chaos Insurgency. GRU Division \"P\" continues to exist as a paranormal agency within the Russian Federation, but with a drastically reduced budget its remaining personnel no longer obstruct Foundation's operations within Russia."
   ],
   "num": "GoI-16",
-  "alt": "",
+  "alt": "ГРУ, Отдел 'П' (Russian)",
   "url": "https://scp-wiki.wikidot.com/gru-p-hub",
   "hub": "https://scp-wiki.wikidot.com/groups-of-interest#gru-division-p"
  },
@@ -368,7 +374,7 @@
    "However, imperial loyalists and Japanese nationalists within it kept IJAMEA alive in the post-War years, this time as a clandestine organization, during which its main focus was checking the spread of communist influence in Japan and East Asia. Today, it primarily serves to care for the well-being of Japan's diverse but faltering anomalous ecology, and supports various nationalist agendas with its ties to prominent politicians, businesspeople and cultural personalities throughout Japan. It seeks to return some political power to the Imperial family and return Japan to great power status, and actively seeks to exploit the various anomalies in its possession for this purpose. The Foundation is seen as a foreign rival at best, and agents are to exercise due caution when interacting with IJAMEA personnel."
   ],
   "num": "GoI-28",
-  "alt": "",
+  "alt": "大日本帝国異常事例調査局 (Japanese)",
   "url": "https://scp-wiki.wikidot.com/ijamea-hub",
   "hub": "https://scp-wiki.wikidot.com/groups-of-interest#ijamea"
  },
@@ -413,7 +419,7 @@
   "kind": "goi",
   "title": "Marshall, Carter, and Dark Ltd.",
   "p": [
-   "An anomalous goods and services broker primarily based in London, England, with satellite offices in Hong Kong and New York. Catering to the super-rich, with extensive political and financial ties worldwide (particularly within sub-Veil communities), this group has caused extensive problems for the Foundation. Marshall, Carter, and Dark Ltd. is known for collecting rare and obscure items, along with providing its clients the most exclusive, expensive, and rare experiences available, no matter the cost to human life.",
+   "Marshall, Carter, and Dark Ltd. is an anomalous goods and services broker primarily based in London, England, with satellite offices in New York and Hong Kong. Catering to the super-rich, with extensive political and financial ties worldwide (particularly within sub-Veil communities), this group has caused extensive problems for the Foundation. Marshall, Carter, and Dark Ltd. is known for collecting rare and obscure items, along with providing its clients the most exclusive, expensive, and rare experiences available, no matter the cost to human life.",
    "These activities have resulted in conflict with the Foundation on numerous occasions. The group is not known for the use of force; they prefer to apply extreme financial and political pressure to achieve their goals. When forced to use more direct means, Marshall, Carter, and Dark Ltd. employs outside agents, often nameless contractors embedded within hundreds of layers of shell companies. This makes it difficult to understand the true of their activities in the mundane and paranormal worlds, particularly where their executives are involved.",
    "Marshall, Carter, and Dark Ltd. has caused several SCP containment breaches, primarily through the use of money or social pressure. Many reports, records, and even anomalies have been leaked by Foundation personnel, influenced by the promise of large amounts of money or the threat of blackmail.",
    "Information pertaining to Marshall, Carter, and Dark Ltd., such as the name of the director or even a list of members, has proven very difficult to acquire. Agents encountering members of this group are advised to maintain a cover story and not reveal, for any reason, their Foundation ties or any SCP information. Double-agents are advised not to get comfortable with the life Marshall, Carter, and Dark Ltd. affords those affiliated with them, as these privileges can and will be taken away if they are discovered."
@@ -651,12 +657,75 @@
   "kind": "goi",
   "title": "Wilson's Wildlife Solutions",
   "p": [
-   "Wilson's Wildlife Solutions is a paranormal publicly funded wildlife service based in Clackamas County, Oregon, specifically in the town of Boring. Although the Foundation has known of Wilson's Wildlife Solutions' existence and anomalous affiliations since 1999, it took nine years until the Ursus Maritimus Incident in 2008, for their existence to be officially recognized and a relationship established between the two groups. Currently the Boring Agreement outlines that Wilson's Wildlife Solutions should be supervised by MTF Beta-4 (\"Castaways\"), local to Site-64, and that they may handle containment of Safe or Euclid fauna based anomalies with varying degrees of Foundation intervention (on a case to case basis). Amendments to the Boring Agreement can be, and have been, made to account for grey areas or new policies as necessary."
+   "Wilson's Wildlife Solutions (WWS) is a paranormal publicly funded wildlife service based in Clackamas County, Oregon, specifically in the town of Boring. Although the Foundation has known of Wilson's Wildlife Solutions' existence and anomalous affiliations since 1999, it took nine years until the Ursus Maritimus Incident in 2008, for their existence to be officially recognized and a relationship established between the two groups. Currently the Boring Agreement outlines that Wilson's Wildlife Solutions should be supervised by MTF Beta-4 (\"Castaways\"), local to Site-64, and that they may handle containment of Safe or Euclid fauna based anomalies with varying degrees of Foundation intervention (on a case to case basis). Amendments to the Boring Agreement can be, and have been, made to account for grey areas or new policies as necessary."
   ],
   "num": "GoI-466",
   "alt": "",
   "url": "https://scp-wiki.wikidot.com/wilson-s-wildlife-solutions-hub",
   "hub": "https://scp-wiki.wikidot.com/groups-of-interest#wilsons-wildlife"
+ },
+ "asci": {
+  "kind": "goi",
+  "title": "American Secure Containment Initiative (ASCI)",
+  "p": [
+   "The American Secure Containment Initiative (ASCI) was one of a number of anomaly containment organisations that merged together to establish the modern Foundation. While it existed, ASCI was the primary paranormal agency of the United States of America, containing or neutralizing anomalies and concealing their existence from the American public. Unlike the Foundation, ASCI was also tasked with using anomalies to advance American interests both domestically and abroad, a role that has now been taken on by the Pentagram.",
+   "The Foundation inherited multiple anomalies from this precursor organization, as well as facilities still in use today, including Site-55, Site-88 and Area-14. The American Secure Containment Initiative also developed methods still in use by the modern Foundation, including diplomatic engagement with the inhabited anomalous communities now classified as Nexuses, as well as the recruitment of D-class personnel. While primarily of historical interest, ASCI records can provide important context for the current practices of the Foundation."
+  ],
+  "num": "",
+  "alt": "",
+  "url": "",
+  "hub": "https://scp-wiki.wikidot.com/groups-of-interest#asci"
+ },
+ "british-occult-service": {
+  "kind": "goi",
+  "title": "British Occult Service",
+  "p": [
+   "The British Occult Service (BOS), also known as the Royal Occult Service, is the United Kingdom's primary paranormal intelligence agency. As the occult counterpart to MI5 and MI6, it is known colloquially as \"MI666\" or \"MI13\". While the current organization is a relatively modern creation, it traces its origin back to a long line of spies, magicians and alchemists who have been part of royal retinues throughout British history. The chief of the British Occult Service is known only as \"D\", in reference to the occultist John Dee, who served Queen Elizabeth I.",
+   "Once operating throughout the British Empire, the independence of former British colonies dramatically decreased the organization's global reach over the course of the 20th Century. As a founding member of the Allied Occult Initiative, the British Occult Service retains a permanent seat on the Global Occult Coalition's Council of 108, and this is now the main means through which it exerts international influence. Domestically, the British Occult Service gathers intelligence on British subjects through both mundane methods and clairvoyance, detaining threats to normalcy using a special paranormal division of the Metropolitan Police Force.",
+   "The British Occult Service answers directly to the Crown, lacking any formal Parliamentary oversight. This grants it a great deal of autonomy to pursue British interests, both within the United Kingdom and abroad. Historic ties between HMFSCP and the British Occult Service mean that conflict with the Foundation is infrequent, as continued cooperation enables both organizations to operate covertly in the United Kingdom, without interference from the general public or their elected representatives."
+  ],
+  "num": "",
+  "alt": "",
+  "url": "",
+  "hub": "https://scp-wiki.wikidot.com/groups-of-interest#british-occult-service"
+ },
+ "joicl": {
+  "kind": "goi",
+  "title": "Japan Organisms Improvement and Creation Laboratory (JOICL)",
+  "p": [
+   "Japan Organisms Improvement and Creation Laboratory (JOICL) has been connected to a wide range of life forms, including animals, plants and objects which behave like living organisms. Almost all of these entities exhibit anomalous properties that cannot be observed in nature or explained by conventional science, and the laboratory's research does not appear to be restricted by either physical laws or ethical principles. JOICL is thought to be a research facility or group of researchers with access to some kind of anomalous technology, but its exact nature and capabilities are currently unknown.",
+   "Initially it was thought that there was no direct distribution or sale of the anomalies created by the Japan Organisms Improvement and Creation Laboratory, but in rare cases the organization has been confirmed to sell their creations as commercial products, including SCP-483-JP or SCP-1919-JP. Its organizational purpose remains unknown."
+  ],
+  "num": "",
+  "alt": "日本生類創研 (Japanese)",
+  "url": "",
+  "hub": "https://scp-wiki.wikidot.com/groups-of-interest#joicl"
+ },
+ "obskura": {
+  "kind": "goi",
+  "title": "OBSKURA",
+  "p": [
+   "The Obskurakorps were the occult arm of the Nazi Ahnenerbe, placing occultists recruited from the Thule Society under the command of the SS. Initially tasked with research intended to prove Aryan racial superiority, their efforts to weaponize anomalies during the Second World War lead to the 7th Occult War, in which the Obskurakorps were opposed and eventually defeated by the combined efforts of the Allied Occult Initiative and the Foundation.",
+   "After the conclusion of the war, most surviving members of the Obskurakorps were detained or executed by the recently established Global Occult Coalition. Some former members were recruited by organizations including the Foundation and the Pentagram, while others were amnestized and returned to civilian life. A small number evaded capture through the aid of an organization known as OBSKURA, which transported them to the Middle East and South America. This network persisted, developing into a neo-Nazi organization lead by a self-proclaimed Führer, claiming to be the successor to Adolf Hitler.",
+   "Both the Foundation and the Global Occult Coalition continue to oppose OBSKURA. While the organization lacks any official government backing, it has operatives trained in thaumaturgy, and retains a number of paranormal artifacts, acquired during the war and then smuggled out of Europe by OBSKURA. While it mostly tries to spread its Nazi ideology in secret, its members do not hesitate to use their anomalous capabilities against their foes."
+  ],
+  "num": "GoI-023",
+  "alt": "",
+  "url": "",
+  "hub": "https://scp-wiki.wikidot.com/groups-of-interest#obskura"
+ },
+ "pentagram": {
+  "kind": "goi",
+  "title": "PENTAGRAM",
+  "p": [
+   "The United States Paranatural Warfare Command, usually known simply as the Pentagram, is the division of the Department of Defense responsible for paranormal operations and intelligence. The Pentagram counters anomalous threats to the United States of America and its interests abroad, through both covert operations and the development and use of paranormal weapons.",
+   "Although the Pentagram was a member of the Allied Occult Initiative during the 7th Occult War, the Pentagram only cooperates with the Foundation and Global Occult Coalition to the extent that this is advantageous to their own military objectives. Their paranormal arms race with the GRU Division \"P\" contributed to the escalation of tensions during the Cold War, and after the fall of the Soviet Union the Pentagram has shifted its focus to contemporary US adversaries, including extensive involvement in the War on Terror. Assets under their command include the Navy's 13th Fleet, SEAL Team Bravo Papa Romeo Delta, the Air Force's 616th Squadron (\"Roswell's Revengers\"), and the Army's 23rd Paranatural Operations Group.",
+   "The secrecy required for its anomalous operations shields the Pentagram from civilian oversight, and the organization answers directly to the President of the United States. On multiple occasions, the Pentagram's development and deployment of anomalous assets has threatened to reveal the existence of the anomalous to the general public, necessitating extensive cover-up operations. While the Foundation generally avoids antagonizing the USA through direct opposition to the Pentagram, on rare occasions this has been necessary to ensure that certain anomalies do not fall into their hands."
+  ],
+  "num": "GoI-616",
+  "alt": "",
+  "url": "",
+  "hub": "https://scp-wiki.wikidot.com/groups-of-interest#pentagram"
  },
  "aces-and-eights": {
   "kind": "canon",
